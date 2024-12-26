@@ -1,0 +1,9 @@
+[[item]]
+name = "About"
+path = "#about"
+[[item]]
+name = "News & Events"
+path = "#news_events"
+[[item]]
+name = "Contact us"
+path = "https://github.com/ScienceLiveHub/sciencelivehub.github.io/issues/new"
