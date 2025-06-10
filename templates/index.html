@@ -1,173 +1,337 @@
-{% import "macros/debug.html" as debug %}
-{% import "macros/head.html" as head %}
-{% import "macros/analytics.html" as analytics %}
-
-{% set navigation = load_data(path="navigation.toml") %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head %}
-    {{ analytics::google_analytics() }}
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="{{ config.description }}" />
-    <meta name="author" content="{{ config.author }}" />
-    {% block title %}{{ head::title() }}{% endblock title %}
-    <link rel="icon" type="image/x-icon" href="{{ get_url(path="assets/favicon.ico") }}" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.7.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ get_url(path="css/styles.css") }}" rel="stylesheet" />
-    {% block extra_head %}
-    <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/custom.css") }}">
-    {% endblock extra_head %}
-    {% endblock head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {{ config.title }}{% else %}{{ config.title }} - {{ config.description }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}">
+    <meta name="author" content="{{ config.author }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ get_url(path="assets/favicon.ico") }}">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ get_url(path="css/science-live.css") }}" rel="stylesheet">
 </head>
-<body id="{% block body_id %}page-top{% endblock body_id %}">
-    {% block navigation %}
+
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand text-black" href="{{ get_url(path="/") }}#page-top">{% block nav_home_title %}{{ config.title }}{% endblock nav_home_title %}</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-text">{{ config.title }}</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    {% for item in navigation.item %}
-                    <li class="nav-itempdown">
-                        <a class="nav-link" href="{{ item.path | safe }}">{{ item.name }}</a>
+                    {% for item in config.extra.main_menu %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
                     </li>
                     {% endfor %}
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary btn-sm" href="#contact">Get Started</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    {% endblock navigation %}
-    {% block masthead %}
-    <!-- Masthead -->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">{% block masthead_title %}{{ config.title }}{% endblock masthead_title %}</h1>
-                    <h2 class="text-black-50 mx-auto mt-2 mb-5">{% block masthead_description %}{{ config.description }}{% endblock masthead_description %}</h2>
-                    {% block masthead_button %}<a class="btn btn-primary" href="{% block masthead_button_url %}#about{% endblock masthead_button_url %}" id="{% block masthead_button_id %}getstarted{% endblock masthead_button_id %}">{% block masthead_button_label %}Learn More{% endblock masthead_button_label %}</a>{% endblock masthead_button %}
-                </div>
-            </div>
-        </div>
-    </header>
-    {% endblock masthead %}
-    {% block content %}
-    {% block about %}
-    <!-- About -->
-    <section class="about-section text-center" id="{% block about_id %}about{% endblock about_id %}">
-        <div class="container px-4 px-lg-5">
-            {% block about_image %}
-            <img class="img-fluid" src="{{ get_url(path="assets/img/banner_animated.gif") }}" alt="..." />
-            {% endblock about_image %}
-        </div>
-    </section>
-    {% endblock about %}
-    {% block projects %}
-    <!-- Projects-->
-    <section class="projects-section bg-light" id="{% block projects_id %}projects{% endblock projects_id %}">
-        <div class="container px-4 px-lg-5">
-            {% block feature_project %}
-            <!-- Featured Project Row -->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7">
-                    {% block feature_project_thumbnail %}
-                    <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/bg-masthead.jpg") }}" alt="...">
-                    {% endblock feature_project_thumbnail %}
-                </div>
-                <div class="col-xl-4 col-lg-5">
-                    {% block feature_project_content %}
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>{% block feature_project_title %}About{% endblock feature_project_title %}</h4>
-                        <p class="text-black-50 mb-0">
-                        {% block feature_project_description %}
-<br>{{ config.title }} is a decentralized open platform that turns research findings into structured, machine-readable data, making findings more accessible, interpretable, and reusable.
-                        {% endblock feature_project_description %}
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">{{ config.title }}</h1>
+                        <h2 class="hero-subtitle">{{ config.description }}</h2>
+                        <p class="hero-description">
+                            Pioneering the future of scientific knowledge sharing through structured, 
+                            machine-readable research data that breaks down institutional and disciplinary barriers.
                         </p>
-                    </div>
-                    {% endblock feature_project_content %}
-                </div>
-            </div>
-            {% endblock feature_project %}
-            {% block project_1 %}
-            <!-- Project One Row -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6">
-                    {% block project_1_thumbnail %}
-                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
-                    {% endblock project_1_thumbnail %}
-                </div>
-                <div class="col-lg-6">
-                    {% block project_1_content %}
-                    <div class="bg-white text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-black">{% block project_1_title %}News{% endblock project_1_title %}</h4>
-                                <p class="mb-0 text-black-50">
-                                {% block project_1_description %}
-                                &nbsp; The Science Live Project is launching in collaboration with Astera in April 2025! Stay tuned as we revolutionize scientific communication with knowledge graphs, enabling faster, more accessible, and reusable research.
-                                {% endblock project_1_description %}
-                                </p>
-                            </div>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary btn-lg me-3">Learn More</a>
+                            <a href="#products" class="btn btn-outline-primary btn-lg">Our Products</a>
                         </div>
                     </div>
-                    {% endblock project_1_content %}
                 </div>
-            </div>
-            {% endblock project_1 %}
-            {% block project_2 %}
-            <!-- Project Two Row -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <div class="col-lg-6">
-                    {% block project_2_thumbnail %}
-                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-02.jpg") }}" alt="...">
-                    {% endblock project_2_thumbnail %}
-                </div>
-                <div class="col-lg-6 order-lg-first">
-                    {% block project_2_content %}
-                    <div class="bg-white text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-black">{% block project_2_title %}Events{% endblock project_2_title %}</h4>
-                                <p class="mb-0 text-black-50">
-                                {% block project_2_description %}
-                                &nbsp; The Science Live Project will kick off on April 7, 2025, with an event to mark the start of this transformative initiative in scientific communication.
-                                {% endblock project_2_description %}
-                            </div>
-                        </div>
+                    <div class="hero-image">
+                        <img src="{{ get_url(path="assets/img/banner_animated.gif") }}" 
+                             alt="Science Live Platform" class="img-fluid rounded-4 shadow-lg">
                     </div>
-                    {% endblock project_2_content %}
                 </div>
             </div>
-            {% endblock project_2 %}
-            {% block extra_projects %}{% endblock extra_projects %}
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="content-wrapper">
+                        {{ section.content | safe }}
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    {% endblock projects %}
-    {% endblock content %}
-    {% block footer %}
+
+    <!-- Values Section -->
+    <section id="values" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="row g-4">
+                {% for value in config.extra.company_values %}
+                <div class="col-lg-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="value-title">{{ value.title }}</h4>
+                        <p class="value-description">{{ value.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding bg-gradient-primary">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Our Products</h2>
+                <p class="section-subtitle text-white-50">Comprehensive solutions for scientific knowledge management</p>
+            </div>
+            
+            <div class="row g-5">
+                {% for product in config.extra.products %}
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-header">
+                            <div class="product-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h4 class="product-title">{{ product.name }}</h4>
+                        </div>
+                        <p class="product-description">{{ product.description }}</p>
+                        <ul class="product-features">
+                            {% for feature in product.features %}
+                            <li><i class="fas fa-check text-secondary"></i> {{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Technology Foundation</h2>
+                <p class="section-subtitle">Built on proven standards and cutting-edge innovation</p>
+            </div>
+            
+            <div class="row g-4">
+                {% for tech in config.extra.technology_pillars %}
+                <div class="col-lg-6">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="tech-content">
+                            <h5 class="tech-title">{{ tech.name }}</h5>
+                            <p class="tech-description">{{ tech.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section-padding bg-gradient-secondary">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Leadership</h2>
+                <p class="section-subtitle text-white-50">Experienced leaders driving scientific innovation</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="leadership-card">
+                        <div class="text-center">
+                            <h3 class="leader-name">{{ config.extra.leadership.ceo }}</h3>
+                            <h5 class="leader-title">{{ config.extra.leadership.ceo_title }}</h5>
+                            <p class="leader-bio">{{ config.extra.leadership.ceo_background }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Partnership with {{ config.extra.partnership.primary_partner }}</h2>
+                    <p class="lead">{{ config.extra.partnership.description }}</p>
+                    <p class="fw-bold text-primary">Launch Date: {{ config.extra.partnership.launch_date }}</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="partnership-highlight">
+                        <div class="highlight-content">
+                            <h4>Collaborative Innovation</h4>
+                            <p>Join us in transforming scientific communication for the global research community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="impact" class="section-padding bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Our Impact</h2>
+            </div>
+            
+            <div class="row text-center g-4">
+                {% for metric in config.extra.metrics %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="metric-item">
+                        <div class="metric-number">{{ metric.value }}</div>
+                        <div class="metric-label">{{ metric.label }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Ready to transform how your organization shares scientific knowledge?</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>General Inquiries</h5>
+                        <p>Get in touch with our team for general questions and information.</p>
+                        <a href="{{ config.extra.contact.general_inquiries }}" class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5>Partnerships</h5>
+                        <p>Explore collaboration opportunities with Science Live.</p>
+                        <a href="{{ config.extra.contact.partnerships }}" class="btn btn-outline-primary">Partner With Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>Technical Support</h5>
+                        <p>Get help with our platform and development resources.</p>
+                        <a href="{{ config.extra.contact.technical_support }}" class="btn btn-outline-primary">Get Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer bg-white small text-center text-black-50">
-        <div class="container px-4 px-lg-5">{% block footer_copyright %}Copyright &copy; {{ config.author }} {{ now() | date(format="%Y") }}{% endblock footer_copyright %}</div>
-        {% block extra_footer %}{% endblock extra_footer %}
-        {% block footer_debug %}{{ debug::debug(context=__tera_context, name="__tera_context") }}{% endblock footer_debug %}
+    <footer class="footer bg-white border-top">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <span class="fw-bold">{{ config.title }}</span>
+                        <span class="text-muted ms-2">© {{ now() | date(format="%Y") }} {{ config.author }}</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        {% for link in config.extra.social_links %}
+                        <a href="{{ link.url }}" class="footer-link">
+                            <i class="{{ link.icon }}"></i>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    {% endblock footer %}
-<!-- Bootstrap core JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!-- Core theme JS -->
-<script src="{{ get_url(path="js/scripts.js") }}"></script>
-{% block extra_scripts %}{% endblock extra_scripts %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

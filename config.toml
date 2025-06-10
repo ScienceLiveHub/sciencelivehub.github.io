@@ -1,21 +1,90 @@
-# The URL the site will be built for
+# Science Live Company Website Configuration
+
 base_url = "https://sciencelivehub.github.io"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-# The site title and description; used in feeds by default.
 title = "Science Live"
-description = "Connecting science through knowledge graphs"
-author = "Anne Fouilloux"
+description = "Transforming scientific communication through structured knowledge graphs"
+author = "Science Live"
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "base16-ocean-dark"
 
 [extra]
-# Put all your custom variables here
+# Company navigation
+main_menu = [
+    { name = "About", url = "#about" },
+    { name = "Products", url = "#products" },
+    { name = "Technology", url = "#technology" },
+    { name = "Leadership", url = "#leadership" },
+    { name = "Partnership", url = "#partnership" },
+    { name = "Contact", url = "#contact" }
+]
+
+# Company values and differentiators
+company_values = [
+    { title = "Open Science", description = "Committed to transparent, accessible research that benefits the entire scientific community"},
+    { title = "Scientific Rigor", description = "Maintaining the highest standards of accuracy with full traceability and provenance"},
+    { title = "Community First", description = "Designing products with researchers to enhance existing workflows"},
+    { title = "Global Impact", description = "Accelerating discovery by connecting knowledge across languages and institutions"}
+]
+
+# Product offerings
+products = [
+    { name = "Science Live Pipeline", description = "Open-source toolkit enabling natural language queries of scientific knowledge", features = ["Natural language processing", "Semantic query generation", "Comprehensive results", "Full traceability"] },
+    { name = "Nanopublication Framework", description = "System for creating and sharing structured scientific statements", features = ["Structured data creation", "Provenance tracking", "Community validation", "Global distribution"] },
+    { name = "Knowledge Graph Platform", description = "Growing network of interconnected scientific knowledge", features = ["Cross-domain discovery", "Real-time updates", "API access", "Research analytics"] }
+]
+
+# Technology stack (professional presentation)
+technology_pillars = [
+    { name = "FAIR Principles", description = "Findable, Accessible, Interoperable, Reusable data standards" },
+    { name = "Semantic Web Standards", description = "W3C standards including RDF, SPARQL, and OWL" },
+    { name = "Nanopublication Framework", description = "Structured scientific statements with provenance" },
+    { name = "AI Processing", description = "Advanced natural language understanding and generation" }
+]
+
+# Use cases for different audiences
+use_cases = [
+    "Cross-disciplinary literature discovery and analysis",
+    "Research impact assessment through citation networks", 
+    "Expert identification and collaboration mapping",
+    "Experimental data integration and comparison",
+    "Knowledge gap identification and opportunity assessment"
+]
+
+# Company information
+company = { founded = "2025", mission = "Transforming scientific communication through structured knowledge sharing", vision = "A world where scientific knowledge flows freely across all boundaries"}
+
+# Leadership
+leadership = { ceo = "Anne Fouilloux", ceo_title = "Founder & CEO", ceo_background = "25+ years in academic research and software engineering, expert in semantic technologies and FAIR data principles" }
+
+# Partnership information
+partnership = { primary_partner = "Astera Institute", launch_date = "April 2025", description = "Strategic collaboration advancing scientific communication through innovative technology"}
+
+# Call-to-action buttons (professional)
+cta_primary = "Explore Our Platform"
+cta_secondary = "Learn More"
+cta_tertiary = "Partner With Us"
+
+# Contact information
+contact = { general_inquiries = "mailto:annef@simula.no", partnerships = "mailto:annef@simula.no", technical_support = "https://github.com/ScienceLiveHub/science-live-pipeline/issues"}
+
+# Social proof / metrics
+metrics = [
+    { label = "Research Domains", value = "10+" },
+    { label = "Active Researchers", value = "50+" },
+    { label = "Structured Statements", value = "10,000+" },
+    { label = "Knowledge Connections", value = "100,000+" }
+]
+
+# Brand colors
+brand_colors = { primary = "#193967", secondary = "#be2e78", primary_light = "#2a4d7a", secondary_light = "#d648a0"}
+
+# Professional social links
+social_links = [
+    { name = "GitHub", url = "https://github.com/ScienceLiveHub", icon = "fab fa-github" },
+    { name = "LinkedIn", url = "https://linkedin.com/company/science-live", icon = "fab fa-linkedin" }
+]
