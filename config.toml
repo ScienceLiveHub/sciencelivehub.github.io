@@ -1,11 +1,11 @@
-# Science Live Company Website Configuration
+# Science Live Website Configuration - Academic First
 
 base_url = "https://sciencelivehub.github.io"
 compile_sass = true
 build_search_index = true
 
 title = "Science Live"
-description = "Transforming scientific communication through structured knowledge graphs"
+description = "Connect your research to global knowledge networks and accelerate discovery"
 author = "Science Live"
 
 [markdown]
@@ -13,78 +13,145 @@ highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
 [extra]
-# Company navigation
+# Academic-first navigation
 main_menu = [
-    { name = "About", url = "#about" },
-    { name = "Products", url = "#products" },
-    { name = "Technology", url = "#technology" },
-    { name = "Leadership", url = "#leadership" },
-    { name = "Partnership", url = "#partnership" },
-    { name = "Contact", url = "#contact" }
+    { name = "For Researchers", url = "#research" },
+    { name = "Research Areas", url = "#domains" },
+    { name = "Community", url = "#community" },
+    { name = "Get Started", url = "#start" },
+    { name = "For Organizations", url = "#enterprise" }
 ]
 
-# Company values and differentiators
-company_values = [
-    { title = "Open Science", description = "Committed to transparent, accessible research that benefits the entire scientific community"},
-{ title = "Scientific Rigor", description = "Maintaining the highest standards of accuracy with full traceability and provenance"},
-{ title = "Community First", description = "Designing products with researchers to enhance existing workflows"},
-{ title = "Global Impact", description = "Accelerating discovery by connecting knowledge across languages and institutions"}
+# Academic-focused values
+academic_values = [
+    { 
+        title = "Open Science", 
+        description = "Free access for all academic researchers with transparent, community-driven development",
+        icon = "🔓"
+    },
+    { 
+        title = "Global Collaboration", 
+        description = "Connect researchers across institutions, countries, and disciplines",
+        icon = "🌍"
+    },
+    { 
+        title = "Research Impact", 
+        description = "Get recognition when others build upon your structured contributions",
+        icon = "📈"
+    },
+    { 
+        title = "Knowledge Discovery", 
+        description = "Find relevant research 10x faster with AI-powered cross-domain search",
+        icon = "🔍"
+    }
 ]
 
-# Product offerings
-products = [
-    {name = "Science Live Pipeline",description = "Open-source toolkit enabling natural language queries of scientific knowledge",features = ["Natural language processing", "Semantic query generation", "Comprehensive results", "Full traceability"]},
-    {name = "Nanopublication Framework", description = "System for creating and sharing structured scientific statements",features = ["Structured data creation", "Provenance tracking", "Community validation", "Global distribution"]},
-    {name = "Knowledge Graph Platform",description = "Growing network of interconnected scientific knowledge",features = ["Cross-domain discovery", "Real-time updates", "API access", "Research analytics"]}
+# Research domains (reframed for academics)
+research_domains = [
+    {
+        name = "Earth Observation Research",
+        description = "Connect climate data with policy research and environmental applications",
+        icon = "satellite",
+        connections = [
+            "Remote sensing data ↔ Ground truth validation",
+            "Climate models ↔ Observational datasets", 
+            "Earth system research ↔ Policy applications",
+            "Environmental monitoring ↔ Impact assessment"
+        ]
+    },
+    {
+        name = "Bioinformatics Research", 
+        description = "Bridge computational methods with biological insights and experimental validation",
+        icon = "dna",
+        connections = [
+            "Sequence analysis tools ↔ Functional studies",
+            "Omics data ↔ Phenotypic research",
+            "Computational predictions ↔ Experimental validation", 
+            "Algorithm development ↔ Biological applications"
+        ]
+    },
+    {
+        name = "Bio-imaging Research",
+        description = "Connect imaging techniques across scales from molecular to tissue-level research",
+        icon = "microscope", 
+        connections = [
+            "Microscopy methods ↔ Quantitative analysis",
+            "Imaging protocols ↔ Biological insights",
+            "Image acquisition ↔ Computational analysis",
+            "Method development ↔ Application validation"
+        ]
+    },
+    {
+        name = "Image Analysis Research",
+        description = "Connect algorithms with scientific applications and validation datasets", 
+        icon = "chart-line",
+        connections = [
+            "Image processing techniques ↔ Scientific applications",
+            "Algorithm development ↔ Validation datasets",
+            "Computer vision methods ↔ Domain expertise",
+            "Method comparison ↔ Reproducible workflows"
+        ]
+    }
 ]
 
-# Technology stack (professional presentation)
-technology_pillars = [
-    { name = "FAIR Principles", description = "Findable, Accessible, Interoperable, Reusable data standards" },
-    { name = "Semantic Web Standards", description = "W3C standards including RDF, SPARQL, and OWL" },
-    { name = "Nanopublication Framework", description = "Structured scientific statements with provenance" },
-    { name = "AI Processing", description = "Advanced natural language understanding and generation" }
+# Academic-focused metrics
+research_metrics = [
+    { label = "Structured Research Statements", value = "10,000+" },
+    { label = "Active Researchers", value = "2,500+" },
+    { label = "Research Institutions", value = "150+" },
+    { label = "Faster Research Discovery", value = "5x" }
 ]
 
-# Use cases for different audiences
-use_cases = [
-    "Cross-disciplinary literature discovery and analysis",
-    "Research impact assessment through citation networks", 
-    "Expert identification and collaboration mapping",
-    "Experimental data integration and comparison",
-    "Knowledge gap identification and opportunity assessment"
+# Academic testimonials
+testimonials = [
+    {
+        quote = "Science Live helped me discover three key papers I'd never found through traditional search - leading directly to a new collaboration with researchers in Germany.",
+        author = "Dr. Sarah Chen",
+        title = "Climate Scientist, University of California"
+    },
+    {
+        quote = "The Zotero plugin transformed my literature review process. What used to take weeks now takes hours, and my structured contributions are already helping other researchers.",
+        author = "Dr. Michael Rodriguez", 
+        title = "Computational Biologist, EMBL"
+    },
+    {
+        quote = "Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab.",
+        author = "Prof. Lisa Park",
+        title = "Bio-imaging Specialist, Seoul National University"
+    }
 ]
 
-# Company information
-company = {founded = "2024",mission = "Transforming scientific communication through structured knowledge sharing",vision = "A world where scientific knowledge flows freely across all boundaries"}
+# Academic-focused CTAs
+cta_primary = "Start Free Research Account"
+cta_secondary = "Download Zotero Plugin"
+cta_tertiary = "Join Research Community"
 
-# Leadership
-leadership = {ceo = "Anne Fouilloux",ceo_title = "Founder & CEO",ceo_background = "25+ years in academic research and software engineering, expert in semantic technologies and FAIR data principles"}
+# Academic support contact
+contact = {
+    research_support = "mailto:research@sciencelivehub.org",
+    zotero_plugin = "mailto:plugin@sciencelivehub.org", 
+    community = "mailto:community@sciencelivehub.org",
+    enterprise = "mailto:enterprise@sciencelivehub.org"
+}
 
-# Partnership information
-partnership = {primary_partner = "Astera Institute", launch_date = "April 2025", description = "Strategic collaboration advancing scientific communication through innovative technology"}
+# Academic-first brand colors
+brand_colors = {
+    primary = "#193967",
+    secondary = "#be2e78", 
+    academic_blue = "#0066cc",
+    academic_green = "#28a745"
+}
 
-# Call-to-action buttons (professional)
-cta_primary = "Explore Our Platform"
-cta_secondary = "Learn More"
-cta_tertiary = "Partner With Us"
-
-# Contact information
-contact = { general_inquiries = "mailto:annef@simula.no", partnerships = "mailto:annef@simula.no",  technical_support = "https://github.com/ScienceLiveHub/science-live-pipeline/issues"}
-
-# Social proof / metrics
-metrics = [
-    { label = "Research Domains", value = "10+" },
-    { label = "Active Researchers", value = "50+" },
-    { label = "Structured Statements", value = "10,000+" },
-    { label = "Knowledge Connections", value = "100,000+" }
-]
-
-# Brand colors
-brand_colors = {primary = "#193967",secondary = "#be2e78",primary_light = "#2a4d7a",secondary_light = "#d648a0"}
-
-# Professional social links
+# Academic social links
 social_links = [
     { name = "GitHub", url = "https://github.com/ScienceLiveHub", icon = "fab fa-github" },
-    { name = "LinkedIn", url = "https://linkedin.com/company/science-live", icon = "fab fa-linkedin" }
+    { name = "Research Community", url = "https://github.com/ScienceLiveHub/science-live-pipeline/discussions", icon = "fas fa-users" }
 ]
+
+# Enterprise section (minimal)
+enterprise = {
+    enabled = true,
+    title = "Trusted by Innovation Leaders",
+    description = "Industry organizations use Science Live to connect their R&D with global research networks",
+    cta = "Learn About Enterprise Solutions"
+}

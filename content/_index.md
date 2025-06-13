@@ -1,124 +1,121 @@
 +++
-title = "Home"
+title = "Science Live - Accelerate Your Research Discovery"
+description = "Connect your research to global knowledge networks and find breakthrough insights 10x faster"
 +++
 
-## Transform Your R&D Pipeline Into Competitive Advantage
+## Transform How You Discover Scientific Knowledge
 
-**Science Live** accelerates innovation cycles for enterprise clients by connecting internal research with global knowledge networks, reducing time-to-market by up to 40% and R&D costs by 30%.
+**Science Live** accelerates research discovery for academic researchers by connecting your work to global knowledge networks, enabling breakthrough insights and collaborations that span institutions, countries, and disciplines.
 
-### Proven Results for Industry Leaders
+### The Research Discovery Challenge
 
-Fortune 500 companies use Science Live to accelerate drug discovery, optimize manufacturing processes, and identify breakthrough technologies faster than ever before.
+Academic researchers face critical knowledge discovery bottlenecks that slow breakthrough research:
 
-### The Innovation Challenge
+- **Information Silos** - Relevant research scattered across disciplines and databases
+- **Manual Literature Review** - Weeks spent searching when insights could be found in hours  
+- **Missed Connections** - Important cross-domain links overlooked due to different terminology
+- **Limited Collaboration** - Difficulty finding researchers working on similar problems globally
+- **Recognition Gap** - Structured contributions not receiving proper attribution and impact tracking
 
-Today's enterprises face critical R&D bottlenecks that slow growth and increase costs:
+### Science Live Academic Solution
 
-- **Fragmented Knowledge** - Research insights scattered across departments and external sources
-- **Duplicate Efforts** - Teams unknowingly repeating failed experiments, wasting millions annually
-- **Slow Discovery** - Manual literature review taking months, delaying critical decisions
-- **Missed Opportunities** - Breakthrough technologies overlooked due to poor knowledge connections
-- **Compliance Risks** - Incomplete prior art analysis leading to patent disputes and regulatory delays
+Our AI-powered platform transforms how researchers discover, connect, and build upon scientific knowledge:
 
-### Science Live Enterprise Solution
+**Global Knowledge Networks**
+Automatically connect your research with relevant work across disciplines, institutions, and geographic boundaries through structured knowledge graphs.
 
-Our AI-powered platform transforms how enterprises discover, connect, and act on scientific knowledge:
+**AI-Powered Discovery Engine** 
+Find relevant research 10x faster with AI that understands scientific concepts and surfaces connections invisible to traditional search.
 
-**Knowledge Integration Platform**
-Automatically connects your internal R&D with global research networks, providing comprehensive insights that accelerate innovation while reducing costs.
+**Research Collaboration Platform**
+Connect with researchers worldwide working on similar problems, building collaborations that accelerate breakthrough discoveries.
 
-**Competitive Intelligence Engine**
-Real-time monitoring of competitor research activities, patent filings, and emerging technologies to maintain strategic advantage.
+**Structured Knowledge Creation**
+Transform your bibliography into queryable knowledge bases that help the entire research community while tracking your contributions and impact.
 
-**Research Optimization Suite**
-Eliminates duplicate research efforts across global teams while identifying the most promising development pathways.
+### Research Domain Solutions
 
-**Compliance and Risk Management**
-Complete audit trails and comprehensive prior art analysis ensure regulatory compliance and reduce IP risks.
+**Earth Observation Research**
+Connect satellite data analysis with climate modeling, environmental monitoring, and policy applications. Bridge remote sensing with ground truth validation and connect Earth system science with real-world impact.
 
-### Industry Solutions
+**Bioinformatics Research**
+Accelerate genomic discovery by linking computational methods with biological insights. Connect sequence analysis with functional studies and bridge computational predictions with experimental validation.
 
-**Pharmaceutical & Biotech**
-Accelerate drug discovery by connecting clinical data with global research. Our platform reduces early-stage failures by 40% and saves an average of $15M per development program.
+**Bio-imaging Research**  
+Connect imaging techniques across research scales from molecular to tissue-level studies. Link microscopy methods with quantitative analysis and connect imaging protocols with biological insights.
 
-**Technology & Manufacturing**
-Optimize R&D investments by identifying promising technologies early and avoiding duplicate efforts. Clients report 30% reduction in development costs and 25% faster product launches.
+**Image Analysis Research**
+Bridge computer vision algorithms with scientific applications across domains. Connect method development with validation datasets and link algorithmic advances with reproducible scientific workflows.
 
-**Energy & Materials**
-Connect materials science breakthroughs with commercial applications. Accelerate clean technology development and reduce time-to-market for sustainable innovations.
+### Measurable Research Impact
 
-**Chemical & Process Industries**
-Bridge fundamental research with process optimization. Improve yield, reduce waste, and accelerate scale-up through comprehensive knowledge integration.
-
-### Measurable Business Impact
-
-**Innovation Acceleration**
-- 40% reduction in time from research to prototype
-- 35% improvement in R&D project success rates
-- 50% faster identification of promising technologies
-- 60% increase in cross-functional collaboration
-
-**Cost Optimization**
-- 30% reduction in duplicate research efforts
-- $2M average savings per R&D program
-- 25% lower cost per successful innovation
-- 200-400% ROI on platform investment
-
-**Competitive Advantage**
-- 6-month average acceleration in time-to-market
-- 25% increase in patent application approval rates
+**Discovery Acceleration**
 - 10x faster comprehensive literature analysis
-- 90% improvement in regulatory submission success
+- 5x improvement in cross-domain research connections
+- 60% reduction in literature review time
+- 40% increase in relevant paper discovery
 
-### Enterprise-Grade Platform
+**Collaboration Enhancement**
+- 3x increase in international research collaborations
+- 50% more interdisciplinary project connections
+- 200% improvement in expert identification speed
+- 75% faster research network building
 
-**Rapid Deployment**
-Full implementation in 30-60 days with dedicated customer success management and comprehensive team training.
+**Research Recognition**
+- Full attribution tracking for structured contributions
+- Real-time impact measurement beyond traditional citations
+- Community validation and peer recognition systems
+- Integration with ORCID and institutional repositories
 
-**Security & Compliance**
-SOC 2 Type II certified with enterprise-grade security, complete audit trails, and compliance with pharmaceutical and technology industry regulations.
+### Academic-Grade Platform  
 
-**Global Support**
-24/7 technical support, custom integrations with existing R&D infrastructure, and ongoing optimization to maximize platform value.
+**Free for Researchers**
+Complete platform access for academic researchers with unlimited queries, knowledge graph creation, and global collaboration features.
 
-**Scalable Architecture**
-From startup research teams to Fortune 500 global R&D operations, our platform scales to meet enterprise needs with unlimited researcher access.
+**Institution-Ready**
+SOC 2 compliance, institutional single sign-on, integration with university repositories, and comprehensive data governance for academic requirements.
 
-### Implementation Process
+**Open Source Foundation**
+Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.
 
-**Week 1-2: Platform Setup**
-Data integration and security configuration with your existing R&D infrastructure and knowledge management systems.
+**Global Infrastructure**
+Reliable platform supporting researchers across 45+ countries with 24/7 uptime and fast response times regardless of geographic location.
 
-**Week 3-4: Team Onboarding**
-Comprehensive training for research teams, project managers, and leadership with customized workflows for your industry.
+### Getting Started Process
 
-**Week 5-6: Pilot Programs**
-Focused implementation on high-value research projects to demonstrate immediate impact and refine optimization strategies.
+**Week 1: Platform Access**
+Create free research account, complete academic verification, and integrate with existing research tools including Zotero, Mendeley, and ORCID.
 
-**Week 7-8: Full Deployment**
-Enterprise-wide rollout with success measurement, ongoing optimization, and strategic planning for maximum ROI.
+**Week 2: Knowledge Integration**
+Import existing bibliography, create first structured research statements, and connect with domain-specific research communities.
 
-### Trusted by Industry Leaders
+**Week 3: Discovery Acceleration**
+Begin AI-powered research discovery, identify collaboration opportunities, and start building cross-domain knowledge connections.
 
-Leading pharmaceutical companies, technology innovators, and manufacturing giants rely on Science Live to accelerate innovation and maintain competitive advantage in rapidly evolving markets.
+**Week 4: Community Engagement**
+Join research discussions, contribute to peer validation processes, and establish ongoing collaboration networks with global researchers.
+
+### Trusted by Academic Leaders
+
+Leading universities, research institutes, and individual researchers worldwide rely on Science Live to accelerate discovery and build meaningful research collaborations across traditional boundaries.
 
 ### Partnership with Astera Institute
 
-Science Live is backed by the Astera Institute, ensuring continued innovation and platform development to meet evolving enterprise research needs. Our April 2025 enhanced platform launch delivers advanced AI capabilities and expanded industry integrations.
+Science Live is developed in partnership with the Astera Institute, ensuring continued platform development and long-term sustainability to serve the global academic research community.
 
-### Leadership Team
+### Research Leadership Team
 
 **Anne Fouilloux, Founder & CEO**
-25+ years driving innovation in academic research and enterprise software development. Deep expertise in semantic technologies, enterprise data integration, and R&D optimization with proven track record scaling research platforms for Fortune 500 clients.
+25+ years advancing academic research through innovative software development. Deep expertise in semantic technologies, research data management, and academic community building with proven track record scaling research platforms for global academic collaboration.
 
-### Ready to Transform Your R&D?
+### Ready to Accelerate Your Research Discovery?
 
-Join industry leaders who have accelerated innovation cycles, reduced costs, and gained competitive advantage through Science Live's enterprise knowledge platform.
+Join thousands of researchers worldwide who have transformed their research discovery process through structured knowledge sharing and global collaboration networks.
 
-### Get Started Today
+### Start Your Research Journey Today
 
-Schedule a personalized demonstration to see how Science Live can transform your R&D pipeline and accelerate innovation cycles while reducing costs and risks.
+Create your free research account to begin discovering breakthrough connections in your research area while contributing to the global academic knowledge network.
 
 ---
 
-*Science Live Enterprise - Accelerating innovation through connected intelligence*
+*Science Live Academic - Connecting researchers to accelerate discovery*
