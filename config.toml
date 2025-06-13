@@ -26,16 +26,16 @@ main_menu = [
 # Company values and differentiators
 company_values = [
     { title = "Open Science", description = "Committed to transparent, accessible research that benefits the entire scientific community"},
-    { title = "Scientific Rigor", description = "Maintaining the highest standards of accuracy with full traceability and provenance"},
-    { title = "Community First", description = "Designing products with researchers to enhance existing workflows"},
-    { title = "Global Impact", description = "Accelerating discovery by connecting knowledge across languages and institutions"}
+{ title = "Scientific Rigor", description = "Maintaining the highest standards of accuracy with full traceability and provenance"},
+{ title = "Community First", description = "Designing products with researchers to enhance existing workflows"},
+{ title = "Global Impact", description = "Accelerating discovery by connecting knowledge across languages and institutions"}
 ]
 
 # Product offerings
 products = [
-    { name = "Science Live Pipeline", description = "Open-source toolkit enabling natural language queries of scientific knowledge", features = ["Natural language processing", "Semantic query generation", "Comprehensive results", "Full traceability"] },
-    { name = "Nanopublication Framework", description = "System for creating and sharing structured scientific statements", features = ["Structured data creation", "Provenance tracking", "Community validation", "Global distribution"] },
-    { name = "Knowledge Graph Platform", description = "Growing network of interconnected scientific knowledge", features = ["Cross-domain discovery", "Real-time updates", "API access", "Research analytics"] }
+    {name = "Science Live Pipeline",description = "Open-source toolkit enabling natural language queries of scientific knowledge",features = ["Natural language processing", "Semantic query generation", "Comprehensive results", "Full traceability"]},
+    {name = "Nanopublication Framework", description = "System for creating and sharing structured scientific statements",features = ["Structured data creation", "Provenance tracking", "Community validation", "Global distribution"]},
+    {name = "Knowledge Graph Platform",description = "Growing network of interconnected scientific knowledge",features = ["Cross-domain discovery", "Real-time updates", "API access", "Research analytics"]}
 ]
 
 # Technology stack (professional presentation)
@@ -56,13 +56,13 @@ use_cases = [
 ]
 
 # Company information
-company = { founded = "2025", mission = "Transforming scientific communication through structured knowledge sharing", vision = "A world where scientific knowledge flows freely across all boundaries"}
+company = {founded = "2024",mission = "Transforming scientific communication through structured knowledge sharing",vision = "A world where scientific knowledge flows freely across all boundaries"}
 
 # Leadership
-leadership = { ceo = "Anne Fouilloux", ceo_title = "Founder & CEO", ceo_background = "25+ years in academic research and software engineering, expert in semantic technologies and FAIR data principles" }
+leadership = {ceo = "Anne Fouilloux",ceo_title = "Founder & CEO",ceo_background = "25+ years in academic research and software engineering, expert in semantic technologies and FAIR data principles"}
 
 # Partnership information
-partnership = { primary_partner = "Astera Institute", launch_date = "April 2025", description = "Strategic collaboration advancing scientific communication through innovative technology"}
+partnership = {primary_partner = "Astera Institute", launch_date = "April 2025", description = "Strategic collaboration advancing scientific communication through innovative technology"}
 
 # Call-to-action buttons (professional)
 cta_primary = "Explore Our Platform"
@@ -70,7 +70,7 @@ cta_secondary = "Learn More"
 cta_tertiary = "Partner With Us"
 
 # Contact information
-contact = { general_inquiries = "mailto:annef@simula.no", partnerships = "mailto:annef@simula.no", technical_support = "https://github.com/ScienceLiveHub/science-live-pipeline/issues"}
+contact = { general_inquiries = "mailto:annef@simula.no", partnerships = "mailto:annef@simula.no",  technical_support = "https://github.com/ScienceLiveHub/science-live-pipeline/issues"}
 
 # Social proof / metrics
 metrics = [
@@ -81,7 +81,7 @@ metrics = [
 ]
 
 # Brand colors
-brand_colors = { primary = "#193967", secondary = "#be2e78", primary_light = "#2a4d7a", secondary_light = "#d648a0"}
+brand_colors = {primary = "#193967",secondary = "#be2e78",primary_light = "#2a4d7a",secondary_light = "#d648a0"}
 
 # Professional social links
 social_links = [
