@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Live User Flow</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: white;
+            padding: 15px;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .flow-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .flow-title {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #193967;
+            margin-bottom: 20px;
+        }
+        
+        .user-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .user-step {
+            flex: 1;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px 12px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .user-step:hover {
+            border-color: #193967;
+            box-shadow: 0 5px 15px rgba(25, 57, 103, 0.15);
+            transform: translateY(-3px);
+        }
+        
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 8px;
+            background: linear-gradient(135deg, #193967, #be2e78);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .step-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        
+        .step-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #193967;
+            margin-bottom: 4px;
+        }
+        
+        .step-subtitle {
+            font-size: 0.75rem;
+            color: #be2e78;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .step-description {
+            font-size: 0.7rem;
+            color: #666;
+            line-height: 1.3;
+        }
+        
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: #be2e78;
+            animation: pulse-arrow 2s infinite;
+            flex-shrink: 0;
+        }
+        
+        @keyframes pulse-arrow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .benefits-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        .benefit-card {
+            flex: 1;
+            background: linear-gradient(135deg, #193967, #be2e78);
+            color: white;
+            padding: 12px 8px;
+            border-radius: 8px;
+            text-align: center;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .benefit-icon {
+            width: 28px;
+            height: 28px;
+            margin: 0 auto 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .benefit-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        
+        .benefit-title {
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .benefit-text {
+            font-size: 0.6rem;
+            opacity: 0.9;
+            line-height: 1.2;
+        }
+        
+        .highlight-text {
+            color: #be2e78;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="flow-container">
+        <div class="flow-title">
+            How Science Live Works for Everyone
+        </div>
+        
+        <div class="user-flow">
+            <!-- Academic Researchers -->
+            <div class="user-step" data-user="academic">
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16z"/>
+                    </svg>
+                </div>
+                <div class="step-title">Academic Researchers</div>
+                <div class="step-subtitle">Better Reading & Citing</div>
+                <div class="step-description">
+                    Use <strong>Zotero plugin</strong> to track reading and create structured citations
+                </div>
+            </div>
+            
+            <div class="flow-arrow">→</div>
+            
+            <!-- All Researchers -->
+            <div class="user-step" data-user="researchers">
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                </div>
+                <div class="step-title">All Researchers</div>
+                <div class="step-subtitle">Share Results Faster</div>
+                <div class="step-description">
+                    Skip lengthy papers. Publish <strong>nanopublications</strong> with data & code
+                </div>
+            </div>
+            
+            <div class="flow-arrow">→</div>
+            
+            <!-- Industry -->
+            <div class="user-step" data-user="industry">
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                    </svg>
+                </div>
+                <div class="step-title">Industry Teams</div>
+                <div class="step-subtitle">Find & Reuse Research</div>
+                <div class="step-description">
+                    Discover research findings <strong>ready to use</strong> with clear data
+                </div>
+            </div>
+        </div>
+        
+        <div class="benefits-row">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7 6V3a1 1 0 011-1h12a1 1 0 011 1v14a1 1 0 01-1 1h-3v3c0 .552-.448 1-1.007 1H4.007A1.01 1.01 0 013 21l.003-14c0-.552.448-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z"/>
+                    </svg>
+                </div>
+                <div class="benefit-title">10x Faster</div>
+                <div class="benefit-text">Find research in minutes</div>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3.055 13H5.07a.944.944 0 01.27.04L12 15.33l6.66-2.29a.944.944 0 01.27-.04h2.015l.001-1.384a1 1 0 01.504-.864l2-1.115a1 1 0 011.314.401l1.337 2.397a1 1 0 01.001 1.01L24 15.5a1 1 0 01-.866.5H20v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3H.866a1 1 0 01-.866-.5L-.002 13.5a1 1 0 01.001-1.01l1.337-2.397a1 1 0 011.314-.401l2 1.115a1 1 0 01.504.864L5.055 13z"/>
+                    </svg>
+                </div>
+                <div class="benefit-title">Machine Ready</div>
+                <div class="benefit-text">AI can understand & reuse</div>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 018.027 13H4.062a8.008 8.008 0 005.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0013.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 01-1.683 6.667A8.008 8.008 0 0019.938 13zM4.062 11h3.965A17.9 17.9 0 019.71 4.333 8.008 8.008 0 004.062 11zm5.968 0h3.94A15.905 15.905 0 0012 4.248 15.905 15.905 0 0010.03 11zm4.259-6.667A17.9 17.9 0 0115.973 11h3.965a8.008 8.008 0 00-5.648-6.667z"/>
+                    </svg>
+                </div>
+                <div class="benefit-title">Global Network</div>
+                <div class="benefit-text">Connect worldwide</div>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/>
+                    </svg>
+                </div>
+                <div class="benefit-title">Full Credit</div>
+                <div class="benefit-text">Track all contributions</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add hover effects with concise examples
+        const userSteps = document.querySelectorAll('.user-step');
+        
+        const originalDescriptions = [
+            'Use <strong>Zotero plugin</strong> to track reading and create structured citations',
+            'Skip lengthy papers. Publish <strong>nanopublications</strong> with data & code',
+            'Discover research findings <strong>ready to use</strong> with clear data'
+        ];
+        
+        const hoverDescriptions = [
+            'Track: <span class="highlight-text">"ML model: 94% accuracy"</span> → structured claim',
+            'Publish: <span class="highlight-text">"CO2 = 421ppm ± 0.1"</span> + dataset + code',
+            'Search: <span class="highlight-text">"energy storage"</span> → ready methods & data'
+        ];
+        
+        userSteps.forEach((step, index) => {
+            step.addEventListener('mouseenter', function() {
+                this.querySelector('.step-description').innerHTML = hoverDescriptions[index];
+            });
+            
+            step.addEventListener('mouseleave', function() {
+                this.querySelector('.step-description').innerHTML = originalDescriptions[index];
+            });
+        });
+    </script>
+</body>
+</html>
