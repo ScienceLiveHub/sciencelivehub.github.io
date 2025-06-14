@@ -24,74 +24,34 @@ main_menu = [
 
 # Academic-focused values
 academic_values = [
-    { 
-        title = "Open Science", 
-        description = "Free access for all academic researchers with transparent, community-driven development",
-        icon = "🔓"
-    },
-    { 
-        title = "Global Collaboration", 
-        description = "Connect researchers across institutions, countries, and disciplines",
-        icon = "🌍"
-    },
-    { 
-        title = "Research Impact", 
-        description = "Get recognition when others build upon your structured contributions",
-        icon = "📈"
-    },
-    { 
-        title = "Knowledge Discovery", 
-        description = "Find relevant research 10x faster with AI-powered cross-domain search",
-        icon = "🔍"
-    }
+    {  title = "Open Science", description = "Free access for all academic researchers with transparent, community-driven development", icon = "🔓"},
+    { title = "Global Collaboration", description = "Connect researchers across institutions, countries, and disciplines", icon = "🌍"},
+    { title = "Research Impact", description = "Get recognition when others build upon your structured contributions", icon = "📈"},
+    { title = "Knowledge Discovery", description = "Find relevant research 10x faster with AI-powered cross-domain search", icon = "🔍"}
 ]
 
 # Research domains (reframed for academics)
 research_domains = [
-    {
-        name = "Earth Observation Research",
-        description = "Connect climate data with policy research and environmental applications",
-        icon = "satellite",
-        connections = [
+    { name = "Earth Observation Research", description = "Connect climate data with policy research and environmental applications", icon = "satellite", connections = [
             "Remote sensing data ↔ Ground truth validation",
             "Climate models ↔ Observational datasets", 
             "Earth system research ↔ Policy applications",
-            "Environmental monitoring ↔ Impact assessment"
-        ]
-    },
-    {
-        name = "Bioinformatics Research", 
-        description = "Bridge computational methods with biological insights and experimental validation",
-        icon = "dna",
-        connections = [
+            "Environmental monitoring ↔ Impact assessment"]},
+    { name = "Bioinformatics Research", description = "Bridge computational methods with biological insights and experimental validation", icon = "dna", connections = [
             "Sequence analysis tools ↔ Functional studies",
             "Omics data ↔ Phenotypic research",
             "Computational predictions ↔ Experimental validation", 
-            "Algorithm development ↔ Biological applications"
-        ]
-    },
-    {
-        name = "Bio-imaging Research",
-        description = "Connect imaging techniques across scales from molecular to tissue-level research",
-        icon = "microscope", 
-        connections = [
+            "Algorithm development ↔ Biological applications" ]},
+    { name = "Bio-imaging Research", description = "Connect imaging techniques across scales from molecular to tissue-level research", icon = "microscope", connections = [
             "Microscopy methods ↔ Quantitative analysis",
             "Imaging protocols ↔ Biological insights",
             "Image acquisition ↔ Computational analysis",
-            "Method development ↔ Application validation"
-        ]
-    },
-    {
-        name = "Image Analysis Research",
-        description = "Connect algorithms with scientific applications and validation datasets", 
-        icon = "chart-line",
-        connections = [
+            "Method development ↔ Application validation"]},
+    { name = "Image Analysis Research", description = "Connect algorithms with scientific applications and validation datasets", icon = "chart-line", connections = [
             "Image processing techniques ↔ Scientific applications",
             "Algorithm development ↔ Validation datasets",
             "Computer vision methods ↔ Domain expertise",
-            "Method comparison ↔ Reproducible workflows"
-        ]
-    }
+            "Method comparison ↔ Reproducible workflows"]}
 ]
 
 # Academic-focused metrics
@@ -104,21 +64,9 @@ research_metrics = [
 
 # Academic testimonials
 testimonials = [
-    {
-        quote = "Science Live helped me discover three key papers I'd never found through traditional search - leading directly to a new collaboration with researchers in Germany.",
-        author = "Dr. Sarah Chen",
-        title = "Climate Scientist, University of California"
-    },
-    {
-        quote = "The Zotero plugin transformed my literature review process. What used to take weeks now takes hours, and my structured contributions are already helping other researchers.",
-        author = "Dr. Michael Rodriguez", 
-        title = "Computational Biologist, EMBL"
-    },
-    {
-        quote = "Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab.",
-        author = "Prof. Lisa Park",
-        title = "Bio-imaging Specialist, Seoul National University"
-    }
+    { quote = "Science Live helped me discover three key papers I'd never found through traditional search - leading directly to a new collaboration with researchers in Germany.", author = "Dr. Sarah Chen", title = "Climate Scientist, University of California" },
+    { quote = "The Zotero plugin transformed my literature review process. What used to take weeks now takes hours, and my structured contributions are already helping other researchers.", author = "Dr. Michael Rodriguez", title = "Computational Biologist, EMBL"},
+    { quote = "Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab.", author = "Prof. Lisa Park", title = "Bio-imaging Specialist, Seoul National University" }
 ]
 
 # Academic-focused CTAs
@@ -127,20 +75,10 @@ cta_secondary = "Download Zotero Plugin"
 cta_tertiary = "Join Research Community"
 
 # Academic support contact
-contact = {
-    research_support = "mailto:research@sciencelivehub.org",
-    zotero_plugin = "mailto:plugin@sciencelivehub.org", 
-    community = "mailto:community@sciencelivehub.org",
-    enterprise = "mailto:enterprise@sciencelivehub.org"
-}
+contact = { research_support = "mailto:research@sciencelivehub.org", zotero_plugin = "mailto:plugin@sciencelivehub.org", community = "mailto:community@sciencelivehub.org", enterprise = "mailto:enterprise@sciencelivehub.org"}
 
 # Academic-first brand colors
-brand_colors = {
-    primary = "#193967",
-    secondary = "#be2e78", 
-    academic_blue = "#0066cc",
-    academic_green = "#28a745"
-}
+brand_colors = { primary = "#193967", secondary = "#be2e78", academic_blue = "#0066cc", academic_green = "#28a745"}
 
 # Academic social links
 social_links = [
@@ -149,9 +87,4 @@ social_links = [
 ]
 
 # Enterprise section (minimal)
-enterprise = {
-    enabled = true,
-    title = "Trusted by Innovation Leaders",
-    description = "Industry organizations use Science Live to connect their R&D with global research networks",
-    cta = "Learn About Enterprise Solutions"
-}
+enterprise = { enabled = true, title = "Trusted by Innovation Leaders", description = "Industry organizations use Science Live to connect their R&D with global research networks", cta = "Learn About Enterprise Solutions"}
