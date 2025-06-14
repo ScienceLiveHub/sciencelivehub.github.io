@@ -3,8 +3,10 @@
 :root {
     --primary-color: #193967;
     --secondary-color: #be2e78;
-    --academic-blue: #0066cc;
-    --academic-green: #28a745;
+    --primary-light: #2a5788;
+    --secondary-light: #d456a0;
+    --primary-dark: #0f2548;
+    --secondary-dark: #8f1e58;
     --text-light: #f8f9fa;
     --text-dark: #212529;
 }
@@ -104,6 +106,12 @@ body {
     transform: translateY(-2px);
 }
 
+.hero-iframe {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: white;
+}
+
 .hero-image {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
@@ -146,7 +154,7 @@ body {
 .benefit-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--academic-blue), var(--academic-green));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -178,7 +186,7 @@ body {
     padding: 2.5rem;
     border-radius: 16px;
     height: 100%;
-    border-left: 4px solid var(--academic-blue);
+    border-left: 4px solid var(--primary-color);
     transition: all 0.3s ease;
 }
 
@@ -223,7 +231,7 @@ body {
 }
 
 .platform-feature i {
-    color: var(--academic-blue);
+    color: var(--secondary-color);
 }
 
 .platform-feature h5 {
@@ -257,7 +265,7 @@ body {
 .start-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--academic-blue), var(--academic-green));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -344,8 +352,8 @@ body {
 }
 
 .btn-primary:hover {
-    background: #0f2548;
-    border-color: #0f2548;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: translateY(-2px);
 }
 
