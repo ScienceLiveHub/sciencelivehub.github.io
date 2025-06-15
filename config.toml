@@ -24,30 +24,30 @@ main_menu = [
 
 # Academic-focused values
 academic_values = [
-    {  title = "Open Science", description = "Free access for all academic researchers with transparent, community-driven development", icon = "🔓"},
-    { title = "Global Collaboration", description = "Connect researchers across institutions, countries, and disciplines", icon = "🌍"},
-    { title = "Research Impact", description = "Get recognition when others build upon your structured contributions", icon = "📈"},
-    { title = "Knowledge Discovery", description = "Find relevant research 10x faster with AI-powered cross-domain search", icon = "🔍"}
+    {  title = "Discover Faster", description = "Find relevant research across disciplines in minutes, not weeks. Our AI understands scientific concepts and surfaces connections you'd never find through traditional search.", icon = "search"},
+    { title = "Connect Globally", description = "Meet researchers worldwide working on similar problems. Build collaborations that span institutions, countries, and disciplines.", icon = "globe"},
+    { title = "Structured Knowledge", description = "Turn your bibliography into a queryable knowledge base. Your reading lists become discoverable resources that help the entire research community.", icon = "database"},
+    { title = "Get Recognition", description = "Receive credit when other researchers build upon your structured contributions. Track your research impact beyond traditional citations.", icon = "award"}
 ]
 
 # Research domains (reframed for academics)
 research_domains = [
-    { name = "Earth Observation Research", description = "Connect climate data with policy research and environmental applications", icon = "satellite", connections = [
+    { name = "Earth Observation Research", description = "Connect Climate Data with Global Impact", info = "Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications.", icon = "satellite", connections = [
             "Remote sensing data ↔ Ground truth validation",
             "Climate models ↔ Observational datasets", 
             "Earth system research ↔ Policy applications",
             "Environmental monitoring ↔ Impact assessment"]},
-    { name = "Bioinformatics Research", description = "Bridge computational methods with biological insights and experimental validation", icon = "dna", connections = [
+    { name = "Bioinformatics Research", description = "Bridge Computational Methods with Biological Insights", info = "Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies.", icon = "dna", connections = [
             "Sequence analysis tools ↔ Functional studies",
             "Omics data ↔ Phenotypic research",
             "Computational predictions ↔ Experimental validation", 
             "Algorithm development ↔ Biological applications" ]},
-    { name = "Bio-imaging Research", description = "Connect imaging techniques across scales from molecular to tissue-level research", icon = "microscope", connections = [
+    { name = "Bio-imaging Research", description = "Connect Imaging Techniques Across Research Scales", info = "Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research.", icon = "microscope", connections = [
             "Microscopy methods ↔ Quantitative analysis",
             "Imaging protocols ↔ Biological insights",
             "Image acquisition ↔ Computational analysis",
             "Method development ↔ Application validation"]},
-    { name = "Image Analysis Research", description = "Connect algorithms with scientific applications and validation datasets", icon = "chart-line", connections = [
+    { name = "Image Analysis Research", description = "Connect Algorithms with Scientific Applications", info = "Accelerate computer vision research by linking algorithm development with domain-specific applications and validation datasets.", icon = "chart-line", connections = [
             "Image processing techniques ↔ Scientific applications",
             "Algorithm development ↔ Validation datasets",
             "Computer vision methods ↔ Domain expertise",
@@ -70,9 +70,10 @@ testimonials = [
 ]
 
 # Academic-focused CTAs
-cta_primary = "Start Free Research Account"
-cta_secondary = "Download Zotero Plugin"
-cta_tertiary = "Join Research Community"
+cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring global knowledge networks in under 2 minutes.", button = "Create Free Account"}
+cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin"}
+cta_tertiary = {title = "Domain Communities", description = "Join active researcher communities in your field to connect with peers and discover relevant work.", button = "Join Community"}
+cta_quaternary = {title = "Learn By Examples", description = "Explore curated examples of structured research statements to see how others are making their work discoverable.", button = "View Examples"}
 
 # Academic support contact
 contact = { research_support = "mailto:research@sciencelivehub.org", zotero_plugin = "mailto:plugin@sciencelivehub.org", community = "mailto:community@sciencelivehub.org", enterprise = "mailto:enterprise@sciencelivehub.org"}

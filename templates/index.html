@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Science Live - Accelerate Your Research Discovery</title>
+    <title>{{ config.title }} - {{ config.description }}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/science-live.css" rel="stylesheet">
+    <link href="{{ get_url(path="css/science-live.css") }}" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold navbar-text-white" href="#home">
-                <span class="fs-4">Science Live</span>
+                <span class="fs-4">{{ config.title }}</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,20 +25,13 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    {% for item in config.extra.main_menu %}
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#research">For Researchers</a>
+                        <a class="nav-link navbar-text-white" href="{{ item.url }}">{{ item.name }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#domains">Research Areas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#community">Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-text-light" href="#enterprise">For Organizations</a>
-                    </li>
+                    {% endfor %}
                     <li class="nav-item ms-2">
-                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="#start">Get Started Free</a>
+                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="#start">{{ config.extra.cta_primary }}</a>
                     </li>
                 </ul>
             </div>
@@ -51,20 +44,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="hero-title">Accelerate Your Research Discovery</h1>
-                    <h2 class="hero-subtitle">Connect your research to global knowledge networks</h2>
+                    <h2 class="hero-subtitle">{{ config.description }}</h2>
                     <p class="hero-description">
                         Transform how you discover, connect, and build upon scientific knowledge. 
                         Join thousands of researchers making their work more discoverable and impactful 
                         through structured knowledge sharing.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#start" class="btn btn-primary-hero">Start Free Research Account</a>
-                        <a href="#enterprise" class="btn btn-secondary-hero">Enterprise Solutions</a>
+                        <a href="#start" class="btn-primary-hero">{{ config.extra.cta_primary }}</a>
+                        <a href="#enterprise" class="btn-secondary-hero">Enterprise Solutions</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <iframe src="research-network.html" 
+                        <iframe src="{{ get_url(path="research-network.html") }}" 
                                 width="100%" 
                                 height="400" 
                                 frameborder="0" 
@@ -86,72 +79,15 @@
             </div>
             
             <div class="row g-4">
+                {% for value in config.extra.academic_values %}
                 <div class="col-lg-3 col-md-6">
                     <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-search"></i></div>
-                        <h3 class="benefit-title">Discover Faster</h3>
-                        <p>Find relevant research across disciplines in minutes, not weeks. Our AI understands scientific concepts and surfaces connections you'd never find through traditional search.</p>
+                        <div class="benefit-icon"><i class="fas fa-{{ value.icon | default(value="search") }}"></i></div>
+                        <h3 class="benefit-title">{{ value.title }}</h3>
+                        <p>{{ value.description }}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-globe"></i></div>
-                        <h3 class="benefit-title">Connect Globally</h3>
-                        <p>Meet researchers worldwide working on similar problems. Build collaborations that span institutions, countries, and disciplines.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-database"></i></div>
-                        <h3 class="benefit-title">Structured Knowledge</h3>
-                        <p>Turn your bibliography into a queryable knowledge base. Your reading lists become discoverable resources that help the entire research community.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-award"></i></div>
-                        <h3 class="benefit-title">Get Recognition</h3>
-                        <p>Receive credit when other researchers build upon your structured contributions. Track your research impact beyond traditional citations.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="text-center">
-                        <h4 class="mb-4">Academic Features</h4>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>Free unlimited access for academic researchers</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>One-click integration with Zotero</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>AI-powered cross-domain research discovery</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>Global researcher collaboration network</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>Structured data creation with full attribution</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    <span>ORCID integration and institutional support</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -165,71 +101,30 @@
             </div>
             
             <div class="row g-4">
+                {% for domain in config.extra.research_domains %}
                 <div class="col-lg-6">
                     <div class="domain-card">
                         <div class="domain-icon">
-                            <i class="fas fa-satellite"></i>
+                            <i class="fas fa-{{ domain.icon }}"></i>
                         </div>
-                        <h4 class="mb-3">Earth Observation Research</h4>
-                        <h5 class="text-primary mb-3">"Connect Climate Data with Global Impact"</h5>
-                        <p class="mb-3">Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications.</p>
+                        <h4 class="mb-3">{{ domain.name }}</h4>
+                        <h5 class="text-primary mb-3">"{{ domain.description }}"</h5>
+                        <p class="mb-3">{{ domain.info }}</p>
                         <small class="text-muted">
                             <strong>Research Connections Enabled:</strong><br>
-                            Remote sensing data ↔ Ground truth validation • Climate models ↔ Observational datasets • Earth system research ↔ Policy applications
+                            {% for connection in domain.connections %}
+                            {{ connection }}{% if not loop.last %} • {% endif %}
+                            {% endfor %}
                         </small>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h4 class="mb-3">Bioinformatics Research</h4>
-                        <h5 class="text-primary mb-3">"Bridge Computational Methods with Biological Insights"</h5>
-                        <p class="mb-3">Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            Sequence analysis tools ↔ Functional studies • Omics data ↔ Phenotypic research • Computational predictions ↔ Experimental validation
-                        </small>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <h4 class="mb-3">Bio-imaging Research</h4>
-                        <h5 class="text-primary mb-3">"Connect Imaging Techniques Across Research Scales"</h5>
-                        <p class="mb-3">Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            Microscopy methods ↔ Quantitative analysis • Imaging protocols ↔ Biological insights • Image acquisition ↔ Computational analysis
-                        </small>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4 class="mb-3">Image Analysis Research</h4>
-                        <h5 class="text-primary mb-3">"Connect Algorithms with Scientific Applications"</h5>
-                        <p class="mb-3">Accelerate computer vision research by linking algorithm development with domain-specific applications and validation datasets.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            Image processing techniques ↔ Scientific applications • Algorithm development ↔ Validation datasets • Computer vision ↔ Domain expertise
-                        </small>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
 
-    <!-- Platform Foundation -->
-    <section class="platform-section">
+    <!-- Platform Infrastructure -->
+    <section class="platform-section bg-dark text-white py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title text-white">Built for Science, Designed to Last</h2>
@@ -289,33 +184,33 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="start-option">
                         <div class="start-icon"><i class="fas fa-rocket"></i></div>
-                        <h4 class="mb-3">Instant Access</h4>
-                        <p class="mb-4">Create your free research account and start exploring global knowledge networks in under 2 minutes.<br><br></p>
-                        <a href="#" class="btn btn-primary">Create Free Account</a>
+                        <h4 class="mb-3">{{ config.extra.cta_primary.title }}</h4>
+                        <p class="mb-4">{{ config.extra.cta_primary.description}}<br><br></p>
+                        <a href="mailto:{{ config.extra.contact.research_support }}" class="btn btn-primary">{{ config.extra.cta_primary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="start-option">
                         <div class="start-icon"><i class="fas fa-book-open"></i></div>
-                        <h4 class="mb-3">Zotero Integration</h4>
-                        <p class="mb-4">Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.</p>
-                        <a href="#" class="btn btn-outline-primary">Download Plugin</a>
+                        <h4 class="mb-3">{{config.extra.cta_secondary.title}}</h4>
+                        <p class="mb-4">{{ config.extra.cta_secondary.description}}</p>
+                        <a href="mailto:{{ config.extra.contact.zotero_plugin }}" class="btn btn-outline-primary">{{ config.extra.cta_secondary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="start-option">
                         <div class="start-icon"><i class="fas fa-users"></i></div>
-                        <h4 class="mb-3">Domain Communities</h4>
-                        <p class="mb-4">Join active researcher communities in your field to connect with peers and discover relevant work.</p>
-                        <a href="#" class="btn btn-outline-primary">Join Community</a>
+                        <h4 class="mb-3">{{ config.extra.cta_tertiary.title }}</h4>
+                        <p class="mb-4">{{ config.extra.cta_tertiary.description }}</p>
+                        <a href="mailto:{{ config.extra.contact.community }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="start-option">
                         <div class="start-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4 class="mb-3">Learn by Example</h4>
-                        <p class="mb-4">Explore curated examples of structured research statements to see how others are making their work discoverable.</p>
-                        <a href="#" class="btn btn-outline-primary">View Examples</a>
+                        <h4 class="mb-3">{{ config.extra.cta_quaternary.title }}</h4>
+                        <p class="mb-4">{{ config.extra.cta_quaternary.description }}</p>
+                        <a href="#" class="btn btn-outline-primary">{{ config.extra.cta_quaternary.button }}</a>
                     </div>
                 </div>
             </div>
@@ -330,121 +225,85 @@
             </div>
             
             <div class="row g-4 mb-5">
+                {% for metric in config.extra.research_metrics %}
                 <div class="col-lg-3 col-md-6">
                     <div class="metric-item">
-                        <div class="metric-number">10,000+</div>
-                        <div class="metric-label">Structured Research Statements</div>
+                        <div class="metric-number">{{ metric.value }}</div>
+                        <div class="metric-label">{{ metric.label }}</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="metric-item">
-                        <div class="metric-number">2,500+</div>
-                        <div class="metric-label">Active Researchers</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="metric-item">
-                        <div class="metric-number">150+</div>
-                        <div class="metric-label">Research Institutions</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="metric-item">
-                        <div class="metric-number">5x</div>
-                        <div class="metric-label">Faster Research Discovery</div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             
             <div class="row g-4">
+                {% for testimonial in config.extra.testimonials %}
                 <div class="col-lg-4">
                     <div class="testimonial-card">
                         <div class="mb-3">
                             <i class="fas fa-quote-left text-primary fs-4"></i>
                         </div>
-                        <p class="mb-3">"Science Live helped me discover three key papers I'd never found through traditional search - leading directly to a new collaboration with researchers in Germany."</p>
+                        <p class="mb-3">"{{ testimonial.quote }}"</p>
                         <div class="d-flex align-items-center">
                             <div>
-                                <strong>Dr. Sarah Chen</strong><br>
-                                <small class="text-muted">Climate Scientist, University of California</small>
+                                <strong>{{ testimonial.author }}</strong>
+                                <br><small class="text-muted">{{ testimonial.title }}</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="mb-3">
-                            <i class="fas fa-quote-left text-primary fs-4"></i>
-                        </div>
-                        <p class="mb-3">"The Zotero plugin transformed my literature review process. What used to take weeks now takes hours, and my structured contributions are already helping other researchers."</p>
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <strong>Dr. Michael Rodriguez</strong><br>
-                                <small class="text-muted">Computational Biologist, EMBL</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="mb-3">
-                            <i class="fas fa-quote-left text-primary fs-4"></i>
-                        </div>
-                        <p class="mb-3">"Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab."</p>
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <strong>Prof. Lisa Park</strong><br>
-                                <small class="text-muted">Bio-imaging Specialist, Seoul National University</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
 
     <!-- Enterprise Brief -->
+    {% if config.extra.enterprise.enabled %}
     <section id="enterprise" class="enterprise-brief">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Trusted by Innovation Leaders</h2>
-                <p class="section-subtitle">Industry organizations use Science Live to connect their R&D with global research networks</p>
-                
-                <div class="row justify-content-center mt-4">
-                    <div class="col-lg-8">
-                        <p class="mb-4">Enterprise research teams accelerate innovation by accessing structured academic knowledge, identifying emerging technologies early, and connecting with research expertise worldwide.</p>
-                        
-                        <div class="row text-start">
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i>
-                                    <span>Access to structured academic research intelligence</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i>
-                                    <span>Early identification of promising technologies</span>
-                                </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">{{ config.extra.enterprise.title }}</h2>
+                    <p class="lead mb-4">{{ config.extra.enterprise.description }}</p>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Institutional-grade security and compliance</span>
                             </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i>
-                                    <span>Connection to global research expertise</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i>
-                                    <span>Accelerated innovation through research networks</span>
-                                </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Custom integrations with research infrastructure</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Dedicated research support and training</span>
                             </div>
                         </div>
-                        
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Learn About Enterprise Solutions →</a>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Priority access to new research capabilities</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Connection to global research expertise</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-primary me-2"></i>
+                                <span>Accelerated innovation through research networks</span>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="mailto:{{ config.extra.contact.enterprise }}" class="btn btn-primary">{{ config.extra.enterprise.cta }} →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    {% endif %}
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
@@ -454,16 +313,16 @@
                     <h5>Research Resources</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white-50">Getting Started Guide</a></li>
-                        <li><a href="#" class="text-white-50">Zotero Plugin Documentation</a></li>
-                        <li><a href="#" class="text-white-50">Research Community Guidelines</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.zotero_plugin }}" class="text-white-50">Zotero Plugin Documentation</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.community }}" class="text-white-50">Research Community Guidelines</a></li>
                         <li><a href="#" class="text-white-50">Nanopublication Best Practices</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h5>For Researchers</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">Free Research Account</a></li>
-                        <li><a href="#" class="text-white-50">Domain Communities</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50">Free Research Account</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.community }}" class="text-white-50">Domain Communities</a></li>
                         <li><a href="#" class="text-white-50">Collaboration Guidelines</a></li>
                         <li><a href="#" class="text-white-50">ORCID Integration</a></li>
                     </ul>
@@ -471,8 +330,8 @@
                 <div class="col-lg-3">
                     <h5>Platform</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">About Science Live</a></li>
-                        <li><a href="#" class="text-white-50">Open Source Project</a></li>
+                        <li><a href="#" class="text-white-50">About {{ config.title }}</a></li>
+                        <li><a href="https://github.com/ScienceLiveHub" class="text-white-50">Open Source Project</a></li>
                         <li><a href="#" class="text-white-50">API Documentation</a></li>
                         <li><a href="#" class="text-white-50">Research Data Policy</a></li>
                     </ul>
@@ -480,21 +339,22 @@
                 <div class="col-lg-3">
                     <h5>Support</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">Academic Support Center</a></li>
-                        <li><a href="#" class="text-white-50">Community Forums</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50">Academic Support Center</a></li>
+                        <li><a href="https://github.com/ScienceLiveHub/science-live-pipeline/discussions" class="text-white-50">Community Forums</a></li>
                         <li><a href="#" class="text-white-50">Technical Documentation</a></li>
-                        <li><a href="#" class="text-white-50">Contact Research Team</a></li>
+                        <li><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50">Contact Research Team</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 Science Live. Built for the global research community.</p>
+                    <p class="mb-0">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. Built for the global research community.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white-50 me-3"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-white-50"><i class="fab fa-linkedin"></i></a>
+                    {% for social in config.extra.social_links %}
+                    <a href="{{ social.url }}" class="text-white-50 me-3"><i class="{{ social.icon }}"></i></a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
