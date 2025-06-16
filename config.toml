@@ -69,6 +69,8 @@ testimonials = [
     { quote = "Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab.", author = "Prof. Lisa Park", title = "Bio-imaging Specialist, Seoul National University" }
 ]
 
+# main page button
+main_page = {button1 = "Start Free Research Account", button2 = "Enterprise Solutions"}
 # Academic-focused CTAs
 cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring global knowledge networks in under 2 minutes.", button = "Create Free Account"}
 cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin"}
@@ -88,4 +90,4 @@ social_links = [
 ]
 
 # Enterprise section (minimal)
-enterprise = { enabled = true, title = "Trusted by Innovation Leaders", description = "Industry organizations use Science Live to connect their R&D with global research networks", cta = "Learn About Enterprise Solutions"}
+enterprise = { enabled = true, title = "Trusted by Innovation Leaders", description = "Industry organizations use Science Live to connect their R&D with global research networks", info = "Enterprise research teams accelerate innovation by accessing structured academic knowledge, identifying emerging technologies early, and connecting with research expertise worldwide.", b1= "Institutional-grade security and compliance", b2 = "Custom integrations with research infrastructure", b3 = "Dedicated research support and training", b4 = "Priority access to new research capabilities", b5 = "Connection to global research expertise", b6 = "Accelerated innovation through research networks", cta = "Learn About Enterprise Solutions"}

@@ -31,12 +31,13 @@
                     </li>
                     {% endfor %}
                     <li class="nav-item ms-2">
-                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="#start">{{ config.extra.cta_primary }}</a>
+                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="#start">{{ config.extra.cta_primary.button }}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -51,8 +52,8 @@
                         through structured knowledge sharing.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#start" class="btn-primary-hero">{{ config.extra.cta_primary }}</a>
-                        <a href="#enterprise" class="btn-secondary-hero">Enterprise Solutions</a>
+                        <a href="#start" class="btn-primary-hero">{{ config.extra.main_page.button1 }}</a>
+                        <a href="#enterprise" class="btn-secondary-hero">{{ config.extra.main_page.button2 }}</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -90,6 +91,77 @@
                 {% endfor %}
             </div>
         </div>
+    </section>
+   <!-- Academic Features -->
+    <section class="academic-features" style="background: linear-gradient(135deg, #193967 0%, #be2e78 100%); color: white;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Academic Features</h2>
+                <p class="section-subtitle text-white-50">Everything you need for academic research excellence</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="features-list">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">Free unlimited access for academic researchers</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">One-click integration with Zotero</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">AI-powered cross-domain research discovery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="features-list">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">Global researcher collaboration network</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">Structured data creation with full attribution</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="check-icon me-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="fs-5 text-white">ORCID integration and institutional support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+        .check-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        </style>
     </section>
 
     <!-- Research Domains -->
@@ -202,7 +274,7 @@
                         <div class="start-icon"><i class="fas fa-users"></i></div>
                         <h4 class="mb-3">{{ config.extra.cta_tertiary.title }}</h4>
                         <p class="mb-4">{{ config.extra.cta_tertiary.description }}</p>
-                        <a href="mailto:{{ config.extra.contact.community }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary }}</a>
+                        <a href="mailto:{{ config.extra.contact.community }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -260,43 +332,44 @@
     {% if config.extra.enterprise.enabled %}
     <section id="enterprise" class="enterprise-brief">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
                     <h2 class="mb-3">{{ config.extra.enterprise.title }}</h2>
                     <p class="lead mb-4">{{ config.extra.enterprise.description }}</p>
+                    <p class="mb-4">{{ config.extra.enterprise.info }}</p>
                     
-                    <div class="row g-3">
+                    <div class="row g-3 justify-content-center">
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Institutional-grade security and compliance</span>
+                                <span>{{ config.extra.enterprise.b1 }}</span>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Custom integrations with research infrastructure</span>
+                                <span>{{ config.extra.enterprise.b2 }}</span>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Dedicated research support and training</span>
+                                <span>{{ config.extra.enterprise.b3 }}</span>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Priority access to new research capabilities</span>
+                                <span>{{ config.extra.enterprise.b4 }}</span>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Connection to global research expertise</span>
+                                <span>{{ config.extra.enterprise.b5 }}</span>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
                                 <i class="fas fa-check text-primary me-2"></i>
-                                <span>Accelerated innovation through research networks</span>
+                                <span>{{ config.extra.enterprise.b6 }}</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="mt-4">
+                    <div class="mt-4 text-center">
                         <a href="mailto:{{ config.extra.contact.enterprise }}" class="btn btn-primary">{{ config.extra.enterprise.cta }} →</a>
                     </div>
                 </div>
@@ -304,7 +377,6 @@
         </div>
     </section>
     {% endif %}
-
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
