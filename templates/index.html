@@ -290,10 +290,11 @@
     </section>
 
     <!-- Community Proof -->
+    {% if config.extra.metrics_enabled %}
     <section id="community" class="community-section">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Trusted by Researchers Worldwide</h2>
+                <h2 class="section-title">{{ config.extra.metrics_title }}</h2>
             </div>
             
             <div class="row g-4 mb-5">
@@ -327,6 +328,7 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
     <!-- Enterprise Brief -->
     {% if config.extra.enterprise.enabled %}
