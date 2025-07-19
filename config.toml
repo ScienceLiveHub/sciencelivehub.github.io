@@ -19,18 +19,18 @@ subdescription = "Science Live helps you to make your work trusted and applicati
 
 # Academic-first navigation
 main_menu = [
-    { name = "For Researchers", url = "#research" },
+    { name = "Data scientists", url = "#research" },
+    { name = "Researchers", url = "#academics" },
     { name = "Research Areas", url = "#domains" },
-    { name = "Community", url = "https://github.com/ScienceLiveHub/science-live-pipeline/discussions" },
     { name = "Get Started", url = "#start" },
-    { name = "For Businesses", url = "#enterprise" }
+    { name = "Businesses", url = "#enterprise" },
 ]
 
 # Academic-focused values
 academic_values = [
     {  title = "Discover Faster", description = "Find relevant research across disciplines in minutes, not weeks. Our AI understands scientific concepts and surfaces connections you'd never find through traditional search.", icon = "search"},
     { title = "Connect Globally", description = "Connect with researchers and data scientists tackling similar challenges. Build collaborations across institutions, countries, and disciplines.", icon = "globe"},
-    { title = "Structured Knowledge", description = "Structure your data science work into a queryable knowledge base of reusable datasets, models, and code.", icon = "database"},
+    { title = "Structured Knowledge", description = "Structure your data science work into a queryable knowledge base of reusable datasets, models, and code. Build your professional portfolio while advancing science.", icon = "database"},
     { title = "Get Recognition", description = "Receive credit when others build upon your structured contributions. Track your impact beyond traditional citations.", icon = "award"}
 ]
 
