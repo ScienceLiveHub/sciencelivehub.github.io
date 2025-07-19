@@ -44,12 +44,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="hero-title">Accelerate Your Research Discovery</h1>
+                    <h1 class="hero-title">{{ config.extra.subtitle }}</h1>
                     <h2 class="hero-subtitle">{{ config.description }}</h2>
                     <p class="hero-description">
-                        Transform how you discover, connect, and build upon scientific knowledge. 
-                        Join thousands of researchers making their work more discoverable and impactful 
-                        through structured knowledge sharing.
+                        {{ config.extra.subdescription }}
                     </p>
                     <div class="hero-buttons">
                         <a href="#start" class="btn-primary-hero">{{ config.extra.main_page.button1 }}</a>
@@ -76,7 +74,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Research Without Boundaries</h2>
-                <p class="section-subtitle">Break through information silos and discover the connections that accelerate breakthrough research</p>
+                <p class="section-subtitle">Connect research with application and discover the collaborations that accelerate innovation</p>
             </div>
             
             <div class="row g-4">
@@ -423,7 +421,7 @@
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. Built for the global research community.</p>
+                    <p class="mb-0 text-nowrap">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. {{ config.extra.footer }}</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     {% for social in config.extra.social_links %}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Live User Flow</title>
+    <title>Science Live Platform Flow</title>
     <style>
         body {
             margin: 0;
@@ -34,7 +34,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
             margin-bottom: 15px;
         }
         
@@ -42,7 +42,7 @@
             flex: 1;
             background: #f8f9fa;
             border-radius: 10px;
-            padding: 15px 12px;
+            padding: 12px 8px;
             text-align: center;
             border: 2px solid transparent;
             transition: all 0.3s ease;
@@ -77,27 +77,27 @@
         }
         
         .step-title {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #193967;
             margin-bottom: 4px;
         }
         
         .step-subtitle {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #be2e78;
             font-weight: 500;
             margin-bottom: 8px;
         }
         
         .step-description {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: #666;
             line-height: 1.3;
         }
         
         .flow-arrow {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #be2e78;
             animation: pulse-arrow 2s infinite;
             flex-shrink: 0;
@@ -111,45 +111,45 @@
         .benefits-row {
             display: flex;
             justify-content: space-between;
-            gap: 10px;
+            gap: 8px;
         }
         
         .benefit-card {
             flex: 1;
             background: linear-gradient(135deg, #193967, #be2e78);
             color: white;
-            padding: 12px 8px;
+            padding: 10px 6px;
             border-radius: 8px;
             text-align: center;
-            height: 80px;
+            height: 75px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         
         .benefit-icon {
-            width: 28px;
-            height: 28px;
-            margin: 0 auto 6px;
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 10px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
         .benefit-icon svg {
-            width: 20px;
-            height: 20px;
+            width: 36px;
+            height: 36px;
             fill: white;
         }
         
         .benefit-title {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
             margin-bottom: 2px;
         }
         
         .benefit-text {
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             opacity: 0.9;
             line-height: 1.2;
         }
@@ -163,53 +163,53 @@
 <body>
     <div class="flow-container">
         <div class="flow-title">
-            How Science Live Works for Everyone
+           How Science Live Works 
         </div>
         
         <div class="user-flow">
-            <!-- Academic Researchers -->
-            <div class="user-step" data-user="academic">
+            <!-- Record & Structure -->
+            <div class="user-step" data-user="record">
                 <div class="step-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16z"/>
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
                     </svg>
                 </div>
-                <div class="step-title">Academic Researchers</div>
-                <div class="step-subtitle">Better Reading & Citing</div>
+                <div class="step-title">Record & Structure</div>
+                <div class="step-subtitle">Make Application-Ready</div>
                 <div class="step-description">
-                    Use <strong>Zotero plugin</strong> to track reading and create structured citations
+                    Transform your <strong>research, data & code</strong> into structured, reusable components
                 </div>
             </div>
             
             <div class="flow-arrow">→</div>
             
-            <!-- All Researchers -->
-            <div class="user-step" data-user="researchers">
+            <!-- Discover & Build -->
+            <div class="user-step" data-user="discover">
                 <div class="step-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
                     </svg>
                 </div>
-                <div class="step-title">All Researchers</div>
-                <div class="step-subtitle">Share Results Faster</div>
+                <div class="step-title">Discover & Build</div>
+                <div class="step-subtitle">Find & Implement</div>
                 <div class="step-description">
-                    Skip lengthy papers. Publish <strong>nanopublications</strong> with data & code
+                    Find <strong>application-ready research</strong> and build faster with trusted components
                 </div>
             </div>
             
             <div class="flow-arrow">→</div>
             
-            <!-- Industry -->
-            <div class="user-step" data-user="industry">
+            <!-- Connect & Collaborate -->
+            <div class="user-step" data-user="connect">
                 <div class="step-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                        <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
                     </svg>
                 </div>
-                <div class="step-title">Industry Teams</div>
-                <div class="step-subtitle">Find & Reuse Research</div>
+                <div class="step-title">Connect & Collaborate</div>
+                <div class="step-subtitle">Work with Experts</div>
                 <div class="step-description">
-                    Discover research findings <strong>ready to use</strong> with clear data
+                    Get <strong>expert guidance</strong> and collaborate with the people behind the work
                 </div>
             </div>
         </div>
@@ -218,21 +218,21 @@
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M7 6V3a1 1 0 011-1h12a1 1 0 011 1v14a1 1 0 01-1 1h-3v3c0 .552-.448 1-1.007 1H4.007A1.01 1.01 0 013 21l.003-14c0-.552.448-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z"/>
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <div class="benefit-title">10x Faster</div>
-                <div class="benefit-text">Find research in minutes</div>
+                <div class="benefit-title">Trusted & Validated</div>
+                <div class="benefit-text">Reliable, tested components</div>
             </div>
             
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M3.055 13H5.07a.944.944 0 01.27.04L12 15.33l6.66-2.29a.944.944 0 01.27-.04h2.015l.001-1.384a1 1 0 01.504-.864l2-1.115a1 1 0 011.314.401l1.337 2.397a1 1 0 01.001 1.01L24 15.5a1 1 0 01-.866.5H20v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3H.866a1 1 0 01-.866-.5L-.002 13.5a1 1 0 01.001-1.01l1.337-2.397a1 1 0 011.314-.401l2 1.115a1 1 0 01.504.864L5.055 13z"/>
+                        <path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
                     </svg>
                 </div>
-                <div class="benefit-title">Machine Ready</div>
-                <div class="benefit-text">AI can understand & reuse</div>
+                <div class="benefit-title">Application-Ready</div>
+                <div class="benefit-text">Skip months of preparation</div>
             </div>
             
             <div class="benefit-card">
@@ -248,29 +248,29 @@
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/>
+                        <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
                     </svg>
                 </div>
-                <div class="benefit-title">Full Credit</div>
-                <div class="benefit-text">Track all contributions</div>
+                <div class="benefit-title">Get Recognition</div>
+                <div class="benefit-text">Track your impact</div>
             </div>
         </div>
     </div>
 
     <script>
-        // Add hover effects with concise examples
+        // Add hover effects with examples that match the Science Live pitch
         const userSteps = document.querySelectorAll('.user-step');
         
         const originalDescriptions = [
-            'Use <strong>Zotero plugin</strong> to track reading and create structured citations',
-            'Skip lengthy papers. Publish <strong>nanopublications</strong> with data & code',
-            'Discover research findings <strong>ready to use</strong> with clear data'
+            'Transform your <strong>research, data & code</strong> into structured, reusable components',
+            'Find <strong>application-ready research</strong> and build faster with trusted components',
+            'Get <strong>expert guidance</strong> and collaborate with the people behind the work'
         ];
         
         const hoverDescriptions = [
-            'Track: <span class="highlight-text">"ML model: 94% accuracy"</span> → structured claim',
-            'Publish: <span class="highlight-text">"CO2 = 421ppm ± 0.1"</span> + dataset + code',
-            'Search: <span class="highlight-text">"energy storage"</span> → ready methods & data'
+            'Example: <span class="highlight-text">ML accuracy: 94%</span> → structured claim with code & data',
+            'Search: <span class="highlight-text">"energy storage"</span> → find & use validated methods',
+            'Connect: <span class="highlight-text">Chat with authors</span> → get implementation guidance'
         ];
         
         userSteps.forEach((step, index) => {

@@ -5,7 +5,7 @@ compile_sass = true
 build_search_index = true
 
 title = "Science Live"
-description = "Connect your research to global knowledge networks and accelerate discovery"
+description = "Structure what matters. Reuse what works. Collaborate where it counts."
 author = "Science Live"
 
 [markdown]
@@ -13,21 +13,25 @@ highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
 [extra]
+subtitle = "Record, Discover, Build & Connect"
+footer = "Trusted by science. Powered by nanopublications. Ready for industry."
+subdescription = "Science Live helps you to make your work trusted and application-ready."
+
 # Academic-first navigation
 main_menu = [
     { name = "For Researchers", url = "#research" },
     { name = "Research Areas", url = "#domains" },
-    { name = "Community", url = "#community" },
+    { name = "Community", url = "https://github.com/ScienceLiveHub/science-live-pipeline/discussions" },
     { name = "Get Started", url = "#start" },
-    { name = "For Organizations", url = "#enterprise" }
+    { name = "For Businesses", url = "#enterprise" }
 ]
 
 # Academic-focused values
 academic_values = [
     {  title = "Discover Faster", description = "Find relevant research across disciplines in minutes, not weeks. Our AI understands scientific concepts and surfaces connections you'd never find through traditional search.", icon = "search"},
-    { title = "Connect Globally", description = "Meet researchers worldwide working on similar problems. Build collaborations that span institutions, countries, and disciplines.", icon = "globe"},
-    { title = "Structured Knowledge", description = "Turn your bibliography into a queryable knowledge base. Your reading lists become discoverable resources that help the entire research community.", icon = "database"},
-    { title = "Get Recognition", description = "Receive credit when other researchers build upon your structured contributions. Track your research impact beyond traditional citations.", icon = "award"}
+    { title = "Connect Globally", description = "Connect with researchers and data scientists tackling similar challenges. Build collaborations across institutions, countries, and disciplines.", icon = "globe"},
+    { title = "Structured Knowledge", description = "Structure your data science work into a queryable knowledge base of reusable datasets, models, and code.", icon = "database"},
+    { title = "Get Recognition", description = "Receive credit when others build upon your structured contributions. Track your impact beyond traditional citations.", icon = "award"}
 ]
 
 # Research domains (reframed for academics)
@@ -47,11 +51,11 @@ research_domains = [
             "Imaging protocols ↔ Biological insights",
             "Image acquisition ↔ Computational analysis",
             "Method development ↔ Application validation"]},
-    { name = "Image Analysis Research", description = "Connect Algorithms with Scientific Applications", info = "Accelerate computer vision research by linking algorithm development with domain-specific applications and validation datasets.", icon = "chart-line", connections = [
-            "Image processing techniques ↔ Scientific applications",
-            "Algorithm development ↔ Validation datasets",
-            "Computer vision methods ↔ Domain expertise",
-            "Method comparison ↔ Reproducible workflows"]}
+    { name = "Biodiversity Research", description = "Bridge Species Science with Conservation Impact", info = "Connect taxonomic research with conservation planning, link species data with ecosystem modeling, and bridge biodiversity science with real-world conservation applications.", icon = "leaf", connections = [
+            "Species discovery ↔ Conservation planning",
+            "Taxonomic data ↔ Ecosystem modeling",
+            "Biodiversity monitoring ↔ Habitat management",
+            "Climate impacts ↔ Species distribution"]}
 ]
 
 # metrics title
@@ -81,7 +85,7 @@ cta_tertiary = {title = "Domain Communities", description = "Join active researc
 cta_quaternary = {title = "Learn By Examples", description = "Explore curated examples of structured research statements to see how others are making their work discoverable.", button = "View Examples"}
 
 # Academic support contact
-contact = { research_support = "mailto:research@sciencelivehub.org", zotero_plugin = "mailto:plugin@sciencelivehub.org", community = "mailto:community@sciencelivehub.org", enterprise = "mailto:enterprise@sciencelivehub.org"}
+contact = { research_support = "mailto:anne.fouilloux@gmail.com", zotero_plugin = "mailto:anne.fouilloux@gmail.com", community = "mailto:anne.fouilloux@gmail.com", enterprise = "mailto:anne.fouilloux@gmail.com"}
 
 # Academic-first brand colors
 brand_colors = { primary = "#193967", secondary = "#be2e78", academic_blue = "#0066cc", academic_green = "#28a745"}
