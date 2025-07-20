@@ -23,7 +23,7 @@ main_menu = [
     { name = "For Data Scientists", url = "#research" },
     { name = "For Industry", url = "#enterprise" },
     { name = "Get Started", url = "#start" },
-    { name = "How It Works", url = "#platform" },
+    { name = "How It Works", url = "#how-it-works" },
 ]
 
 # Academic-focused values
@@ -58,10 +58,13 @@ research_domains = [
             "Climate impacts ↔ Species distribution"]}
 ]
 
+
+# Infrastructure
+infrastructure = { title = "Built to Last", subtitle = "Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community" , bullet_points = [ {title = "Institutional Partnership", description = "Built in collaboration with Astera Institute with community-driven governance and sustainable funding model, ensuring continued development and long-term platform stability independent of single-source dependencies.", icon = "university"}, {title = "Open Source Foundation", description = "Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.", icon = "unlock"}, {title = "Enterprise Infrastructure", description = "Reliable, scalable platform infrastructure that handles growing research demands while maintaining fast response times and 99.9% uptime.", icon = "bolt"}, {title = "Growing Network", description = "Join a growing network of structured research statements with active researcher communities across multiple research domains.", icon = "network-wired"} ] } 
+
+
 # Platform
-
-platform = { title = "How Science Live Works", subtitle = "Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community" } 
-
+platform = { title = "How Science Live Works", subtitle = "The infrastructure that makes research connections possible", bullet_points = [ {title = "Decentralized Knowledge Network", description = "Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data"  }, { title = "AI-Powered Discovery Engine", description = "7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers" }, { title = "Semantic Integration", description = "Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains", terms = "FAIR,RDF,SPARQL" }, { title = "Open Governance", description = "Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control" } ] } 
 
 # metrics title
 metrics_enabled = false
@@ -98,15 +101,10 @@ testimonials = [
 # main page button
 main_page = {button1 = "Start Publishing Research", button2 = "Explore Ecosystem"}
 # Academic-focused CTAs
-cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Create Free Account", button_url = "https://github.com/ScienceLiveHub/nanopub-viewer"}
-cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://github.com/ScienceLiveHub/zotero-nanopub-plugin"}
-cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelivehub.github.io/impact_stories"}
+cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Try it!", button_url = "https://sciencelive.netlify.app"}
+cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"}
+cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelive.netlify.app"}
 cta_quaternary = {title = "Science Live Data Pipeline & APIs", description = "Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.", button = "Pipeline Documentation", button_url = "https://sciencelivehub.github.io/science-live-pipeline/index.html"}
-
-#cta_primary = {title = "Publish Structured Research", description = "Turn your next research finding into a traceable nanopub and see immediate discoverability across the innovation ecosystem.", button = "Create First Nanopub"}
-#cta_secondary = {title = "Bridge Research to Applications", description = "Structure existing research for industry use and earn recognition for critical translation work that bridges the research-application gap.", button = "Start Translation Work"}
-#cta_tertiary = {title = "Find Application-Ready Research", description = "Discover validated research with full traceability to data, code, and real-world testing results.", button = "Explore Research"}
-#cta_quaternary = {title = "Track Research Impact", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Impact Stories"}
 
 # Academic support contact
 contact = { research_support = "mailto:anne.fouilloux@gmail.com", zotero_plugin = "mailto:anne.fouilloux@gmail.com", community = "mailto:anne.fouilloux@gmail.com", enterprise = "mailto:anne.fouilloux@gmail.com"}

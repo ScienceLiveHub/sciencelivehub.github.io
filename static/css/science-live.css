@@ -393,3 +393,219 @@ body {
     border-color: var(--primary-color);
     transform: translateY(-2px);
 }
+
+/* How Science Live Works Section */
+/* How Science Live Works Section */
+.how-it-works {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+}
+
+.how-it-works-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.how-it-works h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.capabilities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.capability-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 120px;
+    text-align: left;
+}
+
+.capability-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.capability-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.capability-card:hover::before {
+    transform: scaleX(1);
+}
+
+.capability-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #193967, #be2e78);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.capability-card:hover .capability-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* If using text icons instead of emojis */
+.capability-icon.text-icon {
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    color: white;
+    font-weight: 900;
+}
+
+.capability-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 1rem 0;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.capability-card:hover h3 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.capability-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
+/* Alternative layout classes - remove these since we're using vertical layout */
+/* Removed grid-2x2 and grid-1x4 responsive layouts */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 60px 0;
+    }
+    
+    .how-it-works h2 {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .capabilities-grid {
+        gap: 1.5rem;
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+    
+    .capability-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        min-height: auto;
+        align-items: center;
+    }
+    
+    .capability-content {
+        text-align: center;
+    }
+    
+    .capability-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+        order: 0;
+    }
+}
+
+/* Loading animation for progressive enhancement */
+.capability-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.capability-card:nth-child(1) { animation-delay: 0.1s; }
+.capability-card:nth-child(2) { animation-delay: 0.2s; }
+.capability-card:nth-child(3) { animation-delay: 0.3s; }
+.capability-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print styles */
+@media print {
+    .how-it-works {
+        background: white !important;
+        color: black !important;
+        padding: 2rem 0;
+    }
+    
+    .capability-card {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+    
+    .capability-card h3 {
+        color: var(--primary-color) !important;
+    }
+    
+    .capability-card p {
+        color: #666 !important;
+    }
+    
+    .capability-card:hover {
+        transform: none;
+    }
+}
+

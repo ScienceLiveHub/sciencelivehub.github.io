@@ -31,7 +31,7 @@
                     </li>
                     {% endfor %}
                     <li class="nav-item ms-2">
-                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="#start">{{ config.extra.cta_primary.button }}</a>
+                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="{{ config.extra.cta_primary.button_url }}">{{ config.extra.cta_primary.button }}</a>
                     </li>
                 </ul>
             </div>
@@ -193,54 +193,48 @@
         </div>
     </section>
 
+    <!-- How it works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="how-it-works-grid">
+            <h2> {{ config.extra.platform.title }} </h2>
+            <p class="section-subtitle"> {{ config.extra.platform.subtitle }} </p>
+
+            <div class="capabilities-grid">
+              {% for hit_item in config.extra.platform.bullet_points %}
+                <div class="capability-card" {% if hit_item.terms %}data-terms="{{ hit_item.terms }}"{% endif %}>
+                    <div class="capability-content">
+                        <h3> {{ hit_item.title }} </h3>
+                        <p> {{ hit_item.description }} </p>
+                    </div>
+               </div>
+              {% endfor %}
+        </div>
+    </section>
+
     <!-- Platform Infrastructure -->
-    <section class="platform-section bg-dark text-white py-5" id="platform">
+    <section class="platform-section bg-dark text-white py-5" id="infrastructure">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title text-white"><br> {{ config.extra.platform.title }}</h2>
-                <p class="section-subtitle text-white-50"> {{ config.extra.platform.subtitle }} </p>
+                <h2 class="section-title text-white"><br> {{ config.extra.infrastructure.title }}</h2>
+                <p class="section-subtitle text-white-50"> {{ config.extra.infrastructure.subtitle }} </p>
             </div>
             
             <div class="row g-4">
+              {% for infra_item in config.extra.infrastructure.bullet_points %}
                 <div class="col-lg-6">
                     <div class="platform-feature">
                         <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-university me-3 fs-4"></i>
-                            <h5 class="mb-0">Institutional Partnership</h5>
+                            <i class="fas fa-{{ infra_item.icon }} me-3 fs-4"></i>
+                            <h5 class="mb-0">{{ infra_item.title }}</h5>
                         </div>
-                        <p class="mb-0">Built in collaboration with Astera Institute with community-driven governance and sustainable funding model, ensuring continued development and long-term platform stability independent of single-source dependencies.</p>
+                        <p class="mb-0">{{ infra_item.description }}</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-unlock me-3 fs-4"></i>
-                            <h5 class="mb-0">Open Source Foundation</h5>
-                        </div>
-                        <p class="mb-0">Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-bolt me-3 fs-4"></i>
-                            <h5 class="mb-0">Enterprise Infrastructure</h5>
-                        </div>
-                        <p class="mb-0">Reliable, scalable platform infrastructure that handles growing research demands while maintaining fast response times and 99.9% uptime.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-network-wired me-3 fs-4"></i>
-                            <h5 class="mb-0">Growing Network</h5>
-                        </div>
-                        <p class="mb-0">Join a growing network of structured research statements with active researcher communities across multiple research domains.</p>
-                    </div>
-                </div>
+              {% endfor %}
             </div>
         </div>
     </section>
+
 
     <!-- Getting Started -->
     <section id="start" class="getting-started">
@@ -256,7 +250,7 @@
                         <div class="start-icon"><i class="fas fa-rocket"></i></div>
                         <h4 class="mb-3">{{ config.extra.cta_primary.title }}</h4>
                         <p class="mb-4">{{ config.extra.cta_primary.description}}<br><br></p>
-                        <a href="mailto:{{ config.extra.contact.research_support }}" class="btn btn-primary">{{ config.extra.cta_primary.button }}</a>
+                        <a href="{{ config.extra.cta_primary.button_url }}" class="btn btn-primary">{{ config.extra.cta_primary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -264,7 +258,7 @@
                         <div class="start-icon"><i class="fas fa-book-open"></i></div>
                         <h4 class="mb-3">{{config.extra.cta_secondary.title}}</h4>
                         <p class="mb-4">{{ config.extra.cta_secondary.description}}</p>
-                        <a href="mailto:{{ config.extra.contact.zotero_plugin }}" class="btn btn-outline-primary">{{ config.extra.cta_secondary.button }}</a>
+                        <a href="{{ config.extra.cta_secondary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_secondary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -272,7 +266,7 @@
                         <div class="start-icon"><i class="fas fa-users"></i></div>
                         <h4 class="mb-3">{{ config.extra.cta_tertiary.title }}</h4>
                         <p class="mb-4">{{ config.extra.cta_tertiary.description }}</p>
-                        <a href="mailto:{{ config.extra.contact.community }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary.button }}</a>
+                        <a href="{{ config.extra.cta_tertiary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -280,7 +274,7 @@
                         <div class="start-icon"><i class="fas fa-lightbulb"></i></div>
                         <h4 class="mb-3">{{ config.extra.cta_quaternary.title }}</h4>
                         <p class="mb-4">{{ config.extra.cta_quaternary.description }}</p>
-                        <a href="#" class="btn btn-outline-primary">{{ config.extra.cta_quaternary.button }}</a>
+                        <a href="{{ config.extra.cta_quaternary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_quaternary.button }}</a>
                     </div>
                 </div>
             </div>
@@ -384,17 +378,17 @@
                 <div class="col-lg-3">
                     <h5>Research Resources</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">Getting Started Guide</a></li>
-                        <li><a href="mailto:{{ config.extra.contact.zotero_plugin }}" class="text-white-50">Zotero Plugin Documentation</a></li>
+                        <li><a href="#start" class="text-white-50">Getting Started Guide</a></li>
+                        <li><a href="https://sciencelivehub.github.io/zotero-nanopub-plugin/" class="text-white-50">Zotero Plugin Documentation</a></li>
                         <li><a href="mailto:{{ config.extra.contact.community }}" class="text-white-50">Research Community Guidelines</a></li>
-                        <li><a href="#" class="text-white-50">Nanopublication Best Practices</a></li>
+                        <li><a href="" class="text-white-50">Nanopublication Best Practices</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h5>For Researchers</h5>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50">Free Research Account</a></li>
-                        <li><a href="mailto:{{ config.extra.contact.community }}" class="text-white-50">Domain Communities</a></li>
+                        <li><a href="https://sciencelive.netlify.app/" class="text-white-50">Free Research Account</a></li>
+                        <li><a href="#domains" class="text-white-50">Domain Communities</a></li>
                         <li><a href="#" class="text-white-50">Collaboration Guidelines</a></li>
                         <li><a href="#" class="text-white-50">ORCID Integration</a></li>
                     </ul>
@@ -402,9 +396,9 @@
                 <div class="col-lg-3">
                     <h5>Platform</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">About {{ config.title }}</a></li>
+                        <li><a href="{{ config.base_url | safe }}/about/" class="text-white-50">About {{ config.title }}</a></li>
                         <li><a href="https://github.com/ScienceLiveHub" class="text-white-50">Open Source Project</a></li>
-                        <li><a href="#" class="text-white-50">API Documentation</a></li>
+                        <li><a href="https://sciencelivehub.github.io/science-live-pipeline/index.html" class="text-white-50">API Documentation</a></li>
                         <li><a href="#" class="text-white-50">Research Data Policy</a></li>
                     </ul>
                 </div>
@@ -502,6 +496,88 @@
                 });
             }
         });
+
+    // Add the tooltip functionality
+// Add the tooltip functionality - HOVER VERSION
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Tooltip script starting...');
+    
+    // Define terms and their definitions
+    const definitions = {
+        'FAIR': 'Findable, Accessible, Interoperable, Reusable - principles for scientific data management',
+        'RDF': 'Resource Description Framework - standard model for data interchange on the web', 
+        'SPARQL': 'Query language for databases that store data in RDF format'
+    };
+    
+    // Process cards that have terms
+    const cards = document.querySelectorAll('.capability-card[data-terms]');
+    console.log('Found cards with terms:', cards.length);
+    
+    cards.forEach(card => {
+        const terms = card.dataset.terms.split(',');
+        const paragraph = card.querySelector('p');
+        let html = paragraph.innerHTML;
+        
+        terms.forEach(term => {
+            const trimmedTerm = term.trim();
+            if (definitions[trimmedTerm]) {
+                const regex = new RegExp(`\\b${trimmedTerm}\\b`, 'g');
+                html = html.replace(regex, 
+                    `<span class="tooltip-term" data-definition="${definitions[trimmedTerm]}">${trimmedTerm}</span>`
+                );
+            }
+        });
+        
+        paragraph.innerHTML = html;
+    });
+    
+    // Add hover events to all tooltip terms
+    document.querySelectorAll('.tooltip-term').forEach(term => {
+        // Create tooltip element
+        const tooltip = document.createElement('div');
+        tooltip.className = 'custom-tooltip';
+        tooltip.textContent = term.dataset.definition;
+        tooltip.style.cssText = `
+            position: absolute;
+            background: rgba(25, 57, 103, 0.95);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            max-width: 300px;
+            z-index: 1000;
+            display: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        `;
+        document.body.appendChild(tooltip);
+        
+        // Style the term
+        term.style.cssText = `
+            background: none;
+            color: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+            cursor: help;
+        `;
+        
+        // Show tooltip on hover
+        term.addEventListener('mouseenter', (e) => {
+            tooltip.style.display = 'block';
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = (e.pageY - 40) + 'px';
+        });
+        
+        // Hide tooltip on leave
+        term.addEventListener('mouseleave', () => {
+            tooltip.style.display = 'none';
+        });
+        
+        // Update tooltip position on mouse move
+        term.addEventListener('mousemove', (e) => {
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = (e.pageY - 40) + 'px';
+        });
+    });
+});
     </script>
 </body>
 </html>
