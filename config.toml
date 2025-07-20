@@ -5,7 +5,7 @@ compile_sass = true
 build_search_index = true
 
 title = "Science Live"
-description = "Turn research into action. The platform connecting researchers, data scientists, and industry with full traceability from discovery to application."
+description = "Turn scattered research into connected, application-ready knowledge."
 author = "Science Live"
 
 [markdown]
@@ -13,9 +13,9 @@ highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
 [extra]
-subtitle = "The Research-to-Application Ecosystem"
+subtitle = "Science Live: Your Research-to-Application Ecosystem"
+subdescription = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
 footer = "Trusted by science. Powered by nanopublications. Ready for industry."
-subdescription = "For the first time, everyone in the knowledge chain gets credit: researchers for discoveries, data scientists for making work application-ready, and industry for creating real-world impact."
 
 # Academic-first navigation
 main_menu = [
@@ -57,6 +57,11 @@ research_domains = [
             "Biodiversity monitoring ↔ Habitat management",
             "Climate impacts ↔ Species distribution"]}
 ]
+
+# Platform
+
+platform = { title = "How Science Live Works", subtitle = "Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community" } 
+
 
 # metrics title
 metrics_enabled = false
