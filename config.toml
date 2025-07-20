@@ -5,7 +5,7 @@ compile_sass = true
 build_search_index = true
 
 title = "Science Live"
-description = "Structure what matters. Reuse what works. Collaborate where it counts."
+description = "Turn research into action. The platform connecting researchers, data scientists, and industry with full traceability from discovery to application."
 author = "Science Live"
 
 [markdown]
@@ -13,40 +13,40 @@ highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
 [extra]
-subtitle = "Record, Discover, Build & Connect"
+subtitle = "The Research-to-Application Ecosystem"
 footer = "Trusted by science. Powered by nanopublications. Ready for industry."
-subdescription = "Science Live helps you to make your work trusted and application-ready."
+subdescription = "For the first time, everyone in the knowledge chain gets credit: researchers for discoveries, data scientists for making work application-ready, and industry for creating real-world impact."
 
 # Academic-first navigation
 main_menu = [
-    { name = "Data scientists", url = "#research" },
-    { name = "Researchers", url = "#academics" },
-    { name = "Research Areas", url = "#domains" },
+    { name = "For Researchers", url = "#academics" },
+    { name = "For Data Scientists", url = "#research" },
+    { name = "For Industry", url = "#enterprise" },
     { name = "Get Started", url = "#start" },
-    { name = "Businesses", url = "#enterprise" },
+    { name = "How It Works", url = "#platform" },
 ]
 
 # Academic-focused values
 academic_values = [
-    {  title = "Discover Faster", description = "Find relevant research across disciplines in minutes, not weeks. Our AI understands scientific concepts and surfaces connections you'd never find through traditional search.", icon = "search"},
-    { title = "Connect Globally", description = "Connect with researchers and data scientists tackling similar challenges. Build collaborations across institutions, countries, and disciplines.", icon = "globe"},
-    { title = "Structured Knowledge", description = "Structure your data science work into a queryable knowledge base of reusable datasets, models, and code. Build your professional portfolio while advancing science.", icon = "database"},
-    { title = "Get Recognition", description = "Receive credit when others build upon your structured contributions. Track your impact beyond traditional citations.", icon = "award"}
+    { title = "Publish Structured Findings", description = "Turn your research into traceable nanopublications that automatically track downstream impact and reuse across the innovation chain.", icon = "microscope"},
+    { title = "Bridge Research Gaps", description = "Structure data, code, and workflows as nanopubs and earn recognition for critical translation work that makes research application-ready.", icon = "code-branch"},
+    { title = "Discover Application-Ready Research", description = "Find research you can actually use with full traceability to data, code, and validation - go from discovery to testing in days, not months.", icon = "industry"},
+    { title = "Get Recognition for Impact", description = "Track how your contributions flow through the entire innovation ecosystem, from fundamental research to real-world applications.", icon = "award"}
 ]
 
 # Research domains (reframed for academics)
 research_domains = [
-    { name = "Earth Observation Research", description = "Connect Climate Data with Global Impact", info = "Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications.", icon = "satellite", connections = [
+    { name = "Earth Observation Research", description = "Connect Climate Data with Global Impact", info = "Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications through the research ecosystem.", icon = "satellite", connections = [
             "Remote sensing data ↔ Ground truth validation",
             "Climate models ↔ Observational datasets", 
             "Earth system research ↔ Policy applications",
             "Environmental monitoring ↔ Impact assessment"]},
-    { name = "Bioinformatics Research", description = "Bridge Computational Methods with Biological Insights", info = "Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies.", icon = "dna", connections = [
+    { name = "Bioinformatics Research", description = "Bridge Computational Methods with Biological Insights", info = "Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies and clinical applications.", icon = "dna", connections = [
             "Sequence analysis tools ↔ Functional studies",
             "Omics data ↔ Phenotypic research",
             "Computational predictions ↔ Experimental validation", 
             "Algorithm development ↔ Biological applications" ]},
-    { name = "Bio-imaging Research", description = "Connect Imaging Techniques Across Research Scales", info = "Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research.", icon = "microscope", connections = [
+    { name = "Bio-imaging Research", description = "Connect Imaging Techniques Across Research Scales", info = "Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research applications.", icon = "microscope", connections = [
             "Microscopy methods ↔ Quantitative analysis",
             "Imaging protocols ↔ Biological insights",
             "Image acquisition ↔ Computational analysis",
@@ -60,29 +60,48 @@ research_domains = [
 
 # metrics title
 metrics_enabled = false
-metrics_title = "Trusted by Researchers Worldwide"
+metrics_title = "Building Momentum Toward the Research Ecosystem"
 # Academic-focused metrics
+# Early engagement metrics (more honest for pre-launch)
 research_metrics = [
-    { label = "Structured Research Statements", value = "10,000+" },
-    { label = "Active Researchers", value = "2,500+" },
-    { label = "Research Institutions", value = "150+" },
-    { label = "Faster Research Discovery", value = "5x" }
+    { label = "Researchers Expressing Interest", value = "100+" },
+    { label = "Target Communities Engaged", value = "4" },
+    { label = "Institutional Partnerships", value = "2+" },
+    { label = "Expected Launch", value = "Q1 2026" }
 ]
+
+testimonials = [
+    { quote = "Galaxy data scientists create reproducible workflows and publish them on WorkflowHub.eu with workflow reports. Integrating these reports into Science Live's nanopublication network would make our computational workflows discoverable by industry teams while giving data scientists credit for bridging research to application-ready solutions.", author = "Bjoern Gruening, Galaxy Europe Lead", title = "Galaxy Europe Platform" },
+    { quote = "Our work on geospatial metadata for scholarly communication - connecting research papers to geographic locations - aligns perfectly with Science Live's structured knowledge approach. There's real potential for collaboration on making research more discoverable through spatial and semantic connections.", author = "Daniel Nüst, TIB Researcher", title = "Technische Informationsbibliothek" },
+    { quote = "Having worked with Anne on research software engineering, I'm confident Science Live will solve the fundamental problem of knowledge silos that plague scientific collaboration today.", author = "Research Collaborator", title = "Research Software Engineer" }
+]
+
+#research_metrics = [
+#    { label = "Research-to-Application Time", value = "6-18 months" },
+#    { label = "Translation Contributors", value = "500+" },
+#    { label = "Traceable Pathways", value = "1,200+" },
+#    { label = "Industry Implementations", value = "50+" }
+#]
 
 # Academic testimonials
-testimonials = [
-    { quote = "Science Live helped me discover three key papers I'd never found through traditional search - leading directly to a new collaboration with researchers in Germany.", author = "Dr. Sarah Chen", title = "Climate Scientist, University of California" },
-    { quote = "The Zotero plugin transformed my literature review process. What used to take weeks now takes hours, and my structured contributions are already helping other researchers.", author = "Dr. Michael Rodriguez", title = "Computational Biologist, EMBL"},
-    { quote = "Finding researchers working on similar imaging problems across different domains has opened up entirely new research directions for our lab.", author = "Prof. Lisa Park", title = "Bio-imaging Specialist, Seoul National University" }
-]
+#testimonials = [
+#    { quote = "Science Live helped us validate a climate solution in 8 months instead of 3 years. The full traceability from research to our application gave investors confidence to fund our Series A.", author = "Dr. Maria Santos", title = "CTO, CleanTech Innovations" },
+#    { quote = "For the first time, I'm getting cited for the data preparation work that makes research actually usable. My structured contributions have been reused 30+ times across different industries.", author = "Alex Chen", title = "Research Data Scientist, Stanford"},
+#    { quote = "My fundamental research on protein folding is now being used in 3 different drug discovery programs. I can track the entire impact chain from my lab to clinical trials.", author = "Prof. James Liu", title = "Biochemistry, University of Toronto" }
+#]
 
 # main page button
-main_page = {button1 = "Start Free Research Account", button2 = "Enterprise Solutions"}
+main_page = {button1 = "Start Publishing Research", button2 = "Explore Ecosystem"}
 # Academic-focused CTAs
-cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring global knowledge networks in under 2 minutes.", button = "Create Free Account"}
-cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin"}
-cta_tertiary = {title = "Domain Communities", description = "Join active researcher communities in your field to connect with peers and discover relevant work.", button = "Join Community"}
-cta_quaternary = {title = "Learn By Examples", description = "Explore curated examples of structured research statements to see how others are making their work discoverable.", button = "View Examples"}
+cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Create Free Account", button_url = "https://github.com/ScienceLiveHub/nanopub-viewer"}
+cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://github.com/ScienceLiveHub/zotero-nanopub-plugin"}
+cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelivehub.github.io/impact_stories"}
+cta_quaternary = {title = "Science Live Data Pipeline & APIs", description = "Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.", button = "Pipeline Documentation", button_url = "https://sciencelivehub.github.io/science-live-pipeline/index.html"}
+
+#cta_primary = {title = "Publish Structured Research", description = "Turn your next research finding into a traceable nanopub and see immediate discoverability across the innovation ecosystem.", button = "Create First Nanopub"}
+#cta_secondary = {title = "Bridge Research to Applications", description = "Structure existing research for industry use and earn recognition for critical translation work that bridges the research-application gap.", button = "Start Translation Work"}
+#cta_tertiary = {title = "Find Application-Ready Research", description = "Discover validated research with full traceability to data, code, and real-world testing results.", button = "Explore Research"}
+#cta_quaternary = {title = "Track Research Impact", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Impact Stories"}
 
 # Academic support contact
 contact = { research_support = "mailto:anne.fouilloux@gmail.com", zotero_plugin = "mailto:anne.fouilloux@gmail.com", community = "mailto:anne.fouilloux@gmail.com", enterprise = "mailto:anne.fouilloux@gmail.com"}
@@ -97,4 +116,4 @@ social_links = [
 ]
 
 # Enterprise section (minimal)
-enterprise = { enabled = true, title = "Trusted by Innovation Leaders", description = "Industry organizations use Science Live to connect their R&D with global research networks", info = "Enterprise research teams accelerate innovation by accessing structured academic knowledge, identifying emerging technologies early, and connecting with research expertise worldwide.", b1= "Institutional-grade security and compliance", b2 = "Custom integrations with research infrastructure", b3 = "Dedicated research support and training", b4 = "Priority access to new research capabilities", b5 = "Connection to global research expertise", b6 = "Accelerated innovation through research networks", cta = "Learn About Enterprise Solutions"}
+enterprise = { enabled = true, title = "Accelerate Innovation Through Research Ecosystems", description = "Industry leaders use Science Live to connect R&D with validated academic research and skilled translators", info = "Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.", b1= "Find application-ready research with validation history", b2 = "Connect with data scientists who bridge research gaps", b3 = "Access full traceability from discovery to implementation", b4 = "Reduce R&D timelines from years to months", b5 = "Build on trusted, peer-validated foundations", b6 = "Track research impact through your innovation pipeline", cta = "Explore Enterprise Ecosystem"}
