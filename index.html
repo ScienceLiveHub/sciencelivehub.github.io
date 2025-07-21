@@ -13,9 +13,9 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold navbar-text-white" href="#home">
+            <a class="navbar-brand fw-bold" href="#home">
                 <span class="fs-4">Science Live</span>
             </a>
             
@@ -27,56 +27,58 @@
                 <ul class="navbar-nav ms-auto">
                     
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#academics">For Researchers</a>
+                        <a class="nav-link" href="#academics">For Researchers</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#research">For Data Scientists</a>
+                        <a class="nav-link" href="#research">For Data Scientists</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#enterprise">For Industry</a>
+                        <a class="nav-link" href="#enterprise">For Industry</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#start">Get Started</a>
+                        <a class="nav-link" href="#start">Get Started</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="#how-it-works">How It Works</a>
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
                     </li>
                     
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="https:&#x2F;&#x2F;sciencelive.netlify.app">Try it!</a>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-outline-light" href="https:&#x2F;&#x2F;sciencelive.netlify.app">Try it!</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <!-- Hero Section -->
+    <!-- Hero Section - Dark Blue with Pink Accents -->
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center min-vh-100 py-5">
                 <div class="col-lg-6">
-                    <h1 class="hero-title">Science Live: Your Research-to-Application Ecosystem</h1>
-                    <h2 class="hero-subtitle">Turn scattered research into connected, application-ready knowledge.</h2>
-                    <p class="hero-description">
+                    <h1 class="hero-title mb-4">
+                        <span class="text-white">Science</span> 
+                        <span class="text-accent">Live</span>
+                    </h1>
+                    <h2 class="hero-subtitle mb-3">Turn scattered research into connected, application-ready knowledge.</h2>
+                    <p class="hero-description mb-4">
                         Built by and for researchers, data scientists, and industry — with full traceability and shared credit.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#start" class="btn-primary-hero">Start Publishing Research</a>
-                        <a href="#enterprise" class="btn-secondary-hero">Explore Ecosystem</a>
+                        <a href="#start" class="btn btn-accent btn-lg me-3">Start Publishing Research</a>
+                        <a href="#enterprise" class="btn btn-outline-white btn-lg">Explore Ecosystem</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="text-center">
+                    <div class="hero-visual">
                         <iframe src="https://sciencelivehub.github.io/research-network.html" 
                                 width="100%" 
-                                height="400" 
+                                height="450" 
                                 frameborder="0" 
-                                class="rounded hero-iframe"
+                                class="rounded shadow-lg"
                                 title="Interactive Research Network Visualization">
                         </iframe>
                     </div>
@@ -86,8 +88,8 @@
     </section>
 
     <!-- Academic Value Section -->
-    <section id="research" class="academic-value">
-        <div class="container">
+    <section id="research" class="py-5 bg-light">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Data Without Boundaries</h2>
                 <p class="section-subtitle">Connect research with application and build the workflows that accelerate innovation</p>
@@ -96,115 +98,97 @@
             <div class="row g-4">
                 
                 <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-microscope"></i></div>
-                        <h3 class="benefit-title">Publish Structured Findings</h3>
-                        <p>Turn your research into traceable nanopublications that automatically track downstream impact and reuse across the innovation chain.</p>
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="mb-3">Publish Structured Findings</h4>
+                        <p class="text-muted">Turn your research into traceable nanopublications that automatically track downstream impact and reuse across the innovation chain.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-code-branch"></i></div>
-                        <h3 class="benefit-title">Bridge Research Gaps</h3>
-                        <p>Structure data, code, and workflows as nanopubs and earn recognition for critical translation work that makes research application-ready.</p>
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4 class="mb-3">Bridge Research Gaps</h4>
+                        <p class="text-muted">Structure data, code, and workflows as nanopubs and earn recognition for critical translation work that makes research application-ready.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-industry"></i></div>
-                        <h3 class="benefit-title">Discover Application-Ready Research</h3>
-                        <p>Find research you can actually use with full traceability to data, code, and validation - go from discovery to testing in days, not months.</p>
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4 class="mb-3">Discover Application-Ready Research</h4>
+                        <p class="text-muted">Find research you can actually use with full traceability to data, code, and validation - go from discovery to testing in days, not months.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-award"></i></div>
-                        <h3 class="benefit-title">Get Recognition for Impact</h3>
-                        <p>Track how your contributions flow through the entire innovation ecosystem, from fundamental research to real-world applications.</p>
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="mb-3">Get Recognition for Impact</h4>
+                        <p class="text-muted">Track how your contributions flow through the entire innovation ecosystem, from fundamental research to real-world applications.</p>
                     </div>
                 </div>
                 
             </div>
         </div>
     </section>
-   <!-- Academic Features -->
-    <section id="academics" class="academic-features" style="background: linear-gradient(135deg, #193967 0%, #be2e78 100%); color: white;">
-        <div class="container py-5">
+
+    <!-- Academic Features - Professional Dark Background -->
+    <section id="academics" class="py-5 bg-primary-custom text-white">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title text-white"><br>Academic Features</h2>
+                <h2 class="section-title text-white">Academic Features</h2>
                 <p class="section-subtitle text-white-50">Everything you need for academic research excellence</p>
             </div>
             
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="features-list">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Free unlimited access for academic researchers</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">One-click integration with Zotero</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">AI-powered cross-domain research discovery</span>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <ul class="feature-list">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Free unlimited access for academic researchers</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>One-click integration with Zotero</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>AI-powered cross-domain research discovery</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <div class="features-list">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Global researcher collaboration network</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Structured data creation with full attribution</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">ORCID integration and institutional support</span>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <ul class="feature-list">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Global researcher collaboration network</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Structured data creation with full attribution</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>ORCID integration and institutional support</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        <style>
-        .check-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: white;
-            flex-shrink: 0;
-        }
-        </style>
     </section>
 
     <!-- Research Domains -->
-    <section id="domains" class="domain-section">
-        <div class="container">
+    <section id="domains" class="py-5">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Accelerating Discovery Across Research Areas</h2>
                 <p class="section-subtitle">Deep expertise in the domains where knowledge connections matter most</p>
@@ -213,94 +197,118 @@
             <div class="row g-4">
                 
                 <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-satellite"></i>
+                    <div class="domain-card h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="domain-icon-simple me-3">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mb-2">Earth Observation Research</h4>
+                                <p class="text-primary mb-2">"Connect Climate Data with Global Impact"</p>
+                                <p class="mb-3 text-muted">Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications through the research ecosystem.</p>
+                                <div class="domain-connections">
+                                    <small class="text-muted">
+                                        <strong>Research Connections:</strong>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Remote sensing data ↔ Ground truth validation</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Climate models ↔ Observational datasets</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Earth system research ↔ Policy applications</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Environmental monitoring ↔ Impact assessment</span>
+                                        
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">Earth Observation Research</h4>
-                        <h5 class="text-primary mb-3">"Connect Climate Data with Global Impact"</h5>
-                        <p class="mb-3">Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications through the research ecosystem.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            
-                            Remote sensing data ↔ Ground truth validation • 
-                            
-                            Climate models ↔ Observational datasets • 
-                            
-                            Earth system research ↔ Policy applications • 
-                            
-                            Environmental monitoring ↔ Impact assessment
-                            
-                        </small>
                     </div>
                 </div>
                 
                 <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-dna"></i>
+                    <div class="domain-card h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="domain-icon-simple me-3">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mb-2">Bioinformatics Research</h4>
+                                <p class="text-primary mb-2">"Bridge Computational Methods with Biological Insights"</p>
+                                <p class="mb-3 text-muted">Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies and clinical applications.</p>
+                                <div class="domain-connections">
+                                    <small class="text-muted">
+                                        <strong>Research Connections:</strong>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Sequence analysis tools ↔ Functional studies</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Omics data ↔ Phenotypic research</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Computational predictions ↔ Experimental validation</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Algorithm development ↔ Biological applications</span>
+                                        
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">Bioinformatics Research</h4>
-                        <h5 class="text-primary mb-3">"Bridge Computational Methods with Biological Insights"</h5>
-                        <p class="mb-3">Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies and clinical applications.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            
-                            Sequence analysis tools ↔ Functional studies • 
-                            
-                            Omics data ↔ Phenotypic research • 
-                            
-                            Computational predictions ↔ Experimental validation • 
-                            
-                            Algorithm development ↔ Biological applications
-                            
-                        </small>
                     </div>
                 </div>
                 
                 <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-microscope"></i>
+                    <div class="domain-card h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="domain-icon-simple me-3">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mb-2">Bio-imaging Research</h4>
+                                <p class="text-primary mb-2">"Connect Imaging Techniques Across Research Scales"</p>
+                                <p class="mb-3 text-muted">Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research applications.</p>
+                                <div class="domain-connections">
+                                    <small class="text-muted">
+                                        <strong>Research Connections:</strong>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Microscopy methods ↔ Quantitative analysis</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Imaging protocols ↔ Biological insights</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Image acquisition ↔ Computational analysis</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Method development ↔ Application validation</span>
+                                        
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">Bio-imaging Research</h4>
-                        <h5 class="text-primary mb-3">"Connect Imaging Techniques Across Research Scales"</h5>
-                        <p class="mb-3">Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research applications.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            
-                            Microscopy methods ↔ Quantitative analysis • 
-                            
-                            Imaging protocols ↔ Biological insights • 
-                            
-                            Image acquisition ↔ Computational analysis • 
-                            
-                            Method development ↔ Application validation
-                            
-                        </small>
                     </div>
                 </div>
                 
                 <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-leaf"></i>
+                    <div class="domain-card h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="domain-icon-simple me-3">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mb-2">Biodiversity Research</h4>
+                                <p class="text-primary mb-2">"Bridge Species Science with Conservation Impact"</p>
+                                <p class="mb-3 text-muted">Connect taxonomic research with conservation planning, link species data with ecosystem modeling, and bridge biodiversity science with real-world conservation applications.</p>
+                                <div class="domain-connections">
+                                    <small class="text-muted">
+                                        <strong>Research Connections:</strong>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Species discovery ↔ Conservation planning</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Taxonomic data ↔ Ecosystem modeling</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Biodiversity monitoring ↔ Habitat management</span>
+                                        
+                                        <span class="badge bg-light text-dark me-1">Climate impacts ↔ Species distribution</span>
+                                        
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">Biodiversity Research</h4>
-                        <h5 class="text-primary mb-3">"Bridge Species Science with Conservation Impact"</h5>
-                        <p class="mb-3">Connect taxonomic research with conservation planning, link species data with ecosystem modeling, and bridge biodiversity science with real-world conservation applications.</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            
-                            Species discovery ↔ Conservation planning • 
-                            
-                            Taxonomic data ↔ Ecosystem modeling • 
-                            
-                            Biodiversity monitoring ↔ Habitat management • 
-                            
-                            Climate impacts ↔ Species distribution
-                            
-                        </small>
                     </div>
                 </div>
                 
@@ -308,103 +316,121 @@
         </div>
     </section>
 
-    <!-- How it works -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="how-it-works-grid">
-            <h2> How Science Live Works </h2>
-            <p class="section-subtitle"> The infrastructure that makes research connections possible </p>
+    <!-- How it works - Professional Style -->
+    <section class="py-5 bg-primary-custom text-white" id="how-it-works">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">How Science Live Works</h2>
+                <p class="section-subtitle text-white-50">The infrastructure that makes research connections possible</p>
+            </div>
 
-            <div class="capabilities-grid">
-              
-                <div class="capability-card" >
-                    <div class="capability-content">
-                        <h3> Decentralized Knowledge Network </h3>
-                        <p> Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data </p>
+            <div class="row g-4">
+                
+                <div class="col-lg-6">
+                    <div class="capability-item" >
+                        <h4 class="text-white mb-3">Decentralized Knowledge Network</h4>
+                        <p class="text-white-50">Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data</p>
                     </div>
-               </div>
-              
-                <div class="capability-card" >
-                    <div class="capability-content">
-                        <h3> AI-Powered Discovery Engine </h3>
-                        <p> 7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="capability-item" >
+                        <h4 class="text-white mb-3">AI-Powered Discovery Engine</h4>
+                        <p class="text-white-50">7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers</p>
                     </div>
-               </div>
-              
-                <div class="capability-card" data-terms="FAIR,RDF,SPARQL">
-                    <div class="capability-content">
-                        <h3> Semantic Integration </h3>
-                        <p> Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="capability-item" data-terms="FAIR,RDF,SPARQL">
+                        <h4 class="text-white mb-3">Semantic Integration</h4>
+                        <p class="text-white-50">Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains</p>
                     </div>
-               </div>
-              
-                <div class="capability-card" >
-                    <div class="capability-content">
-                        <h3> Open Governance </h3>
-                        <p> Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="capability-item" >
+                        <h4 class="text-white mb-3">Open Governance</h4>
+                        <p class="text-white-50">Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control</p>
                     </div>
-               </div>
-              
+                </div>
+                
+            </div>
         </div>
     </section>
 
     <!-- Platform Infrastructure -->
-    <section class="platform-section bg-dark text-white py-5" id="infrastructure">
-        <div class="container">
+    <section class="py-5 bg-light" id="infrastructure">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title text-white"><br> Built to Last</h2>
-                <p class="section-subtitle text-white-50"> Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community </p>
+                <h2 class="section-title">Built to Last</h2>
+                <p class="section-subtitle">Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community</p>
             </div>
             
             <div class="row g-4">
-              
+                
                 <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-university me-3 fs-4"></i>
-                            <h5 class="mb-0">Institutional Partnership</h5>
+                    <div class="infrastructure-item">
+                        <div class="d-flex align-items-start">
+                            <div class="infrastructure-icon me-3">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Institutional Partnership</h5>
+                                <p class="text-muted mb-0">Built in collaboration with Astera Institute with community-driven governance and sustainable funding model, ensuring continued development and long-term platform stability independent of single-source dependencies.</p>
+                            </div>
                         </div>
-                        <p class="mb-0">Built in collaboration with Astera Institute with community-driven governance and sustainable funding model, ensuring continued development and long-term platform stability independent of single-source dependencies.</p>
                     </div>
                 </div>
-              
+                
                 <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-unlock me-3 fs-4"></i>
-                            <h5 class="mb-0">Open Source Foundation</h5>
+                    <div class="infrastructure-item">
+                        <div class="d-flex align-items-start">
+                            <div class="infrastructure-icon me-3">
+                                <i class="fas fa-unlock"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Open Source Foundation</h5>
+                                <p class="text-muted mb-0">Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.</p>
+                            </div>
                         </div>
-                        <p class="mb-0">Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.</p>
                     </div>
                 </div>
-              
+                
                 <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-bolt me-3 fs-4"></i>
-                            <h5 class="mb-0">Enterprise Infrastructure</h5>
+                    <div class="infrastructure-item">
+                        <div class="d-flex align-items-start">
+                            <div class="infrastructure-icon me-3">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Enterprise Infrastructure</h5>
+                                <p class="text-muted mb-0">Reliable, scalable platform infrastructure that handles growing research demands while maintaining fast response times and 99.9% uptime.</p>
+                            </div>
                         </div>
-                        <p class="mb-0">Reliable, scalable platform infrastructure that handles growing research demands while maintaining fast response times and 99.9% uptime.</p>
                     </div>
                 </div>
-              
+                
                 <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-network-wired me-3 fs-4"></i>
-                            <h5 class="mb-0">Growing Network</h5>
+                    <div class="infrastructure-item">
+                        <div class="d-flex align-items-start">
+                            <div class="infrastructure-icon me-3">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Growing Network</h5>
+                                <p class="text-muted mb-0">Join a growing network of structured research statements with active researcher communities across multiple research domains.</p>
+                            </div>
                         </div>
-                        <p class="mb-0">Join a growing network of structured research statements with active researcher communities across multiple research domains.</p>
                     </div>
                 </div>
-              
+                
             </div>
         </div>
     </section>
 
-
     <!-- Getting Started -->
-    <section id="start" class="getting-started">
-        <div class="container">
+    <section id="start" class="py-5 bg-primary-custom text-white">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Join the Research Revolution</h2>
                 <p class="section-subtitle">Start discovering connections in your research area today</p>
@@ -412,34 +438,42 @@
             
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-rocket"></i></div>
-                        <h4 class="mb-3">Instant Access</h4>
-                        <p class="mb-4">Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.<br><br></p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h5 class="mb-3">Instant Access</h5>
+                        <p class="text-muted mb-4">Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.</p>
                         <a href="https:&#x2F;&#x2F;sciencelive.netlify.app" class="btn btn-primary">Try it!</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-book-open"></i></div>
-                        <h4 class="mb-3">Zotero Integration</h4>
-                        <p class="mb-4">Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5 class="mb-3">Zotero Integration</h5>
+                        <p class="text-muted mb-4">Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.</p>
                         <a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;zotero-nanopub-plugin&#x2F;" class="btn btn-outline-primary">Download Plugin</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-users"></i></div>
-                        <h4 class="mb-3">Learn by Examples</h4>
-                        <p class="mb-4">See how your work flows through the entire innovation pipeline from discovery to commercial application.</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="mb-3">Learn by Examples</h5>
+                        <p class="text-muted mb-4">See how your work flows through the entire innovation pipeline from discovery to commercial application.</p>
                         <a href="https:&#x2F;&#x2F;sciencelive.netlify.app" class="btn btn-outline-primary">View Examples &amp; Impact Stories</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4 class="mb-3">Science Live Data Pipeline &amp; APIs</h4>
-                        <p class="mb-4">Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h5 class="mb-3">Science Live Data Pipeline &amp; APIs</h5>
+                        <p class="text-muted mb-4">Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.</p>
                         <a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-pipeline&#x2F;index.html" class="btn btn-outline-primary">Pipeline Documentation</a>
                     </div>
                 </div>
@@ -452,90 +486,93 @@
 
     <!-- Enterprise Brief -->
     
-    <section id="enterprise" class="enterprise-brief">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
+    <section id="enterprise" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-3">Accelerate Innovation Through Research Ecosystems</h2>
+                    <h2 class="section-title mb-4">Accelerate Innovation Through Research Ecosystems</h2>
                     <p class="lead mb-4">Industry leaders use Science Live to connect R&amp;D with validated academic research and skilled translators</p>
-                    <p class="mb-4">Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.</p>
+                    <p class="mb-5 text-muted">Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.</p>
                     
-                    <div class="row g-3 justify-content-center">
+                    <div class="row g-4 mb-5">
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Find application-ready research with validation history</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Connect with data scientists who bridge research gaps</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Access full traceability from discovery to implementation</span>
-                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Find application-ready research with validation history
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Connect with data scientists who bridge research gaps
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Access full traceability from discovery to implementation
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Reduce R&amp;D timelines from years to months</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Build on trusted, peer-validated foundations</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>Track research impact through your innovation pipeline</span>
-                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Reduce R&amp;D timelines from years to months
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Build on trusted, peer-validated foundations
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    Track research impact through your innovation pipeline
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     
-                    <div class="mt-4 text-center">
-                        <a href="mailto:mailto:anne.fouilloux@gmail.com" class="btn btn-primary">Explore Enterprise Ecosystem →</a>
-                    </div>
+                    <a href="mailto:mailto:anne.fouilloux@gmail.com" class="btn btn-primary btn-lg">Explore Enterprise Ecosystem →</a>
                 </div>
             </div>
         </div>
     </section>
     
+
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-primary-custom text-white py-5">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-3">
-                    <h5>Get Started</h5>
+                    <h6 class="text-uppercase mb-3">Get Started</h6>
                     <ul class="list-unstyled">
-                        <li><a href="https://sciencelivehub.github.io/account/" class="text-white-50">Get an Account</a></li>
-                        <li><a href="https://sciencelive.netlify.app" class="text-white-50">Getting Started Guide</a></li>
+                        <li class="mb-2"><a href="https://sciencelivehub.github.io/account/" class="text-white-50 text-decoration-none">Get an Account</a></li>
+                        <li class="mb-2"><a href="https://sciencelive.netlify.app" class="text-white-50 text-decoration-none">Getting Started Guide</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Collaborate & Contribute</h5>
+                    <h6 class="text-uppercase mb-3">Collaborate & Contribute</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#domains" class="text-white-50">Communities</a></li>
-                        <li><a href="mailto:anne.fouilloux@gmail.com" class="text-white-50">Support</a></li>
+                        <li class="mb-2"><a href="#domains" class="text-white-50 text-decoration-none">Communities</a></li>
+                        <li class="mb-2"><a href="mailto:anne.fouilloux@gmail.com" class="text-white-50 text-decoration-none">Support</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>About Science Live</h5>
+                    <h6 class="text-uppercase mb-3">About Science Live</h6>
                     <ul class="list-unstyled">
-                        <li><a href="https://sciencelivehub.github.io/about/" class="text-white-50">Platform Overview</a></li>
-                        <li><a href="mailto:mailto:anne.fouilloux@gmail.com" class="text-white-50">Contact</a></li>
+                        <li class="mb-2"><a href="https://sciencelivehub.github.io/about/" class="text-white-50 text-decoration-none">Platform Overview</a></li>
+                        <li class="mb-2"><a href="mailto:mailto:anne.fouilloux@gmail.com" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Documentation</h5>
+                    <h6 class="text-uppercase mb-3">Documentation</h6>
                     <ul class="list-unstyled">
-                        <li><a href="https://sciencelivehub.github.io/science-live-pipeline/index.html" class="text-white-50">Technical Info</a></li>
-                        <li><a href="https://sciencelivehub.github.io/policies/" class="text-white-50">Data & API Policy</a></li>
+                        <li class="mb-2"><a href="https://sciencelivehub.github.io/science-live-pipeline/index.html" class="text-white-50 text-decoration-none">Technical Info</a></li>
+                        <li class="mb-2"><a href="https://sciencelivehub.github.io/policies/" class="text-white-50 text-decoration-none">Data & API Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <hr class="my-4">
+            <hr class="my-4 border-secondary">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-nowrap">&copy; 2025 Science Live. Trusted by science. Powered by nanopublications. Ready for industry.</p>
+                    <p class="mb-0 text-white-50">&copy; 2025 Science Live. Trusted by science. Powered by nanopublications. Ready for industry.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     
@@ -548,6 +585,7 @@
         </div>
     </footer>
 
+    <!-- Custom Professional Styles -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Smooth scrolling
@@ -564,142 +602,50 @@
             });
         });
 
-        // Navbar scroll effect - FIXED VERSION
+        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
-            
             if (window.scrollY > 50) {
-                // When scrolled - change to white background with dark text
                 navbar.classList.add('scrolled');
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('bg-white');
-                
-                // Change all navbar text to dark
-                navbar.querySelectorAll('.navbar-text-white').forEach(el => {
-                    el.classList.remove('text-white');
-                    el.classList.add('text-dark');
-                });
-                
-                navbar.querySelectorAll('.navbar-text-light').forEach(el => {
-                    el.classList.remove('text-white-50');
-                    el.classList.add('text-secondary');
-                });
-                
-                // Change button to dark outline
-                navbar.querySelectorAll('.navbar-btn-light').forEach(el => {
-                    el.classList.remove('btn-outline-light');
-                    el.classList.add('btn-outline-dark');
-                });
-                
             } else {
-                // When at top - transparent background with white text
                 navbar.classList.remove('scrolled');
-                navbar.classList.add('bg-transparent');
-                navbar.classList.remove('bg-white');
-                
-                // Change all navbar text back to white
-                navbar.querySelectorAll('.text-dark').forEach(el => {
-                    el.classList.add('text-white');
-                    el.classList.remove('text-dark');
-                    el.classList.add('navbar-text-white');
-                });
-                
-                navbar.querySelectorAll('.text-secondary').forEach(el => {
-                    el.classList.add('text-white-50');
-                    el.classList.remove('text-secondary');
-                    el.classList.add('navbar-text-light');
-                });
-                
-                // Change button back to light outline
-                navbar.querySelectorAll('.btn-outline-dark').forEach(el => {
-                    el.classList.add('btn-outline-light');
-                    el.classList.remove('btn-outline-dark');
-                    el.classList.add('navbar-btn-light');
-                });
             }
         });
 
-    // Add the tooltip functionality
-// Add the tooltip functionality - HOVER VERSION
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Tooltip script starting...');
-    
-    // Define terms and their definitions
-    const definitions = {
-        'FAIR': 'Findable, Accessible, Interoperable, Reusable - principles for scientific data management',
-        'RDF': 'Resource Description Framework - standard model for data interchange on the web', 
-        'SPARQL': 'Query language for databases that store data in RDF format'
-    };
-    
-    // Process cards that have terms
-    const cards = document.querySelectorAll('.capability-card[data-terms]');
-    console.log('Found cards with terms:', cards.length);
-    
-    cards.forEach(card => {
-        const terms = card.dataset.terms.split(',');
-        const paragraph = card.querySelector('p');
-        let html = paragraph.innerHTML;
-        
-        terms.forEach(term => {
-            const trimmedTerm = term.trim();
-            if (definitions[trimmedTerm]) {
-                const regex = new RegExp(`\\b${trimmedTerm}\\b`, 'g');
-                html = html.replace(regex, 
-                    `<span class="tooltip-term" data-definition="${definitions[trimmedTerm]}">${trimmedTerm}</span>`
-                );
-            }
+        // Tooltip functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const definitions = {
+                'FAIR': 'Findable, Accessible, Interoperable, Reusable - principles for scientific data management',
+                'RDF': 'Resource Description Framework - standard model for data interchange on the web', 
+                'SPARQL': 'Query language for databases that store data in RDF format'
+            };
+            
+            const items = document.querySelectorAll('.capability-item[data-terms]');
+            
+            items.forEach(item => {
+                const terms = item.dataset.terms.split(',');
+                const paragraph = item.querySelector('p');
+                let html = paragraph.innerHTML;
+                
+                terms.forEach(term => {
+                    const trimmedTerm = term.trim();
+                    if (definitions[trimmedTerm]) {
+                        const regex = new RegExp(`\\b${trimmedTerm}\\b`, 'g');
+                        html = html.replace(regex, 
+                            `<span class="tooltip-term" data-bs-toggle="tooltip" data-bs-placement="top" title="${definitions[trimmedTerm]}">${trimmedTerm}</span>`
+                        );
+                    }
+                });
+                
+                paragraph.innerHTML = html;
+            });
+            
+            // Initialize Bootstrap tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
         });
-        
-        paragraph.innerHTML = html;
-    });
-    
-    // Add hover events to all tooltip terms
-    document.querySelectorAll('.tooltip-term').forEach(term => {
-        // Create tooltip element
-        const tooltip = document.createElement('div');
-        tooltip.className = 'custom-tooltip';
-        tooltip.textContent = term.dataset.definition;
-        tooltip.style.cssText = `
-            position: absolute;
-            background: rgba(25, 57, 103, 0.95);
-            color: white;
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            max-width: 300px;
-            z-index: 1000;
-            display: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        `;
-        document.body.appendChild(tooltip);
-        
-        // Style the term
-        term.style.cssText = `
-            background: none;
-            color: rgba(255, 255, 255, 0.9);
-            border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
-            cursor: help;
-        `;
-        
-        // Show tooltip on hover
-        term.addEventListener('mouseenter', (e) => {
-            tooltip.style.display = 'block';
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = (e.pageY - 40) + 'px';
-        });
-        
-        // Hide tooltip on leave
-        term.addEventListener('mouseleave', () => {
-            tooltip.style.display = 'none';
-        });
-        
-        // Update tooltip position on mouse move
-        term.addEventListener('mousemove', (e) => {
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = (e.pageY - 40) + 'px';
-        });
-    });
-});
     </script>
 </body>
 </html>

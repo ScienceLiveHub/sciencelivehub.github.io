@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Live Platform Flow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Include Science Live CSS -->
+    <link href="css/science-live.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -26,8 +29,9 @@
             text-align: center;
             font-size: 1.1rem;
             font-weight: 600;
-            color: #193967;
+            color: var(--primary-color);
             margin-bottom: 20px;
+            font-family: 'Space Grotesk', sans-serif;
         }
         
         .user-flow {
@@ -40,7 +44,7 @@
         
         .user-step {
             flex: 1;
-            background: #f8f9fa;
+            background: var(--bg-light);
             border-radius: 10px;
             padding: 12px 8px;
             text-align: center;
@@ -54,8 +58,8 @@
         }
         
         .user-step:hover {
-            border-color: #193967;
-            box-shadow: 0 5px 15px rgba(25, 57, 103, 0.15);
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(190, 46, 120, 0.15);
             transform: translateY(-3px);
         }
         
@@ -63,11 +67,16 @@
             width: 40px;
             height: 40px;
             margin: 0 auto 8px;
-            background: linear-gradient(135deg, #193967, #be2e78);
+            background: var(--primary-color);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .user-step:hover .step-icon {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
         }
         
         .step-icon svg {
@@ -79,33 +88,39 @@
         .step-title {
             font-size: 0.85rem;
             font-weight: 600;
-            color: #193967;
+            color: var(--primary-color);
             margin-bottom: 4px;
+            font-family: 'Space Grotesk', sans-serif;
         }
         
         .step-subtitle {
             font-size: 0.7rem;
-            color: #be2e78;
+            color: var(--secondary-color);
             font-weight: 500;
             margin-bottom: 8px;
         }
         
         .step-description {
             font-size: 0.65rem;
-            color: #666;
+            color: var(--text-muted);
             line-height: 1.3;
+        }
+        
+        .step-description strong {
+            color: var(--text-dark);
+            font-weight: 600;
         }
         
         .flow-arrow {
             font-size: 1.2rem;
-            color: #be2e78;
+            color: var(--secondary-color);
             animation: pulse-arrow 2s infinite;
             flex-shrink: 0;
         }
         
         @keyframes pulse-arrow {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
         }
         
         .benefits-row {
@@ -116,7 +131,7 @@
         
         .benefit-card {
             flex: 1;
-            background: linear-gradient(135deg, #193967, #be2e78);
+            background: var(--primary-color);
             color: white;
             padding: 10px 6px;
             border-radius: 8px;
@@ -125,6 +140,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .benefit-card:hover {
+            background: var(--primary-dark);
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
         }
         
         .benefit-icon {
@@ -146,17 +169,33 @@
             font-size: 0.65rem;
             font-weight: 600;
             margin-bottom: 2px;
+            font-family: 'Space Grotesk', sans-serif;
         }
         
         .benefit-text {
             font-size: 0.55rem;
             opacity: 0.9;
             line-height: 1.2;
+            color: rgba(255, 255, 255, 0.9);
         }
         
         .highlight-text {
-            color: #be2e78;
+            color: var(--secondary-color);
             font-weight: 600;
+        }
+        
+        /* Add subtle background pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(190, 46, 120, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(5, 29, 64, 0.03) 0%, transparent 50%);
+            pointer-events: none;
         }
     </style>
 </head>
@@ -218,7 +257,7 @@
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M9 11H7V13H9V11M13 11H11V13H13V11M17 11H15V13H17V11M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.9 3 6V20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4M19 20H5V9H19V20Z"/>
                     </svg>
                 </div>
                 <div class="benefit-title">Trusted & Validated</div>
@@ -228,7 +267,7 @@
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                        <path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0S9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2M9,13H7V11H9V13M9,17H7V15H9V17M13,13H11V11H13V13M13,17H11V15H13V17M17,13H15V11H17V13M17,17H15V15H17V17Z"/>
                     </svg>
                 </div>
                 <div class="benefit-title">Application-Ready</div>
@@ -238,7 +277,7 @@
             <div class="benefit-card">
                 <div class="benefit-icon">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 018.027 13H4.062a8.008 8.008 0 005.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0013.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 01-1.683 6.667A8.008 8.008 0 0019.938 13zM4.062 11h3.965A17.9 17.9 0 019.71 4.333 8.008 8.008 0 004.062 11zm5.968 0h3.94A15.905 15.905 0 0012 4.248 15.905 15.905 0 0010.03 11zm4.259-6.667A17.9 17.9 0 0115.973 11h3.965a8.008 8.008 0 00-5.648-6.667z"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2.29 17.667A8.01 8.01 0 014.062 13h3.965a17.9 17.9 0 001.683 6.667zM10.03 13h3.94A15.91 15.91 0 0112 19.752 15.91 15.91 0 0110.03 13zm9.908 0h-3.965a17.9 17.9 0 01-1.683 6.667A8.01 8.01 0 0019.938 13zM4.062 11h3.965A17.9 17.9 0 019.71 4.333 8.01 8.01 0 004.062 11zm5.968 0h3.94A15.91 15.91 0 0012 4.248 15.91 15.91 0 0010.03 11zm4.259-6.667A17.9 17.9 0 0115.973 11h3.965a8.01 8.01 0 00-5.648-6.667z"/>
                     </svg>
                 </div>
                 <div class="benefit-title">Global Network</div>
