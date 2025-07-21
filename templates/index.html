@@ -403,7 +403,7 @@
             <hr class="my-4 border-secondary">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-white-50">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. {{ config.extra.footer }}</p>
+                    <p class="mb-0 text-white-50 text-nowrap">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. {{ config.extra.footer }}</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     {% for social in config.extra.social_links %}
