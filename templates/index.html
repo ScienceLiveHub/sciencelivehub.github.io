@@ -27,7 +27,7 @@
                 <ul class="navbar-nav ms-auto">
                     {% for item in config.extra.main_menu %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+                        <a class="nav-link" href="{{ config.base_url | safe }}/{{ item.url }}">{{ item.name }}</a>
                     </li>
                     {% endfor %}
                     <li class="nav-item ms-3">

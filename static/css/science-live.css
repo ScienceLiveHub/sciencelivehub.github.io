@@ -356,3 +356,223 @@
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
 }
+
+
+/* Page Hero Section */
+.page-hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 120px 0 80px;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Content Typography */
+.content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.content h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.content ul, 
+.content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.content li {
+    margin-bottom: 0.75rem;
+}
+
+.content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.content a:hover {
+    color: var(--secondary-dark);
+    text-decoration: underline;
+}
+
+.content blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.content code {
+    background-color: var(--bg-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--primary-color);
+}
+
+.content pre {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.content pre code {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+}
+
+/* Page Navigation */
+.back-navigation {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(5, 29, 64, 0.1);
+}
+
+.toc h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 0.5rem;
+}
+
+.toc ul ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.toc a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.toc a:hover {
+    color: var(--secondary-color);
+}
+
+/* Fixed Navigation Styles */
+.navbar.fixed-top {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar.fixed-top .navbar-brand {
+    color: var(--primary-color);
+}
+
+.navbar.fixed-top .text-primary {
+    color: var(--primary-color) !important;
+}
+
+.navbar.fixed-top .text-accent {
+    color: var(--secondary-color) !important;
+}
+
+/* Footer Overrides for Pages */
+footer.bg-dark {
+    background-color: var(--primary-color) !important;
+}
+
+/* Responsive Design for Pages */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .page-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .content {
+        font-size: 1rem;
+    }
+    
+    .content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .content h3 {
+        font-size: 1.35rem;
+    }
+}
