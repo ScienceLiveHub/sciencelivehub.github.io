@@ -1,11 +1,9 @@
 +++
-title = "Community"
+title = "Getting Started Guide"
 description = "Join the Science Live community"
 +++
 
-# Science Live Community
-
-## Built by Researchers, for Researchers
+## Built by and for Researchers, data scientists, and engineers in industry
 
 Science Live thrives through community collaboration. Join researchers, developers, and institutions working together to break down knowledge silos.
 
@@ -33,13 +31,6 @@ Science Live thrives through community collaboration. Join researchers, develope
 - **💰 Funding Support** → Help sustain and expand the platform
 - **🤝 Partnerships** → Integrate Science Live with institutional infrastructure
 - **📢 Advocacy** → Promote structured scientific communication
-
-### Community Statistics
-
-- **50+ Active Researchers** across biodiversity, imaging, and earth observation
-- **10K+ Nanopublications** in the distributed network
-- **Multiple Institutions** testing pilot programs
-- **Growing Developer Community** contributing to the codebase
 
 ### Getting Started
 

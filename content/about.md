@@ -1,5 +1,5 @@
 +++
-title = "About Science Live"
+title = "Platform Overview"
 description = "Learn more about the Science Live platform and mission"
 +++
 
