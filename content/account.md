@@ -5,65 +5,45 @@ description = "Find out how to sign up and what benefits you get."
 
 Join the open science movement. Choose the account type that fits your needs.
 
-## Account Types
+## Authentication Requirements
 
-### Free Research Account
-Perfect for individual researchers and academics
-- ✓ 100 nanopublications/month
-- ✓ Join all communities
-- ✓ ORCID integration
-- ✓ API access (1,000 requests/hour)
-- ✓ Zotero plugin
-- **Price**: Free forever
+Science Live uses ORCID as a tiered authentication approach:
 
-[Create Free Account]
+### Public Access (No Authentication)
+- Browse and search the knowledge graph
+- View published nanopublications
+- Access open research connections
+- Explore domain communities
 
-### Team Account
-For research groups and labs
-- ✓ Everything in Free, plus:
-- ✓ 1,000 nanopublications/month
-- ✓ Shared workspace
-- ✓ Team management tools
-- ✓ 10,000 API requests/hour
-- ✓ Priority support
-- **Price**: Free for academic teams
+### ORCID Authentication (Required for Publishing)
+- Create and publish nanopublications
+- Contribute to domain communities
+- Receive attribution for your work
+- Build your research profile
+- **Access advanced features** (detailed in member documentation)
 
-[Request Team Account]
+## About ORCID
 
-### Institutional Account
-For universities and research institutes
-- ✓ Everything in Team, plus:
-- ✓ 10,000 nanopublications/month
-- ✓ Unlimited teams
-- ✓ SSO integration
-- ✓ Usage analytics
-- ✓ Custom training
-- ✓ Dedicated success manager
-- **Price**: From €5,000/year
+[ORCID](https://orcid.org) (Open Researcher and Contributor ID) provides a persistent digital identifier that distinguishes you from other researchers. ORCID is:
 
-[Get Institutional Access]
+- **Free of charge** for all researchers
+- **Globally recognized** across journals, funders, and institutions
+- **Researcher-controlled** with privacy settings you manage
+- **Persistent** throughout your career regardless of name changes or institutional moves
 
-### Industry Account
-For companies and commercial research
-- ✓ Everything in Institutional, plus:
-- ✓ Custom nanopublication limits
-- ✓ Commercial use rights
-- ✓ Custom API limits
-- ✓ SLA guarantee
-- ✓ Custom integrations
-- **Price**: Contact us
+## Getting an ORCID ID
 
-[Contact Sales]
+1. Visit [orcid.org/register](https://orcid.org/register)
+2. Create your free account (takes less than 2 minutes)
+3. Connect your publications and affiliations
+4. Use your ORCID ID to sign in to Science Live
 
-## Getting Started is Easy
-1. Choose your account type
-2. Sign up with your email
-3. Start publishing immediately
+## Why We Use ORCID
 
-## Questions?
-- See our [Getting Started Guide]
-- Visit the [Support Center]
-- Email: accounts@sciencelive.org
+Science Live requires ORCID authentication for publishing to:
+- Ensure proper attribution for your contributions
+- Maintain research integrity through verified identities
+- Connect your work to your global research profile
+- Enable seamless credit for all forms of research contribution
 
----
-*All accounts include full access to Science Live's features. We believe in open science for everyone.*
+[Sign In with ORCID →](https://sciencelive.netlify.app/)
