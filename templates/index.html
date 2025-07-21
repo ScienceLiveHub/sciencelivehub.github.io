@@ -13,9 +13,9 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold navbar-text-white" href="#home">
+            <a class="navbar-brand fw-bold" href="#home">
                 <span class="fs-4">{{ config.title }}</span>
             </a>
             
@@ -27,40 +27,42 @@
                 <ul class="navbar-nav ms-auto">
                     {% for item in config.extra.main_menu %}
                     <li class="nav-item">
-                        <a class="nav-link navbar-text-white" href="{{ item.url }}">{{ item.name }}</a>
+                        <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
                     </li>
                     {% endfor %}
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-outline-light btn-sm navbar-btn-light" href="{{ config.extra.cta_primary.button_url }}">{{ config.extra.cta_primary.button }}</a>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-outline-light" href="{{ config.extra.cta_primary.button_url }}">{{ config.extra.cta_primary.button }}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <!-- Hero Section -->
+    <!-- Hero Section - Dark Blue with Pink Accents -->
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center min-vh-100 py-5">
                 <div class="col-lg-6">
-                    <h1 class="hero-title">{{ config.extra.subtitle }}</h1>
-                    <h2 class="hero-subtitle">{{ config.description }}</h2>
-                    <p class="hero-description">
+                    <h1 class="hero-title mb-4">
+                        <span class="text-white">Science</span> 
+                        <span class="text-accent">Live</span>
+                    </h1>
+                    <h2 class="hero-subtitle mb-3">{{ config.description }}</h2>
+                    <p class="hero-description mb-4">
                         {{ config.extra.subdescription }}
                     </p>
                     <div class="hero-buttons">
-                        <a href="#start" class="btn-primary-hero">{{ config.extra.main_page.button1 }}</a>
-                        <a href="#enterprise" class="btn-secondary-hero">{{ config.extra.main_page.button2 }}</a>
+                        <a href="#start" class="btn btn-accent btn-lg me-3">{{ config.extra.main_page.button1 }}</a>
+                        <a href="#enterprise" class="btn btn-outline-white btn-lg">{{ config.extra.main_page.button2 }}</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="text-center">
+                    <div class="hero-visual">
                         <iframe src="{{ get_url(path="research-network.html") }}" 
                                 width="100%" 
-                                height="400" 
+                                height="450" 
                                 frameborder="0" 
-                                class="rounded hero-iframe"
+                                class="rounded shadow-lg"
                                 title="Interactive Research Network Visualization">
                         </iframe>
                     </div>
@@ -70,8 +72,8 @@
     </section>
 
     <!-- Academic Value Section -->
-    <section id="research" class="academic-value">
-        <div class="container">
+    <section id="research" class="py-5 bg-light">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Data Without Boundaries</h2>
                 <p class="section-subtitle">Connect research with application and build the workflows that accelerate innovation</p>
@@ -80,91 +82,67 @@
             <div class="row g-4">
                 {% for value in config.extra.academic_values %}
                 <div class="col-lg-3 col-md-6">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fas fa-{{ value.icon | default(value="search") }}"></i></div>
-                        <h3 class="benefit-title">{{ value.title }}</h3>
-                        <p>{{ value.description }}</p>
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-{{ value.icon | default(value="search") }}"></i>
+                        </div>
+                        <h4 class="mb-3">{{ value.title }}</h4>
+                        <p class="text-muted">{{ value.description }}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </section>
-   <!-- Academic Features -->
-    <section id="academics" class="academic-features" style="background: linear-gradient(135deg, #193967 0%, #be2e78 100%); color: white;">
-        <div class="container py-5">
+
+    <!-- Academic Features - Professional Dark Background -->
+    <section id="academics" class="py-5 bg-primary-custom text-white">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title text-white"><br>Academic Features</h2>
+                <h2 class="section-title text-white">Academic Features</h2>
                 <p class="section-subtitle text-white-50">Everything you need for academic research excellence</p>
             </div>
             
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="features-list">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Free unlimited access for academic researchers</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">One-click integration with Zotero</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">AI-powered cross-domain research discovery</span>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <ul class="feature-list">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Free unlimited access for academic researchers</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>One-click integration with Zotero</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>AI-powered cross-domain research discovery</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <div class="features-list">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Global researcher collaboration network</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">Structured data creation with full attribution</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="check-icon me-4">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="fs-5 text-white">ORCID integration and institutional support</span>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <ul class="feature-list">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Global researcher collaboration network</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>Structured data creation with full attribution</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1"></i>
+                            <span>ORCID integration and institutional support</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        <style>
-        .check-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: white;
-            flex-shrink: 0;
-        }
-        </style>
     </section>
 
     <!-- Research Domains -->
-    <section id="domains" class="domain-section">
-        <div class="container">
+    <section id="domains" class="py-5">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Accelerating Discovery Across Research Areas</h2>
                 <p class="section-subtitle">Deep expertise in the domains where knowledge connections matter most</p>
@@ -173,19 +151,25 @@
             <div class="row g-4">
                 {% for domain in config.extra.research_domains %}
                 <div class="col-lg-6">
-                    <div class="domain-card">
-                        <div class="domain-icon">
-                            <i class="fas fa-{{ domain.icon }}"></i>
+                    <div class="domain-card h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="domain-icon-simple me-3">
+                                <i class="fas fa-{{ domain.icon }}"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mb-2">{{ domain.name }}</h4>
+                                <p class="text-primary mb-2">"{{ domain.description }}"</p>
+                                <p class="mb-3 text-muted">{{ domain.info }}</p>
+                                <div class="domain-connections">
+                                    <small class="text-muted">
+                                        <strong>Research Connections:</strong>
+                                        {% for connection in domain.connections %}
+                                        <span class="badge bg-light text-dark me-1">{{ connection }}</span>
+                                        {% endfor %}
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">{{ domain.name }}</h4>
-                        <h5 class="text-primary mb-3">"{{ domain.description }}"</h5>
-                        <p class="mb-3">{{ domain.info }}</p>
-                        <small class="text-muted">
-                            <strong>Research Connections Enabled:</strong><br>
-                            {% for connection in domain.connections %}
-                            {{ connection }}{% if not loop.last %} • {% endif %}
-                            {% endfor %}
-                        </small>
                     </div>
                 </div>
                 {% endfor %}
@@ -193,52 +177,58 @@
         </div>
     </section>
 
-    <!-- How it works -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="how-it-works-grid">
-            <h2> {{ config.extra.platform.title }} </h2>
-            <p class="section-subtitle"> {{ config.extra.platform.subtitle }} </p>
+    <!-- How it works - Professional Style -->
+    <section class="py-5 bg-primary-custom text-white" id="how-it-works">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">{{ config.extra.platform.title }}</h2>
+                <p class="section-subtitle text-white-50">{{ config.extra.platform.subtitle }}</p>
+            </div>
 
-            <div class="capabilities-grid">
-              {% for hit_item in config.extra.platform.bullet_points %}
-                <div class="capability-card" {% if hit_item.terms %}data-terms="{{ hit_item.terms }}"{% endif %}>
-                    <div class="capability-content">
-                        <h3> {{ hit_item.title }} </h3>
-                        <p> {{ hit_item.description }} </p>
+            <div class="row g-4">
+                {% for hit_item in config.extra.platform.bullet_points %}
+                <div class="col-lg-6">
+                    <div class="capability-item" {% if hit_item.terms %}data-terms="{{ hit_item.terms }}"{% endif %}>
+                        <h4 class="text-white mb-3">{{ hit_item.title }}</h4>
+                        <p class="text-white-50">{{ hit_item.description }}</p>
                     </div>
-               </div>
-              {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 
     <!-- Platform Infrastructure -->
-    <section class="platform-section bg-dark text-white py-5" id="infrastructure">
-        <div class="container">
+    <section class="py-5 bg-light" id="infrastructure">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title text-white"><br> {{ config.extra.infrastructure.title }}</h2>
-                <p class="section-subtitle text-white-50"> {{ config.extra.infrastructure.subtitle }} </p>
+                <h2 class="section-title">{{ config.extra.infrastructure.title }}</h2>
+                <p class="section-subtitle">{{ config.extra.infrastructure.subtitle }}</p>
             </div>
             
             <div class="row g-4">
-              {% for infra_item in config.extra.infrastructure.bullet_points %}
+                {% for infra_item in config.extra.infrastructure.bullet_points %}
                 <div class="col-lg-6">
-                    <div class="platform-feature">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-{{ infra_item.icon }} me-3 fs-4"></i>
-                            <h5 class="mb-0">{{ infra_item.title }}</h5>
+                    <div class="infrastructure-item">
+                        <div class="d-flex align-items-start">
+                            <div class="infrastructure-icon me-3">
+                                <i class="fas fa-{{ infra_item.icon }}"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">{{ infra_item.title }}</h5>
+                                <p class="text-muted mb-0">{{ infra_item.description }}</p>
+                            </div>
                         </div>
-                        <p class="mb-0">{{ infra_item.description }}</p>
                     </div>
                 </div>
-              {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </section>
 
-
     <!-- Getting Started -->
-    <section id="start" class="getting-started">
-        <div class="container">
+    <section id="start" class="py-5 bg-primary-custom text-white">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">Join the Research Revolution</h2>
                 <p class="section-subtitle">Start discovering connections in your research area today</p>
@@ -246,34 +236,42 @@
             
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-rocket"></i></div>
-                        <h4 class="mb-3">{{ config.extra.cta_primary.title }}</h4>
-                        <p class="mb-4">{{ config.extra.cta_primary.description}}<br><br></p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h5 class="mb-3">{{ config.extra.cta_primary.title }}</h5>
+                        <p class="text-muted mb-4">{{ config.extra.cta_primary.description}}</p>
                         <a href="{{ config.extra.cta_primary.button_url }}" class="btn btn-primary">{{ config.extra.cta_primary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-book-open"></i></div>
-                        <h4 class="mb-3">{{config.extra.cta_secondary.title}}</h4>
-                        <p class="mb-4">{{ config.extra.cta_secondary.description}}</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5 class="mb-3">{{config.extra.cta_secondary.title}}</h5>
+                        <p class="text-muted mb-4">{{ config.extra.cta_secondary.description}}</p>
                         <a href="{{ config.extra.cta_secondary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_secondary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-users"></i></div>
-                        <h4 class="mb-3">{{ config.extra.cta_tertiary.title }}</h4>
-                        <p class="mb-4">{{ config.extra.cta_tertiary.description }}</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="mb-3">{{ config.extra.cta_tertiary.title }}</h5>
+                        <p class="text-muted mb-4">{{ config.extra.cta_tertiary.description }}</p>
                         <a href="{{ config.extra.cta_tertiary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_tertiary.button }}</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="start-option">
-                        <div class="start-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4 class="mb-3">{{ config.extra.cta_quaternary.title }}</h4>
-                        <p class="mb-4">{{ config.extra.cta_quaternary.description }}</p>
+                    <div class="action-card h-100 text-center">
+                        <div class="action-icon mx-auto mb-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h5 class="mb-3">{{ config.extra.cta_quaternary.title }}</h5>
+                        <p class="text-muted mb-4">{{ config.extra.cta_quaternary.description }}</p>
                         <a href="{{ config.extra.cta_quaternary.button_url }}" class="btn btn-outline-primary">{{ config.extra.cta_quaternary.button }}</a>
                     </div>
                 </div>
@@ -283,8 +281,8 @@
 
     <!-- Community Proof -->
     {% if config.extra.metrics_enabled %}
-    <section id="community" class="community-section">
-        <div class="container">
+    <section id="community" class="py-5 bg-light">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title">{{ config.extra.metrics_title }}</h2>
             </div>
@@ -292,7 +290,7 @@
             <div class="row g-4 mb-5">
                 {% for metric in config.extra.research_metrics %}
                 <div class="col-lg-3 col-md-6">
-                    <div class="metric-item">
+                    <div class="metric-card text-center">
                         <div class="metric-number">{{ metric.value }}</div>
                         <div class="metric-label">{{ metric.label }}</div>
                     </div>
@@ -303,16 +301,11 @@
             <div class="row g-4">
                 {% for testimonial in config.extra.testimonials %}
                 <div class="col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="mb-3">
-                            <i class="fas fa-quote-left text-primary fs-4"></i>
-                        </div>
-                        <p class="mb-3">"{{ testimonial.quote }}"</p>
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <strong>{{ testimonial.author }}</strong>
-                                <br><small class="text-muted">{{ testimonial.title }}</small>
-                            </div>
+                    <div class="testimonial-card h-100">
+                        <p class="testimonial-text mb-4">"{{ testimonial.quote }}"</p>
+                        <div class="testimonial-author">
+                            <strong>{{ testimonial.author }}</strong>
+                            <span class="d-block text-muted small">{{ testimonial.title }}</span>
                         </div>
                     </div>
                 </div>
@@ -324,90 +317,93 @@
 
     <!-- Enterprise Brief -->
     {% if config.extra.enterprise.enabled %}
-    <section id="enterprise" class="enterprise-brief">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
+    <section id="enterprise" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-3">{{ config.extra.enterprise.title }}</h2>
+                    <h2 class="section-title mb-4">{{ config.extra.enterprise.title }}</h2>
                     <p class="lead mb-4">{{ config.extra.enterprise.description }}</p>
-                    <p class="mb-4">{{ config.extra.enterprise.info }}</p>
+                    <p class="mb-5 text-muted">{{ config.extra.enterprise.info }}</p>
                     
-                    <div class="row g-3 justify-content-center">
+                    <div class="row g-4 mb-5">
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b1 }}</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b2 }}</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b3 }}</span>
-                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b1 }}
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b2 }}
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b3 }}
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b4 }}</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b5 }}</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <i class="fas fa-check text-primary me-2"></i>
-                                <span>{{ config.extra.enterprise.b6 }}</span>
-                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b4 }}
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b5 }}
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    {{ config.extra.enterprise.b6 }}
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     
-                    <div class="mt-4 text-center">
-                        <a href="mailto:{{ config.extra.contact.enterprise }}" class="btn btn-primary">{{ config.extra.enterprise.cta }} →</a>
-                    </div>
+                    <a href="mailto:{{ config.extra.contact.enterprise }}" class="btn btn-primary btn-lg">{{ config.extra.enterprise.cta }} →</a>
                 </div>
             </div>
         </div>
     </section>
     {% endif %}
+
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-primary-custom text-white py-5">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-3">
-                    <h5>Get Started</h5>
+                    <h6 class="text-uppercase mb-3">Get Started</h6>
                     <ul class="list-unstyled">
-                        <li><a href="{{ config.base_url | safe }}/account/" class="text-white-50">Get an Account</a></li>
-                        <li><a href="https://sciencelive.netlify.app" class="text-white-50">Getting Started Guide</a></li>
+                        <li class="mb-2"><a href="{{ config.base_url | safe }}/account/" class="text-white-50 text-decoration-none">Get an Account</a></li>
+                        <li class="mb-2"><a href="https://sciencelive.netlify.app" class="text-white-50 text-decoration-none">Getting Started Guide</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Collaborate & Contribute</h5>
+                    <h6 class="text-uppercase mb-3">Collaborate & Contribute</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#domains" class="text-white-50">Communities</a></li>
-                        <li><a href="{{ config.extra.contact.research_support }}" class="text-white-50">Support</a></li>
+                        <li class="mb-2"><a href="#domains" class="text-white-50 text-decoration-none">Communities</a></li>
+                        <li class="mb-2"><a href="{{ config.extra.contact.research_support }}" class="text-white-50 text-decoration-none">Support</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>About {{ config.title }}</h5>
+                    <h6 class="text-uppercase mb-3">About {{ config.title }}</h6>
                     <ul class="list-unstyled">
-                        <li><a href="{{ config.base_url | safe }}/about/" class="text-white-50">Platform Overview</a></li>
-                        <li><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50">Contact</a></li>
+                        <li class="mb-2"><a href="{{ config.base_url | safe }}/about/" class="text-white-50 text-decoration-none">Platform Overview</a></li>
+                        <li class="mb-2"><a href="mailto:{{ config.extra.contact.research_support }}" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Documentation</h5>
+                    <h6 class="text-uppercase mb-3">Documentation</h6>
                     <ul class="list-unstyled">
-                        <li><a href="https://sciencelivehub.github.io/science-live-pipeline/index.html" class="text-white-50">Technical Info</a></li>
-                        <li><a href="{{ config.base_url | safe }}/policies/" class="text-white-50">Data & API Policy</a></li>
+                        <li class="mb-2"><a href="https://sciencelivehub.github.io/science-live-pipeline/index.html" class="text-white-50 text-decoration-none">Technical Info</a></li>
+                        <li class="mb-2"><a href="{{ config.base_url | safe }}/policies/" class="text-white-50 text-decoration-none">Data & API Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <hr class="my-4">
+            <hr class="my-4 border-secondary">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-nowrap">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. {{ config.extra.footer }}</p>
+                    <p class="mb-0 text-white-50">&copy; {{ now() | date(format="%Y") }} {{ config.title }}. {{ config.extra.footer }}</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     {% for social in config.extra.social_links %}
@@ -418,6 +414,7 @@
         </div>
     </footer>
 
+    <!-- Custom Professional Styles -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Smooth scrolling
@@ -434,142 +431,50 @@
             });
         });
 
-        // Navbar scroll effect - FIXED VERSION
+        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
-            
             if (window.scrollY > 50) {
-                // When scrolled - change to white background with dark text
                 navbar.classList.add('scrolled');
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('bg-white');
-                
-                // Change all navbar text to dark
-                navbar.querySelectorAll('.navbar-text-white').forEach(el => {
-                    el.classList.remove('text-white');
-                    el.classList.add('text-dark');
-                });
-                
-                navbar.querySelectorAll('.navbar-text-light').forEach(el => {
-                    el.classList.remove('text-white-50');
-                    el.classList.add('text-secondary');
-                });
-                
-                // Change button to dark outline
-                navbar.querySelectorAll('.navbar-btn-light').forEach(el => {
-                    el.classList.remove('btn-outline-light');
-                    el.classList.add('btn-outline-dark');
-                });
-                
             } else {
-                // When at top - transparent background with white text
                 navbar.classList.remove('scrolled');
-                navbar.classList.add('bg-transparent');
-                navbar.classList.remove('bg-white');
-                
-                // Change all navbar text back to white
-                navbar.querySelectorAll('.text-dark').forEach(el => {
-                    el.classList.add('text-white');
-                    el.classList.remove('text-dark');
-                    el.classList.add('navbar-text-white');
-                });
-                
-                navbar.querySelectorAll('.text-secondary').forEach(el => {
-                    el.classList.add('text-white-50');
-                    el.classList.remove('text-secondary');
-                    el.classList.add('navbar-text-light');
-                });
-                
-                // Change button back to light outline
-                navbar.querySelectorAll('.btn-outline-dark').forEach(el => {
-                    el.classList.add('btn-outline-light');
-                    el.classList.remove('btn-outline-dark');
-                    el.classList.add('navbar-btn-light');
-                });
             }
         });
 
-    // Add the tooltip functionality
-// Add the tooltip functionality - HOVER VERSION
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Tooltip script starting...');
-    
-    // Define terms and their definitions
-    const definitions = {
-        'FAIR': 'Findable, Accessible, Interoperable, Reusable - principles for scientific data management',
-        'RDF': 'Resource Description Framework - standard model for data interchange on the web', 
-        'SPARQL': 'Query language for databases that store data in RDF format'
-    };
-    
-    // Process cards that have terms
-    const cards = document.querySelectorAll('.capability-card[data-terms]');
-    console.log('Found cards with terms:', cards.length);
-    
-    cards.forEach(card => {
-        const terms = card.dataset.terms.split(',');
-        const paragraph = card.querySelector('p');
-        let html = paragraph.innerHTML;
-        
-        terms.forEach(term => {
-            const trimmedTerm = term.trim();
-            if (definitions[trimmedTerm]) {
-                const regex = new RegExp(`\\b${trimmedTerm}\\b`, 'g');
-                html = html.replace(regex, 
-                    `<span class="tooltip-term" data-definition="${definitions[trimmedTerm]}">${trimmedTerm}</span>`
-                );
-            }
+        // Tooltip functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const definitions = {
+                'FAIR': 'Findable, Accessible, Interoperable, Reusable - principles for scientific data management',
+                'RDF': 'Resource Description Framework - standard model for data interchange on the web', 
+                'SPARQL': 'Query language for databases that store data in RDF format'
+            };
+            
+            const items = document.querySelectorAll('.capability-item[data-terms]');
+            
+            items.forEach(item => {
+                const terms = item.dataset.terms.split(',');
+                const paragraph = item.querySelector('p');
+                let html = paragraph.innerHTML;
+                
+                terms.forEach(term => {
+                    const trimmedTerm = term.trim();
+                    if (definitions[trimmedTerm]) {
+                        const regex = new RegExp(`\\b${trimmedTerm}\\b`, 'g');
+                        html = html.replace(regex, 
+                            `<span class="tooltip-term" data-bs-toggle="tooltip" data-bs-placement="top" title="${definitions[trimmedTerm]}">${trimmedTerm}</span>`
+                        );
+                    }
+                });
+                
+                paragraph.innerHTML = html;
+            });
+            
+            // Initialize Bootstrap tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
         });
-        
-        paragraph.innerHTML = html;
-    });
-    
-    // Add hover events to all tooltip terms
-    document.querySelectorAll('.tooltip-term').forEach(term => {
-        // Create tooltip element
-        const tooltip = document.createElement('div');
-        tooltip.className = 'custom-tooltip';
-        tooltip.textContent = term.dataset.definition;
-        tooltip.style.cssText = `
-            position: absolute;
-            background: rgba(25, 57, 103, 0.95);
-            color: white;
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            max-width: 300px;
-            z-index: 1000;
-            display: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        `;
-        document.body.appendChild(tooltip);
-        
-        // Style the term
-        term.style.cssText = `
-            background: none;
-            color: rgba(255, 255, 255, 0.9);
-            border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
-            cursor: help;
-        `;
-        
-        // Show tooltip on hover
-        term.addEventListener('mouseenter', (e) => {
-            tooltip.style.display = 'block';
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = (e.pageY - 40) + 'px';
-        });
-        
-        // Hide tooltip on leave
-        term.addEventListener('mouseleave', () => {
-            tooltip.style.display = 'none';
-        });
-        
-        // Update tooltip position on mouse move
-        term.addEventListener('mousemove', (e) => {
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = (e.pageY - 40) + 'px';
-        });
-    });
-});
     </script>
 </body>
 </html>
