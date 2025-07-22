@@ -64,7 +64,7 @@ infrastructure = { title = "Built to Last", subtitle = "Connecting researchers, 
 
 
 # Platform
-platform = { title = "How Science Live Works", subtitle = "The infrastructure that makes research connections possible", bullet_points = [ {title = "Decentralized Knowledge Network", description = "Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data"  }, { title = "AI-Powered Discovery Engine", description = "7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers" }, { title = "Semantic Integration", description = "Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains", terms = "FAIR,RDF,SPARQL" }, { title = "Open Governance", description = "Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control" } ] } 
+platform = { title = "The Science Live Ecosystem", subtitle = "Science Live's infrastructure connects research with application across institutions and industries", bullet_points = [ {title = "Decentralized Knowledge Network", description = "Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data"  }, { title = "AI-Powered Discovery Engine", description = "7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers" }, { title = "Semantic Integration", description = "Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains", terms = "FAIR,RDF,SPARQL" }, { title = "Open Governance", description = "Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control" } ] } 
 
 # metrics title
 metrics_enabled = false
@@ -99,7 +99,7 @@ testimonials = [
 #]
 
 # main page button
-main_page = {button1 = "Start Publishing Research", button2 = "Explore Ecosystem"}
+main_page = {button1 = "Start Publishing Research", url1 = "#start", button2 = "Explore Ecosystem", url2 = "#how-it-works"}
 # Academic-focused CTAs
 cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Try it!", button_url = "https://sciencelive.netlify.app"}
 cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"}
@@ -119,4 +119,9 @@ social_links = [
 ]
 
 # Enterprise section (minimal)
-enterprise = { enabled = true, title = "Accelerate Innovation Through Research Ecosystems", description = "Industry leaders use Science Live to connect R&D with validated academic research and skilled translators", info = "Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.", b1= "Find application-ready research with validation history", b2 = "Connect with data scientists who bridge research gaps", b3 = "Access full traceability from discovery to implementation", b4 = "Reduce R&D timelines from years to months", b5 = "Build on trusted, peer-validated foundations", b6 = "Track research impact through your innovation pipeline", cta = "Explore Enterprise Ecosystem"}
+# enterprise = { enabled = true, title = "Accelerate Innovation Through Research Ecosystems", description = "Industry leaders use Science Live to connect R&D with validated academic research and skilled translators", info = "Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.", b1= "Find application-ready research with validation history", b2 = "Connect with data scientists who bridge research gaps", b3 = "Access full traceability from discovery to implementation", b4 = "Reduce R&D timelines from years to months", b5 = "Build on trusted, peer-validated foundations", b6 = "Track research impact through your innovation pipeline", cta = "Explore Enterprise Ecosystem"}
+
+
+
+# Enterprise section (now more clearly for industry)
+enterprise = { enabled = true, title = "For Industry: Accelerate R&D with Validated Research", description = "Connect directly with the researchers and data scientists behind breakthrough discoveries", info = "Stop spending 18 months validating academic research. Science Live gives you direct access to pre-validated, application-ready research with full traceability back to original sources and the experts who created them.", b1 = "Find research that's been successfully implemented before", b2 = "Access complete validation history and limitations", b3 = "Connect with the actual researchers for guidance", b4 = "Get implementation-ready code and protocols", b5 = "Track which methods work in production", b6 = "Reduce validation cycles from months to weeks", cta = "Learn More About Enterprise Access"}
