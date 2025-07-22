@@ -46,4 +46,4 @@ Science Live requires ORCID authentication for publishing to:
 - Connect your work to your global research profile
 - Enable seamless credit for all forms of research contribution
 
-[Sign In with ORCID →](https://sciencelive.netlify.app/)
+[Sign In with ORCID →](https://sciencelivehub.github.io/science-live-mockups/)

@@ -101,9 +101,9 @@ testimonials = [
 # main page button
 main_page = {button1 = "Start Publishing Research", url1 = "#start", button2 = "Explore Ecosystem", url2 = "#how-it-works"}
 # Academic-focused CTAs
-cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Try it!", button_url = "https://sciencelive.netlify.app"}
+cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Try it!", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
 cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"}
-cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelive.netlify.app"}
+cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
 cta_quaternary = {title = "Science Live Data Pipeline & APIs", description = "Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.", button = "Pipeline Documentation", button_url = "https://sciencelivehub.github.io/science-live-pipeline/index.html"}
 
 # Academic support contact
