@@ -317,7 +317,7 @@ has_academic_discount = true
 academic_discount_text = "50% off for academic institutions"
 is_featured = false
 cta_text = "Contact Sales"
-cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
+cta_url = "mailto:anne.fouilloux@gmail.com"
 cta_style = "secondary"
 
 [[extra.pricing_tiers.features]]
