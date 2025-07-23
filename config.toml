@@ -406,7 +406,7 @@ url = "https://sciencelivehub.github.io/science-live-pipeline/"
 # Feature cards
 [[extra.features]]
 title = "AI Content Generator"
-description = "Transform technical papers, datasets, and documentation into multiple formats. Create podcasts, blog posts, executive summaries, and more with AI-powered generation."
+description = "Transform nanopublications—claims, data, software, and workflows—into human-readable formats. Use AI-powered tools to create podcasts, blog posts, executive summaries, and more."
 icon = "robot"
 icon_type = "fas"
 link = "https://sciencelivehub.github.io/science-live-mockups/"
