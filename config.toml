@@ -148,6 +148,227 @@ cta_secondary_button_icon = "book"
 footer_description = "Trusted by science. Powered by nanopublications. Ready for industry."
 footer_copyright_text = "Science Live is an open platform supporting Open Science and collaboration."
 
+
+# Pricing Configuration
+# Move pricing into separate top-level tables to avoid nesting issues
+
+# Pricing global settings
+pricing_currency = "€"
+pricing_currency_symbol = "€"
+pricing_annual_discount_percent = 20
+pricing_annual_discount_text = "Save 20%"
+
+# Professional Tier
+pricing_professional_monthly = 29
+pricing_professional_annual = 23
+pricing_professional_research_radar_alerts = 5
+pricing_professional_contributor_radar_alerts = 10
+pricing_professional_api_calls = 1000
+
+# Team Tier
+pricing_team_monthly = 99
+pricing_team_annual = 79
+pricing_team_users = 5
+pricing_team_api_calls = 10000
+pricing_team_verifications_included = 5
+pricing_team_academic_discount_percent = 50
+
+# Verification Services
+pricing_verification_simple_claim = 5
+pricing_verification_data = 10
+pricing_verification_code = 15
+pricing_verification_full_reproduction = 25
+
+# Verification Packages
+pricing_verification_starter_count = 10
+pricing_verification_starter_price = 80
+pricing_verification_standard_count = 50
+pricing_verification_standard_price = 350
+pricing_verification_unlimited_price = 999
+
+# Credit System
+pricing_credit_value = 0.10
+pricing_credit_minimum_redemption = 500
+
+# Credit Earnings
+[[extra.credit_earnings]]
+activity = "Publish nanopublication (claim only)"
+credits = 10
+
+[[extra.credit_earnings]]
+activity = "Publish with data"
+credits = 25
+
+[[extra.credit_earnings]]
+activity = "Publish with code/software"
+credits = 30
+
+[[extra.credit_earnings]]
+activity = "Publish with data + code"
+credits = 50
+
+[[extra.credit_earnings]]
+activity = "Nanopub gets endorsed (per endorsement)"
+credits = 2
+
+[[extra.credit_earnings]]
+activity = "Nanopub gets reproduced"
+credits = 20
+
+[[extra.credit_earnings]]
+activity = "Nanopub gets cited"
+credits = 5
+
+# Pricing Tiers
+[[extra.pricing_tiers]]
+name = "Explorer"
+badge = ""
+price_monthly = 0
+price_text = "forever"
+description = "Perfect for individual researchers and contributors"
+is_featured = false
+cta_text = "Get Started"
+cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
+cta_style = "secondary"
+
+[[extra.pricing_tiers.features]]
+text = "<strong>Unlimited nanopublications</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Basic search and discovery"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "View public profiles"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Basic collaboration tools"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Earn credits for contributions"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Research Radar alerts"
+included = false
+
+[[extra.pricing_tiers.features]]
+text = "Contributor Radar alerts"
+included = false
+
+[[extra.pricing_tiers.features]]
+text = "Verification services"
+included = false
+
+[[extra.pricing_tiers]]
+name = "Professional"
+badge = "Most Popular"
+price_monthly = 29
+price_annual = 23
+description = "For professionals who need monitoring tools"
+is_featured = true
+cta_text = "Start Free Trial"
+cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
+cta_style = "primary"
+
+[[extra.pricing_tiers.features]]
+text = "Everything in Explorer"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "<strong>5 Research Radar alerts</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "<strong>10 Contributor Radar alerts</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Advanced search filters"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Priority support"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Export capabilities"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "API access (1,000 calls/month)"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Verification services"
+included = false
+
+[[extra.pricing_tiers]]
+name = "Team"
+badge = ""
+price_monthly = 99
+price_annual = 79
+price_suffix = "per 5 users"
+description = "For teams and organizations"
+has_academic_discount = true
+academic_discount_text = "50% off for academic institutions"
+is_featured = false
+cta_text = "Contact Sales"
+cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
+cta_style = "secondary"
+
+[[extra.pricing_tiers.features]]
+text = "Everything in Professional"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "<strong>Unlimited alerts</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Team collaboration workspace"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Shared projects"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Admin dashboard"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "API access (10,000 calls/month)"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "<strong>5 verifications/month included</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Custom radar configurations"
+included = true
+
+# FAQ Items
+[[extra.pricing_faq]]
+question = "Is contributing really free?"
+answer = "Yes! Creating nanopublications, sharing research, and earning credits is completely free. You only pay for advanced monitoring and verification features."
+
+[[extra.pricing_faq]]
+question = "What payment methods do you accept?"
+answer = "We accept all major credit cards, bank transfers for annual plans, and invoicing for enterprise customers."
+
+[[extra.pricing_faq]]
+question = "Can I change plans anytime?"
+answer = "Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the next billing cycle."
+
+[[extra.pricing_faq]]
+question = "Do you offer academic discounts?"
+answer = "Yes! Academic institutions and public research organizations get 50% off Team plans. Contact us for details."
+
 # Platform statistics
 [[extra.hero_stats]]
 value = ""
@@ -173,6 +394,10 @@ url = "#how-it-works"
 [[extra.nav_links]]
 name = "Benefits"
 url = "#benefits"
+
+[[extra.nav_links]]
+name = "Pricing"
+url = "/pricing"
 
 [[extra.nav_links]]
 name = "Documentation"
@@ -322,4 +547,8 @@ links = [
 #[[extra.footer_sections]]
 #title = "Community"
 #links = [
+#    {name = "GitHub", url = "https://github.com/sciencelivehub"},
+#    {name = "Discord", url = "#"},
+#    {name = "Twitter", url = "#"},
+#    {name = "Newsletter", url = "#"},
 #]

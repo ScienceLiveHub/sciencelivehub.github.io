@@ -1,0 +1,589 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock title %}
+
+{% block content %}
+<div class="pricing-header">
+    <div class="pricing-header-content">
+        <h1 class="pricing-title">Simple, Transparent Pricing</h1>
+        <p class="pricing-subtitle">Contributing is always free. Pay only for advanced monitoring and verification features.</p>
+        <div class="pricing-toggle">
+            <span class="toggle-label">Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Annual <span class="save-badge">{{ config.extra.pricing_annual_discount_text }}</span></span>
+        </div>
+    </div>
+</div>
+
+<div class="pricing-section">
+    <div class="pricing-container">
+        <div class="pricing-grid">
+            {% for tier in config.extra.pricing_tiers %}
+            <div class="pricing-card{% if tier.is_featured %} featured{% endif %}">
+                {% if tier.badge %}
+                <div class="popular-badge">{{ tier.badge }}</div>
+                {% endif %}
+                <div class="card-header">
+                    <h3 class="tier-name">{{ tier.name }}</h3>
+                    <div class="price">
+                        <span class="currency">{{ config.extra.pricing_currency_symbol }}</span>
+                        {% if tier.price_monthly == 0 %}
+                        <span class="amount">{{ tier.price_monthly }}</span>
+                        <span class="period">{{ tier.price_text }}</span>
+                        {% else %}
+                        <span class="amount" data-monthly="{{ tier.price_monthly }}" data-annual="{{ tier.price_annual | default(value=tier.price_monthly) }}">{{ tier.price_monthly }}</span>
+                        <span class="period">/month{% if tier.price_suffix %} {{ tier.price_suffix }}{% endif %}</span>
+                        {% endif %}
+                    </div>
+                    <p class="tier-description">{{ tier.description }}</p>
+                    {% if tier.has_academic_discount %}
+                    <p class="academic-discount"><i class="fas fa-graduation-cap"></i> {{ tier.academic_discount_text }}</p>
+                    {% endif %}
+                </div>
+                <div class="card-features">
+                    <ul class="features-list">
+                        {% for feature in tier.features %}
+                        <li{% if not feature.included %} class="feature-disabled"{% endif %}>
+                            <i class="fas fa-{% if feature.included %}check{% else %}times{% endif %}"></i>
+                            {{ feature.text | safe }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <a href="{{ tier.cta_url }}" class="btn-pricing btn-{{ tier.cta_style }}">{{ tier.cta_text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Enterprise -->
+        <div class="enterprise-section">
+            <div class="enterprise-card">
+                <div class="enterprise-header">
+                    <h3 class="tier-name">Enterprise</h3>
+                    <p class="tier-description">Custom solutions for large organizations and institutions</p>
+                </div>
+                <div class="enterprise-features">
+                    <div class="feature-column">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Everything in Team</li>
+                            <li><i class="fas fa-check"></i> Unlimited users</li>
+                            <li><i class="fas fa-check"></i> Custom integrations</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> On-premise option</li>
+                            <li><i class="fas fa-check"></i> Unlimited verifications</li>
+                            <li><i class="fas fa-check"></i> Custom credit programs</li>
+                            <li><i class="fas fa-check"></i> SSO/SAML integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="enterprise-action">
+                    <button class="btn-pricing btn-primary" onclick="handleCustomQuote()">
+                    Get Custom Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="additional-services">
+            <h2 class="services-title">Additional Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verification Services</h3>
+                    <p>Get your research verified with Science Live Trusted badges</p>
+                    <ul class="service-pricing">
+                        <li>Simple claim: {{ config.extra.pricing_currency_symbol }}{{ config.extra.pricing_verification_simple_claim }}</li>
+                        <li>Data verification: {{ config.extra.pricing_currency_symbol }}{{ config.extra.pricing_verification_data }}</li>
+                        <li>Code verification: {{ config.extra.pricing_currency_symbol }}{{ config.extra.pricing_verification_code }}</li>
+                        <li>Full reproduction: {{ config.extra.pricing_currency_symbol }}{{ config.extra.pricing_verification_full_reproduction }}</li>
+                    </ul>
+                    <a href="/verification" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Credit System</h3>
+                    <p>Earn credits for contributions, redeemable for real money</p>
+                    <ul class="service-pricing">
+                        <li>1 Credit = {{ config.extra.pricing_currency_symbol }}{{ config.extra.pricing_credit_value }}</li>
+                        <li>Minimum redemption: {{ config.extra.pricing_credit_minimum_redemption }} credits</li>
+                        <li>Industry sponsorship available</li>
+                        <li>Monthly payouts</li>
+                    </ul>
+                    <a href="/credits" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="pricing-faq">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                {% for faq in config.extra.pricing_faq %}
+                <div class="faq-item">
+                    <h3>{{ faq.question }}</h3>
+                    <p>{{ faq.answer }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pricing-header {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        color: white;
+        padding: 6rem 3rem 4rem;
+        margin-top: 76px;
+        text-align: center;
+    }
+
+    .pricing-header-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .pricing-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff, #4a9eff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .pricing-subtitle {
+        font-size: 1.3rem;
+        opacity: 0.9;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .toggle-label {
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+    }
+
+    .save-badge {
+        background: var(--success-color);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: .4s;
+        border-radius: 30px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: var(--success-color);
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(30px);
+    }
+
+    .pricing-section {
+        padding: 5rem 3rem;
+        background: var(--gray-50);
+    }
+
+    .pricing-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .pricing-card {
+        background: white;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 2px solid var(--gray-200);
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card.featured {
+        border-color: var(--primary-color);
+        transform: scale(1.05);
+    }
+
+    .popular-badge {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--primary-color);
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .card-header {
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    .tier-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+    }
+
+    .price {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .currency {
+        font-size: 1.5rem;
+        color: var(--gray-600);
+    }
+
+    .amount {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .period {
+        font-size: 1rem;
+        color: var(--gray-600);
+    }
+
+    .tier-description {
+        color: var(--gray-600);
+        font-size: 0.95rem;
+    }
+
+    .academic-discount {
+        background: var(--success-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    .card-features {
+        padding: 2rem 0;
+    }
+
+    .features-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .features-list li {
+        padding: 0.75rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--gray-700);
+    }
+
+    .features-list i {
+        color: var(--success-color);
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    .feature-disabled {
+        color: var(--gray-400);
+    }
+
+    .feature-disabled i {
+        color: var(--gray-400);
+    }
+
+    .card-action {
+        text-align: center;
+    }
+
+    .btn-pricing {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .btn-primary {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+        background: white;
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+    }
+
+    .btn-secondary:hover {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .enterprise-section {
+        margin-bottom: 4rem;
+    }
+
+    .enterprise-card {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 2px solid var(--gray-200);
+    }
+
+    .enterprise-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .enterprise-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .enterprise-action {
+        text-align: center;
+    }
+
+    .additional-services {
+        margin-bottom: 4rem;
+    }
+
+    .services-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 3rem;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        background: white;
+        border-radius: 16px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--gray-200);
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, rgba(190, 46, 120, 0.1), rgba(74, 158, 255, 0.1));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+    }
+
+    .service-icon i {
+        font-size: 1.75rem;
+        color: var(--primary-color);
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+        color: var(--gray-600);
+        margin-bottom: 1.5rem;
+    }
+
+    .service-pricing {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .service-pricing li {
+        padding: 0.5rem 0;
+        color: var(--gray-700);
+        border-bottom: 1px solid var(--gray-100);
+    }
+
+    .service-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .pricing-faq {
+        margin-top: 4rem;
+    }
+
+    .faq-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 3rem;
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .faq-item {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+    }
+
+    .faq-item p {
+        color: var(--gray-600);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .pricing-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .pricing-card.featured {
+            transform: none;
+        }
+        
+        .enterprise-features {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    // Toggle between monthly and annual pricing
+    const toggle = document.getElementById('billingToggle');
+    const amounts = document.querySelectorAll('.amount[data-monthly]');
+    
+    toggle.addEventListener('change', function() {
+        amounts.forEach(amount => {
+            if (this.checked) {
+                amount.textContent = amount.getAttribute('data-annual');
+            } else {
+                amount.textContent = amount.getAttribute('data-monthly');
+            }
+        });
+    });
+
+    // Custom Quote handler
+    function handleCustomQuote() {
+        // Implement Custom Quote flow
+        alert('Custom Quote functionality coming soon!');
+    } 
+</script>
+{% endblock content %}
