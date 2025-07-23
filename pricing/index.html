@@ -277,45 +277,20 @@
                     </ul>
                 </div>
                 <div class="card-action">
-                    <a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-mockups&#x2F;" class="btn-pricing btn-secondary">Contact Sales</a>
+                    <a href="mailto:anne.fouilloux@gmail.com" class="btn-pricing btn-secondary">Contact Sales</a>
                 </div>
             </div>
             
         </div>
-
-        <!-- Enterprise -->
-        <div class="enterprise-section">
-            <div class="enterprise-card">
-                <div class="enterprise-header">
-                    <h3 class="tier-name">Enterprise</h3>
-                    <p class="tier-description">Custom solutions for large organizations and institutions</p>
-                </div>
-                <div class="enterprise-features">
-                    <div class="feature-column">
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Everything in Team</li>
-                            <li><i class="fas fa-check"></i> Unlimited users</li>
-                            <li><i class="fas fa-check"></i> Custom integrations</li>
-                            <li><i class="fas fa-check"></i> Dedicated support</li>
-                        </ul>
-                    </div>
-                    <div class="feature-column">
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> On-premise option</li>
-                            <li><i class="fas fa-check"></i> Unlimited verifications</li>
-                            <li><i class="fas fa-check"></i> Custom credit programs</li>
-                            <li><i class="fas fa-check"></i> SSO/SAML integration</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="enterprise-action">
-                    <button class="btn-pricing btn-primary" onclick="handleCustomQuote()">
-                    Get Custom Quote
-                    </button>
-                </div>
-            </div>
+<div class="enterprise-banner">
+    <div class="enterprise-content">
+        <div class="enterprise-text">
+            <h3>Need an Enterprise Solution?</h3>
+            <p>Unlimited users • Custom API limits • Dedicated support • On-premise deployment</p>
         </div>
-
+        <a href="mailto:anne.fouilloux@gmail.com" class="btn-enterprise">Get Custom Quote →</a>
+    </div>
+</div>
         <!-- Additional Services -->
         <div class="additional-services">
             <h2 class="services-title">Additional Services</h2>
@@ -326,7 +301,7 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Verification Services</h3>
-                    <p>Get your research verified with Science Live Trusted badges</p>
+                    <p>Get your contributions verified with Science Live Trusted badges</p>
                     <ul class="service-pricing">
                         <li>Simple claim: €5</li>
                         <li>Data verification: €10</li>
@@ -801,6 +776,304 @@
             grid-template-columns: 1fr;
         }
     }
+/* 1. Move Additional Services higher up and add visual separator */
+.additional-services {
+    margin-bottom: 4rem;
+    margin-top: -2rem; /* Bring it closer to pricing cards */
+    padding: 4rem 0;
+    background: linear-gradient(to bottom, transparent, var(--gray-50) 20%, var(--gray-50) 80%, transparent);
+    position: relative;
+}
+
+/* Add decorative line before section */
+.additional-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    border-radius: 2px;
+}
+
+/* 2. Make the section title bigger and more colorful */
+.services-title {
+    text-align: center;
+    font-size: 2.5rem; /* Increased from 2rem */
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Add subtitle */
+.services-title::after {
+    content: "Premium features to accelerate your research impact";
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gray-600);
+    margin-top: 0.5rem;
+}
+
+/* 3. Make service cards bigger and more eye-catching */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min width */
+    gap: 3rem; /* Increased gap */
+    max-width: 1000px; /* Center the grid */
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 20px; /* More rounded */
+    padding: 3rem; /* More padding */
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Stronger shadow */
+    border: 2px solid var(--gray-100); /* Thicker border */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add gradient accent to cards */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+}
+
+.service-card:hover {
+    transform: translateY(-8px); /* More lift on hover */
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-color);
+}
+
+/* 4. Make icons bigger and animated */
+.service-icon {
+    width: 80px; /* Increased from 60px */
+    height: 80px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem; /* More margin */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-icon i {
+    font-size: 2.5rem; /* Bigger icon */
+    color: white; /* White icon on gradient background */
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Add pulse animation to icons */
+.service-icon::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: inherit;
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse-icon 3s infinite;
+}
+
+@keyframes pulse-icon {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+/* 5. Style the pricing lists better */
+.service-pricing {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    background: var(--gray-50);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.service-pricing li {
+    padding: 0.75rem 0;
+    color: var(--gray-700);
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+.service-pricing li:last-child {
+    border-bottom: none;
+}
+
+/* Add icons to pricing items */
+.service-pricing li::before {
+    content: "→";
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* 6. Make CTAs more prominent */
+.service-link {
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    gap: 1rem;
+}
+
+/* 7. Add "Popular" badges */
+.service-card:first-child::after {
+    content: "SAVE €€€";
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--danger-color);
+    color: white;
+    padding: 0.5rem 3rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+}
+
+.service-card:last-child::after {
+    content: "EARN MONEY";
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: var(--success-color);
+    color: white;
+    padding: 0.5rem 3rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+}
+
+/* 8. Add highlight box for key info */
+.service-card h3 {
+    font-size: 1.5rem; /* Bigger title */
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+    font-size: 1.1rem; /* Slightly bigger text */
+    line-height: 1.6;
+}
+
+/* 9. Responsive improvements */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-card::after {
+        display: none; /* Hide diagonal badges on mobile */
+    }
+}
+.enterprise-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    margin: 3rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enterprise-text h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.enterprise-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-enterprise {
+    background: white;
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-enterprise:hover {
+    background: var(--gray-100);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .enterprise-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .btn-enterprise {
+        width: 100%;
+        justify-content: center;
+    }
+}
 </style>
 
 <script>
