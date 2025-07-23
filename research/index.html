@@ -1,112 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Research Applications - Science Live</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://sciencelivehub.github.io/css/science-live.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Applications - Science Live - Transform Research into Living Knowledge</title>
+    <meta name="description" content="See how Science Live accelerates discovery across domains">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://sciencelivehub.github.io/css/science-live.css">
+    
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Science Live - Transform Research into Living Knowledge">
+    <meta property="og:description" content="Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;research&#x2F;">
+    <meta property="og:image" content="https://sciencelivehub.github.io/static/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Science Live - Transform Research into Living Knowledge">
+    <meta name="twitter:description" content="Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://sciencelivehub.github.io/static/favicon.png">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="https://sciencelivehub.github.io">
-                <span class="text-primary">Science</span> 
-                <span class="text-accent">Live</span>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="https:&#x2F;&#x2F;sciencelivehub.github.io" class="nav-brand">
+                <img src="https://sciencelivehub.github.io/assets/img/network-logo.png" alt="Science Live Logo" class="nav-logo">
+                <div class="brand-name">
+                    <span class="brand-text">Science</span>
+                    <span class="brand-live">Live</span>
+                </div>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://sciencelivehub.github.io/#academics">For Researchers</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://sciencelivehub.github.io/#research">For Data Scientists</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://sciencelivehub.github.io/#enterprise">For Industry</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://sciencelivehub.github.io/#start">Get Started</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://sciencelivehub.github.io/#how-it-works">How It Works</a>
-                        </li>
-                        
-                    
-                    <li class="nav-item ms-3">
-                        <a class="btn btn-outline-primary btn-sm" href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-mockups&#x2F;">
-                            Try it!
-                        </a>
-                    </li>
-                </ul>
+            <div class="nav-menu">
+                
+                <a href="#features" class="nav-link">Features</a>
+                
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                
+                <a href="#benefits" class="nav-link">Benefits</a>
+                
+                <a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-pipeline&#x2F;" class="nav-link">Documentation</a>
+                
+                <button class="btn-orcid" onclick="handleOrcidLogin()">
+                    <svg class="orcid-icon" viewBox="0 0 256 256" style="width: 16px; height: 16px; margin-right: 8px;">
+                        <path fill="#A6CE39" d="M128,0C57.3,0,0,57.3,0,128s57.3,128,128,128s128-57.3,128-128S198.7,0,128,0z"/>
+                        <path fill="#FFF" d="M86.3,186.2H70.9V79.1h15.4v107.1z"/>
+                        <path fill="#FFF" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/>
+                        <path fill="#FFF" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/>
+                    </svg>
+                    Sign in with ORCID
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container text-center">
-            <h1 class="page-title">Research Applications</h1>
-            
-            <p class="page-subtitle">See how Science Live accelerates discovery across domains</p>
-            
-        </div>
-    </section>
+    
+<div class="page-header">
+    <div class="page-header-content">
+        <h1 class="page-title">Research Applications</h1>
+        
+        <p class="page-subtitle">See how Science Live accelerates discovery across domains</p>
+        
+    </div>
+</div>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <div class="content-wrapper">
-                
-                
-                <div class="content">
-                    <h1 id="research-applications">Research Applications</h1>
-<h2 id="real-world-impact-across-scientific-domains">Real-World Impact Across Scientific Domains</h2>
+<article class="page-content">
+    <div class="content-container">
+        <h1 id="Research_Applications">Research Applications</h1>
+<h2 id="Real-World_Impact_Across_Scientific_Domains">Real-World Impact Across Scientific Domains</h2>
 <p>Science Live is designed to work across all research areas, breaking down traditional disciplinary boundaries to accelerate discovery.</p>
-<h3 id="current-focus-areas">Current Focus Areas</h3>
-<h4 id="biodiversity-research">Biodiversity Research</h4>
+<h3 id="Current_Focus_Areas">Current Focus Areas</h3>
+<h4 id="Biodiversity_Research">Biodiversity Research</h4>
 <ul>
 <li><strong>Species Discovery</strong> → Connect taxonomic classifications with ecological data</li>
 <li><strong>Conservation Planning</strong> → Link habitat requirements with climate projections</li>
 <li><strong>Ecosystem Modeling</strong> → Integrate biological and environmental measurements</li>
 </ul>
-<h4 id="biological-imaging">Biological Imaging</h4>
+<h4 id="Biological_Imaging">Biological Imaging</h4>
 <ul>
 <li><strong>Method Comparison</strong> → Compare imaging techniques across different biological systems</li>
 <li><strong>Data Standards</strong> → Connect image metadata with analysis protocols</li>
 <li><strong>Reproducibility</strong> → Link image processing steps to original experimental conditions</li>
 </ul>
-<h4 id="earth-observation">Earth Observation</h4>
+<h4 id="Earth_Observation">Earth Observation</h4>
 <ul>
 <li><strong>Climate Data Integration</strong> → Connect satellite observations with ground-based measurements</li>
 <li><strong>Model Validation</strong> → Link climate projections with observational data</li>
 <li><strong>Cross-Scale Analysis</strong> → Connect local measurements with global patterns</li>
 </ul>
-<h3 id="example-use-cases">Example Use Cases</h3>
-<h4 id="cross-domain-discovery">Cross-Domain Discovery</h4>
-<p><strong>Question:</strong> &quot;How do climate models connect to biodiversity research?&quot;
+<h3 id="Example_Use_Cases">Example Use Cases</h3>
+<h4 id="Cross-Domain_Discovery">Cross-Domain Discovery</h4>
+<p><strong>Question:</strong> “How do climate models connect to biodiversity research?”
 <strong>Science Live Result:</strong> Discovers papers linking climate projections to species distribution models, connecting earth system scientists with conservation biologists.</p>
-<h4 id="method-discovery">Method Discovery</h4>
-<p><strong>Question:</strong> &quot;What imaging techniques are used to study plant cell walls?&quot;
+<h4 id="Method_Discovery">Method Discovery</h4>
+<p><strong>Question:</strong> “What imaging techniques are used to study plant cell walls?”
 <strong>Science Live Result:</strong> Identifies multiple imaging approaches across different journals and research groups, revealing complementary methods.</p>
-<h4 id="expert-networks">Expert Networks</h4>
-<p><strong>Question:</strong> &quot;Who are the key researchers working on ocean acidification impacts?&quot;
+<h4 id="Expert_Networks">Expert Networks</h4>
+<p><strong>Question:</strong> “Who are the key researchers working on ocean acidification impacts?”
 <strong>Science Live Result:</strong> Maps collaboration networks and identifies potential new partnerships based on complementary expertise.</p>
-<h3 id="community-contributions">Community Contributions</h3>
+<h3 id="Community_Contributions">Community Contributions</h3>
 <p>Science Live grows stronger as more researchers contribute knowledge:</p>
 <ul>
 <li><strong>Nanopub Creation</strong> → Transform your research into structured statements</li>
@@ -114,64 +115,236 @@
 <li><strong>Validation Networks</strong> → Peer review and endorse structured scientific statements</li>
 <li><strong>Tool Integration</strong> → Connect Science Live with discipline-specific software</li>
 </ul>
-<h3 id="future-directions">Future Directions</h3>
-<p>We're actively expanding into new domains:</p>
+<h3 id="Future_Directions">Future Directions</h3>
+<p>We’re actively expanding into new domains:</p>
 <ul>
 <li><strong>Clinical Research</strong> → Medical evidence synthesis and treatment planning</li>
 <li><strong>Materials Science</strong> → Property-structure relationships across material types</li>
 <li><strong>Social Sciences</strong> → Methodology comparison and evidence integration</li>
 <li><strong>Computational Sciences</strong> → Algorithm performance and implementation studies</li>
 </ul>
-<p><a href="https://sciencelivehub.github.io/science-live-pipeline/getting-started/#example-questions">Explore Examples →</a> | <a href="https://github.com/ScienceLiveHub/science-live-pipeline/discussions">Join Community →</a></p>
+<p><a rel="noopener" target="_blank" href="https://sciencelivehub.github.io/science-live-pipeline/getting-started/#example-questions">Explore Examples →</a> | <a rel="noopener" target="_blank" href="https://github.com/ScienceLiveHub/science-live-pipeline/discussions">Join Community →</a></p>
 
-                </div>
-                
-                <div class="back-navigation">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="https://sciencelivehub.github.io" class="btn btn-primary">
-                                <i class="fas fa-arrow-left me-2"></i>Back to Home
-                            </a>
-                        </div>
-                        <div class="col-6 text-end">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
+</article>
+
+<style>
+    .page-header {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        color: white;
+        padding: 6rem 3rem 4rem;
+        margin-top: 76px;
+    }
+
+    .page-header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff, #4a9eff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .page-subtitle {
+        font-size: 1.3rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .page-content {
+        padding: 4rem 3rem;
+        background: white;
+        min-height: 60vh;
+    }
+
+    .content-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--gray-700);
+    }
+
+    .content-container h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2.5rem 0 1rem;
+        color: var(--secondary-color);
+    }
+
+    .content-container h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem;
+        color: var(--primary-color);
+    }
+
+    .content-container p {
+        margin-bottom: 1.5rem;
+    }
+
+    .content-container ul,
+    .content-container ol {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .content-container li {
+        margin-bottom: 0.5rem;
+    }
+
+    .content-container strong {
+        color: var(--gray-800);
+        font-weight: 600;
+    }
+
+    .content-container a {
+        color: var(--primary-color);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+    }
+
+    .content-container a:hover {
+        border-color: var(--primary-color);
+    }
+
+    .content-container blockquote {
+        border-left: 4px solid var(--primary-color);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: var(--gray-600);
+    }
+
+    .content-container code {
+        background: var(--gray-100);
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 0.9em;
+    }
+
+    .content-container pre {
+        background: var(--gray-900);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-container pre code {
+        background: none;
+        padding: 0;
+        color: inherit;
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: 2rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.1rem;
+        }
+        
+        .page-content {
+            padding: 2rem 1rem;
+        }
+        
+        .content-container {
+            font-size: 1rem;
+        }
+    }
+</style>
+
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="mb-3">Science Live</h5>
-                    <p class="text-white-50">Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="text-white-50 mb-2">© 2025 Science Live. All rights reserved.</p>
-                    
-                    <div>
-                        
-                        <a href="https:&#x2F;&#x2F;github.com&#x2F;ScienceLiveHub" class="text-white-50 me-3">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        
-                        <a href="https:&#x2F;&#x2F;github.com&#x2F;ScienceLiveHub&#x2F;science-live-pipeline&#x2F;discussions" class="text-white-50 me-3">
-                            <i class="fas fa-users"></i>
-                        </a>
-                        
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <img src="https://sciencelivehub.github.io/assets/img/network-logo.png" alt="Science Live Logo" class="footer-logo">
+                    <div class="brand-name">
+                        <span style="color: white;">Science</span>
+                        <span style="color: var(--secondary-color);">Live</span>
                     </div>
-                    
                 </div>
+                <p class="footer-description">
+                    Trusted by science. Powered by nanopublications. Ready for industry.
+                </p>
             </div>
+
+            
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-mockups&#x2F;">AI Content Generator</a></li>
+                    
+                    <li><a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-mockups&#x2F;research-radar">Research Radar</a></li>
+                    
+                    <li><a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-mockups&#x2F;contributor-radar">Contributor Radar</a></li>
+                    
+                    <li><a href="https:&#x2F;&#x2F;nanodash.knowledgepixels.com&#x2F;publish">Nanopublication Editor</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-pipeline&#x2F;">Documentation</a></li>
+                    
+                    <li><a href="https:&#x2F;&#x2F;sciencelivehub.github.io&#x2F;science-live-pipeline&#x2F;apidocs&#x2F;index.html">API Reference</a></li>
+                    
+                    <li><a href="https:&#x2F;&#x2F;github.com&#x2F;sciencelivehub">GitHub</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Science Live is an open platform supporting Open Science and collaboration. | 
+            
+                <a href="&#x2F;policies" style="color: var(--gray-400);">Privacy Policy</a>
+                 | 
+            
+                <a href="&#x2F;terms" style="color: var(--gray-400);">Terms of Service</a>
+                
+            
+            </p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Base JavaScript -->
     <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ORCID login handler
+        function handleOrcidLogin() {
+            // Implement ORCID OAuth flow
+            alert('ORCID integration coming soon!');
+        }
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -185,15 +358,39 @@
                 }
             });
         });
-        
-        // Add active class to current nav item
-        const currentLocation = location.pathname;
-        const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
-        menuItems.forEach(item => {
-            if(item.getAttribute('href') === currentLocation){
-                item.classList.add('active');
-            }
+
+        // Add hover effects for hero visual steps
+        document.addEventListener('DOMContentLoaded', function() {
+            const userSteps = document.querySelectorAll('.user-step');
+            
+            const originalDescriptions = [
+                'Transform your <strong>research, data & code</strong> into structured, reusable components',
+                'Find <strong>application-ready research</strong> and build faster with trusted components',
+                'Get <strong>expert guidance</strong> and collaborate with the people behind the work'
+            ];
+            
+            const hoverDescriptions = [
+                'Example: <span style="color: #4a9eff;">ML accuracy: 94%</span> → structured claim with code & data',
+                'Search: <span style="color: #4a9eff;">"energy storage"</span> → find & use validated methods',
+                'Connect: <span style="color: #4a9eff;">Chat with authors</span> → get implementation guidance'
+            ];
+            
+            userSteps.forEach((step, index) => {
+                if (index < originalDescriptions.length) {
+                    step.addEventListener('mouseenter', function() {
+                        const desc = this.querySelector('.step-description');
+                        if (desc) desc.innerHTML = hoverDescriptions[index];
+                    });
+                    
+                    step.addEventListener('mouseleave', function() {
+                        const desc = this.querySelector('.step-description');
+                        if (desc) desc.innerHTML = originalDescriptions[index];
+                    });
+                }
+            });
         });
     </script>
+    
+    
 </body>
 </html>

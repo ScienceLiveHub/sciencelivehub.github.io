@@ -10,6 +10,9 @@
         <loc>https://sciencelivehub.github.io/account/</loc>
     </url>
     <url>
+        <loc>https://sciencelivehub.github.io/categories/</loc>
+    </url>
+    <url>
         <loc>https://sciencelivehub.github.io/community/</loc>
     </url>
     <url>
@@ -20,5 +23,8 @@
     </url>
     <url>
         <loc>https://sciencelivehub.github.io/research/</loc>
+    </url>
+    <url>
+        <loc>https://sciencelivehub.github.io/tags/</loc>
     </url>
 </urlset>
