@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Science Live - Transform Research into Living Knowledge</title>
+      <link>https://sciencelivehub.github.io</link>
+      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://sciencelivehub.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Terms of Service</title>
+          <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://sciencelivehub.github.io/terms/</link>
+          <guid>https://sciencelivehub.github.io/terms/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Effective Date: January 20, 2024&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Welcome to Science Live. These Terms of Service (“Terms”) govern your use of the Science Live platform, including our website, applications, and services (collectively, the “Service”) provided by Science Live (“we,” “us,” or “our”).&lt;&#x2F;p&gt;
+&lt;p&gt;By accessing or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1._Acceptance_of_Terms&quot;&gt;1. Acceptance of Terms&lt;&#x2F;h2&gt;
+&lt;p&gt;By creating an account or using Science Live, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you are using our Service on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2._Description_of_Service&quot;&gt;2. Description of Service&lt;&#x2F;h2&gt;
+&lt;p&gt;Science Live is a platform that enables researchers, data scientists, and engineers to:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create and publish nanopublications&lt;&#x2F;li&gt;
+&lt;li&gt;Share research data, code, and findings&lt;&#x2F;li&gt;
+&lt;li&gt;Discover and build upon existing research&lt;&#x2F;li&gt;
+&lt;li&gt;Collaborate with other professionals in their field&lt;&#x2F;li&gt;
+&lt;li&gt;Generate AI-powered content from research materials&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3._Account_Registration&quot;&gt;3. Account Registration&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;3.1_Account_Requirements&quot;&gt;3.1 Account Requirements&lt;&#x2F;h3&gt;
+&lt;p&gt;To access certain features of our Service, you must register for an account. You agree to:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide accurate, current, and complete information&lt;&#x2F;li&gt;
+&lt;li&gt;Maintain and promptly update your account information&lt;&#x2F;li&gt;
+&lt;li&gt;Maintain the security of your account credentials&lt;&#x2F;li&gt;
+&lt;li&gt;Accept responsibility for all activities under your account&lt;&#x2F;li&gt;
+&lt;li&gt;Notify us immediately of any unauthorized use&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3.2_ORCID_Integration&quot;&gt;3.2 ORCID Integration&lt;&#x2F;h3&gt;
+&lt;p&gt;We support ORCID authentication. By connecting your ORCID iD, you authorize us to access your ORCID record in accordance with your privacy settings.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4._User_Content&quot;&gt;4. User Content&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;4.1_Your_Content&quot;&gt;4.1 Your Content&lt;&#x2F;h3&gt;
+&lt;p&gt;You retain ownership of all content you submit to Science Live (“User Content”). By submitting User Content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, distribute, and display your content for the purpose of operating and improving our Service.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;4.2_Content_Standards&quot;&gt;4.2 Content Standards&lt;&#x2F;h3&gt;
+&lt;p&gt;You agree that your User Content will:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Be accurate and based on legitimate research&lt;&#x2F;li&gt;
+&lt;li&gt;Not infringe any third-party intellectual property rights&lt;&#x2F;li&gt;
+&lt;li&gt;Not contain malicious code or harmful materials&lt;&#x2F;li&gt;
+&lt;li&gt;Comply with FAIR (Findable, Accessible, Interoperable, Reusable) principles where applicable&lt;&#x2F;li&gt;
+&lt;li&gt;Not violate any applicable laws or regulations&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4.3_Nanopublications&quot;&gt;4.3 Nanopublications&lt;&#x2F;h3&gt;
+&lt;p&gt;Nanopublications created on our platform are designed to be persistent and citable. Once published, nanopublications cannot be deleted but may be updated or superseded according to our versioning protocols.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;5._Prohibited_Uses&quot;&gt;5. Prohibited Uses&lt;&#x2F;h2&gt;
+&lt;p&gt;You agree not to:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the Service for any unlawful purpose&lt;&#x2F;li&gt;
+&lt;li&gt;Submit false, misleading, or fraudulent research data&lt;&#x2F;li&gt;
+&lt;li&gt;Impersonate another person or organization&lt;&#x2F;li&gt;
+&lt;li&gt;Interfere with or disrupt the Service&lt;&#x2F;li&gt;
+&lt;li&gt;Attempt to gain unauthorized access to any part of the Service&lt;&#x2F;li&gt;
+&lt;li&gt;Use automated systems or software to extract data without permission&lt;&#x2F;li&gt;
+&lt;li&gt;Violate academic integrity or research ethics standards&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;6._Intellectual_Property&quot;&gt;6. Intellectual Property&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;6.1_Platform_Content&quot;&gt;6.1 Platform Content&lt;&#x2F;h3&gt;
+&lt;p&gt;The Science Live platform, including its design, features, and functionality, is owned by Science Live and is protected by intellectual property laws. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6.2_Open_Source_Components&quot;&gt;6.2 Open Source Components&lt;&#x2F;h3&gt;
+&lt;p&gt;Certain components of our Service may be released under open source licenses, which will be clearly marked and governed by their respective license terms.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6.3_User_Recognition&quot;&gt;6.3 User Recognition&lt;&#x2F;h3&gt;
+&lt;p&gt;We support proper attribution and citation of all research contributions made through our platform.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;7._Privacy_and_Data_Protection&quot;&gt;7. Privacy and Data Protection&lt;&#x2F;h2&gt;
+&lt;p&gt;Your use of our Service is also governed by our Privacy Policy, which describes how we collect, use, and protect your personal information. By using our Service, you consent to our data practices as described in the Privacy Policy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;8._Third-Party_Services&quot;&gt;8. Third-Party Services&lt;&#x2F;h2&gt;
+&lt;p&gt;Our Service may integrate with third-party services (such as ORCID, Zotero, or cloud storage providers). Your use of these services is subject to their respective terms and conditions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;9._Disclaimers&quot;&gt;9. Disclaimers&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;9.1_Service_Availability&quot;&gt;9.1 Service Availability&lt;&#x2F;h3&gt;
+&lt;p&gt;We strive to maintain high availability but do not guarantee uninterrupted access to our Service. We may modify, suspend, or discontinue any part of the Service at any time.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;9.2_Research_Content&quot;&gt;9.2 Research Content&lt;&#x2F;h3&gt;
+&lt;p&gt;We do not endorse or verify the accuracy of User Content. Users are responsible for evaluating the credibility and applicability of any research found on our platform.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;9.3_No_Medical_or_Professional_Advice&quot;&gt;9.3 No Medical or Professional Advice&lt;&#x2F;h3&gt;
+&lt;p&gt;Content on Science Live is for research and informational purposes only and should not be construed as professional advice.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;10._Limitation_of_Liability&quot;&gt;10. Limitation of Liability&lt;&#x2F;h2&gt;
+&lt;p&gt;To the maximum extent permitted by law, Science Live shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use the Service.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;11._Indemnification&quot;&gt;11. Indemnification&lt;&#x2F;h2&gt;
+&lt;p&gt;You agree to indemnify and hold harmless Science Live and its affiliates from any claims, damages, or expenses arising from your violation of these Terms or your use of the Service.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;12._Modifications_to_Terms&quot;&gt;12. Modifications to Terms&lt;&#x2F;h2&gt;
+&lt;p&gt;We reserve the right to modify these Terms at any time. We will notify users of material changes via email or platform notification. Continued use of the Service after such modifications constitutes acceptance of the updated Terms.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;13._Termination&quot;&gt;13. Termination&lt;&#x2F;h2&gt;
+&lt;p&gt;We may terminate or suspend your account at any time for violation of these Terms. You may also delete your account at any time. Upon termination, your right to use the Service will cease immediately, but published nanopublications will remain accessible according to FAIR principles.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;14._Governing_Law&quot;&gt;14. Governing Law&lt;&#x2F;h2&gt;
+&lt;p&gt;These Terms shall be governed by and construed in accordance with the laws of Norway, without regard to its conflict of law provisions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;15._Contact_Information&quot;&gt;15. Contact Information&lt;&#x2F;h2&gt;
+&lt;p&gt;If you have any questions about these Terms, please contact us at:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Science Live&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Email: anne.fouilloux@gmail.com &lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;strong&gt;Acknowledgment&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;By using Science Live, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
