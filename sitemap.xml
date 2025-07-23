@@ -16,6 +16,9 @@
         <loc>https://sciencelivehub.github.io/community/</loc>
     </url>
     <url>
+        <loc>https://sciencelivehub.github.io/credits/</loc>
+    </url>
+    <url>
         <loc>https://sciencelivehub.github.io/platform/</loc>
     </url>
     <url>
@@ -34,5 +37,8 @@
     <url>
         <loc>https://sciencelivehub.github.io/terms/</loc>
         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+        <loc>https://sciencelivehub.github.io/verification/</loc>
     </url>
 </urlset>
