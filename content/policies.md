@@ -1,6 +1,7 @@
 +++
 title = "Data & API Policy for the Science Live Platform"
 description = "Effective Date: January 2025"
+template = "page.html"
 +++
 
 

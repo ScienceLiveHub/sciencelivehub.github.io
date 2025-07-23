@@ -1,126 +1,325 @@
-# Science Live Website Configuration - Academic First
-
+# The URL the site will be built for
 base_url = "https://sciencelivehub.github.io"
-compile_sass = true
-build_search_index = true
 
-title = "Science Live"
+# The site title and description
+title = "Science Live - Transform Research into Living Knowledge"
 description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
-author = "Science Live"
 
-[markdown]
+# The default language
+default_language = "en"
+
+# Theme to use
+# theme = "science-live"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# The taxonomies to be rendered for the site
+taxonomies = [
+    {name = "categories", paginate_by = 10},
+    {name = "tags", paginate_by = 10},
+]
+
+# Whether to do syntax highlighting
 highlight_code = true
-highlight_theme = "base16-ocean-dark"
+
+# The theme to use for code highlighting
+highlight_theme = "tomorrow-night"
+
+# Whether to generate a feed
+generate_feed = true
+
+# The filename to use for the feed
+feed_filename = "rss.xml"
+
+# The number of articles to include in the feed
+feed_limit = 20
+
+# Configuration of the Markdown rendering
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+
+# Whether external links are to be opened in a new tab
+external_links_target_blank = true
+
+# Whether external links are to be no-follow
+external_links_no_follow = false
+
+# Whether external links are to be no-referrer
+external_links_no_referrer = false
+
+# Whether smart punctuation is enabled
+smart_punctuation = true
+
+# Configuration for the search
+[search]
+# Whether to include the title in the index
+include_title = true
+
+# Whether to include the description in the index
+include_description = false
+
+# Whether to include the content in the index
+include_content = true
+
+# Configuration for the link checker
+[link_checker]
+# Skip link checking for external URLs
+skip_prefixes = [
+    "https://",
+    "http://",
+]
+
+# Various slugification strategies
+[slugify]
+paths = "safe"
+taxonomies = "safe"
+anchors = "safe"
 
 [extra]
-subtitle = "Transform Research into Living Knowledge"
-subdescription = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
-footer = "Trusted by science. Powered by nanopublications. Ready for industry."
+# Brand
+brand_text = "Science"
+brand_live = "Live"
+logo_path = "assets/img/network-logo.png"
+logo_alt = "Science Live Logo"
 
-# Academic-first navigation
-main_menu = [
-    { name = "Features", url = "#features" },
-    { name = "How It Works", url = "#how-it-works" },
-    { name = "Benefits", url = "#benefits" },
-    { name = "Documentation", url = "/science-live-pipeline/index.html" },
+# ORCID Button
+orcid_button_text = "Sign in with ORCID"
+
+# Author information
+author = "Anne Fouilloux"
+author_email = "anne.fouilloux@gmail.com"
+author_orcid = "0000-0002-1784-2920"
+
+# Social links
+github = "https://github.com/sciencelivehub"
+twitter = "https://twitter.com/sciencelive"
+
+# Hero Section
+hero_title = "Transform Research into Living Knowledge"
+hero_subtitle = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
+hero_tagline = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
+
+# Hero Buttons
+hero_primary_button_text = "Get Started"
+hero_primary_button_url = "https://sciencelivehub.github.io/science-live-mockups/"
+hero_primary_button_icon = "rocket"
+
+hero_secondary_button_text = "Explore Platform"
+hero_secondary_button_url = "#features"
+hero_secondary_button_icon = "compass"
+
+# Hero animation nodes
+hero_nodes = ["📄", "🧬", "🔬", "💡", "🌍"]
+
+# Section Headers
+features_section_tag = "PLATFORM FEATURES"
+features_section_title = "Everything You Need from Modern Research to Scientific Innovation"
+features_section_subtitle = "Powerful tools to accelerate innovation across academia and industry"
+
+how_it_works_section_tag = "HOW IT WORKS"
+how_it_works_section_title = "Your Knowledge Journey with Science Live"
+how_it_works_section_subtitle = "From discovery to deployment in four simple steps"
+
+benefits_section_tag = "BENEFITS"
+benefits_section_title = "Why Choose Science Live?"
+benefits_section_subtitle = "Join the future of scientific communication and collaboration"
+
+# Benefits Section Content
+benefits_main_title = "Accelerate Innovation & Impact"
+
+# CTA Section
+cta_title = "Ready to Transform Your Work?"
+cta_subtitle = "Join a growing community of researchers, data scientists, and engineers using Science Live to accelerate innovation"
+
+cta_primary_button_text = "Create Free Account"
+cta_primary_button_url = "/account"
+cta_primary_button_icon = "user-plus"
+
+cta_secondary_button_text = "Read Documentation"
+cta_secondary_button_url = "https://sciencelivehub.github.io/science-live-pipeline/"
+cta_secondary_button_icon = "book"
+
+# Footer
+footer_description = "Trusted by science. Powered by nanopublications. Ready for industry."
+footer_copyright_text = "Science Live is an open platform supporting Open Science and collaboration."
+
+# Platform statistics
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+# Navigation menu items
+[[extra.nav_links]]
+name = "Features"
+url = "#features"
+
+[[extra.nav_links]]
+name = "How It Works"
+url = "#how-it-works"
+
+[[extra.nav_links]]
+name = "Benefits"
+url = "#benefits"
+
+[[extra.nav_links]]
+name = "Documentation"
+url = "https://sciencelivehub.github.io/science-live-pipeline/"
+
+# Feature cards
+[[extra.features]]
+title = "AI Content Generator"
+description = "Transform technical papers, datasets, and documentation into multiple formats. Create podcasts, blog posts, executive summaries, and more with AI-powered generation."
+icon = "robot"
+icon_type = "fas"
+link = "https://sciencelivehub.github.io/science-live-mockups/"
+link_text = "Explore Generator"
+
+[[extra.features]]
+title = "Research Radar"
+description = "Monitor technology maturity across your domains. Track algorithms, datasets, tools, and applications as they progress from concept to production-ready."
+icon = "satellite-dish"
+icon_type = "fas"
+link = "https://sciencelivehub.github.io/science-live-mockups/research-radar"
+link_text = "View Research Radar"
+
+[[extra.features]]
+title = "Contributor Radar"
+description = "Discover experts across academia and industry. Find collaborators based on technical expertise, project experience, and complementary skills."
+icon = "network-wired"
+icon_type = "fas"
+link = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"
+link_text = "Find Collaborators"
+
+[[extra.features]]
+title = "Nanopublication Editor"
+description = "Create structured, machine-readable claims about your findings, models, and tools. Ensure your innovations are FAIR and properly attributed."
+icon = "pen-to-square"
+icon_type = "fas"
+link = "https://nanodash.knowledgepixels.com/publish"
+link_text = "Start Publishing"
+
+[[extra.features]]
+title = "Zotero Integration"
+description = "Seamlessly convert your reference library into nanopublications. Bridge traditional documentation with modern semantic knowledge graphs."
+icon = "book-bookmark"
+icon_type = "fas"
+link = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"
+link_text = "Get Plugin"
+
+[[extra.features]]
+title = "Smart Alerts"
+description = "Set up custom notifications for breakthroughs in your field. Monitor when research becomes production-ready or when new collaboration opportunities arise."
+icon = "bell"
+icon_type = "fas"
+link = "#"
+link_text = "Coming Soon"
+coming_soon = true
+
+# Process steps
+[[extra.process_steps]]
+number = "1"
+title = "Create & Publish"
+description = "Use our editor or integrations to create nanopublications from your research findings, datasets, models, and software tools."
+
+[[extra.process_steps]]
+number = "2"
+title = "AI Enhancement"
+description = "Let AI transform your technical content into multiple formats, making complex insights accessible to diverse stakeholders."
+
+[[extra.process_steps]]
+number = "3"
+title = "Monitor & Discover"
+description = "Track technology maturity with Research Radar and find experts across academia and industry through Contributor Radar."
+
+[[extra.process_steps]]
+number = "4"
+title = "Collaborate & Innovate"
+description = "Bridge the gap between research and application. Connect with peers, build on shared knowledge, and accelerate innovation."
+
+# Benefits
+[[extra.benefits]]
+title = "FAIR by Design"
+description = "All content follows FAIR principles, ensuring your work is Findable, Accessible, Interoperable, and Reusable across organizations."
+
+[[extra.benefits]]
+title = "Cross-Domain Visibility"
+description = "AI-powered content generation helps technical insights reach both academic and industry audiences."
+
+[[extra.benefits]]
+title = "Technology Tracking"
+description = "Monitor how technologies evolve from research concepts to production-ready solutions."
+
+[[extra.benefits]]
+title = "Academia-Industry Bridge"
+description = "Connect researchers with engineers, data scientists with domain experts, fostering real-world applications."
+
+[[extra.benefits]]
+title = "Reproducible Science"
+description = "Every nanopublication includes data, code, and methods, enabling true reproducibility."
+
+# Benefit Cards (visual cards on the right)
+[[extra.benefit_cards]]
+icon = "rocket"
+icon_type = "fas"
+title = "Increase Innovation Speed"
+description = "Teams transfer knowledge faster between research and production."
+color = "primary"
+
+[[extra.benefit_cards]]
+icon = "globe"
+icon_type = "fas"
+title = "Industry-Academia Bridge"
+description = "Break down silos between academic research and industry applications with unified knowledge sharing."
+color = "secondary"
+
+[[extra.benefit_cards]]
+icon = "chart-line"
+icon_type = "fas"
+title = "Measurable ROI"
+description = "Track real-world adoption and impact of research outputs across organizations and domains."
+color = "success"
+
+# Footer links
+[[extra.footer_links]]
+text = "Privacy Policy"
+url = "/policies"
+
+[[extra.footer_links]]
+text = "Terms of Service"
+url = "/terms"
+
+# Footer sections
+[[extra.footer_sections]]
+title = "Platform"
+links = [
+    {name = "AI Content Generator", url = "https://sciencelivehub.github.io/science-live-mockups/"},
+    {name = "Research Radar", url = "https://sciencelivehub.github.io/science-live-mockups/research-radar"},
+    {name = "Contributor Radar", url = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"},
+    {name = "Nanopublication Editor", url = "https://nanodash.knowledgepixels.com/publish"},
 ]
 
-# Academic-focused values
-academic_values = [
-    { title = "Publish Structured Findings", description = "Turn your research into traceable nanopublications that automatically track downstream impact and reuse across the innovation chain.", icon = "microscope"},
-    { title = "Bridge Research Gaps", description = "Structure data, code, and workflows as nanopubs and earn recognition for critical translation work that makes research application-ready.", icon = "code-branch"},
-    { title = "Discover Application-Ready Research", description = "Find research you can actually use with full traceability to data, code, and validation - go from discovery to testing in days, not months.", icon = "industry"},
-    { title = "Get Recognition for Impact", description = "Track how your contributions flow through the entire innovation ecosystem, from fundamental research to real-world applications.", icon = "award"}
+[[extra.footer_sections]]
+title = "Resources"
+links = [
+    {name = "Documentation", url = "https://sciencelivehub.github.io/science-live-pipeline/"},
+    {name = "API Reference", url = "https://sciencelivehub.github.io/science-live-pipeline/apidocs/index.html"},
+    {name = "GitHub", url = "https://github.com/sciencelivehub"},
 ]
 
-# Research domains (reframed for academics)
-research_domains = [
-    { name = "Earth Observation Research", description = "Connect Climate Data with Global Impact", info = "Link satellite observations with ground-truth validation, connect climate models with policy research, and bridge Earth system science with real-world applications through the research ecosystem.", icon = "satellite", connections = [
-            "Remote sensing data ↔ Ground truth validation",
-            "Climate models ↔ Observational datasets", 
-            "Earth system research ↔ Policy applications",
-            "Environmental monitoring ↔ Impact assessment"]},
-    { name = "Bioinformatics Research", description = "Bridge Computational Methods with Biological Insights", info = "Accelerate genomic discovery by connecting computational predictions with experimental validation, linking sequence analysis with functional studies and clinical applications.", icon = "dna", connections = [
-            "Sequence analysis tools ↔ Functional studies",
-            "Omics data ↔ Phenotypic research",
-            "Computational predictions ↔ Experimental validation", 
-            "Algorithm development ↔ Biological applications" ]},
-    { name = "Bio-imaging Research", description = "Connect Imaging Techniques Across Research Scales", info = "Link microscopy methods with quantitative analysis, connect imaging protocols with biological insights, and bridge scales from molecular to tissue-level research applications.", icon = "microscope", connections = [
-            "Microscopy methods ↔ Quantitative analysis",
-            "Imaging protocols ↔ Biological insights",
-            "Image acquisition ↔ Computational analysis",
-            "Method development ↔ Application validation"]},
-    { name = "Biodiversity Research", description = "Bridge Species Science with Conservation Impact", info = "Connect taxonomic research with conservation planning, link species data with ecosystem modeling, and bridge biodiversity science with real-world conservation applications.", icon = "leaf", connections = [
-            "Species discovery ↔ Conservation planning",
-            "Taxonomic data ↔ Ecosystem modeling",
-            "Biodiversity monitoring ↔ Habitat management",
-            "Climate impacts ↔ Species distribution"]}
-]
-
-
-# Infrastructure
-infrastructure = { title = "Built to Last", subtitle = "Connecting researchers, data scientists, and industry with enterprise-grade infrastructure that grows with the global scientific community" , bullet_points = [ {title = "Institutional Partnership", description = "Built in collaboration with Astera Institute with community-driven governance and sustainable funding model, ensuring continued development and long-term platform stability independent of single-source dependencies.", icon = "university"}, {title = "Open Source Foundation", description = "Core platform built on open-source principles with transparent development, ensuring researcher control and community-driven improvements.", icon = "unlock"}, {title = "Enterprise Infrastructure", description = "Reliable, scalable platform infrastructure that handles growing research demands while maintaining fast response times and 99.9% uptime.", icon = "bolt"}, {title = "Growing Network", description = "Join a growing network of structured research statements with active researcher communities across multiple research domains.", icon = "network-wired"} ] } 
-
-
-# Platform
-platform = { title = "The Science Live Ecosystem", subtitle = "Science Live's infrastructure connects research with application across institutions and industries", bullet_points = [ {title = "Decentralized Knowledge Network", description = "Built on nanopublications and distributed servers - no single point of failure, researcher-controlled data"  }, { title = "AI-Powered Discovery Engine", description = "7-step pipeline transforms questions into insights: Query → Intent → Entities → Statements → Results → Answers" }, { title = "Semantic Integration", description = "Standards-based approach (FAIR, RDF, SPARQL) ensures everything connects automatically across domains", terms = "FAIR,RDF,SPARQL" }, { title = "Open Governance", description = "Community-driven development with Astera Institute partnership ensures long-term sustainability and researcher control" } ] } 
-
-# metrics title
-metrics_enabled = false
-metrics_title = "Building Momentum Toward the Research Ecosystem"
-# Academic-focused metrics
-# Early engagement metrics (more honest for pre-launch)
-research_metrics = [
-    { label = "Researchers Expressing Interest", value = "100+" },
-    { label = "Target Communities Engaged", value = "4" },
-    { label = "Institutional Partnerships", value = "2+" },
-    { label = "Expected Launch", value = "Q1 2026" }
-]
-
-testimonials = [
-    { quote = "Galaxy data scientists create reproducible workflows and publish them on WorkflowHub.eu with workflow reports. Integrating these reports into Science Live's nanopublication network would make our computational workflows discoverable by industry teams while giving data scientists credit for bridging research to application-ready solutions.", author = "Bjoern Gruening, Galaxy Europe Lead", title = "Galaxy Europe Platform" },
-    { quote = "Our work on geospatial metadata for scholarly communication - connecting research papers to geographic locations - aligns perfectly with Science Live's structured knowledge approach. There's real potential for collaboration on making research more discoverable through spatial and semantic connections.", author = "Daniel Nüst, TIB Researcher", title = "Technische Informationsbibliothek" },
-    { quote = "Having worked with Anne on research software engineering, I'm confident Science Live will solve the fundamental problem of knowledge silos that plague scientific collaboration today.", author = "Research Collaborator", title = "Research Software Engineer" }
-]
-
-#research_metrics = [
-#    { label = "Research-to-Application Time", value = "6-18 months" },
-#    { label = "Translation Contributors", value = "500+" },
-#    { label = "Traceable Pathways", value = "1,200+" },
-#    { label = "Industry Implementations", value = "50+" }
+#[[extra.footer_sections]]
+#title = "Community"
+#links = [
 #]
-
-# Academic testimonials
-#testimonials = [
-#    { quote = "Science Live helped us validate a climate solution in 8 months instead of 3 years. The full traceability from research to our application gave investors confidence to fund our Series A.", author = "Dr. Maria Santos", title = "CTO, CleanTech Innovations" },
-#    { quote = "For the first time, I'm getting cited for the data preparation work that makes research actually usable. My structured contributions have been reused 30+ times across different industries.", author = "Alex Chen", title = "Research Data Scientist, Stanford"},
-#    { quote = "My fundamental research on protein folding is now being used in 3 different drug discovery programs. I can track the entire impact chain from my lab to clinical trials.", author = "Prof. James Liu", title = "Biochemistry, University of Toronto" }
-#]
-
-# main page button
-main_page = {button1 = "Get Started", url1 = "https://sciencelivehub.github.io/science-live-mockups/", button2 = "Explore Ecosystem", url2 = "#how-it-works"}
-# Academic-focused CTAs
-cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Sign in with ORCID", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
-cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"}
-cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
-cta_quaternary = {title = "Science Live Data Pipeline & APIs", description = "Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.", button = "Pipeline Documentation", button_url = "https://sciencelivehub.github.io/science-live-pipeline/index.html"}
-
-# Academic support contact
-contact = { research_support = "mailto:anne.fouilloux@gmail.com", zotero_plugin = "mailto:anne.fouilloux@gmail.com", community = "mailto:anne.fouilloux@gmail.com", enterprise = "mailto:anne.fouilloux@gmail.com"}
-
-# Academic-first brand colors
-brand_colors = { primary = "#193967", secondary = "#be2e78", academic_blue = "#0066cc", academic_green = "#28a745"}
-
-# Academic social links
-social_links = [
-    { name = "GitHub", url = "https://github.com/ScienceLiveHub", icon = "fab fa-github" },
-    { name = "Research Community", url = "https://github.com/ScienceLiveHub/science-live-pipeline/discussions", icon = "fas fa-users" }
-]
-
-# Enterprise section (minimal)
-# enterprise = { enabled = true, title = "Accelerate Innovation Through Research Ecosystems", description = "Industry leaders use Science Live to connect R&D with validated academic research and skilled translators", info = "Instead of spending 18 months validating research, find pre-validated work with full traceability to successful applications. Connect directly with researchers and data scientists who can bridge gaps.", b1= "Find application-ready research with validation history", b2 = "Connect with data scientists who bridge research gaps", b3 = "Access full traceability from discovery to implementation", b4 = "Reduce R&D timelines from years to months", b5 = "Build on trusted, peer-validated foundations", b6 = "Track research impact through your innovation pipeline", cta = "Explore Enterprise Ecosystem"}
-
-
-
-# Enterprise section (now more clearly for industry)
-enterprise = { enabled = true, title = "For Industry: Accelerate R&D with Validated Research", description = "Connect directly with the researchers and data scientists behind breakthrough discoveries", info = "Stop spending 18 months validating academic research. Science Live gives you direct access to pre-validated, application-ready research with full traceability back to original sources and the experts who created them.", b1 = "Find research that's been successfully implemented before", b2 = "Access complete validation history and limitations", b3 = "Connect with the actual researchers for guidance", b4 = "Get implementation-ready code and protocols", b5 = "Track which methods work in production", b6 = "Reduce validation cycles from months to weeks", cta = "Learn More About Enterprise Access"}

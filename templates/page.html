@@ -1,139 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - {{ config.title }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="{{ get_url(path="css/science-live.css") }}" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="{{ get_url(path="/") }}">
-                <span class="text-primary">Science</span> 
-                <span class="text-accent">Live</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    {% if config.extra.main_menu %}
-                        {% for item in config.extra.main_menu %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ config.base_url | safe }}/{{ item.url }}">{{ item.name }}</a>
-                        </li>
-                        {% endfor %}
-                    {% endif %}
-                    <li class="nav-item ms-3">
-                        <a class="btn btn-outline-primary btn-sm" href="{{ config.extra.cta_primary.button_url | default(value="#") }}">
-                            {{ config.extra.cta_primary.button | default(value="Get Started") }}
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+{% extends "base.html" %}
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container text-center">
-            <h1 class="page-title">{{ page.title }}</h1>
-            {% if page.description %}
-            <p class="page-subtitle">{{ page.description }}</p>
-            {% endif %}
-        </div>
-    </section>
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description | default(value=page.summary) | default(value=config.description) }}{% endblock description %}
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <div class="content-wrapper">
-                {% if page.extra.show_toc and page.toc %}
-                <div class="toc">
-                    <h4>Table of Contents</h4>
-                    {{ page.toc | safe }}
-                </div>
-                {% endif %}
-                
-                <div class="content">
-                    {{ page.content | safe }}
-                </div>
-                
-                <div class="back-navigation">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="{{ get_url(path="/") }}" class="btn btn-primary">
-                                <i class="fas fa-arrow-left me-2"></i>Back to Home
-                            </a>
-                        </div>
-                        <div class="col-6 text-end">
-                            {% if page.extra.next_page %}
-                            <a href="{{ page.extra.next_page.url }}" class="btn btn-outline-primary">
-                                {{ page.extra.next_page.title }}<i class="fas fa-arrow-right ms-2"></i>
-                            </a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+{% block content %}
+<div class="page-header">
+    <div class="page-header-content">
+        <h1 class="page-title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="page-subtitle">{{ page.description }}</p>
+        {% endif %}
+    </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="mb-3">{{ config.title }}</h5>
-                    <p class="text-white-50">{{ config.description }}</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="text-white-50 mb-2">© {{ now() | date(format="%Y") }} {{ config.title }}. All rights reserved.</p>
-                    {% if config.extra.social_links %}
-                    <div>
-                        {% for social in config.extra.social_links %}
-                        <a href="{{ social.url }}" class="text-white-50 me-3">
-                            <i class="{{ social.icon }}"></i>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </footer>
+<article class="page-content">
+    <div class="content-container">
+        {{ page.content | safe }}
+    </div>
+</article>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+<style>
+    .page-header {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        color: white;
+        padding: 6rem 3rem 4rem;
+        margin-top: 76px;
+    }
+
+    .page-header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff, #4a9eff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .page-subtitle {
+        font-size: 1.3rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .page-content {
+        padding: 4rem 3rem;
+        background: white;
+        min-height: 60vh;
+    }
+
+    .content-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--gray-700);
+    }
+
+    .content-container h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2.5rem 0 1rem;
+        color: var(--secondary-color);
+    }
+
+    .content-container h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem;
+        color: var(--primary-color);
+    }
+
+    .content-container p {
+        margin-bottom: 1.5rem;
+    }
+
+    .content-container ul,
+    .content-container ol {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .content-container li {
+        margin-bottom: 0.5rem;
+    }
+
+    .content-container strong {
+        color: var(--gray-800);
+        font-weight: 600;
+    }
+
+    .content-container a {
+        color: var(--primary-color);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+    }
+
+    .content-container a:hover {
+        border-color: var(--primary-color);
+    }
+
+    .content-container blockquote {
+        border-left: 4px solid var(--primary-color);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: var(--gray-600);
+    }
+
+    .content-container code {
+        background: var(--gray-100);
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 0.9em;
+    }
+
+    .content-container pre {
+        background: var(--gray-900);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-container pre code {
+        background: none;
+        padding: 0;
+        color: inherit;
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: 2rem;
+        }
         
-        // Add active class to current nav item
-        const currentLocation = location.pathname;
-        const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
-        menuItems.forEach(item => {
-            if(item.getAttribute('href') === currentLocation){
-                item.classList.add('active');
-            }
-        });
-    </script>
-</body>
-</html>
+        .page-subtitle {
+            font-size: 1.1rem;
+        }
+        
+        .page-content {
+            padding: 2rem 1rem;
+        }
+        
+        .content-container {
+            font-size: 1rem;
+        }
+    }
+</style>
+{% endblock content %}

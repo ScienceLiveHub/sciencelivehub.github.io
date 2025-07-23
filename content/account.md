@@ -1,6 +1,7 @@
 +++
 title = "Create Your Science Live Account"
 description = "Find out how to sign up and what benefits you get."
+template = "page.html"
 +++
 
 Join the open science movement. Choose the account type that fits your needs.
