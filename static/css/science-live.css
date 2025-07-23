@@ -43,15 +43,26 @@
         }
         
         .hero-subtitle {
-            font-size: 1.75rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 3.0rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff, #4a9eff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-description {
+            font-size: 1.5rem;
             font-weight: 300;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: 1.5rem;
             line-height: 1.4;
         }
-        
-        .hero-description {
-            font-size: 1.25rem;
+
+        .hero-subdescription {
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 2.5rem;
             max-width: 600px;
