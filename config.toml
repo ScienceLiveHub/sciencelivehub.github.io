@@ -19,11 +19,10 @@ footer = "Trusted by science. Powered by nanopublications. Ready for industry."
 
 # Academic-first navigation
 main_menu = [
-    { name = "For Researchers", url = "#academics" },
-    { name = "For Data Scientists", url = "#research" },
-    { name = "For Industry", url = "#enterprise" },
-    { name = "Get Started", url = "#start" },
+    { name = "Features", url = "#features" },
     { name = "How It Works", url = "#how-it-works" },
+    { name = "Benefits", url = "#benefits" },
+    { name = "Documentation", url = "/science-live-pipeline/index.html" },
 ]
 
 # Academic-focused values
@@ -99,9 +98,9 @@ testimonials = [
 #]
 
 # main page button
-main_page = {button1 = "Start Publishing", url1 = "#start", button2 = "Explore Ecosystem", url2 = "#how-it-works"}
+main_page = {button1 = "Get Started", url1 = "https://sciencelivehub.github.io/science-live-mockups/", button2 = "Explore Ecosystem", url2 = "#how-it-works"}
 # Academic-focused CTAs
-cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Try it!", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
+cta_primary = {title = "Instant Access", description = "Create your free research account and start exploring the Science Live global knowledge network in under 2 minutes.", button = "Sign in with ORCID", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
 cta_secondary = {title = "Zotero Integration", description = "Install our Zotero plugin and transform your existing bibliography into structured, discoverable knowledge with one click.", button = "Download Plugin", button_url = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"}
 cta_tertiary = {title = "Learn by Examples", description = "See how your work flows through the entire innovation pipeline from discovery to commercial application.", button = "View Examples & Impact Stories", button_url = "https://sciencelivehub.github.io/science-live-mockups/"}
 cta_quaternary = {title = "Science Live Data Pipeline & APIs", description = "Learn, Use and Contribute to our Science Live Data Pipeline and open APIs.", button = "Pipeline Documentation", button_url = "https://sciencelivehub.github.io/science-live-pipeline/index.html"}
