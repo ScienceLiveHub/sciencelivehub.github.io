@@ -493,7 +493,7 @@ description = "Connect researchers with engineers, data scientists with domain e
 
 [[extra.benefits]]
 title = "Reproducible Science"
-description = "Every nanopublication includes data, code, and methods, enabling true reproducibility."
+description = "Nanopublications that include data, code, and methods enable true reproducibility."
 
 # Benefit Cards (visual cards on the right)
 [[extra.benefit_cards]]
