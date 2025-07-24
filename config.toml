@@ -110,7 +110,7 @@ hero_primary_button_url = "https://sciencelivehub.github.io/science-live-mockups
 hero_primary_button_icon = "rocket"
 
 hero_secondary_button_text = "Explore Platform"
-hero_secondary_button_url = "#features"
+hero_secondary_button_url = "https://sciencelivehub.github.io/#features"
 hero_secondary_button_icon = "compass"
 
 # Hero animation nodes
@@ -385,15 +385,15 @@ label = ""
 # Navigation menu items
 [[extra.nav_links]]
 name = "Features"
-url = "#features"
+url = "https://sciencelivehub.github.io/#features"
 
 [[extra.nav_links]]
 name = "How It Works"
-url = "#how-it-works"
+url = "https://sciencelivehub.github.io/#how-it-works"
 
 [[extra.nav_links]]
 name = "Benefits"
-url = "#benefits"
+url = "https://sciencelivehub.github.io/#benefits"
 
 [[extra.nav_links]]
 name = "Pricing"
