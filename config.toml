@@ -81,6 +81,9 @@ taxonomies = "safe"
 anchors = "safe"
 
 [extra]
+# Google Analytics
+gtm_id = "GTM-WSJ3ZZ29"
+
 # Brand
 brand_text = "Science"
 brand_live = "Live"
