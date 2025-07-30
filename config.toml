@@ -222,6 +222,7 @@ credits = 20
 activity = "Nanopub gets cited"
 credits = 5
 
+
 # Pricing Tiers
 [[extra.pricing_tiers]]
 name = "Explorer"
@@ -239,19 +240,19 @@ text = "<strong>Unlimited nanopublications</strong>"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "Basic search and discovery"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "View public profiles"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Basic collaboration tools"
+text = "Search and discovery"
 included = true
 
 [[extra.pricing_tiers.features]]
 text = "Earn credits for contributions"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Use credits for verifications"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Earn credit for Community support"
 included = true
 
 [[extra.pricing_tiers.features]]
@@ -263,34 +264,64 @@ text = "Contributor Radar alerts"
 included = false
 
 [[extra.pricing_tiers.features]]
-text = "Verification services"
+text = "API access"
 included = false
 
 [[extra.pricing_tiers]]
 name = "Professional"
 badge = "Most Popular"
-price_monthly = 29
-price_annual = 23
-description = "For professionals who need monitoring tools"
+price_monthly = 0
+price_text = "/year"
+description = "Unlock Professional by: 10 nanopublications and 5 Science Live Trusted badges"
 is_featured = true
-cta_text = "Start Free Trial"
+cta_text = "Start Contributing"
 cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
 cta_style = "primary"
+unlock_requirements = true
 
 [[extra.pricing_tiers.features]]
 text = "Everything in Explorer"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "<strong>5 Research Radar alerts</strong>"
+text = "<strong>25 Research Radar alerts</strong>"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "<strong>10 Contributor Radar alerts</strong>"
+text = "<strong>50 Contributor Radar alerts</strong>"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "Advanced search filters"
+text = "API access (1,000 /month)"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Priority in search results"
+included = true
+
+[[extra.pricing_tiers]]
+name = "Organisations"
+badge = ""
+price_annual = 2500
+price_text = "/year"
+price_suffix = "starting from"
+description = "Academic: €2,500 • Government: €3,500 • Commercial: €5,000"
+is_featured = false
+cta_text = "Contact Sales"
+cta_url = "mailto:anne.fouilloux@gmail.com"
+cta_style = "secondary"
+show_annual_only = true
+
+[[extra.pricing_tiers.features]]
+text = "Everything in Professional"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "<strong>Unlimited users</strong>"
+included = true
+
+[[extra.pricing_tiers.features]]
+text = "Team workspace"
 included = true
 
 [[extra.pricing_tiers.features]]
@@ -298,61 +329,11 @@ text = "Priority support"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "Export capabilities"
+text = "API access (10,000 /month)"
 included = true
 
 [[extra.pricing_tiers.features]]
-text = "API access (1,000 calls/month)"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Verification services"
-included = false
-
-[[extra.pricing_tiers]]
-name = "Team"
-badge = ""
-price_monthly = 99
-price_annual = 79
-price_suffix = "per 5 users"
-description = "For teams and organizations"
-has_academic_discount = true
-academic_discount_text = "50% off for academic institutions"
-is_featured = false
-cta_text = "Contact Sales"
-cta_url = "mailto:anne.fouilloux@gmail.com"
-cta_style = "secondary"
-
-[[extra.pricing_tiers.features]]
-text = "Everything in Professional"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "<strong>Unlimited alerts</strong>"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Team collaboration workspace"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Shared projects"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Admin dashboard"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "API access (10,000 calls/month)"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "<strong>5 verifications/month included</strong>"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Custom radar configurations"
+text = "Usage analytics"
 included = true
 
 # FAQ Items
