@@ -351,7 +351,7 @@ answer = "Yes, you can upgrade or downgrade your plan at any time. Changes take 
 
 [[extra.pricing_faq]]
 question = "Do you offer academic discounts?"
-answer = "Yes! Academic institutions and public research organizations get 50% off Team plans. Contact us for details."
+answer = "Yes! Academic institutions and public research organizations get 50% off Organization plans. Contact us for details."
 
 # Platform statistics
 [[extra.hero_stats]]
