@@ -120,7 +120,10 @@
             </div>
 
             <div class="hero-visual">
-             <iframe src="https://drive.google.com/file/d/1IOu8LWFy_Gv0rfxogzrQ9dDRNBON3vBJ/preview" width="640" height="640" allow="autoplay"></iframe>
+            <div id="videoContainer">
+  <img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
+</div>
+
             </div>
 
         </div>
@@ -480,6 +483,11 @@
     
     
 <script>
+function loadVideo() {
+  document.getElementById('videoContainer').innerHTML =
+    '<iframe src="https://drive.google.com/file/d/1IOu8LWFy_Gv0rfxogzrQ9dDRNBON3vBJ/preview" width="640" height="640" allow="autoplay"></iframe>';
+}
+
     // Animate elements on scroll
     const observerOptions = {
         threshold: 0.1,
