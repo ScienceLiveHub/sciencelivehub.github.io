@@ -29,10 +29,9 @@
             </div>
 
             <div class="hero-visual">
-            <div id="videoContainer">
-  <img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
-</div>
-
+              <div id="videoContainer">
+                 <img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
+              </div>
             </div>
 
         </div>
@@ -146,9 +145,33 @@
 
 {% block extra_js %}
 <script>
+
 function loadVideo() {
-  document.getElementById('videoContainer').innerHTML =
-    '<iframe src="https://drive.google.com/file/d/1IOu8LWFy_Gv0rfxogzrQ9dDRNBON3vBJ/preview" width="640" height="640" allow="autoplay"></iframe>';
+  const container = document.getElementById('videoContainer');
+  
+  // Create video element
+  const video = document.createElement('video');
+  video.width = 640;
+  video.height = 640;
+  video.controls = true;
+  video.autoplay = true;
+  video.muted = true; // Needed if you want autoplay
+  video.playsInline = true; // Mobile support
+
+  // Add source
+  const source = document.createElement('source');
+  source.src = "https://raw.githubusercontent.com/ScienceLiveHub/ideas-discussions/main/ScienceLiveIntro.mp4";
+  source.type = "video/mp4";
+  video.appendChild(source);
+
+  // When video ends, restore preview image
+  video.onended = function () {
+    container.innerHTML = `<img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">`;
+  };
+
+  // Replace preview image with video
+  container.innerHTML = '';
+  container.appendChild(video);
 }
 
     // Animate elements on scroll
