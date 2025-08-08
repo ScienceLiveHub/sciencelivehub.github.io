@@ -3,7 +3,7 @@ base_url = "https://sciencelivehub.github.io"
 
 # The site title and description
 title = "Science Live - Transform Research into Living Knowledge"
-description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, trust, and discover knowledge through AI-powered nanopublications and collaborative tools."
+description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
 
 # The default language
 default_language = "en"
@@ -104,7 +104,7 @@ twitter = "https://twitter.com/sciencelive"
 
 # Hero Section
 hero_title = "Transform Research into Living Knowledge"
-hero_subtitle = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, trust, and discover knowledge through AI-powered nanopublications and collaborative tools."
+hero_subtitle = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
 hero_tagline = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
 
 # Hero Buttons
