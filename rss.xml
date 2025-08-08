@@ -3,7 +3,7 @@
     <channel>
       <title>Science Live - Transform Research into Living Knowledge</title>
       <link>https://sciencelivehub.github.io</link>
-      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, trust, and discover knowledge through AI-powered nanopublications and collaborative tools.</description>
+      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://sciencelivehub.github.io/rss.xml" rel="self" type="application/rss+xml"/>
