@@ -108,13 +108,13 @@ hero_subtitle = "Science Live revolutionizes how researchers, data scientists, a
 hero_tagline = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
 
 # Hero Buttons
-hero_primary_button_text = "Get Started"
-hero_primary_button_url = "https://sciencelivehub.github.io/science-live-mockups/"
-hero_primary_button_icon = "rocket"
+hero_primary_button_text = "Book a call"
+hero_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
+hero_primary_button_icon = "video"
 
-hero_secondary_button_text = "Explore Platform"
-hero_secondary_button_url = "https://sciencelivehub.github.io/#features"
-hero_secondary_button_icon = "compass"
+hero_secondary_button_text = "Subscribe to our newsletter"
+hero_secondary_button_url = "mailto:contact@vitenhub.no?subject=Subscribe%20to%20our%20newsletter%20from%20website&body=Hi%20Team,%0A%0A"
+hero_secondary_button_icon = "envelope"
 
 # Hero animation nodes
 hero_nodes = ["📄", "🧬", "🔬", "💡", "🌍"]
@@ -139,13 +139,13 @@ benefits_main_title = "Accelerate Innovation & Impact"
 cta_title = "Ready to Transform Your Work?"
 cta_subtitle = "Join a growing community of researchers, data scientists, and engineers using Science Live to accelerate innovation"
 
-cta_primary_button_text = "Create Free Account"
-cta_primary_button_url = "/account"
-cta_primary_button_icon = "user-plus"
+cta_primary_button_text = "Book a video call"
+cta_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
+cta_primary_button_icon = "video"
 
-cta_secondary_button_text = "Read Documentation"
-cta_secondary_button_url = "https://sciencelivehub.github.io/science-live-pipeline/"
-cta_secondary_button_icon = "book"
+cta_secondary_button_text = "Contact us"
+cta_secondary_button_url = "mailto:contact@vitenhub.no?subject=Contact%20from%20website&body=Hi%20Team,%0A%0A"
+cta_secondary_button_icon = "envelope"
 
 # Footer
 footer_description = "Trusted by science. Powered by nanopublications. Ready for industry."
@@ -379,13 +379,13 @@ url = "https://sciencelivehub.github.io/#how-it-works"
 name = "Benefits"
 url = "https://sciencelivehub.github.io/#benefits"
 
-[[extra.nav_links]]
-name = "Pricing"
-url = "/pricing"
+#[[extra.nav_links]]
+#name = "Pricing"
+#url = "/pricing"
 
-[[extra.nav_links]]
-name = "Documentation"
-url = "https://sciencelivehub.github.io/science-live-pipeline/"
+#[[extra.nav_links]]
+#name = "Documentation"
+#url = "https://sciencelivehub.github.io/science-live-pipeline/"
 
 # Feature cards
 [[extra.features]]
@@ -503,30 +503,35 @@ color = "success"
 
 # Footer links
 [[extra.footer_links]]
-text = "Privacy Policy"
-url = "/policies"
+text = ""
+url = ""
+#[[extra.footer_links]]
+#text = "Privacy Policy"
+#url = "/policies"
 
-[[extra.footer_links]]
-text = "Terms of Service"
-url = "/terms"
+#[[extra.footer_links]]
+#text = "Terms of Service"
+#url = "/terms"
 
 # Footer sections
 [[extra.footer_sections]]
-title = "Platform"
-links = [
-    {name = "AI Content Generator", url = "https://sciencelivehub.github.io/science-live-mockups/"},
-    {name = "Research Radar", url = "https://sciencelivehub.github.io/science-live-mockups/research-radar"},
-    {name = "Contributor Radar", url = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"},
-    {name = "Nanopublication Editor", url = "https://nanodash.knowledgepixels.com/publish"},
-]
+title = ""
+links = []
+#title = "Platform"
+#links = [
+#    {name = "AI Content Generator", url = "https://sciencelivehub.github.io/science-live-mockups/"},
+#    {name = "Research Radar", url = "https://sciencelivehub.github.io/science-live-mockups/research-radar"},
+#    {name = "Contributor Radar", url = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"},
+#    {name = "Nanopublication Editor", url = "https://nanodash.knowledgepixels.com/publish"},
+#]
 
-[[extra.footer_sections]]
-title = "Resources"
-links = [
-    {name = "Documentation", url = "https://sciencelivehub.github.io/science-live-pipeline/"},
-    {name = "API Reference", url = "https://sciencelivehub.github.io/science-live-pipeline/apidocs/index.html"},
-    {name = "GitHub", url = "https://github.com/sciencelivehub"},
-]
+#[[extra.footer_sections]]
+#title = "Resources"
+#links = [
+#    {name = "Documentation", url = "https://sciencelivehub.github.io/science-live-pipeline/"},
+#    {name = "API Reference", url = "https://sciencelivehub.github.io/science-live-pipeline/apidocs/index.html"},
+#    {name = "GitHub", url = "https://github.com/sciencelivehub"},
+#]
 
 #[[extra.footer_sections]]
 #title = "Community"
