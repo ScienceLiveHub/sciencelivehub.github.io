@@ -308,7 +308,7 @@ price_suffix = "starting from"
 description = "Academic: €2,500 • Government: €3,500 • Commercial: €5,000"
 is_featured = false
 cta_text = "Contact Sales"
-cta_url = "mailto:anne.fouilloux@gmail.com"
+cta_url = "mailto:contact@vitenhub.no"
 cta_style = "secondary"
 show_annual_only = true
 

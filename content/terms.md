@@ -122,7 +122,7 @@ These Terms shall be governed by and construed in accordance with the laws of No
 If you have any questions about these Terms, please contact us at:
 
 **Science Live**  
-Email: anne.fouilloux@gmail.com 
+Email: contact@vitenhub.no
 
 ---
 
