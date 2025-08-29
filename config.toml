@@ -1,6 +1,5 @@
 # The URL the site will be built for
-#base_url = "https://sciencelivehub.github.io"
-base_url = "https://vitenhub.no"
+base_url = "https://sciencelivehub.github.io"
 
 # The site title and description
 title = "Science Live - Transform Research into Living Knowledge"
