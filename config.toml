@@ -85,7 +85,7 @@ github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
 # Hero Section
-hero_title = "Science Live: Research Without Walls"
+hero_title = "Science Live: Research beyond Walls"
 hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, making research traceable, reproducible, and ready for your team and others to use and build on."
 hero_tagline = "Connect science and industry — apply and validate findings in practice, while researchers earn travel credits that fuel a self-sustained research ecosystem."
 #hero_subtitle = "Capture the complete scientific process—discussions, reasoning, methods, data, and findings—through guided workflows that make research fully traceable, reproducible, discoverable, and ready for real-world application."
