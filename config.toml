@@ -3,13 +3,10 @@ base_url = "https://sciencelivehub.github.io"
 
 # The site title and description
 title = "Science Live - Transform Research into Living Knowledge"
-description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
+description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process."
 
 # The default language
 default_language = "en"
-
-# Theme to use
-# theme = "science-live"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -40,35 +37,20 @@ feed_limit = 20
 
 # Configuration of the Markdown rendering
 [markdown]
-# Whether to do syntax highlighting
 highlight_code = true
-
-# Whether external links are to be opened in a new tab
 external_links_target_blank = true
-
-# Whether external links are to be no-follow
 external_links_no_follow = false
-
-# Whether external links are to be no-referrer
 external_links_no_referrer = false
-
-# Whether smart punctuation is enabled
 smart_punctuation = true
 
 # Configuration for the search
 [search]
-# Whether to include the title in the index
 include_title = true
-
-# Whether to include the description in the index
 include_description = false
-
-# Whether to include the content in the index
 include_content = true
 
 # Configuration for the link checker
 [link_checker]
-# Skip link checking for external URLs
 skip_prefixes = [
     "https://",
     "http://",
@@ -87,7 +69,7 @@ gtm_id = "GTM-WSJ3ZZ29"
 # Brand
 brand_text = "Science"
 brand_live = "Live"
-logo_path = "assets/img/network-logo.png"
+logo_path = "assets/img/sciencelive-logo.png"
 logo_alt = "Science Live Logo"
 
 # ORCID Button
@@ -103,21 +85,29 @@ github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
 # Hero Section
-hero_title = "Transform Research into Living Knowledge"
-hero_subtitle = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools."
-hero_tagline = "Built by and for researchers, data scientists, and industry — with full traceability and shared credit."
+hero_title = "Research Without Walls"
+hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, making research traceable, reproducible, and ready for your team and others to use and build on."
+hero_tagline = "Connect science and industry — apply and validate findings in practice, while researchers earn travel credits that fuel a self-sustained research ecosystem."
+#hero_subtitle = "Capture the complete scientific process—discussions, reasoning, methods, data, and findings—through guided workflows that make research fully traceable, reproducible, discoverable, and ready for real-world application."
+#hero_subtitle = "Capture the full scientific thinking process — from discussions and reasoning to claims, data, software, and methods. Guided workflows help you create reproducible, discoverable, traceable, and actionable research."
+#hero_tagline = "Search, collaborate, validate, and apply findings for your own cases — earn credits towards travel grants while accelerating the journey from discovery to application."
+
+#hero_subtitle = "Capture the scientific thinking process — discussions, reasoning, claims, data, software, and methods — providing the complete context needed for reliable implementation and replication, while guiding all contributors to make research outputs reproducible, discoverable, traceable, and actionable."
+#hero_tagline = "Collaborators across academia and industry can validate, build on, and apply findings as they happen, while earning credits toward travel grants that fund conferences and research visits, accelerating the entire research-to-application pipeline."
+#hero_subtitle = "Capture the scientific thinking process — discussions, reasoning, claims, data, software, and methods — while guiding all contributors to make research outputs reproducible, discoverable, traceable, and actionable."
+#hero_tagline = "Collaborators across academia and industry can validate, build on, and apply findings as they happen, accelerating the entire research-to-application pipeline."
 
 # Hero Buttons
-hero_primary_button_text = "Book a call"
-hero_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
-hero_primary_button_icon = "video"
+hero_primary_button_text = "Join Beta Waitlist"
+hero_primary_button_url = "mailto:contact@vitenhub.no?subject=Join%20our%20Beta%20Waitlist&body=Hi%20Team,%0A%0A"
+hero_primary_button_icon = "envelope"
 
-hero_secondary_button_text = "Subscribe to our newsletter"
-hero_secondary_button_url = "mailto:contact@vitenhub.no?subject=Subscribe%20to%20our%20newsletter%20from%20website&body=Hi%20Team,%0A%0A"
-hero_secondary_button_icon = "envelope"
+hero_secondary_button_text = "Book Strategy Call"
+hero_secondary_button_url = "https://calendly.com/anne-fouilloux/30min"
+hero_secondary_button_icon = "video"
 
-# Hero animation nodes
-hero_nodes = ["📄", "🧬", "🔬", "💡", "🌍"]
+# Core Values
+core_values = "Traceable • Open • Collaborative"
 
 # Section Headers
 features_section_tag = "PLATFORM FEATURES"
@@ -136,8 +126,8 @@ benefits_section_subtitle = "Join the future of scientific communication and col
 benefits_main_title = "Accelerate Innovation & Impact"
 
 # CTA Section
-cta_title = "Ready to Transform Your Work?"
-cta_subtitle = "Join a growing community of researchers, data scientists, and engineers using Science Live to accelerate innovation"
+cta_title = "Sustainable Academia-Industry Ecosystem"
+cta_subtitle = "Organizational subscriptions fund the Science Live infrastructure and travel grants while gaining access to validated research and collaboration opportunities. This creates a self-sustaining model where quality contributions are rewarded with career development funding, regardless of whether contributors work in academia or industry."
 
 cta_primary_button_text = "Book a video call"
 cta_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
@@ -148,210 +138,145 @@ cta_secondary_button_url = "mailto:contact@vitenhub.no?subject=Contact%20from%20
 cta_secondary_button_icon = "envelope"
 
 # Footer
-footer_description = "Trusted by science. Powered by nanopublications. Ready for industry."
+footer_description = "Built for science. Powered by collaboration. Ready for innovation."
 footer_copyright_text = "Science Live is an open platform supporting Open Science and collaboration."
 
+# Credit system explanation
+credit_system_explanation = "Credits reflect relative contribution value - a PRISMA systematic review (150 credits) is worth 7.5x more than a basic claim (20 credits). Actual travel funding depends on total annual fund size divided by all credits earned."
 
-# Pricing Configuration
-# Move pricing into separate top-level tables to avoid nesting issues
+# Current transparency values (update these monthly)
+current_fund_balance = "€3,000 (initial seed funding)"
+total_credits_earned = "0" 
+current_credit_value = "Will be calculated as organizations join and contributors earn credits"
+last_updated = "June 2025"
 
-# Pricing global settings
-pricing_currency = "€"
-pricing_currency_symbol = "€"
-pricing_annual_discount_percent = 20
-pricing_annual_discount_text = "Save 20%"
+# Credit System - Three Panel Structure
+[extra.credit_system]
+title = "Pricing & Travel Fund"
+subtitle = "The Science Live ecosystem is funded by Organizational Subscriptions"
 
-# Professional Tier
-pricing_professional_monthly = 29
-pricing_professional_annual = 23
-pricing_professional_research_radar_alerts = 5
-pricing_professional_contributor_radar_alerts = 10
-pricing_professional_api_calls = 1000
+# Panel 1: Always Free for Contributors
+[extra.panel_free]
+title = "Always Free for Individual contributors"
+subtitle = "Start Your Science Live Journey"
+description = "We support you through every step of the research process—from systematic reviews to final outputs—so your work is traceable, reproducible, visible, and valued."
 
-# Team Tier
-pricing_team_monthly = 99
-pricing_team_annual = 79
-pricing_team_users = 5
-pricing_team_api_calls = 10000
-pricing_team_verifications_included = 5
-pricing_team_academic_discount_percent = 50
+[[extra.panel_free.features]]
+text = "Access the platform for free, always"
 
-# Verification Services
-pricing_verification_simple_claim = 5
-pricing_verification_data = 10
-pricing_verification_code = 15
-pricing_verification_full_reproduction = 25
+[[extra.panel_free.features]]
+text = "Follow structured guidance to make reproducible outputs—data, code, and claims"
 
-# Verification Packages
-pricing_verification_starter_count = 10
-pricing_verification_starter_price = 80
-pricing_verification_standard_count = 50
-pricing_verification_standard_price = 350
-pricing_verification_unlimited_price = 999
+[[extra.panel_free.features]]
+text = "Build on reproducible systematic reviews and consolidated research claims"
 
-# Credit System
-pricing_credit_value = 0.10
-pricing_credit_minimum_redemption = 500
+[[extra.panel_free.features]]     
+text = "Contribute to and get valued for consensus-building across the scientific process"
 
-# Credit Earnings
-[[extra.credit_earnings]]
-activity = "Publish nanopublication (claim only)"
-credits = 10
+[[extra.panel_free.features]]
+text = "Validate and improve the work of others"
 
-[[extra.credit_earnings]]
-activity = "Publish with data"
-credits = 25
+[[extra.panel_free.features]]
+text = "Earn and exchange credits for meaningful contributions"
 
-[[extra.credit_earnings]]
-activity = "Publish with code/software"
-credits = 30
+[[extra.panel_free.features]]
+text = "Grow your reputation through open collaboration"
 
-[[extra.credit_earnings]]
-activity = "Publish with data + code"
-credits = 50
+# Panel 2: Travel Fund for Significant Contributors
+[extra.panel_travel]
+title = "Travel Fund Access"
+subtitle = "Unlock with Contributions"
+description = "Turn your validated contributions into career opportunities. Earn travel funding through Science Live validated work, successful reproductions, and community recognition - all funded by organizational subscriptions."
+requirement = "Annual threshold: 10 Science Live validated contributions + 5 scientific claims successfully reproduced"
 
-[[extra.credit_earnings]]
-activity = "Nanopub gets endorsed (per endorsement)"
-credits = 2
+[[extra.panel_travel.features]]
+text = "70% of organizational subscriptions directly fund the Science Live travel grant ecosystem"
 
-[[extra.credit_earnings]]
-activity = "Nanopub gets reproduced"
-credits = 20
+[[extra.panel_travel.features]]
+text = "Annual fund size published transparently on our website"
 
-[[extra.credit_earnings]]
-activity = "Nanopub gets cited"
-credits = 5
+[[extra.panel_travel.features]]
+text = "Access Science Live endorsed conferences at negotiated rates"
 
+[[extra.panel_travel.features]]
+text = "Build your professional network across academia and industry"
 
-# Pricing Tiers
-[[extra.pricing_tiers]]
-name = "Explorer"
-badge = ""
-price_monthly = 0
-price_text = "forever"
-description = "Perfect for individual researchers and contributors"
-is_featured = false
-cta_text = "Get Started"
-cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
-cta_style = "secondary"
+[[extra.panel_travel.features]]
+text = "Additional sponsorships from conferences and companies expand the travel fund"
 
-[[extra.pricing_tiers.features]]
-text = "<strong>Unlimited nanopublications</strong>"
-included = true
+[[extra.panel_travel.features]]
+text = "Science Live manages conference travel with partner events"
 
-[[extra.pricing_tiers.features]]
-text = "Search and discovery"
-included = true
+[[extra.panel_travel.features]]
+text = "Industry partnership visits to bridge academia and commercial R&D"
 
-[[extra.pricing_tiers.features]]
-text = "Earn credits for contributions"
-included = true
+# Panel 3: Organizational Subscriptions
+[extra.panel_subscriptions]
+title = "Organizational Subscriptions"
+subtitle = "Fund the Ecosystem & Get Team Features"
+description = "Organizational subscriptions provide team collaboration features while directly funding the travel grants that support individual contributors across academia and industry."
 
-[[extra.pricing_tiers.features]]
-text = "Use credits for verifications"
-included = true
+[[extra.panel_subscriptions.tiers]]
+name = "Research Organizations"
+price = "€3,000"
+period = "/year"
+description = "Universities, research institutes, and governmental organizations"
+features = [
+    "Showcase your open science impact and effective implementation",
+    "Attract top talent with visible commitment to research excellence and industry collaboration",
+    "Preserve institutional knowledge as researchers transition",
+    "Track institutional research contributions and networks",
+    "Connect your researchers with industry collaboration opportunities",
+    "Help your researchers access industry-funded travel grants",
+]
 
-[[extra.pricing_tiers.features]]
-text = "Earn credit for Community support"
-included = true
+[[extra.panel_subscriptions.tiers]]
+name = "Industry Organizations"
+price = "€10,000"
+period = "/year"
+description = "Companies, R&D teams, and commercial organizations"
+features = [
+    "Priority validation queue for business-critical research",
+    "Access ready-to-reproduce research with linked code and data",
+    "Commission validation of research claims relevant to your use cases",
+    "Understand complete implementation context and avoid costly mistakes",
+    "Bridge academic-industry communication with machine-readable formats",
+    "Direct channels to collaborate with researchers on implementation challenges"
+]
 
-[[extra.pricing_tiers.features]]
-text = "Research Radar alerts"
-included = false
+# Credit earning activities
+[[extra.credit_earning]]
+credits = "20"
+activity = "Publish structured research claim"
 
-[[extra.pricing_tiers.features]]
-text = "Contributor Radar alerts"
-included = false
+[[extra.credit_earning]]
+credits = "50"
+activity = "Publish with linked and curated datasets"
 
-[[extra.pricing_tiers.features]]
-text = "API access"
-included = false
+[[extra.credit_earning]]
+credits = "75"
+activity = "Publish with reproducible code/software"
 
-[[extra.pricing_tiers]]
-name = "Professional"
-badge = "Most Popular"
-price_monthly = 0
-price_text = "/year"
-description = "Unlock Professional by: 10 nanopublications and 5 Science Live Trusted badges"
-is_featured = true
-cta_text = "Start Contributing"
-cta_url = "https://sciencelivehub.github.io/science-live-mockups/"
-cta_style = "primary"
-unlock_requirements = true
+[[extra.credit_earning]]
+credits = "150"
+activity = "Complete PRISMA systematic review"
 
-[[extra.pricing_tiers.features]]
-text = "Everything in Explorer"
-included = true
+[[extra.credit_earning]]
+credits = "100"
+activity = "Publish complete reproducible package (data + code)"
 
-[[extra.pricing_tiers.features]]
-text = "<strong>25 Research Radar alerts</strong>"
-included = true
+[[extra.credit_earning]]
+credits = "50"
+activity = "Successfully reproduce scientific claim"
 
-[[extra.pricing_tiers.features]]
-text = "<strong>50 Contributor Radar alerts</strong>"
-included = true
+[[extra.credit_earning]]
+credits = "10"
+activity = "Research output gets cited"
 
-[[extra.pricing_tiers.features]]
-text = "API access (1,000 /month)"
-included = true
+[[extra.credit_earning]]
+credits = "40"
+activity = "Contribute to consensus-building discussions and peer review"
 
-[[extra.pricing_tiers.features]]
-text = "Priority in search results"
-included = true
-
-[[extra.pricing_tiers]]
-name = "Organisations"
-badge = ""
-price_annual = 2500
-price_text = "/year"
-price_suffix = "starting from"
-description = "Academic: €2,500 • Government: €3,500 • Commercial: €5,000"
-is_featured = false
-cta_text = "Contact Sales"
-cta_url = "mailto:contact@vitenhub.no"
-cta_style = "secondary"
-show_annual_only = true
-
-[[extra.pricing_tiers.features]]
-text = "Everything in Professional"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "<strong>Unlimited users</strong>"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Team workspace"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Priority support"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "API access (10,000 /month)"
-included = true
-
-[[extra.pricing_tiers.features]]
-text = "Usage analytics"
-included = true
-
-# FAQ Items
-[[extra.pricing_faq]]
-question = "Is contributing really free?"
-answer = "Yes! Creating nanopublications, sharing research, and earning credits is completely free. You only pay for advanced monitoring and verification features."
-
-[[extra.pricing_faq]]
-question = "What payment methods do you accept?"
-answer = "We accept all major credit cards, bank transfers for annual plans, and invoicing for enterprise customers."
-
-[[extra.pricing_faq]]
-question = "Can I change plans anytime?"
-answer = "Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the next billing cycle."
-
-[[extra.pricing_faq]]
-question = "Do you offer academic discounts?"
-answer = "Yes! Academic institutions and public research organizations get 50% off Organization plans. Contact us for details."
 
 # Platform statistics
 [[extra.hero_stats]]
@@ -366,31 +291,35 @@ label = ""
 value = ""
 label = ""
 
-# Navigation menu items
+# Navigation menu items - streamlined for main page focus
 [[extra.nav_links]]
-name = "Features"
-url = "https://sciencelivehub.github.io/#features"
-
-[[extra.nav_links]]
-name = "How It Works"
-url = "https://sciencelivehub.github.io/#how-it-works"
+name = "Researchers"
+url = "#researchers"
 
 [[extra.nav_links]]
-name = "Benefits"
-url = "https://sciencelivehub.github.io/#benefits"
+name = "Organizations"
+url = "#organizations"
 
-#[[extra.nav_links]]
-#name = "Pricing"
-#url = "/pricing"
+[[extra.nav_links]]
+name = "Industry"
+url = "#industry"
 
-#[[extra.nav_links]]
-#name = "Documentation"
-#url = "https://sciencelivehub.github.io/science-live-pipeline/"
+[[extra.nav_links]]
+name = "Travel Fund"
+url = "#travel-fund"
+
+[[extra.nav_links]]
+name = "Timeline"
+url = "#timeline"
+
+[[extra.nav_links]]
+name = "Team"
+url = "#team"
 
 # Feature cards
 [[extra.features]]
 title = "AI Content Generator"
-description = "Transform nanopublications—claims, data, software, and workflows—into human-readable formats. Use AI-powered tools to create podcasts, blog posts, executive summaries, and more."
+description = "Transform research into human-readable formats. Use AI-powered tools to create podcasts, blog posts, executive summaries, and more from structured scientific content."
 icon = "robot"
 icon_type = "fas"
 link = "https://sciencelivehub.github.io/science-live-mockups/"
@@ -413,7 +342,7 @@ link = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"
 link_text = "Find Collaborators"
 
 [[extra.features]]
-title = "Nanopublication Editor"
+title = "Publication Editor"
 description = "Create structured, machine-readable claims about your findings, models, and tools. Ensure your innovations are FAIR and properly attributed."
 icon = "pen-to-square"
 icon_type = "fas"
@@ -422,7 +351,7 @@ link_text = "Start Publishing"
 
 [[extra.features]]
 title = "Zotero Integration"
-description = "Seamlessly convert your reference library into nanopublications. Bridge traditional documentation with modern semantic knowledge graphs."
+description = "Seamlessly convert your reference library into structured research outputs. Bridge traditional documentation with modern semantic knowledge graphs."
 icon = "book-bookmark"
 icon_type = "fas"
 link = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"
@@ -436,12 +365,189 @@ icon_type = "fas"
 link = "#"
 link_text = "Coming Soon"
 coming_soon = true
+[extra.timeline]
+title = "Development Roadmap"
+subtitle = "15-Month Project Timeline"
+
+[[extra.timeline.items]]
+period = "Apr-Jun 2025"
+status = "completed"
+title = "Project Launch & Foundation"
+description = "Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks"
+
+[[extra.timeline.items]]
+period = "Jul-Sep 2025"
+status = "current"
+title = "Design & User Research"
+description = "User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters"
+
+[[extra.timeline.items]]
+period = "Oct-Dec 2025"
+status = "upcoming"
+title = "Platform Development"
+description = "Core platform implementation, feature development, and integration of user feedback from design phase"
+
+[[extra.timeline.items]]
+period = "Jan-Mar 2026"
+status = "upcoming"
+title = "Beta Launch"
+description = "Limited beta release with research communities, travel fund activation, and organizational subscription pilot program"
+
+[[extra.timeline.items]]
+period = "Apr-Jun 2026"
+status = "upcoming"
+title = "Public Launch & Project Completion"
+description = "Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion"
+
+# Team
+[extra.team]
+title = "Who We Are"
+subtitle = "Experienced researchers and technologists building the future of scientific collaboration"
+
+[[extra.team.members]]
+name = "Viten Hub Team"
+title = "Project Lead"
+description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development."
+organization = "VitenHub AS"
+
+[[extra.team.members]]
+name = "Knowledge Pixels Team"
+title = "Nanopublication Infrastructure"
+description = "Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation."
+organization = "Knowledge Pixels"
+
+[[extra.team.members]]
+name = "Barbara Magagna"
+title = "Semantic Technologies Consultant"
+description = "Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise."
+organization = "Mabablue"
+
+[extra.team.hiring]
+title = "Growing Our Team"
+description = "We're seeking a Frontend Development & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
+positions = [
+  "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
+]
+cta_text = "Interested in collaborating with us?"
+cta_url = "mailto:contact@vitenhub.no"
+
+[extra.team.backing]
+title = "Institutional Support"
+description = "Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships."
+
+
+# Researchers Section
+[extra.researchers]
+title = "For Researchers"
+#subtitle = "Make Your Scientific Process Visible and Validated"
+subtitle = "Get AI-guided support to make your scientific process visible and validated, and earn travel grants along the way."
+description = "Document your complete research journey with integrated validation workflows—from reproducible systematic reviews to claim reproducibility checks—capturing the reasoning, discussions, methods, and data that drive rigorous, traceable and excellent science."
+price = "Always Free"
+price_period = ""
+price_description = ""
+cta_text = "Book a call for a demo"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+[[extra.researchers.benefits]]
+title = "AI-Enhanced reproducible PRISMA Systematic Reviews"
+description = "Structured literature searches with AI-powered paper assessment, captured search strategies, and reproducible protocols that others can re-run and update"
+
+[[extra.researchers.benefits]]
+title = "Seamless Zotero Integration"
+description = "Transform your reference library into structured research outputs directly from Zotero, bridging traditional citation management with modern knowledge sharing"
+
+[[extra.researchers.benefits]]
+title = "Enable Granular Reproducibility"
+description = "Validate specific claims and methods through CodeCheck, StatCheck, and AI-assisted evaluation rather than requiring full study replication"
+
+[[extra.researchers.benefits]]
+title = "Preserve Failed Experiments and Reasoning"
+description = "Capture what didn't work and why, preventing others from repeating failed approaches and preserving valuable scientific reasoning"
+
+[[extra.researchers.benefits]]
+title = "Access Travel Grants"
+description = "Earn credits for contributions and redeem for conference attendance, collaboration visits, and research travel funded by organization subscriptions"
+
+[[extra.researchers.benefits]]
+title = "Get Recognition for All Scientific Work"
+description = "ORCID-linked attribution for code, data, peer reviews, discussions, and validated contributions across your entire research process"
+
+# Organizations Section
+[extra.organizations]
+title = "For Organizations"
+subtitle = "Attract Top Talent and PhD Candidates by Showcasing Research Excellence Through FAIR and Open Science"
+description = "Demonstrate that your institution makes FAIR and Open Science practices easy and effective for researchers. Top researchers and promising PhD candidates are drawn to organizations where FAIR and Open Science practices drive research excellence, and expand opportunities for impact and collaboration."
+price = "€3,000"
+price_period = "/year"
+price_description = "Reduce duplicate research efforts • Attract and Retain top talent • Enable industry partnerships"
+cta_text = "Book a Free Consultation"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+[[extra.organizations.benefits]]
+title = "Build Searchable Knowledge Networks"
+description = "Connect atomic research components—methods, data, claims—across your existing repositories through persistent identifiers, creating a unified discovery layer for institutional knowledge"
+
+[[extra.organizations.benefits]]
+title = "Make FAIR Practices Easy and Effective"
+description = "AI-assisted guided workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs"
+
+[[extra.organizations.benefits]]
+title = "Attract Forward-Thinking Researchers"
+description = "Show how modern research practices are effectively rewarded in your organisation"
+
+[[extra.organizations.benefits]]
+title = "Preserve Institutional Memory"
+description = "Capture reasoning, failed experiments, and methodological decisions that often disappear between projects—essential for training new PhDs, postdocs, and early-career researchers"
+
+[[extra.organizations.benefits]]
+title = "Enable Granular Institutional Monitoring"
+description = "Track research collaboration patterns, methodology adoption, and knowledge flows at any organizational level from individual researchers to entire institutions using advanced query capabilities"
+
+[[extra.organizations.benefits]]
+title = "Facilitate Industry Collaboration"
+description = "Highlight your application-ready research contributions to attract industry partners and funding opportunities"
+
+# Industry Section
+[extra.industry]
+title = "For Industry"
+subtitle = "Find Research You Can Actually Implement"
+description = "Access validated research with complete implementation context while actively collaborating with researchers. Contribute industry insights and support the research community through structured knowledge exchange."
+price = "€10,000"
+price_period = "/year"
+price_description = "Avoid costly implementation failures • Access validated research • Build academic partnerships"
+cta_text = "Book a Free Consultation"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+
+[[extra.industry.benefits]]
+title = "Access Implementation-Ready Research"
+description = "Find community-validated research with verified code, data, and methods—already tested for reliable implementation"
+
+[[extra.industry.benefits]]
+title = "Commission Targeted studies, reproducibility checks & Validation"
+description = "Select research findings you want to be reproduced and validated while funding researchers through the Science Live Travel Fund"
+
+[[extra.industry.benefits]]
+title = "Participate in Active Research Discussions"
+description = "Engage directly with researchers through structured discussions, providing industry insights and requirements that shape research directions"
+
+[[extra.industry.benefits]]
+title = "Contribute Industry Knowledge to Science"
+description = "Share implementation insights, real-world constraints, and practical requirements that help researchers create more applicable solutions"
+
+[[extra.industry.benefits]]
+title = "Monitor Research Maturity in Real-Time"
+description = "Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions"
+
+[[extra.industry.benefits]]
+title = "Build Long-Term Academic Partnerships"
+description = "Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community"
 
 # Process steps
 [[extra.process_steps]]
 number = "1"
 title = "Create & Publish"
-description = "Use our editor or integrations to create nanopublications from your research findings, datasets, models, and software tools."
+description = "Use our editor or integrations to create structured research outputs from your findings, datasets, models, and software tools."
 
 [[extra.process_steps]]
 number = "2"
@@ -456,7 +562,7 @@ description = "Track technology maturity with Research Radar and find experts ac
 [[extra.process_steps]]
 number = "4"
 title = "Collaborate & Innovate"
-description = "Bridge the gap between research and application. Connect with peers, build on shared knowledge, and accelerate innovation."
+description = "Bridge the gap between discovery and application. Connect with peers, build on shared knowledge, and accelerate innovation."
 
 # Benefits
 [[extra.benefits]]
@@ -477,7 +583,7 @@ description = "Connect researchers with engineers, data scientists with domain e
 
 [[extra.benefits]]
 title = "Reproducible Science"
-description = "Nanopublications that include data, code, and methods enable true reproducibility."
+description = "Complete research packages that include data, code, and methods enable true reproducibility."
 
 # Benefit Cards (visual cards on the right)
 [[extra.benefit_cards]]
@@ -501,43 +607,12 @@ title = "Measurable ROI"
 description = "Track real-world adoption and impact of research outputs across organizations and domains."
 color = "success"
 
-# Footer links
+# Footer links - keeping minimal
 [[extra.footer_links]]
 text = ""
 url = ""
-#[[extra.footer_links]]
-#text = "Privacy Policy"
-#url = "/policies"
 
-#[[extra.footer_links]]
-#text = "Terms of Service"
-#url = "/terms"
-
-# Footer sections
+# Footer sections - keeping minimal  
 [[extra.footer_sections]]
 title = ""
 links = []
-#title = "Platform"
-#links = [
-#    {name = "AI Content Generator", url = "https://sciencelivehub.github.io/science-live-mockups/"},
-#    {name = "Research Radar", url = "https://sciencelivehub.github.io/science-live-mockups/research-radar"},
-#    {name = "Contributor Radar", url = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"},
-#    {name = "Nanopublication Editor", url = "https://nanodash.knowledgepixels.com/publish"},
-#]
-
-#[[extra.footer_sections]]
-#title = "Resources"
-#links = [
-#    {name = "Documentation", url = "https://sciencelivehub.github.io/science-live-pipeline/"},
-#    {name = "API Reference", url = "https://sciencelivehub.github.io/science-live-pipeline/apidocs/index.html"},
-#    {name = "GitHub", url = "https://github.com/sciencelivehub"},
-#]
-
-#[[extra.footer_sections]]
-#title = "Community"
-#links = [
-#    {name = "GitHub", url = "https://github.com/sciencelivehub"},
-#    {name = "Discord", url = "#"},
-#    {name = "Twitter", url = "#"},
-#    {name = "Newsletter", url = "#"},
-#]
