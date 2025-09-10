@@ -3,7 +3,7 @@
     <channel>
       <title>Science Live - Transform Research into Living Knowledge</title>
       <link>https://sciencelivehub.github.io</link>
-      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through AI-powered nanopublications and collaborative tools.</description>
+      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://sciencelivehub.github.io/rss.xml" rel="self" type="application/rss+xml"/>
@@ -100,15 +100,6 @@ Email: contact@vitenhub.no&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;&lt;strong&gt;Acknowledgment&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;By using Science Live, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>Pricing</title>
-          <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://sciencelivehub.github.io/pricing/</link>
-          <guid>https://sciencelivehub.github.io/pricing/</guid>
-          <description>&lt;p&gt;Contributing is always free. Pay only for advanced monitoring and verification features.&lt;&#x2F;p&gt;
 </description>
       </item>
     </channel>
