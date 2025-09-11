@@ -31,7 +31,7 @@
             </div>
             <div class="hero-visual">
               <div id="videoContainer">
-                 <img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
+                 <img src="assets/img/science-live-main.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
               </div>
             </div>
         </div>
@@ -381,13 +381,13 @@ function loadVideo() {
 
   // Add source
   const source = document.createElement('source');
-  source.src = "https://raw.githubusercontent.com/ScienceLiveHub/ideas-discussions/main/ScienceLiveIntro.mp4";
+  source.src = "https://raw.githubusercontent.com/ScienceLiveHub/ideas-discussions/main/Science_Live_NotebookLM.mp4";
   source.type = "video/mp4";
   video.appendChild(source);
 
   // When video ends, restore preview image
   video.onended = function () {
-    container.innerHTML = `<img src="assets/img/nanopublications.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">`;
+    container.innerHTML = `<img src="assets/img/science-live-main.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">`;
   };
 
   // Replace preview image with video
