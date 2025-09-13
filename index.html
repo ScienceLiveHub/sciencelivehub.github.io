@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Live - Transform Research into Living Knowledge</title>
-    <meta name="description" content="Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process.">
+    <title>Science Live - Transform Research into Connected Knowledge</title>
+    <meta name="description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,493 +13,18 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://sciencelive4all.org/css/science-live.css">
     
-<style>
-    /* Existing audience section styles remain the same */
-    .audience-section {
-        padding: 5rem 3rem;
-        position: relative;
-    }
-
-    .audience-section.researchers {
-        background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-    }
-
-    .audience-section.organizations {
-        background: linear-gradient(135deg, #fefefe, #f1f5f9);
-    }
-
-    .audience-section.industry {
-        background: linear-gradient(135deg, #f9fafb, #f3f4f6);
-    }
-
-    .audience-container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .audience-content {
-        text-align: center;
-    }
-
-    .audience-icon {
-        width: 80px;
-        height: 80px;
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 2rem;
-    }
-
-    .audience-icon i {
-        font-size: 2.5rem;
-        color: white;
-    }
-
-    .audience-content h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--secondary-color);
-        margin-bottom: 1rem;
-    }
-
-    .audience-content h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--primary-color);
-        margin-bottom: 1.5rem;
-    }
-
-    .audience-content > p {
-        font-size: 1.2rem;
-        color: var(--gray-600);
-        margin-bottom: 3rem;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .key-benefits {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        margin-bottom: 3rem;
-        text-align: left;
-    }
-
-    .benefit-item {
-        display: flex;
-        align-items: start;
-        gap: 1rem;
-        padding: 1rem;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .benefit-item i {
-        color: var(--secondary-color);
-        font-size: 1.2rem;
-        margin-top: 0.2rem;
-        flex-shrink: 0;
-    }
-
-    .pricing-highlight {
-        margin: 2rem 0;
-    }
-
-    .pricing-tier {
-        background: white;
-        border: 2px solid var(--primary-color);
-        border-radius: 16px;
-        padding: 2rem;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .pricing-tier h4 {
-        font-size: 1.3rem;
-        color: var(--secondary-color);
-        margin-bottom: 1rem;
-    }
-
-    .price {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin-bottom: 1rem;
-    }
-
-    .price span {
-        font-size: 1rem;
-        color: var(--gray-600);
-    }
-
-    .btn-audience {
-        background: var(--primary-color);
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 12px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        transition: all 0.3s;
-        display: inline-block;
-    }
-
-    .btn-audience:hover {
-        background: var(--primary-dark);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 16px rgba(5, 29, 64, 0.3);
-    }
-
-    /* New Three Panel Credit System Styles */
-    .credit-system {
-        padding: 5rem 3rem;
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        color: white;
-    }
-
-    .credit-container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .credit-header {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .credit-header h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
-
-    .credit-header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
-    }
-
-    .three-panel-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-        margin-bottom: 4rem;
-    }
-
-    .credit-panel {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 2rem;
-        position: relative;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
-    }
-
-    .credit-panel:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .credit-panel.featured {
-        border-color: #4a9eff;
-        transform: scale(1.05);
-    }
-
-    .panel-badge {
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #4a9eff;
-        color: white;
-        padding: 0.5rem 1.5rem;
-        border-radius: 20px;
-        font-size: 0.875rem;
-        font-weight: 600;
-    }
-
-    .panel-header {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .panel-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: #4a9eff;
-    }
-
-    .panel-header h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .panel-header h4 {
-        font-size: 1.1rem;
-        opacity: 0.9;
-        margin-bottom: 1rem;
-    }
-
-    .panel-header p {
-        font-size: 0.95rem;
-        opacity: 0.8;
-        line-height: 1.5;
-    }
-
-    .requirement {
-        background: rgba(74, 158, 255, 0.2);
-        padding: 0.75rem;
-        border-radius: 8px;
-        margin-top: 1rem;
-        font-size: 0.9rem;
-        font-weight: 500;
-    }
-
-    .panel-features {
-        margin-bottom: 2rem;
-    }
-
-    .feature-item {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        padding: 0.5rem 0;
-        font-size: 0.95rem;
-    }
-
-    .feature-item.small {
-        font-size: 0.85rem;
-        padding: 0.3rem 0;
-    }
-
-    .feature-item i {
-        color: #4a9eff;
-        font-size: 1rem;
-        flex-shrink: 0;
-    }
-
-    .panel-footer {
-        text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 1rem;
-    }
-
-    .panel-price {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #4a9eff;
-    }
-
-    .subscription-tiers {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .tier-card {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        padding: 1.5rem;
-    }
-
-    .tier-card h5 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        color: #4a9eff;
-    }
-
-    .tier-price {
-        margin-bottom: 1rem;
-    }
-
-    .tier-price .price {
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-
-    .tier-price .period {
-        font-size: 0.9rem;
-        opacity: 0.8;
-    }
-
-    .tier-description {
-        font-size: 0.85rem;
-        opacity: 0.8;
-        margin-bottom: 1rem;
-    }
-
-.credit-explanation {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;  /* Add this line */
-    text-align: center;
-}
-
-.transparency-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.transparency-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-
-.transparency-note {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-top: 1rem;
-}
-
-    .credit-earning-section {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    .credit-earning-section h3 {
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-    }
-
-.credit-activities {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-@media (min-width: 1200px) {
-    .credit-activities {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-    .credit-activity {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-    }
-
-    .credits {
-        font-weight: 700;
-        color: #4a9eff;
-    }
-
-    .activity {
-        font-size: 0.9rem;
-        opacity: 0.9;
-    }
-
-    .travel-fund-benefits {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 3rem;
-        text-align: center;
-    }
-
-    .travel-fund-benefits h3 {
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-
-    .travel-fund-benefits h4 {
-        margin-bottom: 1rem;
-        opacity: 0.9;
-    }
-
-    .travel-fund-benefits > p {
-        margin-bottom: 2rem;
-        opacity: 0.8;
-    }
-
-    .travel-benefits-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-        text-align: left;
-    }
-
-    .travel-benefit {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1.5rem;
-        border-radius: 12px;
-    }
-
-    .travel-benefit h5 {
-        color: #4a9eff;
-        margin-bottom: 0.5rem;
-    }
-
-    .travel-benefit p {
-        font-size: 0.9rem;
-        opacity: 0.8;
-    }
-
-    .sustainability-section {
-        text-align: center;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 16px;
-    }
-
-    .sustainability-section h3 {
-        margin-bottom: 1rem;
-        font-size: 1.3rem;
-    }
-
-    .sustainability-section p {
-        font-size: 1.1rem;
-        opacity: 0.9;
-        line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-        .three-panel-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .credit-panel.featured {
-            transform: none;
-        }
-        
-        .credit-activities {
-            grid-template-columns: 1fr;
-        }
-        
-        .travel-benefits-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Science Live - Transform Research into Living Knowledge">
-    <meta property="og:description" content="Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process.">
+    <meta property="og:title" content="Science Live - Transform Research into Connected Knowledge">
+    <meta property="og:description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;">
     <meta property="og:image" content="https://sciencelive4all.org/static/og-image.png">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Science Live - Transform Research into Living Knowledge">
-    <meta name="twitter:description" content="Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process.">
+    <meta name="twitter:title" content="Science Live - Transform Research into Connected Knowledge">
+    <meta name="twitter:description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://sciencelive4all.org/static/favicon.png">
@@ -533,17 +58,17 @@
             </a>
             <div class="nav-menu">
                 
-                <a href="#researchers" class="nav-link">Researchers</a>
+                <a href="#researchers" class="nav-link primary">Researchers</a>
                 
-                <a href="#organizations" class="nav-link">Organizations</a>
+                <a href="#organizations" class="nav-link primary">Organizations</a>
                 
-                <a href="#industry" class="nav-link">Industry</a>
+                <a href="#industry" class="nav-link primary">Industry</a>
                 
-                <a href="#travel-fund" class="nav-link">Travel Fund</a>
+                <a href="#travel-fund" class="nav-link travel-fund">Travel Fund</a>
                 
-                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#timeline" class="nav-link secondary">Timeline</a>
                 
-                <a href="#team" class="nav-link">Team</a>
+                <a href="#team" class="nav-link secondary">Team</a>
                 
             </div>
         </div>
@@ -555,8 +80,8 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Science Live: Research beyond Walls</h1>
-                <p>Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, making research traceable, reproducible, and ready for your team and others to use and build on.</p>
-                <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">Connect science and industry — apply and validate findings in practice, while researchers earn travel credits that fuel a self-sustained research ecosystem.</p>
+                <p>Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, creating knowledge bricks that make your research traceable, reproducible, and ready for your team and others to build upon.</p>
+                <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">Connect science and industry—apply and validate findings in practice while researchers earn travel credits that fuel a self-sustained research ecosystem.</p>
                 
                 <div class="hero-buttons">
                     <a href="mailto:contact@vitenhub.no?subject=Join%20our%20Beta%20Waitlist&amp;body=Hi%20Team,%0A%0A" class="btn-primary">
@@ -596,150 +121,81 @@
         </div>
     </section>
 
-<!-- Timeline Section -->
-
-<section class="timeline-section" id="timeline">
-    <div class="timeline-container">
-        <div class="timeline-header">
-            <h2>Development Roadmap</h2>
-            <p>15-Month Project Timeline</p>
-        </div>
-        <div class="timeline">
-            
-            <div class="timeline-item completed">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-check"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Apr-Jun 2025</div>
-                    <h3>Project Launch &amp; Foundation</h3>
-                    <p>Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks</p>
-                </div>
+    <!-- Three Pillars Section -->
+    <section class="three-pillars-section">
+        <div class="pillars-container">
+            <div class="section-header">
+                <div class="section-tag">OUR TARGET AUDIENCES</div>
+                <h2 class="section-title">Your role, your Science Live experience</h2>
             </div>
-            
-            <div class="timeline-item current">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-play"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Jul-Sep 2025</div>
-                    <h3>Design &amp; User Research</h3>
-                    <p>User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Oct-Dec 2025</div>
-                    <h3>Platform Development</h3>
-                    <p>Core platform implementation, feature development, and integration of user feedback from design phase</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Jan-Mar 2026</div>
-                    <h3>Beta Launch</h3>
-                    <p>Limited beta release with research communities, travel fund activation, and organizational subscription pilot program</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Apr-Jun 2026</div>
-                    <h3>Public Launch &amp; Project Completion</h3>
-                    <p>Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-
-<!-- Team Section -->
-
-<section class="team-section" id="team">
-    <div class="team-container">
-        <div class="team-header">
-            <h2>Who We Are</h2>
-            <p>Experienced researchers and technologists building the future of scientific collaboration</p>
-        </div>
-        
-        <!-- Team Members -->
-        <div class="team-members">
-            
-            <div class="team-member">
-                <h3>Viten Hub Team</h3>
-                <h4>Project Lead</h4>
-                <p>Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development.</p>
-                <div class="member-org">VitenHub AS</div>
-            </div>
-            
-            <div class="team-member">
-                <h3>Knowledge Pixels Team</h3>
-                <h4>Nanopublication Infrastructure</h4>
-                <p>Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation.</p>
-                <div class="member-org">Knowledge Pixels</div>
-            </div>
-            
-            <div class="team-member">
-                <h3>Barbara Magagna</h3>
-                <h4>Semantic Technologies Consultant</h4>
-                <p>Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise.</p>
-                <div class="member-org">Mabablue</div>
-            </div>
-            
-        </div>
-
-        <!-- Hiring Section -->
-        
-        <div class="hiring-section">
-            <h3>Growing Our Team</h3>
-            <p>We&#x27;re seeking a Frontend Development &amp; UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers.</p>
-            <div class="open-positions">
+            <div class="pillars-grid">
                 
-                <div class="position-item">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Frontend Development &amp; UX Design Consultant - React.js expertise with user-centered design experience for research platforms</span>
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="pillar-title">For Researchers</h3>
+                    <p class="pillar-description">PhD students, postdocs, faculty, and independent researchers who want to make their work discoverable, reusable, and properly credited.</p>
+                    <a href="#researchers" class="pillar-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="pillar-title">For Organizations</h3>
+                    <p class="pillar-description">Universities, research institutes, and government agencies that need to preserve knowledge, support their researchers, and demonstrate research excellence.</p>
+                    <a href="#organizations" class="pillar-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="pillar-title">For Industry</h3>
+                    <p class="pillar-description">Companies, R&amp;D teams, and commercial organizations seeking validated research they can actually implement in real-world applications.</p>
+                    <a href="#industry" class="pillar-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
             </div>
-            <div class="hiring-cta">
-                <a href="mailto:contact@vitenhub.no" class="btn-hiring">Interested in collaborating with us?</a>
+            
+            <!-- Building Blocks Visual -->
+            <div class="building-blocks-visual">
+
+
+                <h3>Every Research Component Becomes a Knowledge Brick</h3>
+                <div class="blocks-diagram">
+                    <div class="research-block methods">
+                        <i class="fas fa-cogs"></i>
+                        <span>Methods</span>
+                    </div>
+                    <div class="research-block data">
+                        <i class="fas fa-database"></i>
+                        <span>Data</span>
+                    </div>
+                    <div class="research-block claims">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Claims</span>
+                    </div>
+                    <div class="research-block code">
+                        <i class="fas fa-code"></i>
+                        <span>Code</span>
+                    </div>
+                    <div class="research-block reviews">
+                        <i class="fas fa-comments"></i>
+                        <span>Discussions</span>
+                    </div>
+                </div>
+                <p class="blocks-caption">Create knowledge bricks that others can discover, validate, and stack together</p>
             </div>
         </div>
-        
-
-        <!-- Institutional Backing -->
-        
-        <div class="backing-section">
-            <h3>Institutional Support</h3>
-            <p>Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships.</p>
-        </div>
-        
-    </div>
-</section>
-
+    </section>
 
 
     <!-- For Researchers Section -->
@@ -750,42 +206,54 @@
                     <i class="fas fa-chalkboard-user"></i>
                 </div>
                 <h2>For Researchers</h2>
-                <h3>Get AI-guided support to make your scientific process visible and validated, and earn travel grants along the way.</h3>
+                <h3>Earn travel grants while contributing to your scientific legacy through connected knowledge bricks.</h3>
                 <p>Document your complete research journey with integrated validation workflows—from reproducible systematic reviews to claim reproducibility checks—capturing the reasoning, discussions, methods, and data that drive rigorous, traceable and excellent science.</p>
                 
-                <div class="key-benefits">
+                <!-- Two Primary Benefits -->
+                <div class="primary-benefits">
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Get Recognition for All Scientific Work:</strong> ORCID-linked attribution for code, data, peer reviews, discussions, and validated contributions across your entire research process</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Get Recognition &amp; Career Advancement</h4>
+                        </div>
+                        <p>ORCID-linked attribution for code, data, reviews, discussions, and validated contributions across your research process. Build credentials with verified, traceable work.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Enable Granular Reproducibility:</strong> Validate specific claims and methods through CodeCheck, StatCheck, and AI-assisted evaluation rather than requiring full study replication</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Preserve scientific reasoning:</strong> Capture what worked, what didn’t, and why — enabling others to build new hypotheses while preserving valuable scientific reasoning</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>AI-Enhanced reproducible PRISMA Systematic Reviews:</strong> Structured literature searches with AI-powered paper assessment, captured search strategies, and reproducible protocols that others can re-run and update</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Seamless Zotero Integration:</strong> Transform your reference library into structured research outputs directly from Zotero, bridging traditional citation management with modern knowledge sharing</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Access Travel Grants:</strong> Earn credits for contributions and redeem for conference attendance, collaboration visits, and research travel funded by organization subscriptions</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Access Merit-Based Travel Grants</h4>
+                        </div>
+                        <p>Earn credits for quality contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost.</p>
                     </div>
                     
                 </div>
+
+                <!-- Three Secondary Benefits -->
+                <div class="secondary-benefits">
+                    
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Make FAIR Practices Effortless</h5>
+                        </div>
+                        <p>AI-enhanced PRISMA systematic reviews and seamless Zotero integration. Structured guidance makes compliance easy while working with your existing research toolkit.</p>
+                    </div>
+                    
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Create Stackable Knowledge Bricks</h5>
+                        </div>
+                        <p>Document complete research pathways—what worked, what didn&#x27;t, and why. Enable others to build new hypotheses on your reasoning while preventing duplicate efforts.</p>
+                    </div>
+                    
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Enable Brick-Level Validation</h5>
+                        </div>
+                        <p>Use CodeCheck, StatCheck, and AI-assisted evaluation to validate specific brick rather than requiring complete end-to-end reproduction.</p>
+                    </div>
+                    
+                </div>
+
                 <div class="pricing-highlight">
                     <div class="pricing-tier">
                         <h4>Individuals</h4>
@@ -809,39 +277,50 @@
                     <i class="fas fa-university"></i>
                 </div>
                 <h2>For Organizations</h2>
-                <h3>Attract Top Talent and PhD Candidates by Showcasing Research Excellence Through FAIR and Open Science</h3>
-                <p>Demonstrate that your institution makes FAIR and Open Science practices easy and effective for researchers. Top researchers and promising PhD candidates are drawn to organizations where FAIR and Open Science practices drive research excellence, and expand opportunities for impact and collaboration.</p>
+                <h3>Attract Top Talent Through Research Excellence</h3>
+                <p>Show that your institution makes FAIR and Open Science practices easy and rewarding. Top researchers are drawn to organizations that support FAIR science and career advancement.</p>
                 
-                <div class="key-benefits">
+                <!-- Two Primary Benefits -->
+                <div class="primary-benefits">
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Build Searchable Knowledge Networks:</strong> Connect atomic research components—methods, data, claims—across your existing repositories through persistent identifiers, creating a unified discovery layer for institutional knowledge</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Track Research Impact and Collaboration Patterns</h4>
+                        </div>
+                        <p>See who&#x27;s collaborating with whom, which departments excel at open science practices, and track research patterns across your institution—insights that are nearly impossible to get today.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Make FAIR Practices Easy and Effective:</strong> AI-assisted guided workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Position your institution as a leader in FAIR, high-quality science</h4>
+                        </div>
+                        <p>Provide tools and infrastructure that help researchers excel, attract and retain top talent, and clearly demonstrate your commitment to research excellence.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Attract Forward-Thinking Researchers:</strong> Show how modern research practices are effectively rewarded in your organisation</span>
+                </div>
+
+                <!-- Three Secondary Benefits -->
+                <div class="secondary-benefits">
+                    
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Preserve Institutional Memory</h5>
+                        </div>
+                        <p>Capture reasoning, methodological decisions, and research pathways that disappear between projects—essential for training new PhDs, postdocs, and early-career researchers.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Preserve Institutional Memory:</strong> Capture reasoning, tests, and methodological decisions that often disappear between projects—essential for training new PhDs, postdocs, and early-career researchers</span>
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Make FAIR Practices Easy and Effective</h5>
+                        </div>
+                        <p>AI-assisted workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Enable Granular Institutional Monitoring:</strong> Track research collaboration patterns, methodology adoption, and knowledge flows at any organizational level from individual researchers to entire institutions using advanced query capabilities</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Facilitate Industry Collaboration:</strong> Highlight your application-ready research contributions to attract industry partners and funding opportunities</span>
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Facilitate Industry Collaboration</h5>
+                        </div>
+                        <p>Highlight your application-ready research to attract industry partners and funding opportunities.</p>
                     </div>
                     
                 </div>
@@ -850,7 +329,7 @@
                     <div class="pricing-tier">
                         <h4>Academic Organizations</h4>
                         <div class="price">€3,000<span>&#x2F;year</span></div>
-                        <p>Reduce duplicate research efforts • Attract and Retain top talent • Enable industry partnerships</p>
+                        <p>Reduce duplicate research • Attract top talent • Enable industry partnerships</p>
                     </div>
                 </div>
 
@@ -870,38 +349,49 @@
                 </div>
                 <h2>For Industry</h2>
                 <h3>Find Research You Can Actually Implement</h3>
-                <p>Access validated research with complete implementation context while actively collaborating with researchers. Contribute industry insights and support the research community through structured knowledge exchange.</p>
+                <p>Access validated research with complete implementation context. Contribute industry insights while supporting the research community through structured knowledge exchange.</p>
                 
-                <div class="key-benefits">
+                <!-- Two Primary Benefits -->
+                <div class="primary-benefits">
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Access Implementation-Ready Research:</strong> Find community-validated research with verified code, data, and methods—already tested for reliable implementation</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Access Implementation-Ready Research</h4>
+                        </div>
+                        <p>Find community-validated research with verified code, data, and methods—already tested for reliable implementation. Track scientific progress to identify production-ready solutions.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Commission Targeted studies, reproducibility checks &amp; Validation:</strong> Select research findings you want to be reproduced and validated while funding researchers through the Science Live Travel Fund</span>
+                    <div class="primary-benefit">
+                        <div class="benefit-header">
+                            <h4>Commission Targeted Validation Studies</h4>
+                        </div>
+                        <p>Select research findings you want reproduced and validated while funding researchers through the Travel Fund. Ensure research meets your implementation needs.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Participate in Active Research Discussions:</strong> Engage directly with researchers through structured discussions, providing industry insights and requirements that shape research directions</span>
+                </div>
+
+                <!-- Three Secondary Benefits -->
+                <div class="secondary-benefits">
+                    
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Participate in Research Discussions</h5>
+                        </div>
+                        <p>Engage directly with researchers, providing industry insights that shape research directions toward practical applications.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Contribute Industry Knowledge to Science:</strong> Share implementation insights, real-world constraints, and practical requirements that help researchers create more applicable solutions</span>
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Monitor Research Maturity in Real-Time</h5>
+                        </div>
+                        <p>Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions.</p>
                     </div>
                     
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Monitor Research Maturity in Real-Time:</strong> Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions</span>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span><strong>Build Long-Term Academic Partnerships:</strong> Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community</span>
+                    <div class="secondary-benefit">
+                        <div class="benefit-header">
+                            <h5>Build Long-Term Academic Partnerships</h5>
+                        </div>
+                        <p>Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community.</p>
                     </div>
                     
                 </div>
@@ -910,7 +400,7 @@
                     <div class="pricing-tier">
                         <h4>Commercial Organizations</h4>
                         <div class="price">€10,000<span>&#x2F;year</span></div>
-                        <p>Avoid costly implementation setbacks • Access validated research • Build academic partnerships</p>
+                        <p>Avoid implementation failures • Access validated research • Build partnerships</p>
                     </div>
                 </div>
 
@@ -921,7 +411,7 @@
         </div>
     </section>
 
-    <!-- Credit System & Travel Fund Section - New Three Panel Structure -->
+    <!-- Credit System & Travel Fund Section -->
     <section class="credit-system" id="travel-fund">
         <div class="credit-container">
             <div class="credit-header">
@@ -948,7 +438,7 @@
                         
                         <div class="feature-item">
                             <i class="fas fa-check"></i>
-                            <span>Follow structured guidance to make reproducible outputs—data, code, and claims</span>
+                            <span>Create stackable knowledge bricks from every research decision</span>
                         </div>
                         
                         <div class="feature-item">
@@ -1133,26 +623,26 @@
                 </div>
             </div>
 
-<!-- Credit System Explanation -->
-<div class="credit-explanation">
-    <h3>How the Credit System Works</h3>
-    <p>Credits reflect relative contribution value - a PRISMA systematic review (150 credits) is worth 7.5x more than a basic claim (20 credits). Actual travel funding depends on total annual fund size divided by all credits earned.</p>
-    
-    <div class="transparency-example">
-        <h4>Current Status (June 2025):</h4>
-        <div class="transparency-grid">
-            <div class="transparency-item">
-                <strong>Fund Balance:</strong> €3,000 (initial seed funding)
+            <!-- Credit System Explanation -->
+            <div class="credit-explanation">
+                <h3>How the Credit System Works</h3>
+                <p>Credits reflect relative contribution value - a PRISMA systematic review (150 credits) is worth 7.5x more than a basic claim (20 credits). Actual travel funding depends on total annual fund size divided by all credits earned.</p>
+                
+                <div class="transparency-example">
+                    <h4>Current Status (June 2025):</h4>
+                    <div class="transparency-grid">
+                        <div class="transparency-item">
+                            <strong>Fund Balance:</strong> €3,000 (initial seed funding)
+                        </div>
+                        <div class="transparency-item">
+                            <strong>Credits Earned:</strong> 0
+                        </div>
+                        <div class="transparency-item">
+                            <strong>Credit Value:</strong> Will be calculated as organizations join and contributors earn credits
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="transparency-item">
-                <strong>Credits Earned:</strong> 0
-            </div>
-            <div class="transparency-item">
-                <strong>Credit Value:</strong> Will be calculated as organizations join and contributors earn credits
-            </div>
-        </div>
-    </div>
-</div>
 
             <!-- Credit Earning Activities -->
             <div class="credit-earning-section">
@@ -1204,6 +694,150 @@
 
         </div>
     </section>
+
+<!-- Timeline Section -->
+
+<section class="timeline-section" id="timeline">
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <h2>Development Roadmap</h2>
+            <p>15-Month Project Timeline</p>
+        </div>
+        <div class="timeline">
+            
+            <div class="timeline-item completed">
+                <div class="timeline-marker">
+                    
+                    <i class="fas fa-check"></i>
+                    
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Apr-Jun 2025</div>
+                    <h3>Project Launch &amp; Foundation</h3>
+                    <p>Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item current">
+                <div class="timeline-marker">
+                    
+                    <i class="fas fa-play"></i>
+                    
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Jul-Sep 2025</div>
+                    <h3>Design &amp; User Research</h3>
+                    <p>User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item upcoming">
+                <div class="timeline-marker">
+                    
+                    <i class="fas fa-clock"></i>
+                    
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Oct-Dec 2025</div>
+                    <h3>Platform Development</h3>
+                    <p>Core platform implementation, feature development, and integration of user feedback from design phase</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item upcoming">
+                <div class="timeline-marker">
+                    
+                    <i class="fas fa-clock"></i>
+                    
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Jan-Mar 2026</div>
+                    <h3>Beta Launch</h3>
+                    <p>Limited beta release with research communities, travel fund activation, and organizational subscription pilot program</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item upcoming">
+                <div class="timeline-marker">
+                    
+                    <i class="fas fa-clock"></i>
+                    
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Apr-Jun 2026</div>
+                    <h3>Public Launch &amp; Project Completion</h3>
+                    <p>Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Team Section -->
+
+<section class="team-section" id="team">
+    <div class="team-container">
+        <div class="team-header">
+            <h2>Who We Are</h2>
+            <p>Experienced researchers and technologists building the future of scientific collaboration</p>
+        </div>
+        
+        <!-- Team Members -->
+        <div class="team-members">
+            
+            <div class="team-member">
+                <h3>Viten Hub Team</h3>
+                <h4>Project Lead</h4>
+                <p>Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development.</p>
+                <div class="member-org">VitenHub AS</div>
+            </div>
+            
+            <div class="team-member">
+                <h3>Knowledge Pixels Team</h3>
+                <h4>Nanopublication Infrastructure</h4>
+                <p>Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation.</p>
+                <div class="member-org">Knowledge Pixels</div>
+            </div>
+            
+            <div class="team-member">
+                <h3>Barbara Magagna</h3>
+                <h4>Semantic Technologies Consultant</h4>
+                <p>Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise.</p>
+                <div class="member-org">Mabablue</div>
+            </div>
+            
+        </div>
+
+        <!-- Hiring Section -->
+        
+        <div class="hiring-section">
+            <h3>Growing Our Team</h3>
+            <p>We&#x27;re seeking a Frontend Development &amp; UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers.</p>
+            <div class="open-positions">
+                
+                <div class="position-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Frontend Development &amp; UX Design Consultant - React.js expertise with user-centered design experience for research platforms</span>
+                </div>
+                
+            </div>
+            <div class="hiring-cta">
+                <a href="mailto:contact@vitenhub.no" class="btn-hiring">Interested in collaborating with us?</a>
+            </div>
+        </div>
+        
+
+        <!-- Institutional Backing -->
+        
+        <div class="backing-section">
+            <h3>Institutional Support</h3>
+            <p>Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships.</p>
+        </div>
+        
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="cta">
@@ -1325,7 +959,6 @@
     
     
 <script>
-
 function loadVideo() {
   const container = document.getElementById('videoContainer');
   
@@ -1335,8 +968,8 @@ function loadVideo() {
   video.height = 640;
   video.controls = true;
   video.autoplay = true;
-  video.muted = true; // Needed if you want autoplay
-  video.playsInline = true; // Mobile support
+  video.muted = true;
+  video.playsInline = true;
 
   // Add source
   const source = document.createElement('source');
@@ -1354,28 +987,37 @@ function loadVideo() {
   container.appendChild(video);
 }
 
-    // Animate elements on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+// Animate elements on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
 
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Apply animation to feature cards and process steps
-    document.querySelectorAll('.feature-card, .process-step, .benefit-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
     });
+}, observerOptions);
+
+// Apply animation to feature cards and process steps
+document.querySelectorAll('.pillar-card, .researcher-pillar, .benefit-card, .research-block').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// Animate building blocks with stagger
+const blocks = document.querySelectorAll('.research-block');
+blocks.forEach((block, index) => {
+    setTimeout(() => {
+        block.style.opacity = '1';
+        block.style.transform = 'translateY(0)';
+    }, index * 200);
+});
 </script>
 
 </body>

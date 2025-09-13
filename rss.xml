@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>Science Live - Transform Research into Living Knowledge</title>
+      <title>Science Live - Transform Research into Connected Knowledge</title>
       <link>https://sciencelive4all.org</link>
-      <description>Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process.</description>
+      <description>Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://sciencelive4all.org/rss.xml" rel="self" type="application/rss+xml"/>
