@@ -2,8 +2,8 @@
 base_url = "https://sciencelive4all.org"
 
 # The site title and description
-title = "Science Live - Transform Research into Living Knowledge"
-description = "Science Live revolutionizes how researchers, data scientists, and engineers create, share, and discover knowledge through collaborative tools that capture every step of the scientific process."
+title = "Science Live - Transform Research into Connected Knowledge"
+description = "Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress."
 
 # The default language
 default_language = "en"
@@ -84,18 +84,10 @@ author_orcid = "0000-0002-1784-2920"
 github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
-# Hero Section
+# Hero Section - Updated with Three Pillars Messaging
 hero_title = "Science Live: Research beyond Walls"
-hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, making research traceable, reproducible, and ready for your team and others to use and build on."
-hero_tagline = "Connect science and industry — apply and validate findings in practice, while researchers earn travel credits that fuel a self-sustained research ecosystem."
-#hero_subtitle = "Capture the complete scientific process—discussions, reasoning, methods, data, and findings—through guided workflows that make research fully traceable, reproducible, discoverable, and ready for real-world application."
-#hero_subtitle = "Capture the full scientific thinking process — from discussions and reasoning to claims, data, software, and methods. Guided workflows help you create reproducible, discoverable, traceable, and actionable research."
-#hero_tagline = "Search, collaborate, validate, and apply findings for your own cases — earn credits towards travel grants while accelerating the journey from discovery to application."
-
-#hero_subtitle = "Capture the scientific thinking process — discussions, reasoning, claims, data, software, and methods — providing the complete context needed for reliable implementation and replication, while guiding all contributors to make research outputs reproducible, discoverable, traceable, and actionable."
-#hero_tagline = "Collaborators across academia and industry can validate, build on, and apply findings as they happen, while earning credits toward travel grants that fund conferences and research visits, accelerating the entire research-to-application pipeline."
-#hero_subtitle = "Capture the scientific thinking process — discussions, reasoning, claims, data, software, and methods — while guiding all contributors to make research outputs reproducible, discoverable, traceable, and actionable."
-#hero_tagline = "Collaborators across academia and industry can validate, build on, and apply findings as they happen, accelerating the entire research-to-application pipeline."
+hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, creating knowledge bricks that make your research traceable, reproducible, and ready for your team and others to build upon."
+hero_tagline = "Connect science and industry—apply and validate findings in practice while researchers earn travel credits that fuel a self-sustained research ecosystem."
 
 # Hero Buttons
 hero_primary_button_text = "Join Beta Waitlist"
@@ -107,12 +99,11 @@ hero_secondary_button_url = "https://calendly.com/anne-fouilloux/30min"
 hero_secondary_button_icon = "video"
 
 # Core Values
-core_values = "Traceable • Open • Collaborative"
+core_values = "Stackable • Traceable • Rewarded"
 
 # Section Headers
-features_section_tag = "PLATFORM FEATURES"
-features_section_title = "Everything You Need from Modern Research to Scientific Innovation"
-features_section_subtitle = "Powerful tools to accelerate innovation across academia and industry"
+features_section_tag = "OUR TARGET AUDIENCES"
+features_section_title = "Your role, your Science Live experience"
 
 how_it_works_section_tag = "HOW IT WORKS"
 how_it_works_section_title = "Your Knowledge Journey with Science Live"
@@ -150,6 +141,251 @@ total_credits_earned = "0"
 current_credit_value = "Will be calculated as organizations join and contributors earn credits"
 last_updated = "June 2025"
 
+# Platform statistics
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+[[extra.hero_stats]]
+value = ""
+label = ""
+
+# Navigation menu items - streamlined for main page focus
+[[extra.nav_links]]
+name = "Researchers"
+url = "#researchers"
+class = "primary"
+
+[[extra.nav_links]]
+name = "Organizations"  
+url = "#organizations"
+class = "primary"
+
+[[extra.nav_links]]
+name = "Industry"
+url = "#industry"
+class = "primary"
+
+[[extra.nav_links]]
+name = "Travel Fund"
+url = "#travel-fund"
+class = "travel-fund"
+
+[[extra.nav_links]]
+name = "Timeline"
+url = "#timeline"
+class = "secondary"
+
+[[extra.nav_links]]
+name = "Team"
+url = "#team"
+class = "secondary"
+
+# Three Pillars Features - Aligned with Target Audiences
+[[extra.features]]
+title = "For Researchers"
+description = "PhD students, postdocs, faculty, and independent researchers who want to make their work discoverable, reusable, and properly credited."
+icon = "user-graduate"
+icon_type = "fas"
+link = "#researchers"
+link_text = "Learn More"
+
+[[extra.features]]
+title = "For Organizations"
+description = "Universities, research institutes, and government agencies that need to preserve knowledge, support their researchers, and demonstrate research excellence."
+icon = "university"
+icon_type = "fas"
+link = "#organizations"
+link_text = "Learn More"
+
+[[extra.features]]
+title = "For Industry"
+description = "Companies, R&D teams, and commercial organizations seeking validated research they can actually implement in real-world applications."
+icon = "handshake"
+icon_type = "fas"
+link = "#industry"
+link_text = "Learn More"
+
+[extra.visual_blocks]
+title = "Every Research Component Becomes a Knowledge Brick"
+description = "Create knowledge bricks that others can discover, validate, and stack together"
+
+# Timeline
+[extra.timeline]
+title = "Development Roadmap"
+subtitle = "15-Month Project Timeline"
+
+[[extra.timeline.items]]
+period = "Apr-Jun 2025"
+status = "completed"
+title = "Project Launch & Foundation"
+description = "Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks"
+
+[[extra.timeline.items]]
+period = "Jul-Sep 2025"
+status = "current"
+title = "Design & User Research"
+description = "User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters"
+
+[[extra.timeline.items]]
+period = "Oct-Dec 2025"
+status = "upcoming"
+title = "Platform Development"
+description = "Core platform implementation, feature development, and integration of user feedback from design phase"
+
+[[extra.timeline.items]]
+period = "Jan-Mar 2026"
+status = "upcoming"
+title = "Beta Launch"
+description = "Limited beta release with research communities, travel fund activation, and organizational subscription pilot program"
+
+[[extra.timeline.items]]
+period = "Apr-Jun 2026"
+status = "upcoming"
+title = "Public Launch & Project Completion"
+description = "Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion"
+
+# Team
+[extra.team]
+title = "Who We Are"
+subtitle = "Experienced researchers and technologists building the future of scientific collaboration"
+
+[[extra.team.members]]
+name = "Viten Hub Team"
+title = "Project Lead"
+description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development."
+organization = "VitenHub AS"
+
+[[extra.team.members]]
+name = "Knowledge Pixels Team"
+title = "Nanopublication Infrastructure"
+description = "Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation."
+organization = "Knowledge Pixels"
+
+[[extra.team.members]]
+name = "Barbara Magagna"
+title = "Semantic Technologies Consultant"
+description = "Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise."
+organization = "Mabablue"
+
+[extra.team.hiring]
+title = "Growing Our Team"
+description = "We're seeking a Frontend Development & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
+positions = [
+  "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
+]
+cta_text = "Interested in collaborating with us?"
+cta_url = "mailto:contact@vitenhub.no"
+
+[extra.team.backing]
+title = "Institutional Support"
+description = "Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships."
+
+# Researchers Section - 2 Primary + 3 Secondary Benefits
+[extra.researchers]
+title = "For Researchers"
+subtitle = "Earn travel grants while contributing to your scientific legacy through connected knowledge bricks."
+description = "Document your complete research journey with integrated validation workflows—from reproducible systematic reviews to claim reproducibility checks—capturing the reasoning, discussions, methods, and data that drive rigorous, traceable and excellent science."
+price = "Always Free"
+price_period = ""
+price_description = ""
+cta_text = "Book a call for a demo"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+# Primary benefits (will be displayed larger)
+[[extra.researchers.primary_benefits]]
+title = "Get Recognition & Career Advancement"
+description = "ORCID-linked attribution for code, data, reviews, discussions, and validated contributions across your research process. Build credentials with verified, traceable work."
+
+[[extra.researchers.primary_benefits]]
+title = "Access Merit-Based Travel Grants" 
+description = "Earn credits for quality contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost."
+
+# Secondary benefits (will be displayed smaller)
+[[extra.researchers.secondary_benefits]]
+title = "Make FAIR Practices Effortless"
+description = "AI-enhanced PRISMA systematic reviews and seamless Zotero integration. Structured guidance makes compliance easy while working with your existing research toolkit."
+
+[[extra.researchers.secondary_benefits]]
+title = "Create Stackable Knowledge Bricks"
+description = "Document complete research pathways—what worked, what didn't, and why. Enable others to build new hypotheses on your reasoning while preventing duplicate efforts."
+
+[[extra.researchers.secondary_benefits]]
+title = "Enable Brick-Level Validation"
+description = "Use CodeCheck, StatCheck, and AI-assisted evaluation to validate specific brick rather than requiring complete end-to-end reproduction."
+
+# Organizations Section - Reduced to 2 key benefits
+[extra.organizations]
+title = "For Organizations"
+subtitle = "Attract Top Talent Through Research Excellence"
+description = "Show that your institution makes FAIR and Open Science practices easy and rewarding. Top researchers are drawn to organizations that support FAIR science and career advancement."
+price = "€3,000"
+price_period = "/year"
+price_description = "Reduce duplicate research • Attract top talent • Enable industry partnerships"
+cta_text = "Book a Free Consultation"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+# Primary benefits (will be displayed larger)
+[[extra.organizations.primary_benefits]]
+title = "Track Research Impact and Collaboration Patterns"
+description = "See who's collaborating with whom, which departments excel at open science practices, and track research patterns across your institution—insights that are nearly impossible to get today."
+
+[[extra.organizations.primary_benefits]]
+title = "Position your institution as a leader in FAIR, high-quality science"
+description = "Provide tools and infrastructure that help researchers excel, attract and retain top talent, and clearly demonstrate your commitment to research excellence."
+
+# Secondary benefits (will be displayed smaller)
+[[extra.organizations.secondary_benefits]]
+title = "Preserve Institutional Memory"
+description = "Capture reasoning, methodological decisions, and research pathways that disappear between projects—essential for training new PhDs, postdocs, and early-career researchers."
+
+[[extra.organizations.secondary_benefits]]
+title = "Make FAIR Practices Easy and Effective"
+description = "AI-assisted workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs."
+
+[[extra.organizations.secondary_benefits]]
+title = "Facilitate Industry Collaboration"
+description = "Highlight your application-ready research to attract industry partners and funding opportunities."
+
+
+# Industry Section - Reduced to 2 key benefits  
+[extra.industry]
+title = "For Industry"
+subtitle = "Find Research You Can Actually Implement"
+description = "Access validated research with complete implementation context. Contribute industry insights while supporting the research community through structured knowledge exchange."
+price = "€10,000"
+price_period = "/year"
+price_description = "Avoid implementation failures • Access validated research • Build partnerships"
+cta_text = "Book a Free Consultation"
+cta_url = "https://calendly.com/anne-fouilloux/30min"
+
+# Primary benefits (will be displayed larger)
+[[extra.industry.primary_benefits]]
+title = "Access Implementation-Ready Research"
+description = "Find community-validated research with verified code, data, and methods—already tested for reliable implementation. Track scientific progress to identify production-ready solutions."
+
+[[extra.industry.primary_benefits]]
+title = "Commission Targeted Validation Studies"
+description = "Select research findings you want reproduced and validated while funding researchers through the Travel Fund. Ensure research meets your implementation needs."
+
+# Secondary benefits (will be displayed smaller)
+[[extra.industry.secondary_benefits]]
+title = "Participate in Research Discussions"
+description = "Engage directly with researchers, providing industry insights that shape research directions toward practical applications."
+
+[[extra.industry.secondary_benefits]]
+title = "Monitor Research Maturity in Real-Time"
+description = "Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions."
+
+[[extra.industry.secondary_benefits]]
+title = "Build Long-Term Academic Partnerships"
+description = "Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community."
+
+
 # Credit System - Three Panel Structure
 [extra.credit_system]
 title = "Pricing & Travel Fund"
@@ -165,7 +401,7 @@ description = "We support you through every step of the research process—from 
 text = "Access the platform for free, always"
 
 [[extra.panel_free.features]]
-text = "Follow structured guidance to make reproducible outputs—data, code, and claims"
+text = "Create stackable knowledge bricks from every research decision"
 
 [[extra.panel_free.features]]
 text = "Build on reproducible systematic reviews and consolidated research claims"
@@ -277,335 +513,60 @@ activity = "Research output gets cited"
 credits = "40"
 activity = "Contribute to consensus-building discussions and peer review"
 
-
-# Platform statistics
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-# Navigation menu items - streamlined for main page focus
-[[extra.nav_links]]
-name = "Researchers"
-url = "#researchers"
-
-[[extra.nav_links]]
-name = "Organizations"
-url = "#organizations"
-
-[[extra.nav_links]]
-name = "Industry"
-url = "#industry"
-
-[[extra.nav_links]]
-name = "Travel Fund"
-url = "#travel-fund"
-
-[[extra.nav_links]]
-name = "Timeline"
-url = "#timeline"
-
-[[extra.nav_links]]
-name = "Team"
-url = "#team"
-
-# Feature cards
-[[extra.features]]
-title = "AI Content Generator"
-description = "Transform research into human-readable formats. Use AI-powered tools to create podcasts, blog posts, executive summaries, and more from structured scientific content."
-icon = "robot"
-icon_type = "fas"
-link = "https://sciencelivehub.github.io/science-live-mockups/"
-link_text = "Explore Generator"
-
-[[extra.features]]
-title = "Research Radar"
-description = "Monitor technology maturity across your domains. Track algorithms, datasets, tools, and applications as they progress from concept to production-ready."
-icon = "satellite-dish"
-icon_type = "fas"
-link = "https://sciencelivehub.github.io/science-live-mockups/research-radar"
-link_text = "View Research Radar"
-
-[[extra.features]]
-title = "Contributor Radar"
-description = "Discover experts across academia and industry. Find collaborators based on technical expertise, project experience, and complementary skills."
-icon = "network-wired"
-icon_type = "fas"
-link = "https://sciencelivehub.github.io/science-live-mockups/contributor-radar"
-link_text = "Find Collaborators"
-
-[[extra.features]]
-title = "Publication Editor"
-description = "Create structured, machine-readable claims about your findings, models, and tools. Ensure your innovations are FAIR and properly attributed."
-icon = "pen-to-square"
-icon_type = "fas"
-link = "https://nanodash.knowledgepixels.com/publish"
-link_text = "Start Publishing"
-
-[[extra.features]]
-title = "Zotero Integration"
-description = "Seamlessly convert your reference library into structured research outputs. Bridge traditional documentation with modern semantic knowledge graphs."
-icon = "book-bookmark"
-icon_type = "fas"
-link = "https://sciencelivehub.github.io/zotero-nanopub-plugin/"
-link_text = "Get Plugin"
-
-[[extra.features]]
-title = "Smart Alerts"
-description = "Set up custom notifications for breakthroughs in your field. Monitor when research becomes production-ready or when new collaboration opportunities arise."
-icon = "bell"
-icon_type = "fas"
-link = "#"
-link_text = "Coming Soon"
-coming_soon = true
-[extra.timeline]
-title = "Development Roadmap"
-subtitle = "15-Month Project Timeline"
-
-[[extra.timeline.items]]
-period = "Apr-Jun 2025"
-status = "completed"
-title = "Project Launch & Foundation"
-description = "Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks"
-
-[[extra.timeline.items]]
-period = "Jul-Sep 2025"
-status = "current"
-title = "Design & User Research"
-description = "User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters"
-
-[[extra.timeline.items]]
-period = "Oct-Dec 2025"
-status = "upcoming"
-title = "Platform Development"
-description = "Core platform implementation, feature development, and integration of user feedback from design phase"
-
-[[extra.timeline.items]]
-period = "Jan-Mar 2026"
-status = "upcoming"
-title = "Beta Launch"
-description = "Limited beta release with research communities, travel fund activation, and organizational subscription pilot program"
-
-[[extra.timeline.items]]
-period = "Apr-Jun 2026"
-status = "upcoming"
-title = "Public Launch & Project Completion"
-description = "Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion"
-
-# Team
-[extra.team]
-title = "Who We Are"
-subtitle = "Experienced researchers and technologists building the future of scientific collaboration"
-
-[[extra.team.members]]
-name = "Viten Hub Team"
-title = "Project Lead"
-description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development."
-organization = "VitenHub AS"
-
-[[extra.team.members]]
-name = "Knowledge Pixels Team"
-title = "Nanopublication Infrastructure"
-description = "Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation."
-organization = "Knowledge Pixels"
-
-[[extra.team.members]]
-name = "Barbara Magagna"
-title = "Semantic Technologies Consultant"
-description = "Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise."
-organization = "Mabablue"
-
-[extra.team.hiring]
-title = "Growing Our Team"
-description = "We're seeking a Frontend Development & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
-positions = [
-  "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
-]
-cta_text = "Interested in collaborating with us?"
-cta_url = "mailto:contact@vitenhub.no"
-
-[extra.team.backing]
-title = "Institutional Support"
-description = "Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships."
-
-
-# Researchers Section
-[extra.researchers]
-title = "For Researchers"
-#subtitle = "Make Your Scientific Process Visible and Validated"
-subtitle = "Get AI-guided support to make your scientific process visible and validated, and earn travel grants along the way."
-description = "Document your complete research journey with integrated validation workflows—from reproducible systematic reviews to claim reproducibility checks—capturing the reasoning, discussions, methods, and data that drive rigorous, traceable and excellent science."
-price = "Always Free"
-price_period = ""
-price_description = ""
-cta_text = "Book a call for a demo"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-
-[[extra.researchers.benefits]]
-title = "Get Recognition for All Scientific Work"
-description = "ORCID-linked attribution for code, data, peer reviews, discussions, and validated contributions across your entire research process"
-
-[[extra.researchers.benefits]]
-title = "Enable Granular Reproducibility"
-description = "Validate specific claims and methods through CodeCheck, StatCheck, and AI-assisted evaluation rather than requiring full study replication"
-
-[[extra.researchers.benefits]]
-title = "Preserve scientific reasoning"
-description = "Capture what worked, what didn’t, and why — enabling others to build new hypotheses while preserving valuable scientific reasoning"
-
-[[extra.researchers.benefits]]
-title = "AI-Enhanced reproducible PRISMA Systematic Reviews"
-description = "Structured literature searches with AI-powered paper assessment, captured search strategies, and reproducible protocols that others can re-run and update"
-
-[[extra.researchers.benefits]]
-title = "Seamless Zotero Integration"
-description = "Transform your reference library into structured research outputs directly from Zotero, bridging traditional citation management with modern knowledge sharing"
-
-[[extra.researchers.benefits]]
-title = "Access Travel Grants"
-description = "Earn credits for contributions and redeem for conference attendance, collaboration visits, and research travel funded by organization subscriptions"
-
-# Organizations Section
-[extra.organizations]
-title = "For Organizations"
-subtitle = "Attract Top Talent and PhD Candidates by Showcasing Research Excellence Through FAIR and Open Science"
-description = "Demonstrate that your institution makes FAIR and Open Science practices easy and effective for researchers. Top researchers and promising PhD candidates are drawn to organizations where FAIR and Open Science practices drive research excellence, and expand opportunities for impact and collaboration."
-price = "€3,000"
-price_period = "/year"
-price_description = "Reduce duplicate research efforts • Attract and Retain top talent • Enable industry partnerships"
-cta_text = "Book a Free Consultation"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-[[extra.organizations.benefits]]
-title = "Build Searchable Knowledge Networks"
-description = "Connect atomic research components—methods, data, claims—across your existing repositories through persistent identifiers, creating a unified discovery layer for institutional knowledge"
-
-[[extra.organizations.benefits]]
-title = "Make FAIR Practices Easy and Effective"
-description = "AI-assisted guided workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs"
-
-[[extra.organizations.benefits]]
-title = "Attract Forward-Thinking Researchers"
-description = "Show how modern research practices are effectively rewarded in your organisation"
-
-[[extra.organizations.benefits]]
-title = "Preserve Institutional Memory"
-description = "Capture reasoning, tests, and methodological decisions that often disappear between projects—essential for training new PhDs, postdocs, and early-career researchers"
-
-[[extra.organizations.benefits]]
-title = "Enable Granular Institutional Monitoring"
-description = "Track research collaboration patterns, methodology adoption, and knowledge flows at any organizational level from individual researchers to entire institutions using advanced query capabilities"
-
-[[extra.organizations.benefits]]
-title = "Facilitate Industry Collaboration"
-description = "Highlight your application-ready research contributions to attract industry partners and funding opportunities"
-
-# Industry Section
-[extra.industry]
-title = "For Industry"
-subtitle = "Find Research You Can Actually Implement"
-description = "Access validated research with complete implementation context while actively collaborating with researchers. Contribute industry insights and support the research community through structured knowledge exchange."
-price = "€10,000"
-price_period = "/year"
-price_description = "Avoid costly implementation setbacks • Access validated research • Build academic partnerships"
-cta_text = "Book a Free Consultation"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-
-[[extra.industry.benefits]]
-title = "Access Implementation-Ready Research"
-description = "Find community-validated research with verified code, data, and methods—already tested for reliable implementation"
-
-[[extra.industry.benefits]]
-title = "Commission Targeted studies, reproducibility checks & Validation"
-description = "Select research findings you want to be reproduced and validated while funding researchers through the Science Live Travel Fund"
-
-[[extra.industry.benefits]]
-title = "Participate in Active Research Discussions"
-description = "Engage directly with researchers through structured discussions, providing industry insights and requirements that shape research directions"
-
-[[extra.industry.benefits]]
-title = "Contribute Industry Knowledge to Science"
-description = "Share implementation insights, real-world constraints, and practical requirements that help researchers create more applicable solutions"
-
-[[extra.industry.benefits]]
-title = "Monitor Research Maturity in Real-Time"
-description = "Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions"
-
-[[extra.industry.benefits]]
-title = "Build Long-Term Academic Partnerships"
-description = "Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community"
-
-# Process steps
+# Process steps - Updated to reflect building blocks
 [[extra.process_steps]]
 number = "1"
-title = "Create & Publish"
-description = "Use our editor or integrations to create structured research outputs from your findings, datasets, models, and software tools."
+title = "Create Knowledge Bricks"
+description = "Transform your findings into stackable, reusable knowledge bricks using our editor or integrations with existing tools."
 
 [[extra.process_steps]]
 number = "2"
-title = "AI Enhancement"
-description = "Let AI transform your technical content into multiple formats, making complex insights accessible to diverse stakeholders."
+title = "Connect & Validate"
+description = "Link your bricks to related work and get community validation through structured review processes."
 
 [[extra.process_steps]]
 number = "3"
-title = "Monitor & Discover"
-description = "Track technology maturity with Research Radar and find experts across academia and industry through Contributor Radar."
+title = "Discover & Build"
+description = "Find knowledge bricks created by others and build new insights by stacking and connecting them in innovative ways."
 
 [[extra.process_steps]]
 number = "4"
-title = "Collaborate & Innovate"
-description = "Bridge the gap between discovery and application. Connect with peers, build on shared knowledge, and accelerate innovation."
+title = "Apply & Innovate"
+description = "Bridge research and application with validated, implementation-ready bricks that accelerate innovation."
 
 # Benefits
 [[extra.benefits]]
-title = "FAIR by Design"
-description = "All content follows FAIR principles, ensuring your work is Findable, Accessible, Interoperable, and Reusable across organizations."
+title = "Connected Knowledge Bricks"
+description = "Every piece of research becomes a knowledge brick that others can discover, validate, and stack together, creating a connected knowledge network."
 
 [[extra.benefits]]
-title = "Cross-Domain Visibility"
-description = "AI-powered content generation helps technical insights reach both academic and industry audiences."
+title = "Complete Traceability"
+description = "Full provenance from original data and reasoning to final applications, ensuring reliable implementation and reproducibility."
 
 [[extra.benefits]]
-title = "Technology Tracking"
-description = "Monitor how technologies evolve from research concepts to production-ready solutions."
+title = "Merit-Based Recognition"
+description = "Quality contributions are rewarded with professional recognition, travel funding, and collaboration opportunities."
 
-[[extra.benefits]]
-title = "Academia-Industry Bridge"
-description = "Connect researchers with engineers, data scientists with domain experts, fostering real-world applications."
-
-[[extra.benefits]]
-title = "Reproducible Science"
-description = "Complete research packages that include data, code, and methods enable true reproducibility."
-
-# Benefit Cards (visual cards on the right)
+# Benefit Cards (visual cards)
 [[extra.benefit_cards]]
-icon = "rocket"
+icon = "puzzle-piece"
 icon_type = "fas"
-title = "Increase Innovation Speed"
-description = "Teams transfer knowledge faster between research and production."
+title = "Stackable Knowledge"
+description = "Research bricks that interlock and build upon each other, accelerating scientific progress."
 color = "primary"
 
 [[extra.benefit_cards]]
-icon = "globe"
+icon = "network-wired"
 icon_type = "fas"
-title = "Industry-Academia Bridge"
-description = "Break down silos between academic research and industry applications with unified knowledge sharing."
+title = "Connected Science"
+description = "Break down silos between disciplines and organizations with unified knowledge sharing."
 color = "secondary"
 
 [[extra.benefit_cards]]
-icon = "chart-line"
+icon = "rocket"
 icon_type = "fas"
-title = "Measurable ROI"
-description = "Track real-world adoption and impact of research outputs across organizations and domains."
+title = "Career Acceleration"
+description = "Recognition and travel funding for quality contributions that advance both science and your professional growth."
 color = "success"
 
 # Footer links - keeping minimal

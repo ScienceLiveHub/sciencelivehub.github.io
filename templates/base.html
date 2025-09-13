@@ -58,7 +58,7 @@
             </a>
             <div class="nav-menu">
                 {% for link in config.extra.nav_links %}
-                <a href="{{ link.url }}" class="nav-link">{{ link.name }}</a>
+                <a href="{{ link.url }}" class="nav-link {{ link.class | default(value='') }}">{{ link.name }}</a>
                 {% endfor %}
             </div>
         </div>
