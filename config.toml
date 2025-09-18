@@ -91,7 +91,7 @@ hero_tagline = "Connect science and industry—apply and validate findings in pr
 
 # Hero Buttons
 hero_primary_button_text = "Join Beta Waitlist"
-hero_primary_button_url = "mailto:contact@vitenhub.no?subject=Join%20our%20Beta%20Waitlist&body=Hi%20Team,%0A%0A"
+hero_primary_button_url = "https://formspree.io/f/mwpndawr"
 hero_primary_button_icon = "envelope"
 
 hero_secondary_button_text = "Book Strategy Call"
@@ -125,7 +125,7 @@ cta_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
 cta_primary_button_icon = "video"
 
 cta_secondary_button_text = "Contact us"
-cta_secondary_button_url = "mailto:contact@vitenhub.no?subject=Contact%20from%20website&body=Hi%20Team,%0A%0A"
+cta_secondary_button_url = "https://formspree.io/f/mnnbklow"
 cta_secondary_button_icon = "envelope"
 
 # Footer
@@ -279,7 +279,7 @@ positions = [
   "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
 ]
 cta_text = "Interested in collaborating with us?"
-cta_url = "mailto:contact@vitenhub.no"
+cta_url = "https://formspree.io/f/mnnbklow"
 
 [extra.team.backing]
 title = "Institutional Support"
