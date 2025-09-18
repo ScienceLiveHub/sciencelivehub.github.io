@@ -84,14 +84,69 @@
                 <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">Connect science and industry—apply and validate findings in practice while researchers earn travel credits that fuel a self-sustained research ecosystem.</p>
                 
                 <div class="hero-buttons">
-                    <a href="mailto:contact@vitenhub.no?subject=Join%20our%20Beta%20Waitlist&amp;body=Hi%20Team,%0A%0A" class="btn-primary">
+                    <button onclick="openBetaModal()" class="btn-primary">
                         <i class="fas fa-envelope"></i> Join Beta Waitlist
-                    </a>
+                    </button>
                     
                     <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-secondary">
                         <i class="fas fa-video"></i> Book Strategy Call
                     </a>
                     
+                </div>
+               <!-- Beta Modal -->
+               <div id="betaModal" class="modal" style="display: none;">
+                   <div class="modal-content">
+                       <span class="close" onclick="closeBetaModal()">&times;</span>
+                       <form action="https:&#x2F;&#x2F;formspree.io&#x2F;f&#x2F;mwpndawr" method="POST" class="beta-waitlist-form">
+            <div class="form-header">
+                <h3>Join Science Live Beta</h3>
+                <p>Be among the first to experience the future of scientific collaboration</p>
+            </div>
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                
+                <div class="form-group full-width">
+                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
+                </div>
+                
+                <div class="form-group full-width">
+                    <select name="role" required>
+                        <option value="">Select your role</option>
+                        <option value="researcher">Researcher</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="rse-scientist">Research Software Engineer</option>
+                        <option value="industry-professional">Industry Professional</option>
+                        <option value="organisation-representative">Organization Representative</option>
+                        <option value="research-funding-agency">Research Founding Agency</option>
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea name="interest" placeholder="What interests you most about Science Live? (optional)" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-primary form-submit">
+                <i class="fas fa-rocket"></i> Join Beta Waitlist
+            </button>
+
+            <!-- Hidden fields for Formspree -->
+            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
+            <input type="hidden" name="_subject" value="New Science Live Beta Signup">
+        </form>
+
+
+                       </form>
+                   </div>
                 </div>
 
                 <div class="hero-stats">
@@ -113,11 +168,18 @@
                     
                 </div>
             </div>
-            <div class="hero-visual">
-              <div id="videoContainer">
-                 <img src="assets/img/science-live-main.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">
-              </div>
-            </div>
+<div class="hero-visual">
+    <div class="video-wrapper">
+        <iframe width="640" height="360" 
+                src="https://www.youtube.com/embed/KBL9kcTPYRA" 
+                title="Science Live Introduction" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
         </div>
     </section>
 
@@ -824,8 +886,9 @@
                 
             </div>
             <div class="hiring-cta">
-                <a href="mailto:contact@vitenhub.no" class="btn-hiring">Interested in collaborating with us?</a>
-            </div>
+               <button onclick="openContactModal()" class="btn-hiring">Interested in collaborating with us?</button>
+            </div>  
+
         </div>
         
 
@@ -839,21 +902,72 @@
     </div>
 </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="features-container">
-            <h2>Sustainable Academia-Industry Ecosystem</h2>
-            <p>Organizational subscriptions fund the Science Live infrastructure and travel grants while gaining access to validated research and collaboration opportunities. This creates a self-sustaining model where quality contributions are rewarded with career development funding, regardless of whether contributors work in academia or industry.</p>
-            <div class="cta-buttons">
-                <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-cta">
-                    <i class="fas fa-video"></i> Book a video call
-                </a>
-                <a href="mailto:contact@vitenhub.no?subject=Contact%20from%20website&amp;body=Hi%20Team,%0A%0A" class="btn-cta-secondary">
-                    <i class="fas fa-envelope"></i> Contact us
-                </a>
-            </div>
+<!-- CTA Section -->
+<section class="cta">
+    <div class="features-container">
+        <h2>Sustainable Academia-Industry Ecosystem</h2>
+        <p>Organizational subscriptions fund the Science Live infrastructure and travel grants while gaining access to validated research and collaboration opportunities. This creates a self-sustaining model where quality contributions are rewarded with career development funding, regardless of whether contributors work in academia or industry.</p>
+        <div class="cta-buttons">
+            <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-cta">
+                <i class="fas fa-video"></i> Book a video call
+            </a>
+            <button onclick="openContactModal()" class="btn-cta-secondary">
+                <i class="fas fa-envelope"></i> Contact us
+            </button>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <form action="https://formspree.io/f/mwpndawr" method="POST" class="beta-waitlist-form">
+            <div class="form-header">
+                <h3>Contact Us</h3>
+                <p>Get in touch to discuss your needs or learn more about Science Live</p>
+            </div>
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                
+                <div class="form-group full-width">
+                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
+                </div>
+                
+                <div class="form-group full-width">
+                    <select name="inquiry_type">
+                        <option value="">What can we help you with?</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="demo">Request Demo</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="media">Media/Press</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-primary form-submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <!-- Hidden fields for Formspree -->
+            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
+            <input type="hidden" name="_subject" value="New Contact Message from Science Live">
+        </form>
+    </div>
+</div>
+
 
 
     <!-- Footer -->
@@ -1018,6 +1132,48 @@ blocks.forEach((block, index) => {
         block.style.transform = 'translateY(0)';
     }, index * 200);
 });
+// Beta form modal functions
+function openBetaModal() {
+    document.getElementById('betaModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeBetaModal() {
+    document.getElementById('betaModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('betaModal');
+    if (event.target == modal) {
+        closeBetaModal();
+    }
+}
+
+// Contact form modal functions
+function openContactModal() {
+    document.getElementById('contactModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeContactModal() {
+    document.getElementById('contactModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Update the window click handler to handle both modals
+window.onclick = function(event) {
+    const betaModal = document.getElementById('betaModal');
+    const contactModal = document.getElementById('contactModal');
+    
+    if (event.target == betaModal) {
+        closeBetaModal();
+    }
+    if (event.target == contactModal) {
+        closeContactModal();
+    }
+}
 </script>
 
 </body>

@@ -1635,3 +1635,207 @@ body {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+
+/* Beta Form Section */
+.beta-form-section {
+    padding: 5rem 2rem;
+    background: var(--gray-50);
+}
+
+.beta-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.beta-waitlist-form {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--gray-100);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h3 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--gray-400);
+}
+
+.form-submit {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modal Styles (if using Option 2) */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--gray-600);
+    z-index: 1001;
+}
+
+.close:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .beta-waitlist-form {
+        padding: 2rem;
+    }
+    
+    .beta-form-section {
+        padding: 3rem 1rem;
+    }
+}
+
+
+
+/* Ensure buttons have same styling as links */
+button.btn-cta-secondary {
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid white;
+    transition: all 0.2s;
+    font-size: 1rem; /* Explicitly set font size */
+    font-family: inherit; /* Use the same font as the page */
+    cursor: pointer;
+}
+
+button.btn-cta-secondary:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* Also ensure the icon has proper sizing */
+button.btn-cta-secondary i {
+    margin-right: 0.5rem;
+    font-size: inherit; /* Inherit the button's font size */
+}
+
+
+button.btn-hiring {
+    /* Ensure button matches link styling */
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem; /* Explicitly set font size to match original */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button.btn-hiring:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+button.btn-hiring {
+    /* Ensure button matches link styling */
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem; /* Explicitly set font size to match original */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button.btn-hiring:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
