@@ -578,3 +578,95 @@ url = ""
 [[extra.footer_sections]]
 title = ""
 links = []
+
+
+# Thank you part
+[extra.thank_you_messages]
+
+[extra.thank_you_messages.beta]
+title = "Welcome to Science Live Beta!"
+message = "Thank you for joining our beta waitlist. You're helping us shape the future of scientific collaboration."
+submessage = "We'll notify you as soon as beta access becomes available."
+icon = "fas fa-rocket"
+
+[[extra.thank_you_messages.beta.next_steps]]
+title = "Beta Access Notification"
+description = "You'll receive an email when your beta invitation is ready, typically within 2-4 weeks."
+
+[[extra.thank_you_messages.beta.next_steps]]
+title = "Early Access Features"
+description = "As a beta user, you'll get exclusive access to new features and direct input on platform development."
+
+[[extra.thank_you_messages.beta.next_steps]]
+title = "Community Building"
+description = "Connect with other researchers and help us build a vibrant scientific collaboration community."
+
+[extra.thank_you_messages.beta.secondary_action]
+url = "/#researchers"
+text = "Learn More About Science Live"
+icon = "fas fa-info-circle"
+
+[extra.thank_you_messages.contact]
+title = "Message Received!"
+message = "Thank you for contacting us. We've received your message and will get back to you as soon as possible."
+submessage = "We typically respond within 24 hours during business days."
+icon = "fas fa-envelope"
+
+[[extra.thank_you_messages.contact.next_steps]]
+title = "Message Reviewed"
+description = "Our team will review your message and determine the best person to help you."
+
+[[extra.thank_you_messages.contact.next_steps]]
+title = "Personal Response"
+description = "You'll receive a personalized response from our team within 24 hours."
+
+[[extra.thank_you_messages.contact.next_steps]]
+title = "Follow-up Action"
+description = "If needed, we'll schedule a call or provide additional resources to address your inquiry."
+
+[extra.thank_you_messages.contact.secondary_action]
+url = "/#team"
+text = "Meet Our Team"
+icon = "fas fa-users"
+
+[extra.thank_you_messages.newsletter]
+title = "Successfully Subscribed!"
+message = "Thank you for subscribing to our newsletter. You'll now receive updates about Science Live developments."
+submessage = "Check your email for a confirmation message."
+icon = "fas fa-newspaper"
+
+[[extra.thank_you_messages.newsletter.next_steps]]
+title = "Confirmation Email"
+description = "Check your inbox for a confirmation email and click the link to complete your subscription."
+
+[[extra.thank_you_messages.newsletter.next_steps]]
+title = "Monthly Updates"
+description = "Receive monthly updates about new features, research insights, and community highlights."
+
+[extra.thank_you_messages.newsletter.secondary_action]
+url = "/#timeline"
+text = "View Our Roadmap"
+icon = "fas fa-map"
+
+[extra.thank_you_messages.demo]
+title = "Demo Request Submitted!"
+message = "Thank you for requesting a demo. We're excited to show you how Science Live can transform your research workflow."
+submessage = "Our team will contact you within 1 business day to schedule your personalized demo."
+icon = "fas fa-presentation-screen"
+
+[[extra.thank_you_messages.demo.next_steps]]
+title = "Schedule Confirmation"
+description = "We'll email you within 24 hours to confirm your demo time and send calendar invitation."
+
+[[extra.thank_you_messages.demo.next_steps]]
+title = "Personalized Demo"
+description = "Your 30-minute demo will be tailored to your specific research needs and use cases."
+
+[[extra.thank_you_messages.demo.next_steps]]
+title = "Q&A Session"
+description = "Ask questions about features, pricing, and how Science Live fits into your workflow."
+
+[extra.thank_you_messages.demo.secondary_action]
+url = "/#travel-fund"
+text = "View Pricing Plans"
+icon = "fas fa-tag"
