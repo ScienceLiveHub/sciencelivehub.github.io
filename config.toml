@@ -259,12 +259,14 @@ name = "Viten Hub Team"
 title = "Project Lead"
 description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development."
 organization = "VitenHub AS"
+url = "http://vitenhub.no/"
 
 [[extra.team.members]]
 name = "Knowledge Pixels Team"
 title = "Nanopublication Infrastructure"
 description = "Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation."
 organization = "Knowledge Pixels"
+url = "https://knowledgepixels.com"
 
 [[extra.team.members]]
 name = "Barbara Magagna"

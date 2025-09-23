@@ -474,7 +474,11 @@
                 <h3>{{ member.name }}</h3>
                 <h4>{{ member.title }}</h4>
                 <p>{{ member.description }}</p>
-                <div class="member-org">{{ member.organization }}</div>
+                {% if member.url is defined %}
+                  <div class="member-org"> <a href="{{ member.url }}">{{ member.organization }}</a></div>
+                {% else  %}
+                  <div class="member-org">{{ member.organization }}</div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
