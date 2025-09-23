@@ -483,15 +483,15 @@ features = [
 # Credit earning activities
 [[extra.credit_earning]]
 credits = "20"
-activity = "Publish structured research claim"
+activity = "Publish structured research claim""
 
 [[extra.credit_earning]]
 credits = "50"
-activity = "Publish with linked and curated datasets"
+activity = "Publish knowledge brick with datasets"
 
 [[extra.credit_earning]]
 credits = "75"
-activity = "Publish with reproducible code/software"
+activity = "Publish knowledge brick with code/software"
 
 [[extra.credit_earning]]
 credits = "150"
