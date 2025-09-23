@@ -87,7 +87,7 @@ twitter = "https://twitter.com/sciencelive"
 # Hero Section - Updated with Three Pillars Messaging
 hero_title = "Science Live: Research beyond Walls"
 hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, creating knowledge bricks that make your research traceable, reproducible, and ready for your team and others to build upon."
-hero_tagline = "Connect science and industry—apply and validate findings in practice while researchers earn travel credits that fuel a self-sustained research ecosystem."
+hero_tagline = "Bridge research and industry with stackable knowledge bricks — earn travel funding through quality contributions."
 
 # Hero Buttons
 hero_primary_button_text = "Join Beta Waitlist"
@@ -288,8 +288,8 @@ description = "Supported by Astera Institute with planned transition to communit
 # Researchers Section - 2 Primary + 3 Secondary Benefits
 [extra.researchers]
 title = "For Researchers"
-subtitle = "Earn travel grants while contributing to your scientific legacy through connected knowledge bricks."
-description = "Document your complete research journey with integrated validation workflows—from reproducible systematic reviews to claim reproducibility checks—capturing the reasoning, discussions, methods, and data that drive rigorous, traceable and excellent science."
+subtitle = "Earn travel grants while building your scientific legacy through stackable knowledge bricks."
+description = "Transform your research into FAIR, stackable knowledge bricks—from systematic reviews to data analysis—making your work discoverable, reusable, and citable while advancing Open Science practices."
 price = "Always Free"
 price_period = ""
 price_description = ""
@@ -298,65 +298,64 @@ cta_url = "https://calendly.com/anne-fouilloux/30min"
 
 # Primary benefits (will be displayed larger)
 [[extra.researchers.primary_benefits]]
-title = "Get Recognition & Career Advancement"
-description = "ORCID-linked attribution for code, data, reviews, discussions, and validated contributions across your research process. Build credentials with verified, traceable work."
+title = "Get Recognition for Knowledge Brick Contributions"
+description = "ORCID-linked attribution for every knowledge brick you create—code, data, reviews, discussions, and validated contributions. Build credentials with verified, traceable work that others can cite and build upon."
 
 [[extra.researchers.primary_benefits]]
-title = "Access Merit-Based Travel Grants" 
-description = "Earn credits for quality contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost."
+title = "Access Merit-Based Travel Grants"
+description = "Earn credits for quality knowledge brick contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost."
 
 # Secondary benefits (will be displayed smaller)
 [[extra.researchers.secondary_benefits]]
-title = "Make FAIR Practices Effortless"
-description = "AI-enhanced PRISMA systematic reviews and seamless Zotero integration. Structured guidance makes compliance easy while working with your existing research toolkit."
+title = "Make FAIR Knowledge Bricks Effortlessly"
+description = "AI-enhanced workflows help you create FAIR-compliant knowledge bricks while working with your existing research toolkit. Seamless integration with tools like Zotero and systematic review platforms."
 
 [[extra.researchers.secondary_benefits]]
-title = "Create Stackable Knowledge Bricks"
-description = "Document complete research pathways—what worked, what didn't, and why. Enable others to build new hypotheses on your reasoning while preventing duplicate efforts."
+title = "Advance Science Through Open Stackable Knowledge Bricks"
+description = "Document complete research pathways—what worked, what didn't, and why. Enable others to build new hypotheses on your knowledge bricks while preventing duplicate efforts."
 
 [[extra.researchers.secondary_benefits]]
-title = "Enable Brick-Level Validation"
-description = "Use CodeCheck, StatCheck, and AI-assisted evaluation to validate specific brick rather than requiring complete end-to-end reproduction."
+title = "Enable Knowledge Brick Validation"
+description = "Use community validation processes to verify specific knowledge bricks rather than requiring complete end-to-end reproduction of entire studies."
 
 # Organizations Section - Reduced to 2 key benefits
 [extra.organizations]
 title = "For Organizations"
-subtitle = "Attract Top Talent Through Research Excellence"
-description = "Show that your institution makes FAIR and Open Science practices easy and rewarding. Top researchers are drawn to organizations that support FAIR science and career advancement."
+subtitle = "Build Institutional Excellence Through Knowledge Bricks"
+description = "Enable your researchers to create stackable knowledge bricks that preserve institutional memory, demonstrate research quality, and attract top talent who want to work with cutting-edge research infrastructure."
 price = "€3,000"
 price_period = "/year"
-price_description = "Reduce duplicate research • Attract top talent • Enable industry partnerships"
+price_description = "Preserve knowledge bricks • Attract top talent • Enable industry partnerships"
 cta_text = "Book a Free Consultation"
 cta_url = "https://calendly.com/anne-fouilloux/30min"
 
 # Primary benefits (will be displayed larger)
 [[extra.organizations.primary_benefits]]
-title = "Track Research Impact and Collaboration Patterns"
-description = "See who's collaborating with whom, which departments excel at open science practices, and track research patterns across your institution—insights that are nearly impossible to get today."
+title = "Track Knowledge Brick Creation and Collaboration"
+description = "See which departments excel at creating reusable knowledge bricks, monitor collaboration patterns across research teams, and track how your institutional knowledge builds over time."
 
 [[extra.organizations.primary_benefits]]
-title = "Position your institution as a leader in FAIR, high-quality science"
-description = "Provide tools and infrastructure that help researchers excel, attract and retain top talent, and clearly demonstrate your commitment to research excellence."
+title = "Showcase Institutional Knowledge Brick Excellence"
+description = "Demonstrate research quality through validated, traceable knowledge bricks that show prospective researchers and industry partners the caliber of work your institution produces."
 
 # Secondary benefits (will be displayed smaller)
 [[extra.organizations.secondary_benefits]]
-title = "Preserve Institutional Memory"
-description = "Capture reasoning, methodological decisions, and research pathways that disappear between projects—essential for training new PhDs, postdocs, and early-career researchers."
+title = "Preserve Institutional Knowledge Bricks"
+description = "Capture reasoning, methodological decisions, and research pathways as permanent knowledge bricks—preventing knowledge loss when researchers transition between projects or institutions."
 
 [[extra.organizations.secondary_benefits]]
-title = "Make FAIR Practices Easy and Effective"
-description = "AI-assisted workflows help researchers create FAIR-compliant outputs that serve both immediate sharing and future publication needs."
+title = "Make Knowledge Brick Creation Effortless"
+description = "AI-assisted workflows help researchers transform their work into stackable knowledge bricks that serve both immediate collaboration and long-term institutional memory."
 
 [[extra.organizations.secondary_benefits]]
-title = "Facilitate Industry Collaboration"
-description = "Highlight your application-ready research to attract industry partners and funding opportunities."
-
+title = "Attract Industry Partners Through Knowledge Bricks"
+description = "Highlight your implementation-ready knowledge bricks to attract industry collaborators seeking validated research components for real-world deployment."
 
 # Industry Section - Reduced to 2 key benefits  
 [extra.industry]
 title = "For Industry"
 subtitle = "Find Research You Can Actually Implement"
-description = "Access validated research with complete implementation context. Contribute industry insights while supporting the research community through structured knowledge exchange."
+description = "Access validated research with clear TRL progression pathways. Find knowledge bricks that show exactly how academic discoveries become implementable solutions."
 price = "€10,000"
 price_period = "/year"
 price_description = "Avoid implementation failures • Access validated research • Build partnerships"
@@ -365,26 +364,25 @@ cta_url = "https://calendly.com/anne-fouilloux/30min"
 
 # Primary benefits (will be displayed larger)
 [[extra.industry.primary_benefits]]
-title = "Access Implementation-Ready Research"
-description = "Find community-validated research with verified code, data, and methods—already tested for reliable implementation. Track scientific progress to identify production-ready solutions."
+title = "Find Application-Ready Knowledge Bricks"
+description = "Access knowledge bricks with clear pathways from lab discoveries to production deployment. Each knowledge brick shows its maturity level, validation status, and implementation requirements."
 
 [[extra.industry.primary_benefits]]
-title = "Commission Targeted Validation Studies"
-description = "Select research findings you want reproduced and validated while funding researchers through the Travel Fund. Ensure research meets your implementation needs."
+title = "Commission Knowledge Brick Advancement"
+description = "Select specific knowledge bricks you want advanced through TRL levels. Contributors earn travel credits for developing validation studies and implementation pathways that bridge the gap to your deployment requirements."
 
 # Secondary benefits (will be displayed smaller)
 [[extra.industry.secondary_benefits]]
-title = "Participate in Research Discussions"
-description = "Engage directly with researchers, providing industry insights that shape research directions toward practical applications."
+title = "Shape Knowledge Brick Development"
+description = "Engage directly with contributors, providing industry insights that guide how knowledge bricks are developed toward practical applications and real-world deployment."
 
 [[extra.industry.secondary_benefits]]
-title = "Monitor Research Maturity in Real-Time"
-description = "Track scientific progress through atomic publishing to identify when research moves from early findings to production-ready solutions."
+title = "Monitor Knowledge Brick Maturity in Real-Time"
+description = "Track how individual knowledge bricks progress through TRL levels—from basic research components to production-ready solutions with validated implementation pathways."
 
 [[extra.industry.secondary_benefits]]
-title = "Build Long-Term Academic Partnerships"
-description = "Your participation funds researcher travel grants and creates ongoing collaboration opportunities with the research community."
-
+title = "Build Knowledge Brick Collaboration Networks"
+description = "Your participation funds contributor travel grants and creates ongoing partnerships focused on developing knowledge bricks that bridge academic research and industry needs."
 
 # Credit System - Three Panel Structure
 [extra.credit_system]
@@ -670,3 +668,28 @@ description = "Ask questions about features, pricing, and how Science Live fits 
 url = "/#travel-fund"
 text = "View Pricing Plans"
 icon = "fas fa-tag"
+
+
+# Add new section configuration:
+trl_bridge_section_tag = "THE TRL BRIDGE"
+trl_bridge_section_title = "From Academic Research to Industry Implementation"
+trl_bridge_section_subtitle = "Science Live captures the crucial middle steps that turn theoretical discoveries into practical solutions"
+
+# TRL levels visualization
+[[extra.trl_levels]]
+level = "1-3"
+title = "Academic Research"
+description = "Basic principles, laboratory research, proof of concept"
+color = "academic"
+
+[[extra.trl_levels]]
+level = "4-6" 
+title = "Science Live Bridge"
+description = "Validation, implementation context, knowledge bricks with clear pathways"
+color = "bridge"
+
+[[extra.trl_levels]]
+level = "7-9"
+title = "Industry Ready"
+description = "Pilot projects, commercial demonstration, market deployment"
+color = "industry"
