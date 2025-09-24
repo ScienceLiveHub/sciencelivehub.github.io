@@ -276,7 +276,7 @@ organization = "Mabablue"
 
 [extra.team.hiring]
 title = "Growing Our Team"
-description = "We're seeking a Frontend Development & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
+description = "We're seeking a Frontend Developer & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
 positions = [
   "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
 ]
