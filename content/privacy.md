@@ -5,14 +5,14 @@ template = "page.html"
 date = 2025-07-23
 
 [extra]
-last_updated = "July 23, 2025"
+last_updated = "February 12, 2026"
 +++
 
-**Effective Date: [DATE]**
+**Effective Date: 01/02/2026**
 
 ## 1. Introduction
 
-Viten Hub AS ("we," "us," or "our"), a company registered in Norway (organisation number: [ORG NUMBER]), operates the Science Live platform (the "Service"). This Privacy Policy explains how we collect, use, store, and protect your personal data when you use our platform, website, API, and related services.
+Viten Hub AS ("we," "us," or "our"), a company registered in Norway (organisation number: 936 032 478), operates the Science Live platform (the "Service"). This Privacy Policy explains how we collect, use, store, and protect your personal data when you use our platform, website, API, and related services.
 
 We are committed to protecting your privacy and complying with the General Data Protection Regulation (EU/EEA) 2016/679 ("GDPR") and the Norwegian Personal Data Act (Personopplysningsloven). This Privacy Policy should be read alongside our [Terms of Service](/terms) and [Data & API Policy](/data-policy).
 
