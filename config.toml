@@ -85,18 +85,20 @@ github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
 # Hero Section - Updated with Three Pillars Messaging
-hero_title = "Science Live: Research beyond Walls"
-hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, creating knowledge bricks that make your research traceable, reproducible, and ready for your team and others to build upon."
+hero_title_1 = "Transform research into"
+hero_title_2 = "connected knowledge"
+hero_title_3 = "through stackable knowledge bricks"
+hero_subtitle = "Making scientific work FAIR: Findable, Accessible, Interoperable, Reusable."
 hero_tagline = "Bridge research and industry with stackable knowledge bricks — earn travel funding through quality contributions."
 
 # Hero Buttons
-hero_primary_button_text = "Join Beta Waitlist"
-hero_primary_button_url = "https://formspree.io/f/mwpndawr"
-hero_primary_button_icon = "envelope"
+hero_primary_button_text = "Web Platform"
+hero_primary_button_url = "https://platform.sciencelive4all.org"
+hero_primary_button_icon = "computer"
 
-hero_secondary_button_text = "Book Strategy Call"
-hero_secondary_button_url = "https://calendly.com/anne-fouilloux/30min"
-hero_secondary_button_icon = "video"
+hero_secondary_button_text = "Zotero Plugin"
+hero_secondary_button_url = "https://sciencelive4all.org/science-live-platform/zotero"
+hero_secondary_button_icon = "puzzle-piece"
 
 # Core Values
 core_values = "Stackable • Traceable • Rewarded"

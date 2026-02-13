@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #051d40;
+    --primary-color: #0f2547;
     --secondary-color: #be2e78;
     --accent-blue: #4a9eff;
     --primary-light: #2a5788;
@@ -238,6 +238,7 @@ body {
 }
 
 .hero-container {
+    text-align: center;
     max-width: 100%;
     margin: 0 auto;
     padding: 2rem 3rem;
@@ -255,6 +256,33 @@ body {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, #ffffff, var(--secondary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-content h1_1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.0rem;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-content h1_2 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.0rem;
+    background: linear-gradient(135deg, var(--secondary-color), #7f2e66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-content h1_3 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.0rem;
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
