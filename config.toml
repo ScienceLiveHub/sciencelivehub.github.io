@@ -141,7 +141,7 @@ credit_system_explanation = "Credits reflect relative contribution value - a PRI
 current_fund_balance = "€3,000 (initial seed funding)"
 total_credits_earned = "0" 
 current_credit_value = "Will be calculated as organizations join and contributors earn credits"
-last_updated = "June 2025"
+last_updated = "January 2026"
 
 # Platform statistics
 [[extra.hero_stats]]
@@ -271,17 +271,12 @@ organization = "Knowledge Pixels"
 url = "https://knowledgepixels.com"
 
 [[extra.team.members]]
-name = "Barbara Magagna"
-title = "Semantic Technologies Consultant"
-description = "Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise."
-organization = "Mabablue"
+name = "Prophet Town Team"
+title = "Software Engineering"
+description = "Vijay Prema is developing the Science Live Platform and the Zotero plugin."
+organization = "Prophet Town"
+url = "https://www.ptown.tech"
 
-[extra.team.hiring]
-title = "Growing Our Team"
-description = "We're seeking a Frontend Developer & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
-positions = [
-  "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
-]
 cta_text = "Interested in collaborating with us?"
 cta_url = "https://formspree.io/f/mnnbklow"
 
