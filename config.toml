@@ -569,15 +569,15 @@ color = "success"
 # Footer links - keeping minimal
 [[extra.footer_links]]
 text = "Privacy Policy"
-url = "/privacy.html"
+url = "/privacy/"
 
 [[extra.footer_links]]
 text = "Data Policy"
-url = "/policies.html"
+url = "/policies/"
 
 [[extra.footer_links]]
 text = "Terms of Service"
-url = "/terms.html"
+url = "/terms/"
 
 # Footer sections - keeping minimal  
 [[extra.footer_sections]]
