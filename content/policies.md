@@ -1,6 +1,6 @@
 +++
 title = "Data & API Policy for the Science Live Platform"
-description = "Effective Date: January 2025"
+description = "Effective Date: January 2026"
 template = "page.html"
 +++
 
@@ -135,4 +135,4 @@ Science Live platform code is released under **MIT License**
 
 *This policy is designed to support open science while ensuring sustainable platform operation. We reserve the right to modify these terms with appropriate notice to users.*
 
-*Last updated: July 2025*
+*Last updated: January 2026*

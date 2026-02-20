@@ -5,10 +5,10 @@ template = "page.html"
 date = 2025-07-23
 
 [extra]
-last_updated = "January 20, 2024"
+last_updated = "January 20, 2026"
 +++
 
-**Effective Date: January 20, 2024**
+**Effective Date: January 20, 2026**
 
 Welcome to Science Live. These Terms of Service ("Terms") govern your use of the Science Live platform, including our website, applications, and services (collectively, the "Service") provided by Science Live ("we," "us," or "our").
 

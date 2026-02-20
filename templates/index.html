@@ -5,14 +5,21 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>{{ config.extra.hero_title }}</h1>
+                <h1_1>{{ config.extra.hero_title_1 }}</h1_1>
+                <h1_2>{{ config.extra.hero_title_2 }}</h1_2>
+                <h1_3>{{ config.extra.hero_title_3 }}</h1_3>
                 <p>{{ config.extra.hero_subtitle }}</p>
                 <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">{{ config.extra.hero_tagline }}</p>
                 
                 <div class="hero-buttons">
                     <button onclick="openBetaModal()" class="btn-primary">
-                        <i class="fas fa-{{ config.extra.hero_primary_button_icon }}"></i> {{ config.extra.hero_primary_button_text }}
+                        <i class="fas fa-user-plus"></i> Join our List
                     </button>
+                    {% if config.extra.hero_primary_button_url is defined %}
+                    <a href="{{ config.extra.hero_primary_button_url }}" class="btn-secondary">
+                        <i class="fas fa-{{ config.extra.hero_primary_button_icon }}"></i> {{ config.extra.hero_primary_button_text }}
+                    </a>
+                    {% endif %}
                     {% if config.extra.hero_secondary_button_url is defined %}
                     <a href="{{ config.extra.hero_secondary_button_url }}" class="btn-secondary">
                         <i class="fas fa-{{ config.extra.hero_secondary_button_icon }}"></i> {{ config.extra.hero_secondary_button_text }}

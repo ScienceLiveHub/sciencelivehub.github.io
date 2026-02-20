@@ -85,18 +85,20 @@ github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
 # Hero Section - Updated with Three Pillars Messaging
-hero_title = "Science Live: Research beyond Walls"
-hero_subtitle = "Surface your discussions, reasoning, methods, data, and findings with AI-assisted guidance, creating knowledge bricks that make your research traceable, reproducible, and ready for your team and others to build upon."
+hero_title_1 = "Transform research into"
+hero_title_2 = "connected knowledge"
+hero_title_3 = "through stackable knowledge bricks"
+hero_subtitle = "Making scientific work FAIR: Findable, Accessible, Interoperable, Reusable."
 hero_tagline = "Bridge research and industry with stackable knowledge bricks — earn travel funding through quality contributions."
 
 # Hero Buttons
-hero_primary_button_text = "Join Beta Waitlist"
-hero_primary_button_url = "https://formspree.io/f/mwpndawr"
-hero_primary_button_icon = "envelope"
+hero_primary_button_text = "Web Platform"
+hero_primary_button_url = "https://platform.sciencelive4all.org"
+hero_primary_button_icon = "computer"
 
-hero_secondary_button_text = "Book Strategy Call"
-hero_secondary_button_url = "https://calendly.com/anne-fouilloux/30min"
-hero_secondary_button_icon = "video"
+hero_secondary_button_text = "Zotero Plugin"
+hero_secondary_button_url = "https://sciencelive4all.org/science-live-platform/zotero"
+hero_secondary_button_icon = "puzzle-piece"
 
 # Core Values
 core_values = "Stackable • Traceable • Rewarded"
@@ -139,7 +141,7 @@ credit_system_explanation = "Credits reflect relative contribution value - a PRI
 current_fund_balance = "€3,000 (initial seed funding)"
 total_credits_earned = "0" 
 current_credit_value = "Will be calculated as organizations join and contributors earn credits"
-last_updated = "June 2025"
+last_updated = "January 2026"
 
 # Platform statistics
 [[extra.hero_stats]]
@@ -269,17 +271,12 @@ organization = "Knowledge Pixels"
 url = "https://knowledgepixels.com"
 
 [[extra.team.members]]
-name = "Barbara Magagna"
-title = "Semantic Technologies Consultant"
-description = "Expert in semantic web technologies, ontologies, and metadata standards. Contributing semantic framework design and knowledge organization expertise."
-organization = "Mabablue"
+name = "Prophet Town Team"
+title = "Software Engineering"
+description = "Vijay Prema is developing the Science Live Platform and the Zotero plugin."
+organization = "Prophet Town"
+url = "https://www.ptown.tech"
 
-[extra.team.hiring]
-title = "Growing Our Team"
-description = "We're seeking a Frontend Developer & UX Design consultant to help create intuitive interfaces that make FAIR science practices effortless for researchers."
-positions = [
-  "Frontend Development & UX Design Consultant - React.js expertise with user-centered design experience for research platforms"
-]
 cta_text = "Interested in collaborating with us?"
 cta_url = "https://formspree.io/f/mnnbklow"
 
@@ -571,8 +568,16 @@ color = "success"
 
 # Footer links - keeping minimal
 [[extra.footer_links]]
-text = ""
-url = ""
+text = "Privacy Policy"
+url = "/privacy/"
+
+[[extra.footer_links]]
+text = "Data Policy"
+url = "/policies/"
+
+[[extra.footer_links]]
+text = "Terms of Service"
+url = "/terms/"
 
 # Footer sections - keeping minimal  
 [[extra.footer_sections]]

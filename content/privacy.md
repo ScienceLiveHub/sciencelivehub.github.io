@@ -128,7 +128,7 @@ We may also share personal data:
 - To protect the rights, property, or safety of Viten Hub AS, our users, or the public.
 - In connection with a merger, acquisition, or sale of assets, with appropriate notice to affected users.
 
-## 7. Your Rights Under GDPR
+## 7. Your Rights Under GDPR {#7-your-rights-under-gdpr}
 
 As a data subject, you have the following rights under the GDPR. To exercise any of these rights, contact us at contact@vitenhub.no.
 
@@ -173,7 +173,7 @@ We retain personal data only as long as necessary for the purposes described in 
 
 Inactive accounts (no login for 24 months) will receive a warning email. If no action is taken within 30 days, the account may be deactivated. Published nanopublications remain accessible regardless of account status.
 
-## 10. Cookies and Similar Technologies
+## 10. Cookies and Similar Technologies {#10-cookies-and-similar-technologies}
 
 We use cookies and similar technologies to operate and improve the Service.
 
