@@ -9,12 +9,177 @@
       <atom:link href="https://sciencelive4all.org/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
       <item>
+          <title>Privacy Policy</title>
+          <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://sciencelive4all.org/privacy/</link>
+          <guid>https://sciencelive4all.org/privacy/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Effective Date: 01&#x2F;02&#x2F;2026&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1._Introduction&quot;&gt;1. Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;Viten Hub AS (“we,” “us,” or “our”), a company registered in Norway (organisation number: 936 032 478), operates the Science Live platform (the “Service”). This Privacy Policy explains how we collect, use, store, and protect your personal data when you use our platform, website, API, and related services.&lt;&#x2F;p&gt;
+&lt;p&gt;We are committed to protecting your privacy and complying with the General Data Protection Regulation (EU&#x2F;EEA) 2016&#x2F;679 (“GDPR”) and the Norwegian Personal Data Act (Personopplysningsloven). This Privacy Policy should be read alongside our &lt;a href=&quot;&#x2F;terms&quot;&gt;Terms of Service&lt;&#x2F;a&gt; and &lt;a href=&quot;&#x2F;data-policy&quot;&gt;Data &amp;amp; API Policy&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2._Data_Controller&quot;&gt;2. Data Controller&lt;&#x2F;h2&gt;
+&lt;p&gt;The data controller for the processing of your personal data is:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Viten Hub AS&lt;&#x2F;strong&gt;
+Email: contact@vitenhub.no
+Website: https:&#x2F;&#x2F;sciencelive4all.org&lt;&#x2F;p&gt;
+&lt;p&gt;If you have any questions or concerns about how we handle your personal data, or wish to exercise your rights under the GDPR, please contact us at the address above.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3._Personal_Data_We_Collect&quot;&gt;3. Personal Data We Collect&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;3.1_Data_You_Provide_Directly&quot;&gt;3.1 Data You Provide Directly&lt;&#x2F;h3&gt;
+&lt;p&gt;When you register for an account or use our Service, we may collect the following personal data:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Account information:&lt;&#x2F;strong&gt; Name, email address, profile image, and password or authentication credentials.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;ORCID data:&lt;&#x2F;strong&gt; When you authenticate via ORCID, we receive your ORCID iD, name, and any public profile information you have made available in your ORCID record, in accordance with your ORCID privacy settings.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Organisation information:&lt;&#x2F;strong&gt; If you join or create an organisation on the platform, we collect organisation name, logo, and membership details.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Payment information:&lt;&#x2F;strong&gt; If you subscribe to a paid tier, payment details are processed by our payment provider. We do not store full credit card numbers on our servers.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Communications:&lt;&#x2F;strong&gt; Content of messages you send to us, including support requests and feedback.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3.2_Data_Collected_Automatically&quot;&gt;3.2 Data Collected Automatically&lt;&#x2F;h3&gt;
+&lt;p&gt;When you access our Service, we automatically collect:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Usage data:&lt;&#x2F;strong&gt; Pages visited, features used, search queries, API calls, timestamps, and interaction patterns.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Technical data:&lt;&#x2F;strong&gt; IP address, browser type and version, operating system, device type, and referral source.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Cookies and similar technologies:&lt;&#x2F;strong&gt; See &lt;a href=&quot;https:&#x2F;&#x2F;sciencelive4all.org&#x2F;privacy&#x2F;#10-cookies-and-similar-technologies&quot;&gt;Section 10&lt;&#x2F;a&gt; for full details.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3.3_Data_in_Nanopublications&quot;&gt;3.3 Data in Nanopublications&lt;&#x2F;h3&gt;
+&lt;p&gt;Nanopublications you create contain metadata that includes your ORCID iD and name as the creator. Nanopublications are published under CC-BY 4.0 and are permanent by design. You should not include personal data of third parties in nanopublications without a lawful basis. We are not responsible for personal data you choose to include in the content of your nanopublications.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4._Purposes_and_Legal_Basis_for_Processing&quot;&gt;4. Purposes and Legal Basis for Processing&lt;&#x2F;h2&gt;
+&lt;p&gt;We process your personal data for the following purposes, each with a corresponding legal basis under GDPR Article 6(1):&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Purpose&lt;&#x2F;th&gt;&lt;th&gt;Data Processed&lt;&#x2F;th&gt;&lt;th&gt;Legal Basis&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Account creation and management&lt;&#x2F;td&gt;&lt;td&gt;Name, email, ORCID iD, profile image&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Providing and operating the Service&lt;&#x2F;td&gt;&lt;td&gt;Account data, usage data, technical data&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Authentication via ORCID&lt;&#x2F;td&gt;&lt;td&gt;ORCID iD, public ORCID profile data&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Publishing nanopublications&lt;&#x2F;td&gt;&lt;td&gt;ORCID iD, name (as creator metadata)&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;AI-powered knowledge extraction&lt;&#x2F;td&gt;&lt;td&gt;Research content submitted for processing&lt;&#x2F;td&gt;&lt;td&gt;Legitimate interest (Art. 6(1)(f)) — improving platform value&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Platform analytics and improvement&lt;&#x2F;td&gt;&lt;td&gt;Usage data, technical data (aggregated)&lt;&#x2F;td&gt;&lt;td&gt;Legitimate interest (Art. 6(1)(f)) — service improvement&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Subscription billing&lt;&#x2F;td&gt;&lt;td&gt;Payment information, subscription tier&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Security and fraud prevention&lt;&#x2F;td&gt;&lt;td&gt;IP address, technical data, access logs&lt;&#x2F;td&gt;&lt;td&gt;Legitimate interest (Art. 6(1)(f)) — platform security&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Communication and support&lt;&#x2F;td&gt;&lt;td&gt;Email, message content&lt;&#x2F;td&gt;&lt;td&gt;Performance of contract (Art. 6(1)(b))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Legal compliance&lt;&#x2F;td&gt;&lt;td&gt;As required by applicable law&lt;&#x2F;td&gt;&lt;td&gt;Legal obligation (Art. 6(1)(c))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Marketing and newsletters&lt;&#x2F;td&gt;&lt;td&gt;Email address, name&lt;&#x2F;td&gt;&lt;td&gt;Consent (Art. 6(1)(a))&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Where we rely on legitimate interest as the legal basis, we have conducted a balancing test and concluded that our interests do not override your fundamental rights and freedoms. You may object to processing based on legitimate interest at any time (see &lt;a href=&quot;https:&#x2F;&#x2F;sciencelive4all.org&#x2F;privacy&#x2F;#7-your-rights-under-gdpr&quot;&gt;Section 7&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;5._AI_and_Automated_Processing&quot;&gt;5. AI and Automated Processing&lt;&#x2F;h2&gt;
+&lt;p&gt;Science Live uses artificial intelligence and large language models (LLMs) as part of its knowledge extraction pipeline. This section explains how AI processing relates to your personal data.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;5.1_How_We_Use_AI&quot;&gt;5.1 How We Use AI&lt;&#x2F;h3&gt;
+&lt;p&gt;Our AI processing pipeline transforms research content (scientific papers, datasets, code references) into structured, machine-actionable nanopublications. This involves:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extracting structured knowledge claims from scientific literature&lt;&#x2F;li&gt;
+&lt;li&gt;Generating metadata and semantic links between concepts&lt;&#x2F;li&gt;
+&lt;li&gt;Assisting with content verification and quality checks&lt;&#x2F;li&gt;
+&lt;li&gt;Powering smart search and discovery features&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;5.2_AI_Provider_Independence&quot;&gt;5.2 AI Provider Independence&lt;&#x2F;h3&gt;
+&lt;p&gt;Science Live is designed to be independent of any single AI provider. We use open-source LLMs and maintain the ability to swap models without dependency on proprietary US or non-European AI services (such as ChatGPT or Claude). This approach aligns with European digital sovereignty principles.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;5.3_AI_and_Personal_Data&quot;&gt;5.3 AI and Personal Data&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AI processing is applied to research content, not to personal account data.&lt;&#x2F;li&gt;
+&lt;li&gt;We do not use your personal data (name, email, usage patterns) to train AI models.&lt;&#x2F;li&gt;
+&lt;li&gt;Research content submitted for AI extraction may be processed by self-hosted or European-hosted LLMs.&lt;&#x2F;li&gt;
+&lt;li&gt;AI-generated outputs (nanopublications) include cryptographic signatures for transparency and traceability, in alignment with the EU AI Act.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;5.4_Automated_Decision-Making&quot;&gt;5.4 Automated Decision-Making&lt;&#x2F;h3&gt;
+&lt;p&gt;We do not use automated decision-making, including profiling, that produces legal effects or similarly significantly affects you (GDPR Article 22). Credit allocations and content quality assessments involve human oversight.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;6._Data_Sharing_and_Sub-Processors&quot;&gt;6. Data Sharing and Sub-Processors&lt;&#x2F;h2&gt;
+&lt;p&gt;We share personal data only as necessary to operate the Service. We do not sell your personal data.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6.1_Sub-Processors&quot;&gt;6.1 Sub-Processors&lt;&#x2F;h3&gt;
+&lt;p&gt;The following third-party service providers process personal data on our behalf:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sub-Processor&lt;&#x2F;th&gt;&lt;th&gt;Purpose&lt;&#x2F;th&gt;&lt;th&gt;Location&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Cloudflare, Inc.&lt;&#x2F;td&gt;&lt;td&gt;Hosting, CDN, DDoS protection, serverless compute&lt;&#x2F;td&gt;&lt;td&gt;EU (with global edge network)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Neon, Inc.&lt;&#x2F;td&gt;&lt;td&gt;PostgreSQL database hosting (user accounts, credits, organisations)&lt;&#x2F;td&gt;&lt;td&gt;EU (Frankfurt)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Knowledge Pixels AG&lt;&#x2F;td&gt;&lt;td&gt;Nanopublication network infrastructure (decentralised RDF storage)&lt;&#x2F;td&gt;&lt;td&gt;Switzerland (adequate country)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Resend, Inc.&lt;&#x2F;td&gt;&lt;td&gt;Transactional email delivery (verification emails, notifications)&lt;&#x2F;td&gt;&lt;td&gt;USA (with DPA and SCCs)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ORCID, Inc.&lt;&#x2F;td&gt;&lt;td&gt;Authentication (OIDC identity provider)&lt;&#x2F;td&gt;&lt;td&gt;USA (with DPA and SCCs)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;GitHub, Inc. (Microsoft)&lt;&#x2F;td&gt;&lt;td&gt;Source code hosting, version control&lt;&#x2F;td&gt;&lt;td&gt;USA (with DPA and SCCs)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Azets AS&lt;&#x2F;td&gt;&lt;td&gt;Accounting and financial administration&lt;&#x2F;td&gt;&lt;td&gt;Norway&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;We have entered into Data Processing Agreements (DPAs) with each sub-processor. For sub-processors located outside the EEA, we rely on Standard Contractual Clauses (SCCs) approved by the European Commission, or adequacy decisions where applicable (e.g., Switzerland).&lt;&#x2F;p&gt;
+&lt;p&gt;We will notify users of material changes to our sub-processor list at least 30 days in advance via email or platform notification.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6.2_Other_Disclosures&quot;&gt;6.2 Other Disclosures&lt;&#x2F;h3&gt;
+&lt;p&gt;We may also share personal data:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;With law enforcement or regulatory authorities when required by applicable law or valid legal process.&lt;&#x2F;li&gt;
+&lt;li&gt;To protect the rights, property, or safety of Viten Hub AS, our users, or the public.&lt;&#x2F;li&gt;
+&lt;li&gt;In connection with a merger, acquisition, or sale of assets, with appropriate notice to affected users.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;7-your-rights-under-gdpr&quot;&gt;7. Your Rights Under GDPR&lt;&#x2F;h2&gt;
+&lt;p&gt;As a data subject, you have the following rights under the GDPR. To exercise any of these rights, contact us at contact@vitenhub.no.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Right&lt;&#x2F;th&gt;&lt;th&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Right of access (Art. 15)&lt;&#x2F;td&gt;&lt;td&gt;Request a copy of the personal data we hold about you and information about how it is processed.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to rectification (Art. 16)&lt;&#x2F;td&gt;&lt;td&gt;Request correction of inaccurate or incomplete personal data.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to erasure (Art. 17)&lt;&#x2F;td&gt;&lt;td&gt;Request deletion of your personal data, subject to the limitations described below.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to restriction (Art. 18)&lt;&#x2F;td&gt;&lt;td&gt;Request that we limit processing of your personal data in certain circumstances.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to data portability (Art. 20)&lt;&#x2F;td&gt;&lt;td&gt;Receive your personal data in a structured, commonly used, machine-readable format (JSON, CSV, RDF).&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to object (Art. 21)&lt;&#x2F;td&gt;&lt;td&gt;Object to processing based on legitimate interest, including for direct marketing purposes.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to withdraw consent (Art. 7(3))&lt;&#x2F;td&gt;&lt;td&gt;Withdraw consent at any time where processing is based on consent. Withdrawal does not affect the lawfulness of prior processing.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Right to lodge a complaint&lt;&#x2F;td&gt;&lt;td&gt;File a complaint with the Norwegian Data Protection Authority (Datatilsynet) at datatilsynet.no or your local supervisory authority.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;We will respond to all data subject requests within 30 days. In complex cases, this may be extended by a further 60 days with prior notice.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;7.1_Important_Limitation:_Nanopublication_Permanence&quot;&gt;7.1 Important Limitation: Nanopublication Permanence&lt;&#x2F;h3&gt;
+&lt;p&gt;Published nanopublications are permanent by design and cannot be deleted, even upon account deletion. This is essential to the integrity of the scientific record and citation stability. Your ORCID iD and name will remain associated with nanopublications you have published as creator metadata. This limitation is communicated to you before publication and is necessary for the performance of the contract (publishing FAIR, citable research contributions). If you exercise your right to erasure, we will delete your account data and any unpublished drafts, but published nanopublications will remain accessible.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;8._International_Data_Transfers&quot;&gt;8. International Data Transfers&lt;&#x2F;h2&gt;
+&lt;p&gt;Science Live is built on European infrastructure. Your primary data (account information, database records) is stored in the EU (Frankfurt, Germany). Nanopublication data is stored in the decentralised Knowledge Pixels network, with servers primarily in Switzerland (an adequate country under GDPR).&lt;&#x2F;p&gt;
+&lt;p&gt;Some sub-processors are based in the United States (Resend, ORCID, GitHub). For these transfers, we rely on Standard Contractual Clauses (SCCs) and, where available, supplementary measures as recommended by the EDPB. We continuously assess the adequacy of these safeguards.&lt;&#x2F;p&gt;
+&lt;p&gt;We do not transfer personal data to countries without an adequate level of data protection unless appropriate safeguards are in place.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;9._Data_Retention&quot;&gt;9. Data Retention&lt;&#x2F;h2&gt;
+&lt;p&gt;We retain personal data only as long as necessary for the purposes described in this policy:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Data Category&lt;&#x2F;th&gt;&lt;th&gt;Retention Period&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Account data (name, email, ORCID iD)&lt;&#x2F;td&gt;&lt;td&gt;Duration of account + 30 days after deletion request&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Usage and technical data&lt;&#x2F;td&gt;&lt;td&gt;24 months (aggregated and anonymised after 12 months)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Payment records&lt;&#x2F;td&gt;&lt;td&gt;As required by Norwegian tax law (currently 5 years)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Server and access logs&lt;&#x2F;td&gt;&lt;td&gt;90 days&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Nanopublication metadata (ORCID iD, name as creator)&lt;&#x2F;td&gt;&lt;td&gt;Permanent (scientific record integrity)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Support communications&lt;&#x2F;td&gt;&lt;td&gt;24 months after resolution&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Marketing consent records&lt;&#x2F;td&gt;&lt;td&gt;Duration of consent + 12 months after withdrawal&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Inactive accounts (no login for 24 months) will receive a warning email. If no action is taken within 30 days, the account may be deactivated. Published nanopublications remain accessible regardless of account status.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;10-cookies-and-similar-technologies&quot;&gt;10. Cookies and Similar Technologies&lt;&#x2F;h2&gt;
+&lt;p&gt;We use cookies and similar technologies to operate and improve the Service.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;10.1_Types_of_Cookies&quot;&gt;10.1 Types of Cookies&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Cookie Type&lt;&#x2F;th&gt;&lt;th&gt;Purpose&lt;&#x2F;th&gt;&lt;th&gt;Legal Basis&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Strictly necessary&lt;&#x2F;td&gt;&lt;td&gt;Authentication, session management, security&lt;&#x2F;td&gt;&lt;td&gt;Exempt from consent (essential)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Functional&lt;&#x2F;td&gt;&lt;td&gt;Language preferences, display settings&lt;&#x2F;td&gt;&lt;td&gt;Legitimate interest&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Analytics&lt;&#x2F;td&gt;&lt;td&gt;Platform usage statistics (anonymised)&lt;&#x2F;td&gt;&lt;td&gt;Consent&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;We do not use advertising or tracking cookies. We do not share cookie data with third parties for advertising purposes.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;10.2_Cookie_Consent&quot;&gt;10.2 Cookie Consent&lt;&#x2F;h3&gt;
+&lt;p&gt;On your first visit, we present a cookie consent banner that allows you to accept or reject non-essential cookies. You can change your preferences at any time through the cookie settings accessible from the platform footer. Strictly necessary cookies cannot be disabled as they are required for the Service to function.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;11._Data_Security&quot;&gt;11. Data Security&lt;&#x2F;h2&gt;
+&lt;p&gt;We implement appropriate technical and organisational measures to protect your personal data, including:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Encryption in transit (TLS 1.3) and at rest for database storage&lt;&#x2F;li&gt;
+&lt;li&gt;Access controls with role-based permissions and the principle of least privilege&lt;&#x2F;li&gt;
+&lt;li&gt;Daily automated backups with geographically distributed storage&lt;&#x2F;li&gt;
+&lt;li&gt;Regular security assessments and dependency vulnerability scanning&lt;&#x2F;li&gt;
+&lt;li&gt;Incident response procedures with notification within 72 hours to the supervisory authority as required by GDPR Article 33&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;No system can guarantee absolute security. If you become aware of a security vulnerability, please report it to contact@vitenhub.no.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;12._Children’s_Privacy&quot;&gt;12. Children’s Privacy&lt;&#x2F;h2&gt;
+&lt;p&gt;Our Service is not directed at individuals under the age of 16. We do not knowingly collect personal data from children under 16. If you are a parent or guardian and believe your child has provided us with personal data, please contact us and we will take steps to delete such data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;13._Data_Protection_Impact_Assessment&quot;&gt;13. Data Protection Impact Assessment&lt;&#x2F;h2&gt;
+&lt;p&gt;We have conducted a Data Protection Impact Assessment (DPIA) for our AI-powered knowledge extraction features, in accordance with GDPR Article 35. The DPIA concludes that adequate safeguards are in place, including the use of European-hosted or self-hosted AI models, the separation of personal data from AI processing, and human oversight of automated outputs. The DPIA is available upon request from the supervisory authority.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;14._Changes_to_This_Privacy_Policy&quot;&gt;14. Changes to This Privacy Policy&lt;&#x2F;h2&gt;
+&lt;p&gt;We may update this Privacy Policy from time to time. Material changes will be announced at least 30 days in advance via email to all registered users and via a prominent notice on the platform. Continued use of the Service after the effective date of changes constitutes acceptance of the updated policy. Previous versions are archived and available upon request.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;15._Contact_and_Complaints&quot;&gt;15. Contact and Complaints&lt;&#x2F;h2&gt;
+&lt;p&gt;If you have questions about this Privacy Policy or wish to exercise your data protection rights, please contact:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Viten Hub AS&lt;&#x2F;strong&gt;
+Email: contact@vitenhub.no
+Website: https:&#x2F;&#x2F;sciencelive4all.org&lt;&#x2F;p&gt;
+&lt;p&gt;If you are unsatisfied with our response, you have the right to lodge a complaint with:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Datatilsynet (Norwegian Data Protection Authority)&lt;&#x2F;strong&gt;
+Website: https:&#x2F;&#x2F;www.datatilsynet.no
+Email: postkasse@datatilsynet.no&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;By using Science Live, you acknowledge that you have read and understood this Privacy Policy.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>Terms of Service</title>
           <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
           <author>Unknown</author>
           <link>https://sciencelive4all.org/terms/</link>
           <guid>https://sciencelive4all.org/terms/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;Effective Date: January 20, 2024&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;&lt;strong&gt;Effective Date: January 20, 2026&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Welcome to Science Live. These Terms of Service (“Terms”) govern your use of the Science Live platform, including our website, applications, and services (collectively, the “Service”) provided by Science Live (“we,” “us,” or “our”).&lt;&#x2F;p&gt;
 &lt;p&gt;By accessing or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;1._Acceptance_of_Terms&quot;&gt;1. Acceptance of Terms&lt;&#x2F;h2&gt;
