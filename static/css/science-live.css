@@ -258,6 +258,8 @@ body {
     background: linear-gradient(135deg, #ffffff, var(--secondary-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .hero-content h1_1 {
     font-size: 3.2rem;
@@ -267,6 +269,8 @@ body {
     background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .hero-content h1_2 {
     font-size: 3.2rem;
@@ -276,6 +280,8 @@ body {
     background: linear-gradient(135deg, var(--secondary-color), #7f2e66);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .hero-content h1_3 {
     font-size: 3.2rem;
@@ -285,6 +291,8 @@ body {
     background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero-content p {
