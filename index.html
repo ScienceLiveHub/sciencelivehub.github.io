@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Live - Transform Research into Connected Knowledge</title>
-    <meta name="description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
+    <title>Science Live - The Platform for FAIR Research</title>
+    <meta name="description" content="Transform research into FAIR nanopublications. Create, discover, cite, and embed structured knowledge bricks.">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- CSS -->
@@ -15,16 +14,16 @@
     
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Science Live - Transform Research into Connected Knowledge">
-    <meta property="og:description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
+    <meta property="og:title" content="Science Live - The Platform for FAIR Research">
+    <meta property="og:description" content="Transform research into FAIR nanopublications. Create, discover, cite, and embed structured knowledge bricks.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;">
     <meta property="og:image" content="https://sciencelive4all.org/static/og-image.png">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Science Live - Transform Research into Connected Knowledge">
-    <meta name="twitter:description" content="Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.">
+    <meta name="twitter:title" content="Science Live - The Platform for FAIR Research">
+    <meta name="twitter:description" content="Transform research into FAIR nanopublications. Create, discover, cite, and embed structured knowledge bricks.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://sciencelive4all.org/static/favicon.png">
@@ -58,15 +57,13 @@
             </a>
             <div class="nav-menu">
                 
-                <a href="#researchers" class="nav-link primary">Researchers</a>
+                <a href="#tools" class="nav-link primary">Tools</a>
                 
-                <a href="#organizations" class="nav-link primary">Organizations</a>
+                <a href="#showcase" class="nav-link primary">Showcase</a>
                 
-                <a href="#industry" class="nav-link primary">Industry</a>
+                <a href="#pricing" class="nav-link primary">Pricing</a>
                 
-                <a href="#travel-fund" class="nav-link travel-fund">Travel Fund</a>
-                
-                <a href="#timeline" class="nav-link secondary">Timeline</a>
+                <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;" class="nav-link secondary">Docs</a>
                 
                 <a href="#team" class="nav-link secondary">Team</a>
                 
@@ -79,890 +76,509 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1_1>Transform research into</h1_1>
-                <h1_2>connected knowledge</h1_2>
-                <h1_3>through stackable knowledge bricks</h1_3>
-                <p>Making scientific work FAIR: Findable, Accessible, Interoperable, Reusable.</p>
-                <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">Bridge research and industry with stackable knowledge bricks — earn travel funding through quality contributions.</p>
+                <h1_1>Turn research into</h1_1>
+                <h1_2>building blocks others can use</h1_2>
                 
+                <p>Create structured, citable nanopublications from your research. Organizations get visibility into research output, knowledge preservation, and FAIR compliance.</p>
+
                 <div class="hero-buttons">
-                    <button onclick="openBetaModal()" class="btn-primary">
-                        <i class="fas fa-user-plus"></i> Join our List
+                    
+                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Try the Platform
+                    </a>
+                    
+                    
+                    <button onclick="openContactModal()" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Us
                     </button>
                     
-                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org" class="btn-secondary">
-                        <i class="fas fa-computer"></i> Web Platform
-                    </a>
-                    
-                    
-                    <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;zotero" class="btn-secondary">
-                        <i class="fas fa-puzzle-piece"></i> Zotero Plugin
-                    </a>
-                    
-                </div>
-               <!-- Beta Modal -->
-               <div id="betaModal" class="modal" style="display: none;">
-                   <div class="modal-content">
-                       <span class="close" onclick="closeBetaModal()">&times;</span>
-                       <form action="https:&#x2F;&#x2F;platform.sciencelive4all.org" method="POST" class="beta-waitlist-form">
-            <div class="form-header">
-                <h3>Join Science Live Beta</h3>
-                <p>Be among the first to experience the future of scientific collaboration</p>
-            </div>
-            
-            <div class="form-grid">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                
-                <div class="form-group full-width">
-                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
-                </div>
-                
-                <div class="form-group full-width">
-                    <select name="role" required>
-                        <option value="">Select your role</option>
-                        <option value="researcher">Researcher</option>
-                        <option value="data-scientist">Data Scientist</option>
-                        <option value="rse-scientist">Research Software Engineer</option>
-                        <option value="industry-professional">Industry Professional</option>
-                        <option value="organisation-representative">Organization Representative</option>
-                        <option value="research-funding-agency">Research Founding Agency</option>
-                        <option value="student">Student</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group full-width">
-                    <textarea name="interest" placeholder="What interests you most about Science Live? (optional)" rows="3"></textarea>
                 </div>
             </div>
-            
-            <button type="submit" class="btn-primary form-submit">
-                <i class="fas fa-rocket"></i> Web Platform
-            </button>
-
-            <!-- Hidden fields for Formspree -->
-            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
-            <input type="hidden" name="_subject" value="New Science Live Beta Signup">
-        </form>
-
-
-                       </form>
-                   </div>
-                </div>
-
-                <div class="hero-stats">
-                    
-                    <div class="stat">
-                        <div class="stat-value"></div>
-                        <div class="stat-label"></div>
-                    </div>
-                    
-                    <div class="stat">
-                        <div class="stat-value"></div>
-                        <div class="stat-label"></div>
-                    </div>
-                    
-                    <div class="stat">
-                        <div class="stat-value"></div>
-                        <div class="stat-label"></div>
-                    </div>
-                    
-                </div>
-            </div>
-<div class="hero-visual">
-    <div class="video-wrapper">
-        <iframe width="640" height="360" 
-                src="https://www.youtube.com/embed/KBL9kcTPYRA" 
-                title="Science Live Introduction" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-        </iframe>
-    </div>
-</div>
-
         </div>
     </section>
 
-    <!-- Three Pillars Section -->
-    <section class="three-pillars-section">
-        <div class="pillars-container">
-            <div class="section-header">
-                <div class="section-tag">OUR TARGET AUDIENCES</div>
-                <h2 class="section-title">Your role, your Science Live experience</h2>
+    <!-- What Is It Section -->
+    
+    <section class="sl-section" id="what-is-it">
+        <div class="sl-container sl-container--narrow">
+            <div class="sl-section-header">
+                <span class="sl-tag">WHAT IS A NANOPUBLICATION?</span>
+                <h2 class="sl-title">Structured, FAIR knowledge bricks</h2>
             </div>
-            <div class="pillars-grid">
-                
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3 class="pillar-title">For Researchers</h3>
-                    <p class="pillar-description">PhD students, postdocs, faculty, and independent researchers who want to make their work discoverable, reusable, and properly credited.</p>
-                    <a href="#researchers" class="pillar-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3 class="pillar-title">For Organizations</h3>
-                    <p class="pillar-description">Universities, research institutes, and government agencies that need to preserve knowledge, support their researchers, and demonstrate research excellence.</p>
-                    <a href="#organizations" class="pillar-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3 class="pillar-title">For Industry</h3>
-                    <p class="pillar-description">Companies, R&amp;D teams, and commercial organizations seeking validated research they can actually implement in real-world applications.</p>
-                    <a href="#industry" class="pillar-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
+            <p class="sl-lead">A nanopublication is a small, structured unit of scientific knowledge — a claim, a dataset description, a replication result — that is machine-readable, citable, and permanently linked to its author via ORCID. Think of them as building blocks for open science.</p>
+
+            
+            <div class="sl-embed-card">
+                <iframe
+                    src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RA9ZVikfCPsv6yAnNX2S9Ai9x-Udy_q9dWzja9qTMz_80&theme=light&primaryColor=be2e78&showShare=false&showReferences=false"
+                    width="100%" height="450" frameborder="0" scrolling="no">
+                </iframe>
             </div>
             
-            <!-- Building Blocks Visual -->
-            <div class="building-blocks-visual">
+            <p class="sl-caption">A PICO research question — one of many nanopublication types you can create</p>
+            
+            
+        </div>
+    </section>
+    
 
-
-                <h3>Every Research Component Becomes a Knowledge Brick</h3>
-                <div class="blocks-diagram">
-                    <div class="research-block methods">
-                        <i class="fas fa-cogs"></i>
-                        <span>Methods</span>
+    <!-- How It Works Section -->
+    
+    <section class="sl-section sl-section--alt" id="tools">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">HOW IT WORKS</span>
+                <h2 class="sl-title">From research to reusable knowledge</h2>
+                <p class="sl-subtitle">Create, discover, and share structured nanopublications — whether you&#x27;re a researcher or an organization.</p>
+            </div>
+            <div class="sl-three-col">
+                
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-file-circle-plus"></i>
                     </div>
-                    <div class="research-block data">
-                        <i class="fas fa-database"></i>
-                        <span>Data</span>
+                    <h3>Create</h3>
+                    <p>Researchers create nanopublications from their work using guided templates or the Zotero plugin.</p>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Web platform with 15+ guided templates</li>
+                        
+                        <li><i class="fas fa-check"></i> Zotero plugin for your existing workflow</li>
+                        
+                        <li><i class="fas fa-check"></i> PRISMA systematic review tools</li>
+                        
+                        <li><i class="fas fa-check"></i> ORCID-signed, permanently citable</li>
+                        
+                    </ul>
+                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org" class="sl-btn sl-btn--outline">
+                        Try the Platform <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-magnifying-glass"></i>
                     </div>
-                    <div class="research-block claims">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Claims</span>
-                    </div>
-                    <div class="research-block code">
+                    <h3>Discover</h3>
+                    <p>Search and explore structured research across the decentralized nanopub network.</p>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Machine-readable structured queries</li>
+                        
+                        <li><i class="fas fa-check"></i> Filter by topic, author, or type</li>
+                        
+                        <li><i class="fas fa-check"></i> Full provenance on every result</li>
+                        
+                        <li><i class="fas fa-check"></i> Cite and build upon others&#x27; work</li>
+                        
+                    </ul>
+                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org&#x2F;search" class="sl-btn sl-btn--outline">
+                        Explore <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="sl-card">
+                    <div class="sl-card-icon">
                         <i class="fas fa-code"></i>
-                        <span>Code</span>
                     </div>
-                    <div class="research-block reviews">
-                        <i class="fas fa-comments"></i>
-                        <span>Discussions</span>
-                    </div>
+                    <h3>Embed &amp; Track</h3>
+                    <p>Organizations embed nanopubs on their website and track institutional research output.</p>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Customizable iframe embed viewer</li>
+                        
+                        <li><i class="fas fa-check"></i> Branded themes for your organization</li>
+                        
+                        <li><i class="fas fa-check"></i> Institutional dashboard and analytics</li>
+                        
+                        <li><i class="fas fa-check"></i> Preserve knowledge across team changes</li>
+                        
+                    </ul>
+                    <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;for-organizations&#x2F;embed&#x2F;" class="sl-btn sl-btn--outline">
+                        Learn about embedding <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <p class="blocks-caption">Create knowledge bricks that others can discover, validate, and stack together</p>
+                
             </div>
         </div>
     </section>
-
+    
 
     <!-- For Researchers Section -->
-    <section class="audience-section researchers" id="researchers">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-chalkboard-user"></i>
-                </div>
-                <h2>For Researchers</h2>
-                <h3>Earn travel grants while building your scientific legacy through stackable knowledge bricks.</h3>
-                <p>Transform your research into FAIR, stackable knowledge bricks—from systematic reviews to data analysis—making your work discoverable, reusable, and citable while advancing Open Science practices.</p>
+    
+    <section class="sl-section" id="researchers">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">FOR RESEARCHERS</span>
+                <h2 class="sl-title">Make your invisible work visible</h2>
+                <p class="sl-subtitle">Literature annotations, citation assessments, replication studies, PRISMA reviews — all become published, citable contributions linked to your ORCID.</p>
+            </div>
+            <div class="sl-three-col">
                 
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Get Recognition for Knowledge Brick Contributions</h4>
-                        </div>
-                        <p>ORCID-linked attribution for every knowledge brick you create—code, data, reviews, discussions, and validated contributions. Build credentials with verified, traceable work that others can cite and build upon.</p>
+                <div class="sl-card sl-card--compact">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-fingerprint"></i>
                     </div>
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Access Merit-Based Travel Grants</h4>
-                        </div>
-                        <p>Earn credits for quality knowledge brick contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost.</p>
-                    </div>
-                    
+                    <h3>Permanent attribution</h3>
+                    <p>Every nanopub gets a persistent URI and your ORCID cryptographic signature. Your work follows you across institutions.</p>
                 </div>
+                
+                <div class="sl-card sl-card--compact">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Zotero integration</h3>
+                    <p>Create nanopublications directly from your Zotero library — annotate papers, declare citations, publish claims.</p>
+                </div>
+                
+                <div class="sl-card sl-card--compact">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>PRISMA workflows</h3>
+                    <p>Conduct structured systematic reviews. Each step — search strategy, screening, assessment — becomes a traceable nanopub.</p>
+                </div>
+                
+            </div>
+            
+            <div class="sl-center" style="margin-top: 2rem;">
+                <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;for-researchers&#x2F;recognition-and-credits&#x2F;" class="sl-btn sl-btn--outline">
+                    Learn about recognition &amp; credits <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    
 
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Make FAIR Knowledge Bricks Effortlessly</h5>
-                        </div>
-                        <p>AI-enhanced workflows help you create FAIR-compliant knowledge bricks while working with your existing research toolkit. Seamless integration with tools like Zotero and systematic review platforms.</p>
+    <!-- Showcase Section -->
+    
+    <section class="sl-section" id="showcase">
+        <div class="sl-container sl-container--narrow">
+            <div class="sl-section-header">
+                <span class="sl-tag">SHOWCASE</span>
+                <h2 class="sl-title">Real nanopublications, live on the network</h2>
+                <p class="sl-subtitle">These are actual nanopublications created by researchers using Science Live</p>
+            </div>
+            <div class="sl-showcase-list">
+                
+                <div class="sl-showcase-item">
+                    <div class="sl-showcase-item-header">
+                        <h3>Scientific Claim (AIDA Sentence)</h3>
+                        <p>A structured scientific assertion with provenance and attribution</p>
                     </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Advance Science Through Open Stackable Knowledge Bricks</h5>
-                        </div>
-                        <p>Document complete research pathways—what worked, what didn&#x27;t, and why. Enable others to build new hypotheses on your knowledge bricks while preventing duplicate efforts.</p>
-                    </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Enable Knowledge Brick Validation</h5>
-                        </div>
-                        <p>Use community validation processes to verify specific knowledge bricks rather than requiring complete end-to-end reproduction of entire studies.</p>
-                    </div>
-                    
+                    <iframe
+                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RAY7IdUcyQ8P_WCO6o9NDMz9q2LN6w7bl7ZJnsHQ_sO5g&theme=light&primaryColor=0f2547"
+                        width="100%" height="500" frameborder="0" scrolling="no"
+                        loading="lazy">
+                    </iframe>
                 </div>
+                
+                <div class="sl-showcase-item">
+                    <div class="sl-showcase-item-header">
+                        <h3>FAIR Dataset</h3>
+                        <p>A dataset description with metadata, creators, license, and access information</p>
+                    </div>
+                    <iframe
+                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RAywW3taqJeRBg2K1nk-ZU5_XnfDGZEt4gFEQOKHdPOqs&theme=light&primaryColor=0f2547"
+                        width="100%" height="500" frameborder="0" scrolling="no"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <div class="sl-showcase-item">
+                    <div class="sl-showcase-item-header">
+                        <h3>FORRT Replication Study</h3>
+                        <p>A structured replication result from the FORRT reproducibility project</p>
+                    </div>
+                    <iframe
+                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RADCSRkRrlaOzRZ-lkPh1dnvthkhqFz55eGr1wtpW03vk&theme=light&primaryColor=0f2547"
+                        width="100%" height="600" frameborder="0" scrolling="no"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
 
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Individuals</h4>
-                        <div class="price">Always Free<span></span></div>
-                        <p></p>
+    <!-- For Organizations & Industry -->
+    
+    <section class="sl-section sl-section--alt" id="organizations">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">FOR ORGANIZATIONS &amp; INDUSTRY</span>
+                <h2 class="sl-title">Structured, queryable research evidence</h2>
+                <p class="sl-subtitle">Every nanopublication is cryptographically signed, machine-readable, and permanently queryable. No anonymous AI summaries — full provenance on every finding.</p>
+            </div>
+            <div class="sl-two-col">
+                
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>For Research Organizations</h3>
+                    <p>Universities, research institutes, and government agencies</p>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Track institutional research output with dashboards</li>
+                        
+                        <li><i class="fas fa-check"></i> Preserve knowledge when researchers move on</li>
+                        
+                        <li><i class="fas fa-check"></i> Embed nanopubs on your website with branded themes</li>
+                        
+                        <li><i class="fas fa-check"></i> Demonstrate FAIR compliance and research quality</li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>For Industry</h3>
+                    <p>Companies, R&amp;D teams, and commercial organizations</p>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Query structured evidence: &#x27;Which claims have been replicated?&#x27;</li>
+                        
+                        <li><i class="fas fa-check"></i> Commission targeted research via bounties</li>
+                        
+                        <li><i class="fas fa-check"></i> Fund researchers directly through travel grants</li>
+                        
+                        <li><i class="fas fa-check"></i> Open ecosystem — no vendor lock-in</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="sl-center" style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button onclick="openContactModal()" class="sl-btn sl-btn--primary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
+                
+                <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;for-organizations&#x2F;overview&#x2F;" class="sl-btn sl-btn--outline">
+                    Read the organization overview <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Pricing Section -->
+    
+    <section class="sl-section" id="pricing">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">PRICING</span>
+                <h2 class="sl-title">Simple, transparent pricing</h2>
+                <p class="sl-subtitle">Free for individual researchers. Subscriptions for organizations.</p>
+            </div>
+            <div class="sl-pricing-grid">
+                
+                <div class="sl-pricing-card">
+                    <div class="sl-pricing-card-header">
+                        <h3>Researchers</h3>
+                        <div class="sl-pricing-card-price">
+                            <span class="sl-price-amount">Free</span>
+                            
+                        </div>
+                        <p>Individual researchers, PhD students, postdocs, faculty</p>
+                    </div>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Create unlimited nanopublications</li>
+                        
+                        <li><i class="fas fa-check"></i> ORCID-linked attribution</li>
+                        
+                        <li><i class="fas fa-check"></i> Full search and discovery</li>
+                        
+                        <li><i class="fas fa-check"></i> Zotero plugin access</li>
+                        
+                        <li><i class="fas fa-check"></i> PRISMA workflow tools</li>
+                        
+                        <li><i class="fas fa-check"></i> Community validation</li>
+                        
+                    </ul>
+                    <div class="sl-pricing-card-cta">
+                        
+                        <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org" class="sl-btn sl-btn--secondary">Try the Platform</a>
+                        
                     </div>
                 </div>
-
-                <div class="audience-cta">
-                    <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-audience">Book a call for a demo</a>
+                
+                <div class="sl-pricing-card sl-pricing-card--featured">
+                    <div class="sl-pricing-card-header">
+                        <h3>Research Organizations</h3>
+                        <div class="sl-pricing-card-price">
+                            <span class="sl-price-amount">€3,000</span>
+                            
+                            <span class="sl-price-period">&#x2F;year</span>
+                            
+                        </div>
+                        <p>Universities, research institutes, government agencies</p>
+                    </div>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Everything in Free, plus:</li>
+                        
+                        <li><i class="fas fa-check"></i> Institutional dashboard &amp; analytics</li>
+                        
+                        <li><i class="fas fa-check"></i> Track research output across teams</li>
+                        
+                        <li><i class="fas fa-check"></i> Preserve institutional knowledge</li>
+                        
+                        <li><i class="fas fa-check"></i> Branded embed viewers</li>
+                        
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        
+                    </ul>
+                    <div class="sl-pricing-card-cta">
+                        
+                        <button onclick="openContactModal()" class="sl-btn sl-btn--primary">Contact Us</button>
+                        
+                    </div>
                 </div>
+                
+                <div class="sl-pricing-card">
+                    <div class="sl-pricing-card-header">
+                        <h3>Industry</h3>
+                        <div class="sl-pricing-card-price">
+                            <span class="sl-price-amount">€10,000</span>
+                            
+                            <span class="sl-price-period">&#x2F;year</span>
+                            
+                        </div>
+                        <p>Companies, R&amp;D teams, commercial organizations</p>
+                    </div>
+                    <ul class="sl-checklist">
+                        
+                        <li><i class="fas fa-check"></i> Everything in Organizations, plus:</li>
+                        
+                        <li><i class="fas fa-check"></i> Access validated research</li>
+                        
+                        <li><i class="fas fa-check"></i> Commission targeted validations</li>
+                        
+                        <li><i class="fas fa-check"></i> Custom API integration</li>
+                        
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        
+                        <li><i class="fas fa-check"></i> Custom branding &amp; deployment</li>
+                        
+                    </ul>
+                    <div class="sl-pricing-card-cta">
+                        
+                        <button onclick="openContactModal()" class="sl-btn sl-btn--primary">Contact Us</button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Team Section -->
+    
+    <section class="sl-section sl-section--alt" id="team">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <h2 class="sl-title">Who We Are</h2>
+                <p class="sl-subtitle">Building the infrastructure for FAIR scientific knowledge</p>
+            </div>
+            <div class="sl-three-col">
+                
+                <div class="sl-card sl-card--compact">
+                    <h3>Viten Hub Team</h3>
+                    <h4>Project Lead</h4>
+                    <p>Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship.</p>
+                    
+                      <a href="http:&#x2F;&#x2F;vitenhub.no&#x2F;" class="sl-card-link">VitenHub AS <i class="fas fa-arrow-right"></i></a>
+                    
+                </div>
+                
+                <div class="sl-card sl-card--compact">
+                    <h3>Knowledge Pixels Team</h3>
+                    <h4>Nanopublication Infrastructure</h4>
+                    <p>Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation.</p>
+                    
+                      <a href="https:&#x2F;&#x2F;knowledgepixels.com" class="sl-card-link">Knowledge Pixels <i class="fas fa-arrow-right"></i></a>
+                    
+                </div>
+                
+                <div class="sl-card sl-card--compact">
+                    <h3>Prophet Town Team</h3>
+                    <h4>Software Engineering</h4>
+                    <p>Vijay Prema is developing the Science Live Platform and the Zotero plugin.</p>
+                    
+                      <a href="https:&#x2F;&#x2F;www.ptown.tech" class="sl-card-link">Prophet Town <i class="fas fa-arrow-right"></i></a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- CTA Section -->
+    <section class="sl-section sl-section--dark">
+        <div class="sl-container sl-center">
+            <h2 class="sl-title" style="color: white;">Ready to transform your research?</h2>
+            <p class="sl-subtitle" style="color: rgba(255,255,255,0.8);">Join researchers and organizations already using Science Live to create FAIR, structured nanopublications.</p>
+            <div class="sl-btn-group" style="margin-top: 2rem;">
+                <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org" class="sl-btn sl-btn--white">
+                    <i class="fas fa-rocket"></i> Try the Platform
+                </a>
+                <button onclick="openContactModal()" class="sl-btn sl-btn--white-outline">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- For Organizations Section -->
-    <section class="audience-section organizations" id="organizations">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-university"></i>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <form action="https://formspree.io/f/mwpndawr" method="POST" class="beta-waitlist-form">
+                <div class="form-header">
+                    <h3>Contact Us</h3>
+                    <p>Get in touch to discuss your needs or learn more about Science Live</p>
                 </div>
-                <h2>For Organizations</h2>
-                <h3>Build Institutional Excellence Through Knowledge Bricks</h3>
-                <p>Enable your researchers to create stackable knowledge bricks that preserve institutional memory, demonstrate research quality, and attract top talent who want to work with cutting-edge research infrastructure.</p>
-                
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Track Knowledge Brick Creation and Collaboration</h4>
-                        </div>
-                        <p>See which departments excel at creating reusable knowledge bricks, monitor collaboration patterns across research teams, and track how your institutional knowledge builds over time.</p>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Showcase Institutional Knowledge Brick Excellence</h4>
-                        </div>
-                        <p>Demonstrate research quality through validated, traceable knowledge bricks that show prospective researchers and industry partners the caliber of work your institution produces.</p>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
                     </div>
-                    
-                </div>
-
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Preserve Institutional Knowledge Bricks</h5>
-                        </div>
-                        <p>Capture reasoning, methodological decisions, and research pathways as permanent knowledge bricks—preventing knowledge loss when researchers transition between projects or institutions.</p>
+                    <div class="form-group full-width">
+                        <input type="text" name="organization" placeholder="Organization/Institution (optional)">
                     </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Make Knowledge Brick Creation Effortless</h5>
-                        </div>
-                        <p>AI-assisted workflows help researchers transform their work into stackable knowledge bricks that serve both immediate collaboration and long-term institutional memory.</p>
+                    <div class="form-group full-width">
+                        <select name="inquiry_type">
+                            <option value="">What can we help you with?</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="demo">Request Demo</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="subscription">Organization Subscription</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Attract Industry Partners Through Knowledge Bricks</h5>
-                        </div>
-                        <p>Highlight your implementation-ready knowledge bricks to attract industry collaborators seeking validated research components for real-world deployment.</p>
-                    </div>
-                    
-                </div>
-
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Academic Organizations</h4>
-                        <div class="price">€3,000<span>&#x2F;year</span></div>
-                        <p>Preserve knowledge bricks • Attract top talent • Enable industry partnerships</p>
+                    <div class="form-group full-width">
+                        <textarea name="message" placeholder="Your message" rows="4" required></textarea>
                     </div>
                 </div>
-
-                <div class="audience-cta">
-                    <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-audience">Book a Free Consultation</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- For Industry Section -->
-    <section class="audience-section industry" id="industry">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <h2>For Industry</h2>
-                <h3>Find Research You Can Actually Implement</h3>
-                <p>Access validated research with clear TRL progression pathways. Find knowledge bricks that show exactly how academic discoveries become implementable solutions.</p>
-                
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Find Application-Ready Knowledge Bricks</h4>
-                        </div>
-                        <p>Access knowledge bricks with clear pathways from lab discoveries to production deployment. Each knowledge brick shows its maturity level, validation status, and implementation requirements.</p>
-                    </div>
-                    
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>Commission Knowledge Brick Advancement</h4>
-                        </div>
-                        <p>Select specific knowledge bricks you want advanced through TRL levels. Contributors earn travel credits for developing validation studies and implementation pathways that bridge the gap to your deployment requirements.</p>
-                    </div>
-                    
-                </div>
-
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Shape Knowledge Brick Development</h5>
-                        </div>
-                        <p>Engage directly with contributors, providing industry insights that guide how knowledge bricks are developed toward practical applications and real-world deployment.</p>
-                    </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Monitor Knowledge Brick Maturity in Real-Time</h5>
-                        </div>
-                        <p>Track how individual knowledge bricks progress through TRL levels—from basic research components to production-ready solutions with validated implementation pathways.</p>
-                    </div>
-                    
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>Build Knowledge Brick Collaboration Networks</h5>
-                        </div>
-                        <p>Your participation funds contributor travel grants and creates ongoing partnerships focused on developing knowledge bricks that bridge academic research and industry needs.</p>
-                    </div>
-                    
-                </div>
-
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Commercial Organizations</h4>
-                        <div class="price">€10,000<span>&#x2F;year</span></div>
-                        <p>Avoid implementation failures • Access validated research • Build partnerships</p>
-                    </div>
-                </div>
-
-                <div class="audience-cta">
-                    <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-audience">Book a Free Consultation</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Credit System & Travel Fund Section -->
-    <section class="credit-system" id="travel-fund">
-        <div class="credit-container">
-            <div class="credit-header">
-                <h2>Pricing &amp; Travel Fund</h2>
-                <p>The Science Live ecosystem is funded by Organizational Subscriptions</p>
-            </div>
-
-            <!-- Three Panel Structure -->
-            <div class="three-panel-grid">
-                <!-- Panel 1: Always Free -->
-                <div class="credit-panel panel-free">
-                    <div class="panel-header">
-                        <i class="fas fa-unlock panel-icon"></i>
-                        <h3>Always Free for Individual contributors</h3>
-                        <h4>Start Your Science Live Journey</h4>
-                        <p>We support you through every step of the research process—from systematic reviews to final outputs—so your work is traceable, reproducible, visible, and valued.</p>
-                    </div>
-                    <div class="panel-features">
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Access the platform for free, always</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Create stackable knowledge bricks from every research decision</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Build on reproducible systematic reviews and consolidated research claims</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Contribute to and get valued for consensus-building across the scientific process</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Validate and improve the work of others</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Earn and exchange credits for meaningful contributions</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Grow your reputation through open collaboration</span>
-                        </div>
-                        
-                    </div>
-                    <div class="panel-footer">
-                        <div class="panel-price">Always Free</div>
-                    </div>
-                </div>
-
-                <!-- Panel 2: Travel Fund -->
-                <div class="credit-panel panel-travel featured">
-                    <div class="panel-badge">Merit-Based</div>
-                    <div class="panel-header">
-                        <i class="fas fa-exchange panel-icon"></i>
-                        <h3>Travel Fund Access</h3>
-                        <h4>Unlock with Contributions</h4>
-                        <p>Turn your validated contributions into career opportunities. Earn travel funding through Science Live validated work, successful reproductions, and community recognition - all funded by organizational subscriptions.</p>
-                        <div class="requirement">Annual threshold: 10 Science Live validated contributions + 5 scientific claims successfully reproduced</div>
-                    </div>
-                    <div class="panel-features">
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>70% of every organizational subscription fuels Science Live’s travel grants and core infrastructure.</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Annual fund size published transparently on our website</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Access Science Live endorsed conferences at negotiated rates</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Build your professional network across academia and industry</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Additional sponsorships from conferences and companies expand the travel fund</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Science Live manages conference travel with partner events</span>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Industry partnership visits to bridge academia and commercial R&amp;D</span>
-                        </div>
-                        
-                    </div>
-                    <div class="panel-footer">
-                        <div class="panel-price">Unlock Through Contributions</div>
-                    </div>
-                </div>
-
-                <!-- Panel 3: Organizational Subscriptions -->
-                <div class="credit-panel panel-subscriptions">
-                    <div class="panel-header">
-                        <i class="fas fa-building panel-icon"></i>
-                        <h3>Organizational Subscriptions</h3>
-                        <h4>Fund the Ecosystem &amp; Get Team Features</h4>
-                        <p>Organizational subscriptions provide team collaboration features while directly funding the travel grants that support individual contributors across academia and industry.</p>
-                    </div>
-                    <div class="subscription-tiers">
-                        
-                        <div class="tier-card">
-                            <h5>Research Organizations</h5>
-                            <div class="tier-price">
-                                <span class="price">€3,000</span>
-                                <span class="period">&#x2F;year</span>
-                            </div>
-                            <p class="tier-description">Universities, research institutes, and governmental organizations</p>
-                            <div class="tier-features">
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Showcase your open science impact and effective implementation</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Attract top talent with visible commitment to research excellence and industry collaboration</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Preserve institutional knowledge as researchers transition</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Track institutional research contributions and networks</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Connect your researchers with industry collaboration opportunities</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Help your researchers access industry-funded travel grants</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="tier-card">
-                            <h5>Industry Organizations</h5>
-                            <div class="tier-price">
-                                <span class="price">€10,000</span>
-                                <span class="period">&#x2F;year</span>
-                            </div>
-                            <p class="tier-description">Companies, R&amp;D teams, and commercial organizations</p>
-                            <div class="tier-features">
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Priority validation queue for business-critical research</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Access ready-to-reproduce research with linked code and data</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Commission validation of research claims relevant to your use cases</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Understand complete implementation context and avoid costly mistakes</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Bridge academic-industry communication with machine-readable formats</span>
-                                </div>
-                                
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>Direct channels to collaborate with researchers on implementation challenges</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credit System Explanation -->
-            <div class="credit-explanation">
-                <h3>How the Credit System Works</h3>
-                <p>Credits reflect relative contribution value - a PRISMA systematic review (150 credits) is worth 7.5x more than a basic claim (20 credits). Actual travel funding depends on total annual fund size divided by all credits earned.</p>
-                
-                <div class="transparency-example">
-                    <h4>Current Status (January 2026):</h4>
-                    <div class="transparency-grid">
-                        <div class="transparency-item">
-                            <strong>Fund Balance:</strong> €3,000 (initial seed funding)
-                        </div>
-                        <div class="transparency-item">
-                            <strong>Credits Earned:</strong> 0
-                        </div>
-                        <div class="transparency-item">
-                            <strong>Credit Value:</strong> Will be calculated as organizations join and contributors earn credits
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credit Earning Activities -->
-            <div class="credit-earning-section">
-                <h3>Earn Credits Through Quality Knowledge Bricks</h3>
-                <div class="credit-activities">
-                    
-                    <div class="credit-activity">
-                        <span class="credits">20 credits</span>
-                        <span class="activity">Publish structured research claim</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">50 credits</span>
-                        <span class="activity">Publish knowledge brick with datasets</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">75 credits</span>
-                        <span class="activity">Publish knowledge brick with code&#x2F;software</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">150 credits</span>
-                        <span class="activity">Complete PRISMA systematic review</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">100 credits</span>
-                        <span class="activity">Publish complete reproducible package (data + code)</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">50 credits</span>
-                        <span class="activity">Successfully reproduce scientific claim</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">10 credits</span>
-                        <span class="activity">Research output gets cited</span>
-                    </div>
-                    
-                    <div class="credit-activity">
-                        <span class="credits">40 credits</span>
-                        <span class="activity">Contribute to consensus-building discussions and peer review</span>
-                    </div>
-                    
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-<!-- Timeline Section -->
-
-<section class="timeline-section" id="timeline">
-    <div class="timeline-container">
-        <div class="timeline-header">
-            <h2>Development Roadmap</h2>
-            <p>15-Month Project Timeline</p>
-        </div>
-        <div class="timeline">
-            
-            <div class="timeline-item completed">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-check"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Apr-Jun 2025</div>
-                    <h3>Project Launch &amp; Foundation</h3>
-                    <p>Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item current">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-play"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Jul-Sep 2025</div>
-                    <h3>Design &amp; User Research</h3>
-                    <p>User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Oct-Dec 2025</div>
-                    <h3>Platform Development</h3>
-                    <p>Core platform implementation, feature development, and integration of user feedback from design phase</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Jan-Mar 2026</div>
-                    <h3>Beta Launch</h3>
-                    <p>Limited beta release with research communities, travel fund activation, and organizational subscription pilot program</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item upcoming">
-                <div class="timeline-marker">
-                    
-                    <i class="fas fa-clock"></i>
-                    
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Apr-Jun 2026</div>
-                    <h3>Public Launch &amp; Project Completion</h3>
-                    <p>Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion</p>
-                </div>
-            </div>
-            
+                <button type="submit" class="sl-btn sl-btn--primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
+                <input type="hidden" name="_subject" value="New Contact Message from Science Live">
+            </form>
         </div>
     </div>
-</section>
-
-
-<!-- Team Section -->
-
-<section class="team-section" id="team">
-    <div class="team-container">
-        <div class="team-header">
-            <h2>Who We Are</h2>
-            <p>Experienced researchers and technologists building the future of scientific collaboration</p>
-        </div>
-        
-        <!-- Team Members -->
-        <div class="team-members">
-            
-            <div class="team-member">
-                <h3>Viten Hub Team</h3>
-                <h4>Project Lead</h4>
-                <p>Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development.</p>
-                
-                  <div class="member-org"> <a href="http:&#x2F;&#x2F;vitenhub.no&#x2F;">VitenHub AS</a></div>
-                
-            </div>
-            
-            <div class="team-member">
-                <h3>Knowledge Pixels Team</h3>
-                <h4>Nanopublication Infrastructure</h4>
-                <p>Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation.</p>
-                
-                  <div class="member-org"> <a href="https:&#x2F;&#x2F;knowledgepixels.com">Knowledge Pixels</a></div>
-                
-            </div>
-            
-            <div class="team-member">
-                <h3>Prophet Town Team</h3>
-                <h4>Software Engineering</h4>
-                <p>Vijay Prema is developing the Science Live Platform and the Zotero plugin.</p>
-                
-                  <div class="member-org"> <a href="https:&#x2F;&#x2F;www.ptown.tech">Prophet Town</a></div>
-                
-            </div>
-            
-        </div>
-
-        <!-- Hiring Section -->
-        
-
-        <!-- Institutional Backing -->
-        
-        <div class="backing-section">
-            <h3>Institutional Support</h3>
-            <p>Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships.</p>
-        </div>
-        
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta">
-    <div class="features-container">
-        <h2>Sustainable Academia-Industry Ecosystem</h2>
-        <p>Organizational subscriptions fund the Science Live infrastructure and travel grants while gaining access to validated research and collaboration opportunities. This creates a self-sustaining model where quality contributions are rewarded with career development funding, regardless of whether contributors work in academia or industry.</p>
-        <div class="cta-buttons">
-            <a href="https:&#x2F;&#x2F;calendly.com&#x2F;anne-fouilloux&#x2F;30min" class="btn-cta">
-                <i class="fas fa-video"></i> Book a video call
-            </a>
-            <button onclick="openContactModal()" class="btn-cta-secondary">
-                <i class="fas fa-envelope"></i> Contact us
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Modal -->
-<div id="contactModal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close" onclick="closeContactModal()">&times;</span>
-        <form action="https://formspree.io/f/mwpndawr" method="POST" class="beta-waitlist-form">
-            <div class="form-header">
-                <h3>Contact Us</h3>
-                <p>Get in touch to discuss your needs or learn more about Science Live</p>
-            </div>
-            
-            <div class="form-grid">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                
-                <div class="form-group full-width">
-                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
-                </div>
-                
-                <div class="form-group full-width">
-                    <select name="inquiry_type">
-                        <option value="">What can we help you with?</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="demo">Request Demo</option>
-                        <option value="partnership">Partnership Opportunity</option>
-                        <option value="media">Media/Press</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group full-width">
-                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
-                </div>
-            </div>
-            
-            <button type="submit" class="btn-primary form-submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-
-            <!-- Hidden fields for Formspree -->
-            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
-            <input type="hidden" name="_subject" value="New Contact Message from Science Live">
-        </form>
-    </div>
-</div>
 
 
 
@@ -978,7 +594,7 @@
                     </div>
                 </div>
                 <p class="footer-description">
-                    Built for science. Powered by collaboration. Ready for innovation.
+                    The open platform for FAIR scientific nanopublications.
                 </p>
             </div>
 
@@ -1029,154 +645,52 @@
             alert('ORCID integration coming soon!');
         }
 
-        // Smooth scrolling for anchor links
+        // Smooth scrolling for anchor links with navbar offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                var href = this.getAttribute('href');
+                var target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    history.pushState(null, null, href);
+                    function scrollToTarget() {
+                        var offset = 90;
+                        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                    scrollToTarget();
+                    // Retry after lazy-loaded iframes may have resized the page
+                    setTimeout(scrollToTarget, 600);
                 }
             });
         });
 
-        // Add hover effects for hero visual steps
-        document.addEventListener('DOMContentLoaded', function() {
-            const userSteps = document.querySelectorAll('.user-step');
-            
-            const originalDescriptions = [
-                'Transform your <strong>research, data & code</strong> into structured, reusable components',
-                'Find <strong>application-ready research</strong> and build faster with certified components',
-                'Get <strong>expert guidance</strong> and collaborate with the people behind the work'
-            ];
-            
-            const hoverDescriptions = [
-                'Example: <span style="color: #4a9eff;">ML accuracy: 94%</span> → structured claim with code & data',
-                'Search: <span style="color: #4a9eff;">"energy storage"</span> → find & use validated methods',
-                'Connect: <span style="color: #4a9eff;">Chat with authors</span> → get implementation guidance'
-            ];
-            
-            userSteps.forEach((step, index) => {
-                if (index < originalDescriptions.length) {
-                    step.addEventListener('mouseenter', function() {
-                        const desc = this.querySelector('.step-description');
-                        if (desc) desc.innerHTML = hoverDescriptions[index];
-                    });
-                    
-                    step.addEventListener('mouseleave', function() {
-                        const desc = this.querySelector('.step-description');
-                        if (desc) desc.innerHTML = originalDescriptions[index];
-                    });
-                }
-            });
+        // Auto-resize embedded nanopub iframes
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'nanopub-embed-resize') {
+                var iframes = document.querySelectorAll('iframe');
+                iframes.forEach(function(iframe) {
+                    if (iframe.contentWindow === event.source) {
+                        iframe.style.height = event.data.height + 'px';
+                    }
+                });
+            }
         });
     </script>
     
     
 <script>
-function loadVideo() {
-  const container = document.getElementById('videoContainer');
-  
-  // Create video element
-  const video = document.createElement('video');
-  video.width = 640;
-  video.height = 640;
-  video.controls = true;
-  video.autoplay = true;
-  video.muted = true;
-  video.playsInline = true;
-
-  // Add source
-  const source = document.createElement('source');
-  source.src = "https://raw.githubusercontent.com/ScienceLiveHub/ideas-discussions/main/Science_Live_NotebookLM.mp4";
-  source.type = "video/mp4";
-  video.appendChild(source);
-
-  // When video ends, restore preview image
-  video.onended = function () {
-    container.innerHTML = `<img src="assets/img/science-live-main.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">`;
-  };
-
-  // Replace preview image with video
-  container.innerHTML = '';
-  container.appendChild(video);
-}
-
-// Animate elements on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Apply animation to feature cards and process steps
-document.querySelectorAll('.pillar-card, .researcher-pillar, .benefit-card, .research-block').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Animate building blocks with stagger
-const blocks = document.querySelectorAll('.research-block');
-blocks.forEach((block, index) => {
-    setTimeout(() => {
-        block.style.opacity = '1';
-        block.style.transform = 'translateY(0)';
-    }, index * 200);
-});
-// Beta form modal functions
-function openBetaModal() {
-    document.getElementById('betaModal').style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-}
-
-function closeBetaModal() {
-    document.getElementById('betaModal').style.display = 'none';
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-}
-
-// Close modal when clicking outside
-window.onclick = function(event) {
-    const modal = document.getElementById('betaModal');
-    if (event.target == modal) {
-        closeBetaModal();
-    }
-}
-
-// Contact form modal functions
 function openContactModal() {
     document.getElementById('contactModal').style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
-
 function closeContactModal() {
     document.getElementById('contactModal').style.display = 'none';
     document.body.style.overflow = 'auto';
 }
-
-// Update the window click handler to handle both modals
 window.onclick = function(event) {
-    const betaModal = document.getElementById('betaModal');
-    const contactModal = document.getElementById('contactModal');
-    
-    if (event.target == betaModal) {
-        closeBetaModal();
-    }
-    if (event.target == contactModal) {
-        closeContactModal();
-    }
+    var m = document.getElementById('contactModal');
+    if (event.target == m) closeContactModal();
 }
 </script>
 

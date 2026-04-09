@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>Science Live - Transform Research into Connected Knowledge</title>
+      <title>Science Live - The Platform for FAIR Research</title>
       <link>https://sciencelive4all.org</link>
-      <description>Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress.</description>
+      <description>Transform research into FAIR nanopublications. Create, discover, cite, and embed structured knowledge bricks.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://sciencelive4all.org/rss.xml" rel="self" type="application/rss+xml"/>
