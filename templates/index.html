@@ -7,689 +7,322 @@
             <div class="hero-content">
                 <h1_1>{{ config.extra.hero_title_1 }}</h1_1>
                 <h1_2>{{ config.extra.hero_title_2 }}</h1_2>
+                {% if config.extra.hero_title_3 %}
                 <h1_3>{{ config.extra.hero_title_3 }}</h1_3>
+                {% endif %}
                 <p>{{ config.extra.hero_subtitle }}</p>
-                <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 1rem;">{{ config.extra.hero_tagline }}</p>
-                
+
                 <div class="hero-buttons">
-                    <button onclick="openBetaModal()" class="btn-primary">
-                        <i class="fas fa-user-plus"></i> Join our List
-                    </button>
                     {% if config.extra.hero_primary_button_url is defined %}
-                    <a href="{{ config.extra.hero_primary_button_url }}" class="btn-secondary">
+                    <a href="{{ config.extra.hero_primary_button_url }}" class="btn-primary">
                         <i class="fas fa-{{ config.extra.hero_primary_button_icon }}"></i> {{ config.extra.hero_primary_button_text }}
                     </a>
                     {% endif %}
                     {% if config.extra.hero_secondary_button_url is defined %}
-                    <a href="{{ config.extra.hero_secondary_button_url }}" class="btn-secondary">
+                    <button onclick="openContactModal()" class="btn-secondary">
                         <i class="fas fa-{{ config.extra.hero_secondary_button_icon }}"></i> {{ config.extra.hero_secondary_button_text }}
-                    </a>
+                    </button>
                     {% endif %}
                 </div>
-               <!-- Beta Modal -->
-               <div id="betaModal" class="modal" style="display: none;">
-                   <div class="modal-content">
-                       <span class="close" onclick="closeBetaModal()">&times;</span>
-                       <form action="{{ config.extra.hero_primary_button_url }}" method="POST" class="beta-waitlist-form">
-            <div class="form-header">
-                <h3>Join Science Live Beta</h3>
-                <p>Be among the first to experience the future of scientific collaboration</p>
             </div>
-            
-            <div class="form-grid">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                
-                <div class="form-group full-width">
-                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
-                </div>
-                
-                <div class="form-group full-width">
-                    <select name="role" required>
-                        <option value="">Select your role</option>
-                        <option value="researcher">Researcher</option>
-                        <option value="data-scientist">Data Scientist</option>
-                        <option value="rse-scientist">Research Software Engineer</option>
-                        <option value="industry-professional">Industry Professional</option>
-                        <option value="organisation-representative">Organization Representative</option>
-                        <option value="research-funding-agency">Research Founding Agency</option>
-                        <option value="student">Student</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group full-width">
-                    <textarea name="interest" placeholder="What interests you most about Science Live? (optional)" rows="3"></textarea>
-                </div>
-            </div>
-            
-            <button type="submit" class="btn-primary form-submit">
-                <i class="fas fa-rocket"></i> {{ config.extra.hero_primary_button_text }}
-            </button>
-
-            <!-- Hidden fields for Formspree -->
-            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
-            <input type="hidden" name="_subject" value="New Science Live Beta Signup">
-        </form>
-
-
-                       </form>
-                   </div>
-                </div>
-
-                <div class="hero-stats">
-                    {% for stat in config.extra.hero_stats %}
-                    <div class="stat">
-                        <div class="stat-value">{{ stat.value }}</div>
-                        <div class="stat-label">{{ stat.label }}</div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-<div class="hero-visual">
-    <div class="video-wrapper">
-        <iframe width="640" height="360" 
-                src="https://www.youtube.com/embed/KBL9kcTPYRA" 
-                title="Science Live Introduction" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-        </iframe>
-    </div>
-</div>
-
         </div>
     </section>
 
-    <!-- Three Pillars Section -->
-    <section class="three-pillars-section">
-        <div class="pillars-container">
-            <div class="section-header">
-                <div class="section-tag">{{ config.extra.features_section_tag }}</div>
-                <h2 class="section-title">{{ config.extra.features_section_title }}</h2>
+    <!-- What Is It Section -->
+    {% if config.extra.what_is_it is defined %}
+    <section class="sl-section" id="what-is-it">
+        <div class="sl-container sl-container--narrow">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.what_is_it.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.what_is_it.title }}</h2>
             </div>
-            <div class="pillars-grid">
-                {% for feature in config.extra.features %}
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <i class="fas fa-{{ feature.icon }}"></i>
+            <p class="sl-lead">{{ config.extra.what_is_it.description }}</p>
+
+            {% if config.extra.what_is_it.embed_uri is defined %}
+            <div class="sl-embed-card">
+                <iframe
+                    src="https://platform.sciencelive4all.org/embed/view?uri={{ config.extra.what_is_it.embed_uri }}&theme=light&primaryColor=be2e78&showShare=false&showReferences=false"
+                    width="100%" height="450" frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+            {% if config.extra.what_is_it.embed_caption is defined %}
+            <p class="sl-caption">{{ config.extra.what_is_it.embed_caption }}</p>
+            {% endif %}
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- How It Works Section -->
+    {% if config.extra.how_it_works is defined %}
+    <section class="sl-section sl-section--alt" id="tools">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.how_it_works.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.how_it_works.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.how_it_works.subtitle }}</p>
+            </div>
+            <div class="sl-three-col">
+                {% for card in config.extra.how_it_works.cards %}
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ card.icon }}"></i>
                     </div>
-                    <h3 class="pillar-title">{{ feature.title }}</h3>
-                    <p class="pillar-description">{{ feature.description }}</p>
-                    <a href="{{ feature.link }}" class="pillar-link">
-                        {{ feature.link_text }} <i class="fas fa-arrow-right"></i>
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.description }}</p>
+                    <ul class="sl-checklist">
+                        {% for feature in card.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{{ card.cta_url }}" class="sl-btn sl-btn--outline">
+                        {{ card.cta_text }} <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 {% endfor %}
             </div>
-            
-            <!-- Building Blocks Visual -->
-            <div class="building-blocks-visual">
-
-
-                <h3>{{ config.extra.visual_blocks.title }}</h3>
-                <div class="blocks-diagram">
-                    <div class="research-block methods">
-                        <i class="fas fa-cogs"></i>
-                        <span>Methods</span>
-                    </div>
-                    <div class="research-block data">
-                        <i class="fas fa-database"></i>
-                        <span>Data</span>
-                    </div>
-                    <div class="research-block claims">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Claims</span>
-                    </div>
-                    <div class="research-block code">
-                        <i class="fas fa-code"></i>
-                        <span>Code</span>
-                    </div>
-                    <div class="research-block reviews">
-                        <i class="fas fa-comments"></i>
-                        <span>Discussions</span>
-                    </div>
-                </div>
-                <p class="blocks-caption">{{ config.extra.visual_blocks.description }}</p>
-            </div>
         </div>
     </section>
-
+    {% endif %}
 
     <!-- For Researchers Section -->
-    <section class="audience-section researchers" id="researchers">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-chalkboard-user"></i>
-                </div>
-                <h2>{{ config.extra.researchers.title }}</h2>
-                <h3>{{ config.extra.researchers.subtitle }}</h3>
-                <p>{{ config.extra.researchers.description }}</p>
-                
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    {% for benefit in config.extra.researchers.primary_benefits %}
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>{{ benefit.title }}</h4>
-                        </div>
-                        <p>{{ benefit.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    {% for benefit in config.extra.researchers.secondary_benefits %}
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>{{ benefit.title }}</h5>
-                        </div>
-                        <p>{{ benefit.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Individuals</h4>
-                        <div class="price">{{ config.extra.researchers.price }}<span>{{ config.extra.researchers.price_period }}</span></div>
-                        <p>{{ config.extra.researchers.price_description }}</p>
-                    </div>
-                </div>
-
-                <div class="audience-cta">
-                    <a href="{{ config.extra.researchers.cta_url }}" class="btn-audience">{{ config.extra.researchers.cta_text }}</a>
-                </div>
+    {% if config.extra.researchers is defined %}
+    <section class="sl-section" id="researchers">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.researchers.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.researchers.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.researchers.subtitle }}</p>
             </div>
-        </div>
-    </section>
-
-    <!-- For Organizations Section -->
-    <section class="audience-section organizations" id="organizations">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-university"></i>
-                </div>
-                <h2>{{ config.extra.organizations.title }}</h2>
-                <h3>{{ config.extra.organizations.subtitle }}</h3>
-                <p>{{ config.extra.organizations.description }}</p>
-                
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    {% for benefit in config.extra.organizations.primary_benefits %}
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>{{ benefit.title }}</h4>
-                        </div>
-                        <p>{{ benefit.description }}</p>
+            <div class="sl-three-col">
+                {% for feat in config.extra.researchers.features %}
+                <div class="sl-card sl-card--compact">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ feat.icon }}"></i>
                     </div>
-                    {% endfor %}
-                </div>
-
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    {% for benefit in config.extra.organizations.secondary_benefits %}
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>{{ benefit.title }}</h5>
-                        </div>
-                        <p>{{ benefit.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Academic Organizations</h4>
-                        <div class="price">{{ config.extra.organizations.price }}<span>{{ config.extra.organizations.price_period }}</span></div>
-                        <p>{{ config.extra.organizations.price_description }}</p>
-                    </div>
-                </div>
-
-                <div class="audience-cta">
-                    <a href="{{ config.extra.organizations.cta_url }}" class="btn-audience">{{ config.extra.organizations.cta_text }}</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- For Industry Section -->
-    <section class="audience-section industry" id="industry">
-        <div class="audience-container">
-            <div class="audience-content">
-                <div class="audience-icon">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <h2>{{ config.extra.industry.title }}</h2>
-                <h3>{{ config.extra.industry.subtitle }}</h3>
-                <p>{{ config.extra.industry.description }}</p>
-                
-                <!-- Two Primary Benefits -->
-                <div class="primary-benefits">
-                    {% for benefit in config.extra.industry.primary_benefits %}
-                    <div class="primary-benefit">
-                        <div class="benefit-header">
-                            <h4>{{ benefit.title }}</h4>
-                        </div>
-                        <p>{{ benefit.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-
-                <!-- Three Secondary Benefits -->
-                <div class="secondary-benefits">
-                    {% for benefit in config.extra.industry.secondary_benefits %}
-                    <div class="secondary-benefit">
-                        <div class="benefit-header">
-                            <h5>{{ benefit.title }}</h5>
-                        </div>
-                        <p>{{ benefit.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-
-                <div class="pricing-highlight">
-                    <div class="pricing-tier">
-                        <h4>Commercial Organizations</h4>
-                        <div class="price">{{ config.extra.industry.price }}<span>{{ config.extra.industry.price_period }}</span></div>
-                        <p>{{ config.extra.industry.price_description }}</p>
-                    </div>
-                </div>
-
-                <div class="audience-cta">
-                    <a href="{{ config.extra.industry.cta_url }}" class="btn-audience">{{ config.extra.industry.cta_text }}</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Credit System & Travel Fund Section -->
-    <section class="credit-system" id="travel-fund">
-        <div class="credit-container">
-            <div class="credit-header">
-                <h2>{{ config.extra.credit_system.title }}</h2>
-                <p>{{ config.extra.credit_system.subtitle }}</p>
-            </div>
-
-            <!-- Three Panel Structure -->
-            <div class="three-panel-grid">
-                <!-- Panel 1: Always Free -->
-                <div class="credit-panel panel-free">
-                    <div class="panel-header">
-                        <i class="fas fa-unlock panel-icon"></i>
-                        <h3>{{ config.extra.panel_free.title }}</h3>
-                        <h4>{{ config.extra.panel_free.subtitle }}</h4>
-                        <p>{{ config.extra.panel_free.description }}</p>
-                    </div>
-                    <div class="panel-features">
-                        {% for feature in config.extra.panel_free.features %}
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>{{ feature.text }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="panel-footer">
-                        <div class="panel-price">Always Free</div>
-                    </div>
-                </div>
-
-                <!-- Panel 2: Travel Fund -->
-                <div class="credit-panel panel-travel featured">
-                    <div class="panel-badge">Merit-Based</div>
-                    <div class="panel-header">
-                        <i class="fas fa-exchange panel-icon"></i>
-                        <h3>{{ config.extra.panel_travel.title }}</h3>
-                        <h4>{{ config.extra.panel_travel.subtitle }}</h4>
-                        <p>{{ config.extra.panel_travel.description }}</p>
-                        <div class="requirement">{{ config.extra.panel_travel.requirement }}</div>
-                    </div>
-                    <div class="panel-features">
-                        {% for feature in config.extra.panel_travel.features %}
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>{{ feature.text }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="panel-footer">
-                        <div class="panel-price">Unlock Through Contributions</div>
-                    </div>
-                </div>
-
-                <!-- Panel 3: Organizational Subscriptions -->
-                <div class="credit-panel panel-subscriptions">
-                    <div class="panel-header">
-                        <i class="fas fa-building panel-icon"></i>
-                        <h3>{{ config.extra.panel_subscriptions.title }}</h3>
-                        <h4>{{ config.extra.panel_subscriptions.subtitle }}</h4>
-                        <p>{{ config.extra.panel_subscriptions.description }}</p>
-                    </div>
-                    <div class="subscription-tiers">
-                        {% for tier in config.extra.panel_subscriptions.tiers %}
-                        <div class="tier-card">
-                            <h5>{{ tier.name }}</h5>
-                            <div class="tier-price">
-                                <span class="price">{{ tier.price }}</span>
-                                <span class="period">{{ tier.period }}</span>
-                            </div>
-                            <p class="tier-description">{{ tier.description }}</p>
-                            <div class="tier-features">
-                                {% for feature in tier.features %}
-                                <div class="feature-item small">
-                                    <i class="fas fa-check"></i>
-                                    <span>{{ feature }}</span>
-                                </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credit System Explanation -->
-            <div class="credit-explanation">
-                <h3>How the Credit System Works</h3>
-                <p>{{ config.extra.credit_system_explanation }}</p>
-                
-                <div class="transparency-example">
-                    <h4>Current Status ({{ config.extra.last_updated }}):</h4>
-                    <div class="transparency-grid">
-                        <div class="transparency-item">
-                            <strong>Fund Balance:</strong> {{ config.extra.current_fund_balance }}
-                        </div>
-                        <div class="transparency-item">
-                            <strong>Credits Earned:</strong> {{ config.extra.total_credits_earned }}
-                        </div>
-                        <div class="transparency-item">
-                            <strong>Credit Value:</strong> {{ config.extra.current_credit_value }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credit Earning Activities -->
-            <div class="credit-earning-section">
-                <h3>Earn Credits Through Quality Knowledge Bricks</h3>
-                <div class="credit-activities">
-                    {% for activity in config.extra.credit_earning %}
-                    <div class="credit-activity">
-                        <span class="credits">{{ activity.credits }} credits</span>
-                        <span class="activity">{{ activity.activity }}</span>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-<!-- Timeline Section -->
-{% if config.extra.timeline is defined %}
-<section class="timeline-section" id="timeline">
-    <div class="timeline-container">
-        <div class="timeline-header">
-            <h2>{{ config.extra.timeline.title }}</h2>
-            <p>{{ config.extra.timeline.subtitle }}</p>
-        </div>
-        <div class="timeline">
-            {% for item in config.extra.timeline.items %}
-            <div class="timeline-item {{ item.status }}">
-                <div class="timeline-marker">
-                    {% if item.status == "completed" %}
-                    <i class="fas fa-check"></i>
-                    {% elif item.status == "current" %}
-                    <i class="fas fa-play"></i>
-                    {% else %}
-                    <i class="fas fa-clock"></i>
-                    {% endif %}
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-period">{{ item.period }}</div>
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.description }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-<!-- Team Section -->
-{% if config.extra.team is defined %}
-<section class="team-section" id="team">
-    <div class="team-container">
-        <div class="team-header">
-            <h2>{{ config.extra.team.title }}</h2>
-            <p>{{ config.extra.team.subtitle }}</p>
-        </div>
-        
-        <!-- Team Members -->
-        <div class="team-members">
-            {% for member in config.extra.team.members %}
-            <div class="team-member">
-                <h3>{{ member.name }}</h3>
-                <h4>{{ member.title }}</h4>
-                <p>{{ member.description }}</p>
-                {% if member.url is defined %}
-                  <div class="member-org"> <a href="{{ member.url }}">{{ member.organization }}</a></div>
-                {% else  %}
-                  <div class="member-org">{{ member.organization }}</div>
-                {% endif %}
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Hiring Section -->
-        {% if config.extra.team.hiring is defined %}
-        <div class="hiring-section">
-            <h3>{{ config.extra.team.hiring.title }}</h3>
-            <p>{{ config.extra.team.hiring.description }}</p>
-            <div class="open-positions">
-                {% for position in config.extra.team.hiring.positions %}
-                <div class="position-item">
-                    <i class="fas fa-briefcase"></i>
-                    <span>{{ position }}</span>
+                    <h3>{{ feat.title }}</h3>
+                    <p>{{ feat.description }}</p>
                 </div>
                 {% endfor %}
             </div>
-            <div class="hiring-cta">
-               <button onclick="openContactModal()" class="btn-hiring">{{ config.extra.team.hiring.cta_text }}</button>
-            </div>  
-
-        </div>
-        {% endif %}
-
-        <!-- Institutional Backing -->
-        {% if config.extra.team.backing is defined %}
-        <div class="backing-section">
-            <h3>{{ config.extra.team.backing.title }}</h3>
-            <p>{{ config.extra.team.backing.description }}</p>
-        </div>
-        {% endif %}
-    </div>
-</section>
-{% endif %}
-<!-- CTA Section -->
-<section class="cta">
-    <div class="features-container">
-        <h2>{{ config.extra.cta_title }}</h2>
-        <p>{{ config.extra.cta_subtitle }}</p>
-        <div class="cta-buttons">
-            <a href="{{ config.extra.cta_primary_button_url }}" class="btn-cta">
-                <i class="fas fa-{{ config.extra.cta_primary_button_icon }}"></i> {{ config.extra.cta_primary_button_text }}
-            </a>
-            <button onclick="openContactModal()" class="btn-cta-secondary">
-                <i class="fas fa-{{ config.extra.cta_secondary_button_icon }}"></i> {{ config.extra.cta_secondary_button_text }}
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Modal -->
-<div id="contactModal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close" onclick="closeContactModal()">&times;</span>
-        <form action="https://formspree.io/f/mwpndawr" method="POST" class="beta-waitlist-form">
-            <div class="form-header">
-                <h3>Contact Us</h3>
-                <p>Get in touch to discuss your needs or learn more about Science Live</p>
+            {% if config.extra.researchers.doc_url is defined %}
+            <div class="sl-center" style="margin-top: 2rem;">
+                <a href="{{ config.extra.researchers.doc_url }}" class="sl-btn sl-btn--outline">
+                    {{ config.extra.researchers.doc_text }} <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-            
-            <div class="form-grid">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                
-                <div class="form-group full-width">
-                    <input type="text" name="organization" placeholder="Organization/Institution (optional)">
-                </div>
-                
-                <div class="form-group full-width">
-                    <select name="inquiry_type">
-                        <option value="">What can we help you with?</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="demo">Request Demo</option>
-                        <option value="partnership">Partnership Opportunity</option>
-                        <option value="media">Media/Press</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group full-width">
-                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
-                </div>
-            </div>
-            
-            <button type="submit" class="btn-primary form-submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
 
-            <!-- Hidden fields for Formspree -->
-            <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
-            <input type="hidden" name="_subject" value="New Contact Message from Science Live">
-        </form>
+    <!-- Showcase Section -->
+    {% if config.extra.showcase is defined %}
+    <section class="sl-section" id="showcase">
+        <div class="sl-container sl-container--narrow">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.showcase.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.showcase.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.showcase.subtitle }}</p>
+            </div>
+            <div class="sl-showcase-list">
+                {% for item in config.extra.showcase.items %}
+                <div class="sl-showcase-item">
+                    <div class="sl-showcase-item-header">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.description }}</p>
+                    </div>
+                    <iframe
+                        src="https://platform.sciencelive4all.org/embed/view?uri={{ item.uri }}&theme=light&primaryColor=0f2547"
+                        width="100%" height="{{ item.height }}" frameborder="0" scrolling="no"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- For Organizations & Industry -->
+    {% if config.extra.orgs is defined %}
+    <section class="sl-section sl-section--alt" id="organizations">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.orgs.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.orgs.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.orgs.subtitle }}</p>
+            </div>
+            <div class="sl-two-col">
+                {% for card in config.extra.orgs.cards %}
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ card.icon }}"></i>
+                    </div>
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.description }}</p>
+                    <ul class="sl-checklist">
+                        {% for feature in card.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="sl-center" style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button onclick="openContactModal()" class="sl-btn sl-btn--primary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
+                {% if config.extra.orgs.doc_url is defined %}
+                <a href="{{ config.extra.orgs.doc_url }}" class="sl-btn sl-btn--outline">
+                    {{ config.extra.orgs.doc_text }} <i class="fas fa-arrow-right"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Pricing Section -->
+    {% if config.extra.pricing is defined %}
+    <section class="sl-section" id="pricing">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.pricing.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.pricing.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.pricing.subtitle }}</p>
+            </div>
+            <div class="sl-pricing-grid">
+                {% for tier in config.extra.pricing.tiers %}
+                <div class="sl-pricing-card{% if tier.is_featured %} sl-pricing-card--featured{% endif %}">
+                    <div class="sl-pricing-card-header">
+                        <h3>{{ tier.name }}</h3>
+                        <div class="sl-pricing-card-price">
+                            <span class="sl-price-amount">{{ tier.price }}</span>
+                            {% if tier.price_period %}
+                            <span class="sl-price-period">{{ tier.price_period }}</span>
+                            {% endif %}
+                        </div>
+                        <p>{{ tier.description }}</p>
+                    </div>
+                    <ul class="sl-checklist">
+                        {% for feature in tier.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div class="sl-pricing-card-cta">
+                        {% if tier.cta_url == "#contact" %}
+                        <button onclick="openContactModal()" class="sl-btn sl-btn--{{ tier.cta_style }}">{{ tier.cta_text }}</button>
+                        {% else %}
+                        <a href="{{ tier.cta_url }}" class="sl-btn sl-btn--{{ tier.cta_style }}">{{ tier.cta_text }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Team Section -->
+    {% if config.extra.team is defined %}
+    <section class="sl-section sl-section--alt" id="team">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <h2 class="sl-title">{{ config.extra.team.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.team.subtitle }}</p>
+            </div>
+            <div class="sl-three-col">
+                {% for member in config.extra.team.members %}
+                <div class="sl-card sl-card--compact">
+                    <h3>{{ member.name }}</h3>
+                    <h4>{{ member.title }}</h4>
+                    <p>{{ member.description }}</p>
+                    {% if member.url is defined %}
+                      <a href="{{ member.url }}" class="sl-card-link">{{ member.organization }} <i class="fas fa-arrow-right"></i></a>
+                    {% else %}
+                      <span class="sl-muted">{{ member.organization }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- CTA Section -->
+    <section class="sl-section sl-section--dark">
+        <div class="sl-container sl-center">
+            <h2 class="sl-title" style="color: white;">{{ config.extra.cta_title }}</h2>
+            <p class="sl-subtitle" style="color: rgba(255,255,255,0.8);">{{ config.extra.cta_subtitle }}</p>
+            <div class="sl-btn-group" style="margin-top: 2rem;">
+                <a href="{{ config.extra.cta_primary_button_url }}" class="sl-btn sl-btn--white">
+                    <i class="fas fa-{{ config.extra.cta_primary_button_icon }}"></i> {{ config.extra.cta_primary_button_text }}
+                </a>
+                <button onclick="openContactModal()" class="sl-btn sl-btn--white-outline">
+                    <i class="fas fa-{{ config.extra.cta_secondary_button_icon }}"></i> {{ config.extra.cta_secondary_button_text }}
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <form action="https://formspree.io/f/mwpndawr" method="POST" class="beta-waitlist-form">
+                <div class="form-header">
+                    <h3>Contact Us</h3>
+                    <p>Get in touch to discuss your needs or learn more about Science Live</p>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <input type="text" name="organization" placeholder="Organization/Institution (optional)">
+                    </div>
+                    <div class="form-group full-width">
+                        <select name="inquiry_type">
+                            <option value="">What can we help you with?</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="demo">Request Demo</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="subscription">Organization Subscription</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="sl-btn sl-btn--primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
+                <input type="hidden" name="_subject" value="New Contact Message from Science Live">
+            </form>
+        </div>
     </div>
-</div>
 
 {% endblock content %}
 
 {% block extra_js %}
 <script>
-function loadVideo() {
-  const container = document.getElementById('videoContainer');
-  
-  // Create video element
-  const video = document.createElement('video');
-  video.width = 640;
-  video.height = 640;
-  video.controls = true;
-  video.autoplay = true;
-  video.muted = true;
-  video.playsInline = true;
-
-  // Add source
-  const source = document.createElement('source');
-  source.src = "https://raw.githubusercontent.com/ScienceLiveHub/ideas-discussions/main/Science_Live_NotebookLM.mp4";
-  source.type = "video/mp4";
-  video.appendChild(source);
-
-  // When video ends, restore preview image
-  video.onended = function () {
-    container.innerHTML = `<img src="assets/img/science-live-main.png" width="640" height="640" style="cursor:pointer;" onclick="loadVideo()">`;
-  };
-
-  // Replace preview image with video
-  container.innerHTML = '';
-  container.appendChild(video);
-}
-
-// Animate elements on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Apply animation to feature cards and process steps
-document.querySelectorAll('.pillar-card, .researcher-pillar, .benefit-card, .research-block').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Animate building blocks with stagger
-const blocks = document.querySelectorAll('.research-block');
-blocks.forEach((block, index) => {
-    setTimeout(() => {
-        block.style.opacity = '1';
-        block.style.transform = 'translateY(0)';
-    }, index * 200);
-});
-// Beta form modal functions
-function openBetaModal() {
-    document.getElementById('betaModal').style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-}
-
-function closeBetaModal() {
-    document.getElementById('betaModal').style.display = 'none';
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-}
-
-// Close modal when clicking outside
-window.onclick = function(event) {
-    const modal = document.getElementById('betaModal');
-    if (event.target == modal) {
-        closeBetaModal();
-    }
-}
-
-// Contact form modal functions
 function openContactModal() {
     document.getElementById('contactModal').style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
-
 function closeContactModal() {
     document.getElementById('contactModal').style.display = 'none';
     document.body.style.overflow = 'auto';
 }
-
-// Update the window click handler to handle both modals
 window.onclick = function(event) {
-    const betaModal = document.getElementById('betaModal');
-    const contactModal = document.getElementById('contactModal');
-    
-    if (event.target == betaModal) {
-        closeBetaModal();
-    }
-    if (event.target == contactModal) {
-        closeContactModal();
-    }
+    var m = document.getElementById('contactModal');
+    if (event.target == m) closeContactModal();
 }
 </script>
 {% endblock extra_js %}
