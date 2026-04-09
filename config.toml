@@ -2,8 +2,8 @@
 base_url = "https://sciencelive4all.org"
 
 # The site title and description
-title = "Science Live - Transform Research into Connected Knowledge"
-description = "Build your scientific legacy with interlocking knowledge bricks that advance your career and accelerate scientific progress."
+title = "Science Live - The Platform for FAIR Research"
+description = "Transform research into FAIR nanopublications. Create, discover, cite, and embed structured knowledge bricks."
 
 # The default language
 default_language = "en"
@@ -62,8 +62,13 @@ paths = "safe"
 taxonomies = "safe"
 anchors = "safe"
 
+# ══════════════════════════════════════════════════════════════════════════════
+# All [extra] flat keys must come BEFORE any [extra.subsection] headers
+# (TOML scoping rule: keys after [extra.foo] belong to extra.foo, not extra)
+# ══════════════════════════════════════════════════════════════════════════════
 [extra]
-# Google Analytics
+
+# Analytics
 gtm_id = "GTM-WSJ3ZZ29"
 
 # Brand
@@ -71,9 +76,6 @@ brand_text = "Science"
 brand_live = "Live"
 logo_path = "assets/img/sciencelive-logo.png"
 logo_alt = "Science Live Logo"
-
-# ORCID Button
-orcid_button_text = "Sign in with ORCID"
 
 # Author information
 author = "Anne Fouilloux"
@@ -84,102 +86,61 @@ author_orcid = "0000-0002-1784-2920"
 github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
-# Hero Section - Updated with Three Pillars Messaging
-hero_title_1 = "Transform research into"
-hero_title_2 = "connected knowledge"
-hero_title_3 = "through stackable knowledge bricks"
-hero_subtitle = "Making scientific work FAIR: Findable, Accessible, Interoperable, Reusable."
-hero_tagline = "Bridge research and industry with stackable knowledge bricks — earn travel funding through quality contributions."
+# ── Hero ─────────────────────────────────────────────────────────────────────
+hero_title_1 = "Turn research into"
+hero_title_2 = "building blocks others can use"
+hero_title_3 = ""
+hero_subtitle = "Create structured, citable nanopublications from your research. Organizations get visibility into research output, knowledge preservation, and FAIR compliance."
 
-# Hero Buttons
-hero_primary_button_text = "Web Platform"
+hero_primary_button_text = "Try the Platform"
 hero_primary_button_url = "https://platform.sciencelive4all.org"
-hero_primary_button_icon = "computer"
+hero_primary_button_icon = "rocket"
 
-hero_secondary_button_text = "Zotero Plugin"
-hero_secondary_button_url = "https://sciencelive4all.org/science-live-platform/zotero"
-hero_secondary_button_icon = "puzzle-piece"
+hero_secondary_button_text = "Contact Us"
+hero_secondary_button_url = "#contact"
+hero_secondary_button_icon = "envelope"
 
-# Core Values
-core_values = "Stackable • Traceable • Rewarded"
+# ── Features header ─────────────────────────────────────────────────────────
+features_section_tag = "PLATFORM FEATURES"
+features_section_title = "Everything you need for FAIR research"
 
-# Section Headers
-features_section_tag = "OUR TARGET AUDIENCES"
-features_section_title = "Your role, your Science Live experience"
+# ── CTA Section ──────────────────────────────────────────────────────────────
+cta_title = "Ready to transform your research?"
+cta_subtitle = "Join researchers and organizations already using Science Live to create FAIR, structured nanopublications."
 
-how_it_works_section_tag = "HOW IT WORKS"
-how_it_works_section_title = "Your Knowledge Journey with Science Live"
-how_it_works_section_subtitle = "From discovery to deployment in four simple steps"
+cta_primary_button_text = "Try the Platform"
+cta_primary_button_url = "https://platform.sciencelive4all.org"
+cta_primary_button_icon = "rocket"
 
-benefits_section_tag = "BENEFITS"
-benefits_section_title = "Why Choose Science Live?"
-benefits_section_subtitle = "Join the future of scientific communication and collaboration"
-
-# Benefits Section Content
-benefits_main_title = "Accelerate Innovation & Impact"
-
-# CTA Section
-cta_title = "Sustainable Academia-Industry Ecosystem"
-cta_subtitle = "Organizational subscriptions fund the Science Live infrastructure and travel grants while gaining access to validated research and collaboration opportunities. This creates a self-sustaining model where quality contributions are rewarded with career development funding, regardless of whether contributors work in academia or industry."
-
-cta_primary_button_text = "Book a video call"
-cta_primary_button_url = "https://calendly.com/anne-fouilloux/30min"
-cta_primary_button_icon = "video"
-
-cta_secondary_button_text = "Contact us"
-cta_secondary_button_url = "https://formspree.io/f/mnnbklow"
+cta_secondary_button_text = "Contact Us"
+cta_secondary_button_url = "#contact"
 cta_secondary_button_icon = "envelope"
 
-# Footer
-footer_description = "Built for science. Powered by collaboration. Ready for innovation."
+# ── Footer ───────────────────────────────────────────────────────────────────
+footer_description = "The open platform for FAIR scientific nanopublications."
 footer_copyright_text = "Science Live is an open platform supporting Open Science and collaboration."
 
-# Credit system explanation
-credit_system_explanation = "Credits reflect relative contribution value - a PRISMA systematic review (150 credits) is worth 7.5x more than a basic claim (20 credits). Actual travel funding depends on total annual fund size divided by all credits earned."
-
-# Current transparency values (update these monthly)
-current_fund_balance = "€3,000 (initial seed funding)"
-total_credits_earned = "0" 
-current_credit_value = "Will be calculated as organizations join and contributors earn credits"
-last_updated = "January 2026"
-
-# Platform statistics
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-[[extra.hero_stats]]
-value = ""
-label = ""
-
-# Navigation menu items - streamlined for main page focus
+# ══════════════════════════════════════════════════════════════════════════════
+# Navigation (array of inline tables — still under [extra])
+# ══════════════════════════════════════════════════════════════════════════════
 [[extra.nav_links]]
-name = "Researchers"
-url = "#researchers"
+name = "Tools"
+url = "#tools"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Organizations"  
-url = "#organizations"
+name = "Showcase"
+url = "#showcase"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Industry"
-url = "#industry"
+name = "Pricing"
+url = "#pricing"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Travel Fund"
-url = "#travel-fund"
-class = "travel-fund"
-
-[[extra.nav_links]]
-name = "Timeline"
-url = "#timeline"
+name = "Docs"
+url = "https://sciencelive4all.org/science-live-platform/"
 class = "secondary"
 
 [[extra.nav_links]]
@@ -187,79 +148,267 @@ name = "Team"
 url = "#team"
 class = "secondary"
 
-# Three Pillars Features - Aligned with Target Audiences
+# ── Features (array of cards) ────────────────────────────────────────────────
 [[extra.features]]
-title = "For Researchers"
-description = "PhD students, postdocs, faculty, and independent researchers who want to make their work discoverable, reusable, and properly credited."
-icon = "user-graduate"
-icon_type = "fas"
-link = "#researchers"
-link_text = "Learn More"
+title = "Create Nanopublications"
+description = "Transform findings, methods, and data into structured, FAIR-compliant nanopublications using guided templates."
+icon = "file-circle-plus"
+link = "https://platform.sciencelive4all.org/np/create"
+link_text = "Start creating"
 
 [[extra.features]]
-title = "For Organizations"
-description = "Universities, research institutes, and government agencies that need to preserve knowledge, support their researchers, and demonstrate research excellence."
+title = "Discover & Search"
+description = "Find relevant nanopublications across the decentralized network. Filter by topic, author, type, or organization."
+icon = "magnifying-glass"
+link = "https://platform.sciencelive4all.org/search"
+link_text = "Explore"
+
+[[extra.features]]
+title = "Cite & Get Credited"
+description = "Every nanopublication is citable with a permanent URI and linked to your ORCID for proper attribution."
+icon = "quote-left"
+link = "https://platform.sciencelive4all.org"
+link_text = "Learn more"
+
+[[extra.features]]
+title = "PRISMA Systematic Reviews"
+description = "Conduct structured systematic reviews with PRISMA workflows. Each step becomes a traceable nanopublication."
+icon = "clipboard-check"
+link = "https://platform.sciencelive4all.org/np/create"
+link_text = "Start a review"
+
+[[extra.features]]
+title = "Zotero Integration"
+description = "Create nanopublications directly from your Zotero library with our browser plugin."
+icon = "puzzle-piece"
+link = "https://sciencelive4all.org/science-live-platform/zotero"
+link_text = "Get the plugin"
+
+[[extra.features]]
+title = "Embed Anywhere"
+description = "Embed interactive nanopublication viewers on any website with a simple iframe. Customizable themes and branding."
+icon = "code"
+link = "https://platform.sciencelive4all.org/embed-demo.html"
+link_text = "See examples"
+
+# ── Footer links ─────────────────────────────────────────────────────────────
+[[extra.footer_links]]
+text = "Privacy Policy"
+url = "/privacy/"
+
+[[extra.footer_links]]
+text = "Data Policy"
+url = "/policies/"
+
+[[extra.footer_links]]
+text = "Terms of Service"
+url = "/terms/"
+
+[[extra.footer_sections]]
+title = ""
+links = []
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Subsections (each [extra.foo] starts a new TOML table)
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── What Is It ───────────────────────────────────────────────────────────────
+[extra.what_is_it]
+tag = "WHAT IS A NANOPUBLICATION?"
+title = "Structured, FAIR knowledge bricks"
+description = "A nanopublication is a small, structured unit of scientific knowledge — a claim, a dataset description, a replication result — that is machine-readable, citable, and permanently linked to its author via ORCID. Think of them as building blocks for open science."
+embed_uri = "https://w3id.org/np/RA9ZVikfCPsv6yAnNX2S9Ai9x-Udy_q9dWzja9qTMz_80"
+embed_caption = "A PICO research question — one of many nanopublication types you can create"
+
+# ── How It Works ─────────────────────────────────────────────────────────────
+[extra.how_it_works]
+tag = "HOW IT WORKS"
+title = "From research to reusable knowledge"
+subtitle = "Create, discover, and share structured nanopublications — whether you're a researcher or an organization."
+
+[[extra.how_it_works.cards]]
+title = "Create"
+icon = "file-circle-plus"
+description = "Researchers create nanopublications from their work using guided templates or the Zotero plugin."
+features = [
+    "Web platform with 15+ guided templates",
+    "Zotero plugin for your existing workflow",
+    "PRISMA systematic review tools",
+    "ORCID-signed, permanently citable",
+]
+cta_text = "Try the Platform"
+cta_url = "https://platform.sciencelive4all.org"
+
+[[extra.how_it_works.cards]]
+title = "Discover"
+icon = "magnifying-glass"
+description = "Search and explore structured research across the decentralized nanopub network."
+features = [
+    "Machine-readable structured queries",
+    "Filter by topic, author, or type",
+    "Full provenance on every result",
+    "Cite and build upon others' work",
+]
+cta_text = "Explore"
+cta_url = "https://platform.sciencelive4all.org/search"
+
+[[extra.how_it_works.cards]]
+title = "Embed & Track"
+icon = "code"
+description = "Organizations embed nanopubs on their website and track institutional research output."
+features = [
+    "Customizable iframe embed viewer",
+    "Branded themes for your organization",
+    "Institutional dashboard and analytics",
+    "Preserve knowledge across team changes",
+]
+cta_text = "Learn about embedding"
+cta_url = "https://sciencelive4all.org/science-live-platform/for-organizations/embed/"
+
+# ── For Researchers ──────────────────────────────────────────────────────────
+[extra.researchers]
+tag = "FOR RESEARCHERS"
+title = "Make your invisible work visible"
+subtitle = "Literature annotations, citation assessments, replication studies, PRISMA reviews — all become published, citable contributions linked to your ORCID."
+doc_url = "https://sciencelive4all.org/science-live-platform/for-researchers/recognition-and-credits/"
+doc_text = "Learn about recognition & credits"
+
+[[extra.researchers.features]]
+title = "Permanent attribution"
+description = "Every nanopub gets a persistent URI and your ORCID cryptographic signature. Your work follows you across institutions."
+icon = "fingerprint"
+
+[[extra.researchers.features]]
+title = "Zotero integration"
+description = "Create nanopublications directly from your Zotero library — annotate papers, declare citations, publish claims."
+icon = "puzzle-piece"
+
+[[extra.researchers.features]]
+title = "PRISMA workflows"
+description = "Conduct structured systematic reviews. Each step — search strategy, screening, assessment — becomes a traceable nanopub."
+icon = "clipboard-check"
+
+# ── For Organizations & Industry ─────────────────────────────────────────────
+[extra.orgs]
+tag = "FOR ORGANIZATIONS & INDUSTRY"
+title = "Structured, queryable research evidence"
+subtitle = "Every nanopublication is cryptographically signed, machine-readable, and permanently queryable. No anonymous AI summaries — full provenance on every finding."
+doc_url = "https://sciencelive4all.org/science-live-platform/for-organizations/overview/"
+doc_text = "Read the organization overview"
+
+[[extra.orgs.cards]]
+title = "For Research Organizations"
 icon = "university"
-icon_type = "fas"
-link = "#organizations"
-link_text = "Learn More"
+description = "Universities, research institutes, and government agencies"
+features = [
+    "Track institutional research output with dashboards",
+    "Preserve knowledge when researchers move on",
+    "Embed nanopubs on your website with branded themes",
+    "Demonstrate FAIR compliance and research quality",
+]
 
-[[extra.features]]
+[[extra.orgs.cards]]
 title = "For Industry"
-description = "Companies, R&D teams, and commercial organizations seeking validated research they can actually implement in real-world applications."
-icon = "handshake"
-icon_type = "fas"
-link = "#industry"
-link_text = "Learn More"
+icon = "briefcase"
+description = "Companies, R&D teams, and commercial organizations"
+features = [
+    "Query structured evidence: 'Which claims have been replicated?'",
+    "Commission targeted research via bounties",
+    "Fund researchers directly through travel grants",
+    "Open ecosystem — no vendor lock-in",
+]
 
-[extra.visual_blocks]
-title = "Every Research Component Becomes a Knowledge Brick"
-description = "Create knowledge bricks that others can discover, validate, and stack together"
+# ── Showcase ─────────────────────────────────────────────────────────────────
+[extra.showcase]
+tag = "SHOWCASE"
+title = "Real nanopublications, live on the network"
+subtitle = "These are actual nanopublications created by researchers using Science Live"
 
-# Timeline
-[extra.timeline]
-title = "Development Roadmap"
-subtitle = "15-Month Project Timeline"
+[[extra.showcase.items]]
+title = "Scientific Claim (AIDA Sentence)"
+description = "A structured scientific assertion with provenance and attribution"
+uri = "https://w3id.org/np/RAY7IdUcyQ8P_WCO6o9NDMz9q2LN6w7bl7ZJnsHQ_sO5g"
+height = "500"
 
-[[extra.timeline.items]]
-period = "Apr-Jun 2025"
-status = "completed"
-title = "Project Launch & Foundation"
-description = "Project initiation, technical architecture design, semantic framework planning, and initial community partnerships with research networks"
+[[extra.showcase.items]]
+title = "FAIR Dataset"
+description = "A dataset description with metadata, creators, license, and access information"
+uri = "https://w3id.org/np/RAywW3taqJeRBg2K1nk-ZU5_XnfDGZEt4gFEQOKHdPOqs"
+height = "500"
 
-[[extra.timeline.items]]
-period = "Jul-Sep 2025"
-status = "current"
-title = "Design & User Research"
-description = "User interface mockups, user testing and feedback collection, technical infrastructure exploration, and community engagement with early adopters"
+[[extra.showcase.items]]
+title = "FORRT Replication Study"
+description = "A structured replication result from the FORRT reproducibility project"
+uri = "https://w3id.org/np/RADCSRkRrlaOzRZ-lkPh1dnvthkhqFz55eGr1wtpW03vk"
+height = "600"
 
-[[extra.timeline.items]]
-period = "Oct-Dec 2025"
-status = "upcoming"
-title = "Platform Development"
-description = "Core platform implementation, feature development, and integration of user feedback from design phase"
+# ── Pricing ──────────────────────────────────────────────────────────────────
+[extra.pricing]
+tag = "PRICING"
+title = "Simple, transparent pricing"
+subtitle = "Free for individual researchers. Subscriptions for organizations."
 
-[[extra.timeline.items]]
-period = "Jan-Mar 2026"
-status = "upcoming"
-title = "Beta Launch"
-description = "Limited beta release with research communities, travel fund activation, and organizational subscription pilot program"
+[[extra.pricing.tiers]]
+name = "Researchers"
+price = "Free"
+price_period = ""
+description = "Individual researchers, PhD students, postdocs, faculty"
+cta_text = "Try the Platform"
+cta_url = "https://platform.sciencelive4all.org"
+cta_style = "secondary"
+features = [
+    "Create unlimited nanopublications",
+    "ORCID-linked attribution",
+    "Full search and discovery",
+    "Zotero plugin access",
+    "PRISMA workflow tools",
+    "Community validation",
+]
 
-[[extra.timeline.items]]
-period = "Apr-Jun 2026"
-status = "upcoming"
-title = "Public Launch & Project Completion"
-description = "Full platform launch, complete travel fund ecosystem, transition to community governance, and project completion"
+[[extra.pricing.tiers]]
+name = "Research Organizations"
+price = "€3,000"
+price_period = "/year"
+description = "Universities, research institutes, government agencies"
+is_featured = true
+cta_text = "Contact Us"
+cta_url = "#contact"
+cta_style = "primary"
+features = [
+    "Everything in Free, plus:",
+    "Institutional dashboard & analytics",
+    "Track research output across teams",
+    "Preserve institutional knowledge",
+    "Branded embed viewers",
+    "Priority support",
+]
 
-# Team
+[[extra.pricing.tiers]]
+name = "Industry"
+price = "€10,000"
+price_period = "/year"
+description = "Companies, R&D teams, commercial organizations"
+cta_text = "Contact Us"
+cta_url = "#contact"
+cta_style = "primary"
+features = [
+    "Everything in Organizations, plus:",
+    "Access validated research",
+    "Commission targeted validations",
+    "Custom API integration",
+    "Dedicated account manager",
+    "Custom branding & deployment",
+]
+
+# ── Team ─────────────────────────────────────────────────────────────────────
 [extra.team]
 title = "Who We Are"
-subtitle = "Experienced researchers and technologists building the future of scientific collaboration"
+subtitle = "Building the infrastructure for FAIR scientific knowledge"
 
 [[extra.team.members]]
 name = "Viten Hub Team"
 title = "Project Lead"
-description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship with hands-on approach to technical development."
+description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship."
 organization = "VitenHub AS"
 url = "http://vitenhub.no/"
 
@@ -277,339 +426,8 @@ description = "Vijay Prema is developing the Science Live Platform and the Zoter
 organization = "Prophet Town"
 url = "https://www.ptown.tech"
 
-cta_text = "Interested in collaborating with us?"
-cta_url = "https://formspree.io/f/mnnbklow"
-
-[extra.team.backing]
-title = "Institutional Support"
-description = "Supported by Astera Institute with planned transition to community-driven governance. Built on established infrastructure with active research community partnerships."
-
-# Researchers Section - 2 Primary + 3 Secondary Benefits
-[extra.researchers]
-title = "For Researchers"
-subtitle = "Earn travel grants while building your scientific legacy through stackable knowledge bricks."
-description = "Transform your research into FAIR, stackable knowledge bricks—from systematic reviews to data analysis—making your work discoverable, reusable, and citable while advancing Open Science practices."
-price = "Always Free"
-price_period = ""
-price_description = ""
-cta_text = "Book a call for a demo"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-# Primary benefits (will be displayed larger)
-[[extra.researchers.primary_benefits]]
-title = "Get Recognition for Knowledge Brick Contributions"
-description = "ORCID-linked attribution for every knowledge brick you create—code, data, reviews, discussions, and validated contributions. Build credentials with verified, traceable work that others can cite and build upon."
-
-[[extra.researchers.primary_benefits]]
-title = "Access Merit-Based Travel Grants"
-description = "Earn credits for quality knowledge brick contributions and redeem for conference attendance, research visits, and networking opportunities—funded by organizational subscriptions at no personal cost."
-
-# Secondary benefits (will be displayed smaller)
-[[extra.researchers.secondary_benefits]]
-title = "Make FAIR Knowledge Bricks Effortlessly"
-description = "AI-enhanced workflows help you create FAIR-compliant knowledge bricks while working with your existing research toolkit. Seamless integration with tools like Zotero and systematic review platforms."
-
-[[extra.researchers.secondary_benefits]]
-title = "Advance Science Through Open Stackable Knowledge Bricks"
-description = "Document complete research pathways—what worked, what didn't, and why. Enable others to build new hypotheses on your knowledge bricks while preventing duplicate efforts."
-
-[[extra.researchers.secondary_benefits]]
-title = "Enable Knowledge Brick Validation"
-description = "Use community validation processes to verify specific knowledge bricks rather than requiring complete end-to-end reproduction of entire studies."
-
-# Organizations Section - Reduced to 2 key benefits
-[extra.organizations]
-title = "For Organizations"
-subtitle = "Build Institutional Excellence Through Knowledge Bricks"
-description = "Enable your researchers to create stackable knowledge bricks that preserve institutional memory, demonstrate research quality, and attract top talent who want to work with cutting-edge research infrastructure."
-price = "€3,000"
-price_period = "/year"
-price_description = "Preserve knowledge bricks • Attract top talent • Enable industry partnerships"
-cta_text = "Book a Free Consultation"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-# Primary benefits (will be displayed larger)
-[[extra.organizations.primary_benefits]]
-title = "Track Knowledge Brick Creation and Collaboration"
-description = "See which departments excel at creating reusable knowledge bricks, monitor collaboration patterns across research teams, and track how your institutional knowledge builds over time."
-
-[[extra.organizations.primary_benefits]]
-title = "Showcase Institutional Knowledge Brick Excellence"
-description = "Demonstrate research quality through validated, traceable knowledge bricks that show prospective researchers and industry partners the caliber of work your institution produces."
-
-# Secondary benefits (will be displayed smaller)
-[[extra.organizations.secondary_benefits]]
-title = "Preserve Institutional Knowledge Bricks"
-description = "Capture reasoning, methodological decisions, and research pathways as permanent knowledge bricks—preventing knowledge loss when researchers transition between projects or institutions."
-
-[[extra.organizations.secondary_benefits]]
-title = "Make Knowledge Brick Creation Effortless"
-description = "AI-assisted workflows help researchers transform their work into stackable knowledge bricks that serve both immediate collaboration and long-term institutional memory."
-
-[[extra.organizations.secondary_benefits]]
-title = "Attract Industry Partners Through Knowledge Bricks"
-description = "Highlight your implementation-ready knowledge bricks to attract industry collaborators seeking validated research components for real-world deployment."
-
-# Industry Section - Reduced to 2 key benefits  
-[extra.industry]
-title = "For Industry"
-subtitle = "Find Research You Can Actually Implement"
-description = "Access validated research with clear TRL progression pathways. Find knowledge bricks that show exactly how academic discoveries become implementable solutions."
-price = "€10,000"
-price_period = "/year"
-price_description = "Avoid implementation failures • Access validated research • Build partnerships"
-cta_text = "Book a Free Consultation"
-cta_url = "https://calendly.com/anne-fouilloux/30min"
-
-# Primary benefits (will be displayed larger)
-[[extra.industry.primary_benefits]]
-title = "Find Application-Ready Knowledge Bricks"
-description = "Access knowledge bricks with clear pathways from lab discoveries to production deployment. Each knowledge brick shows its maturity level, validation status, and implementation requirements."
-
-[[extra.industry.primary_benefits]]
-title = "Commission Knowledge Brick Advancement"
-description = "Select specific knowledge bricks you want advanced through TRL levels. Contributors earn travel credits for developing validation studies and implementation pathways that bridge the gap to your deployment requirements."
-
-# Secondary benefits (will be displayed smaller)
-[[extra.industry.secondary_benefits]]
-title = "Shape Knowledge Brick Development"
-description = "Engage directly with contributors, providing industry insights that guide how knowledge bricks are developed toward practical applications and real-world deployment."
-
-[[extra.industry.secondary_benefits]]
-title = "Monitor Knowledge Brick Maturity in Real-Time"
-description = "Track how individual knowledge bricks progress through TRL levels—from basic research components to production-ready solutions with validated implementation pathways."
-
-[[extra.industry.secondary_benefits]]
-title = "Build Knowledge Brick Collaboration Networks"
-description = "Your participation funds contributor travel grants and creates ongoing partnerships focused on developing knowledge bricks that bridge academic research and industry needs."
-
-# Credit System - Three Panel Structure
-[extra.credit_system]
-title = "Pricing & Travel Fund"
-subtitle = "The Science Live ecosystem is funded by Organizational Subscriptions"
-
-# Panel 1: Always Free for Contributors
-[extra.panel_free]
-title = "Always Free for Individual contributors"
-subtitle = "Start Your Science Live Journey"
-description = "We support you through every step of the research process—from systematic reviews to final outputs—so your work is traceable, reproducible, visible, and valued."
-
-[[extra.panel_free.features]]
-text = "Access the platform for free, always"
-
-[[extra.panel_free.features]]
-text = "Create stackable knowledge bricks from every research decision"
-
-[[extra.panel_free.features]]
-text = "Build on reproducible systematic reviews and consolidated research claims"
-
-[[extra.panel_free.features]]     
-text = "Contribute to and get valued for consensus-building across the scientific process"
-
-[[extra.panel_free.features]]
-text = "Validate and improve the work of others"
-
-[[extra.panel_free.features]]
-text = "Earn and exchange credits for meaningful contributions"
-
-[[extra.panel_free.features]]
-text = "Grow your reputation through open collaboration"
-
-# Panel 2: Travel Fund for Significant Contributors
-[extra.panel_travel]
-title = "Travel Fund Access"
-subtitle = "Unlock with Contributions"
-description = "Turn your validated contributions into career opportunities. Earn travel funding through Science Live validated work, successful reproductions, and community recognition - all funded by organizational subscriptions."
-requirement = "Annual threshold: 10 Science Live validated contributions + 5 scientific claims successfully reproduced"
-
-[[extra.panel_travel.features]]
-text = "70% of every organizational subscription fuels Science Live’s travel grants and core infrastructure."
-
-[[extra.panel_travel.features]]
-text = "Annual fund size published transparently on our website"
-
-[[extra.panel_travel.features]]
-text = "Access Science Live endorsed conferences at negotiated rates"
-
-[[extra.panel_travel.features]]
-text = "Build your professional network across academia and industry"
-
-[[extra.panel_travel.features]]
-text = "Additional sponsorships from conferences and companies expand the travel fund"
-
-[[extra.panel_travel.features]]
-text = "Science Live manages conference travel with partner events"
-
-[[extra.panel_travel.features]]
-text = "Industry partnership visits to bridge academia and commercial R&D"
-
-# Panel 3: Organizational Subscriptions
-[extra.panel_subscriptions]
-title = "Organizational Subscriptions"
-subtitle = "Fund the Ecosystem & Get Team Features"
-description = "Organizational subscriptions provide team collaboration features while directly funding the travel grants that support individual contributors across academia and industry."
-
-[[extra.panel_subscriptions.tiers]]
-name = "Research Organizations"
-price = "€3,000"
-period = "/year"
-description = "Universities, research institutes, and governmental organizations"
-features = [
-    "Showcase your open science impact and effective implementation",
-    "Attract top talent with visible commitment to research excellence and industry collaboration",
-    "Preserve institutional knowledge as researchers transition",
-    "Track institutional research contributions and networks",
-    "Connect your researchers with industry collaboration opportunities",
-    "Help your researchers access industry-funded travel grants",
-]
-
-[[extra.panel_subscriptions.tiers]]
-name = "Industry Organizations"
-price = "€10,000"
-period = "/year"
-description = "Companies, R&D teams, and commercial organizations"
-features = [
-    "Priority validation queue for business-critical research",
-    "Access ready-to-reproduce research with linked code and data",
-    "Commission validation of research claims relevant to your use cases",
-    "Understand complete implementation context and avoid costly mistakes",
-    "Bridge academic-industry communication with machine-readable formats",
-    "Direct channels to collaborate with researchers on implementation challenges"
-]
-
-# Credit earning activities
-[[extra.credit_earning]]
-credits = "20"
-activity = "Publish structured research claim"
-
-[[extra.credit_earning]]
-credits = "50"
-activity = "Publish knowledge brick with datasets"
-
-[[extra.credit_earning]]
-credits = "75"
-activity = "Publish knowledge brick with code/software"
-
-[[extra.credit_earning]]
-credits = "150"
-activity = "Complete PRISMA systematic review"
-
-[[extra.credit_earning]]
-credits = "100"
-activity = "Publish complete reproducible package (data + code)"
-
-[[extra.credit_earning]]
-credits = "50"
-activity = "Successfully reproduce scientific claim"
-
-[[extra.credit_earning]]
-credits = "10"
-activity = "Research output gets cited"
-
-[[extra.credit_earning]]
-credits = "40"
-activity = "Contribute to consensus-building discussions and peer review"
-
-# Process steps - Updated to reflect building blocks
-[[extra.process_steps]]
-number = "1"
-title = "Create Knowledge Bricks"
-description = "Transform your findings into stackable, reusable knowledge bricks using our editor or integrations with existing tools."
-
-[[extra.process_steps]]
-number = "2"
-title = "Connect & Validate"
-description = "Link your bricks to related work and get community validation through structured review processes."
-
-[[extra.process_steps]]
-number = "3"
-title = "Discover & Build"
-description = "Find knowledge bricks created by others and build new insights by stacking and connecting them in innovative ways."
-
-[[extra.process_steps]]
-number = "4"
-title = "Apply & Innovate"
-description = "Bridge research and application with validated, implementation-ready bricks that accelerate innovation."
-
-# Benefits
-[[extra.benefits]]
-title = "Connected Knowledge Bricks"
-description = "Every piece of research becomes a knowledge brick that others can discover, validate, and stack together, creating a connected knowledge network."
-
-[[extra.benefits]]
-title = "Complete Traceability"
-description = "Full provenance from original data and reasoning to final applications, ensuring reliable implementation and reproducibility."
-
-[[extra.benefits]]
-title = "Merit-Based Recognition"
-description = "Quality contributions are rewarded with professional recognition, travel funding, and collaboration opportunities."
-
-# Benefit Cards (visual cards)
-[[extra.benefit_cards]]
-icon = "puzzle-piece"
-icon_type = "fas"
-title = "Stackable Knowledge"
-description = "Research bricks that interlock and build upon each other, accelerating scientific progress."
-color = "primary"
-
-[[extra.benefit_cards]]
-icon = "network-wired"
-icon_type = "fas"
-title = "Connected Science"
-description = "Break down silos between disciplines and organizations with unified knowledge sharing."
-color = "secondary"
-
-[[extra.benefit_cards]]
-icon = "rocket"
-icon_type = "fas"
-title = "Career Acceleration"
-description = "Recognition and travel funding for quality contributions that advance both science and your professional growth."
-color = "success"
-
-# Footer links - keeping minimal
-[[extra.footer_links]]
-text = "Privacy Policy"
-url = "/privacy/"
-
-[[extra.footer_links]]
-text = "Data Policy"
-url = "/policies/"
-
-[[extra.footer_links]]
-text = "Terms of Service"
-url = "/terms/"
-
-# Footer sections - keeping minimal  
-[[extra.footer_sections]]
-title = ""
-links = []
-
-
-# Thank you part
+# ── Thank You Pages ─────────────────────────────────────────────────────────
 [extra.thank_you_messages]
-
-[extra.thank_you_messages.beta]
-title = "Welcome to Science Live Beta!"
-message = "Thank you for joining our beta waitlist. You're helping us shape the future of scientific collaboration."
-submessage = "We'll notify you as soon as beta access becomes available."
-icon = "fas fa-rocket"
-
-[[extra.thank_you_messages.beta.next_steps]]
-title = "Beta Access Notification"
-description = "You'll receive an email when your beta invitation is ready, typically within 2-4 weeks."
-
-[[extra.thank_you_messages.beta.next_steps]]
-title = "Early Access Features"
-description = "As a beta user, you'll get exclusive access to new features and direct input on platform development."
-
-[[extra.thank_you_messages.beta.next_steps]]
-title = "Community Building"
-description = "Connect with other researchers and help us build a vibrant scientific collaboration community."
-
-[extra.thank_you_messages.beta.secondary_action]
-url = "/#researchers"
-text = "Learn More About Science Live"
-icon = "fas fa-info-circle"
 
 [extra.thank_you_messages.contact]
 title = "Message Received!"
@@ -634,25 +452,6 @@ url = "/#team"
 text = "Meet Our Team"
 icon = "fas fa-users"
 
-[extra.thank_you_messages.newsletter]
-title = "Successfully Subscribed!"
-message = "Thank you for subscribing to our newsletter. You'll now receive updates about Science Live developments."
-submessage = "Check your email for a confirmation message."
-icon = "fas fa-newspaper"
-
-[[extra.thank_you_messages.newsletter.next_steps]]
-title = "Confirmation Email"
-description = "Check your inbox for a confirmation email and click the link to complete your subscription."
-
-[[extra.thank_you_messages.newsletter.next_steps]]
-title = "Monthly Updates"
-description = "Receive monthly updates about new features, research insights, and community highlights."
-
-[extra.thank_you_messages.newsletter.secondary_action]
-url = "/#timeline"
-text = "View Our Roadmap"
-icon = "fas fa-map"
-
 [extra.thank_you_messages.demo]
 title = "Demo Request Submitted!"
 message = "Thank you for requesting a demo. We're excited to show you how Science Live can transform your research workflow."
@@ -672,31 +471,6 @@ title = "Q&A Session"
 description = "Ask questions about features, pricing, and how Science Live fits into your workflow."
 
 [extra.thank_you_messages.demo.secondary_action]
-url = "/#travel-fund"
+url = "/#pricing"
 text = "View Pricing Plans"
 icon = "fas fa-tag"
-
-
-# Add new section configuration:
-trl_bridge_section_tag = "THE TRL BRIDGE"
-trl_bridge_section_title = "From Academic Research to Industry Implementation"
-trl_bridge_section_subtitle = "Science Live captures the crucial middle steps that turn theoretical discoveries into practical solutions"
-
-# TRL levels visualization
-[[extra.trl_levels]]
-level = "1-3"
-title = "Academic Research"
-description = "Basic principles, laboratory research, proof of concept"
-color = "academic"
-
-[[extra.trl_levels]]
-level = "4-6" 
-title = "Science Live Bridge"
-description = "Validation, implementation context, knowledge bricks with clear pathways"
-color = "bridge"
-
-[[extra.trl_levels]]
-level = "7-9"
-title = "Industry Ready"
-description = "Pilot projects, commercial demonstration, market deployment"
-color = "industry"

@@ -1,7 +1,7 @@
 +++
-title = "Thank You - Beta Waitlist"
+title = "Thank You"
 template = "thank-you.html"
 
 [extra]
-thank_you_type = "beta"
+thank_you_type = "contact"
 +++
