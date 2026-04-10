@@ -211,9 +211,8 @@ body {
 
 /* Hero Section */
 .hero {
-    margin-top: 75px;
     min-height: auto;
-    padding: 5rem 0;
+    padding: calc(75px + 5rem) 0 5rem;
     background: var(--primary-color);
     color: white;
     display: flex;
