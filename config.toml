@@ -130,7 +130,7 @@ class = "primary"
 
 [[extra.nav_links]]
 name = "Community"
-url = "#showcase"
+url = "#what-is-it"
 class = "primary"
 
 [[extra.nav_links]]
@@ -146,11 +146,6 @@ class = "primary"
 [[extra.nav_links]]
 name = "Docs"
 url = "https://sciencelive4all.org/science-live-platform/"
-class = "secondary"
-
-[[extra.nav_links]]
-name = "Team"
-url = "#team"
 class = "secondary"
 
 # ── Features (array of cards) ────────────────────────────────────────────────
@@ -229,7 +224,7 @@ embed_caption = "A scientific claim (AIDA sentence) — one of many nanopublicat
 [extra.how_it_works]
 tag = "HOW IT WORKS"
 title = "From research to reusable knowledge"
-subtitle = "Create, discover, and share structured nanopublications — whether you're a researcher or an organization."
+subtitle = "Researchers create. Everyone discovers. Organizations embed and track. One platform, three workflows."
 
 [[extra.how_it_works.cards]]
 title = "Create"
@@ -270,58 +265,66 @@ features = [
 cta_text = "Learn about embedding"
 cta_url = "https://sciencelive4all.org/science-live-platform/for-organizations/embed/"
 
-# ── For Researchers ──────────────────────────────────────────────────────────
-[extra.researchers]
-tag = "FOR RESEARCHERS"
-title = "Make your invisible work visible"
-subtitle = "Literature annotations, citation assessments, replication studies, PRISMA reviews — all become published, citable contributions linked to your ORCID."
-doc_url = "https://sciencelive4all.org/science-live-platform/for-researchers/recognition-and-credits/"
-doc_text = "Learn about recognition & credits"
-
-[[extra.researchers.features]]
-title = "Permanent attribution"
-description = "Every nanopub gets a persistent URI and your ORCID cryptographic signature. Your work follows you across institutions."
-icon = "fingerprint"
-
-[[extra.researchers.features]]
-title = "Zotero integration"
-description = "Create nanopublications directly from your Zotero library — annotate papers, declare citations, publish claims."
-icon = "puzzle-piece"
-
-[[extra.researchers.features]]
-title = "PRISMA workflows"
-description = "Conduct structured systematic reviews. Each step — search strategy, screening, assessment — becomes a traceable nanopub."
-icon = "clipboard-check"
-
 # ── For Organizations & Industry ─────────────────────────────────────────────
 [extra.orgs]
 tag = "FOR ORGANIZATIONS & INDUSTRY"
-title = "Structured, queryable research evidence"
-subtitle = "Every nanopublication is cryptographically signed, machine-readable, and permanently queryable. No anonymous AI summaries — full provenance on every finding."
-doc_url = "https://sciencelive4all.org/science-live-platform/for-organizations/overview/"
-doc_text = "Read the organization overview"
+title = "Make your research investment count"
+subtitle = "Universities meet funder mandates and turn research into real-world impact. Companies cut R&D time with validated findings and on-demand replications."
 
-[[extra.orgs.cards]]
-title = "For Research Organizations"
+# ── Universities side ───────────────────────────────────────────────────────
+[extra.orgs.universities]
 icon = "university"
-description = "Universities, research institutes, and government agencies"
-features = [
-    "Track institutional research output with dashboards",
-    "Preserve knowledge when researchers move on",
-    "Embed nanopubs on your website with branded themes",
-    "Demonstrate FAIR compliance and research quality",
-]
+title = "For Universities & Research Institutes"
+tagline = "Meet funder mandates. Turn research into impact."
+description = "Funders demand FAIR data and measurable impact. But too much research stays locked in PDFs that industry and society never see. Science Live makes your researchers' contributions structured, discoverable, and ready to be used by the people who need them."
 
-[[extra.orgs.cards]]
-title = "For Industry"
+[[extra.orgs.universities.points]]
+icon = "circle-check"
+title = "FAIR compliance, automatic"
+description = "Horizon Europe, NIH, NSF, and most national funders now mandate FAIR data plans. Every nanopublication is FAIR by design — demonstrate compliance without extra documentation."
+
+[[extra.orgs.universities.points]]
+icon = "rocket"
+title = "From research to impact"
+description = "Make findings discoverable by industry, policymakers, and other researchers. Build the impact case studies funders increasingly require — backed by real, traceable contributions."
+
+[[extra.orgs.universities.points]]
+icon = "chart-column"
+title = "Research output reporting"
+description = "Track structured contributions across departments — datasets, methods, replications, claims. Generate reports for REF, accreditation, and internal evaluations in minutes, not months."
+
+[[extra.orgs.universities.points]]
+icon = "eye"
+title = "Visibility for RSEs and research engineers"
+description = "Make hard-to-justify staff contributions measurable and discoverable. Show funders and industry what your research engineering team actually delivers."
+
+# ── Industry side ───────────────────────────────────────────────────────────
+[extra.orgs.industry]
 icon = "briefcase"
-description = "Companies, R&D teams, and commercial organizations"
-features = [
-    "Query structured evidence: 'Which claims have been replicated?'",
-    "Commission targeted research via bounties",
-    "Fund researchers directly through travel grants",
-    "Open ecosystem — no vendor lock-in",
-]
+title = "For Industry & R&D Teams"
+tagline = "Cut R&D validation time from weeks to minutes"
+description = "Your team spends weeks reading papers, attending conferences, and waiting on contract research orgs. Science Live gives you direct access to structured, validated findings — and lets you commission replications on what matters to your business."
+
+[[extra.orgs.industry.points]]
+icon = "flask"
+title = "Commission targeted replications"
+description = "The only platform where you can request a replication study on a specific finding. Get independent validation on the claims your investment depends on — without hiring a CRO."
+
+[[extra.orgs.industry.points]]
+icon = "bolt"
+title = "Skip the preliminary work"
+description = "Browse structured findings directly. Reproducible methods, ready-to-use datasets, replicated claims — try them yourself in minutes instead of weeks of literature review."
+
+[[extra.orgs.industry.points]]
+icon = "magnifying-glass-chart"
+title = "Trust over AI summaries"
+description = "Every claim is cryptographically signed and traceable to its author and methodology. No hallucinated summaries — full provenance on every finding."
+
+[[extra.orgs.industry.points]]
+icon = "handshake"
+title = "Direct researcher engagement"
+description = "Identify and contact the researchers behind the work that matters to you. Bypass academic publishing delays and CRO markups."
+
 
 # ── Showcase ─────────────────────────────────────────────────────────────────
 [extra.showcase]
