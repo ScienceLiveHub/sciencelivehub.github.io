@@ -116,29 +116,22 @@
     </section>
     {% endif %}
 
-    <!-- Showcase Section -->
-    {% if config.extra.showcase is defined %}
+    <!-- Community Feed Section (replaces Showcase) -->
+    {% if config.extra.community_feed is defined %}
     <section class="sl-section" id="showcase">
         <div class="sl-container sl-container--narrow">
             <div class="sl-section-header">
-                <span class="sl-tag">{{ config.extra.showcase.tag }}</span>
-                <h2 class="sl-title">{{ config.extra.showcase.title }}</h2>
-                <p class="sl-subtitle">{{ config.extra.showcase.subtitle }}</p>
+                <span class="sl-tag">{{ config.extra.community_feed.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.community_feed.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.community_feed.subtitle }}</p>
             </div>
-            <div class="sl-showcase-list">
-                {% for item in config.extra.showcase.items %}
-                <div class="sl-showcase-item">
-                    <div class="sl-showcase-item-header">
-                        <h3>{{ item.title }}</h3>
-                        <p>{{ item.description }}</p>
-                    </div>
-                    <iframe
-                        src="https://platform.sciencelive4all.org/embed/view?uri={{ item.uri }}&theme=light&primaryColor=0f2547"
-                        width="100%" height="{{ item.height }}" frameborder="0" scrolling="no"
-                        loading="lazy">
-                    </iframe>
-                </div>
-                {% endfor %}
+            <div id="community-feed">
+                <p class="sl-feed-loading">Loading latest nanopublications…</p>
+            </div>
+            <div class="sl-center" style="margin-top: 1.5rem;">
+                <a href="https://platform.sciencelive4all.org/np/" class="sl-btn sl-btn--outline">
+                    Browse all <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -250,6 +243,30 @@
     </section>
     {% endif %}
 
+    <!-- Roadmap Section -->
+    {% if config.extra.roadmap is defined %}
+    <section class="sl-section" id="roadmap">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.roadmap.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.roadmap.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.roadmap.subtitle }}</p>
+            </div>
+            <div class="sl-roadmap-grid">
+                {% for item in config.extra.roadmap.items %}
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ item.icon }}"></i>
+                    </div>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
     <!-- CTA Section -->
     <section class="sl-section sl-section--dark">
         <div class="sl-container sl-center">
@@ -324,5 +341,78 @@ window.onclick = function(event) {
     var m = document.getElementById('contactModal');
     if (event.target == m) closeContactModal();
 }
+</script>
+
+<!-- Community Feed -->
+<script type="module">
+import { NanopubClient } from '/js/nanopub-elements.js';
+
+(async function() {
+  const container = document.getElementById('community-feed');
+  if (!container) return;
+
+  try {
+    const client = new NanopubClient();
+    const rows = await client.querySparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX np: <http://www.nanopub.org/nschema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX dct: <http://purl.org/dc/terms/>
+      PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+
+      SELECT ?np ?label ?date ?creator (MAX(?desc) AS ?description) WHERE {
+        VALUES (?template) {
+          (<https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA>)
+          (<https://w3id.org/np/RA4fmfVFULMP50FqDFX8fEMn66uDF07vXKFXh_L9aoQKE>)
+          (<https://w3id.org/np/RAX_4tWTyjFpO6nz63s14ucuejd64t2mK3IBlkwZ7jjLo>)
+          (<https://w3id.org/np/RAu5uTahAxc0OLBB3vaGwK3OQDDZV7QuWtDlBk0Ea3bco>)
+          (<https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE>)
+          (<https://w3id.org/np/RAw3XdUhxQJfKBaU-cQhV6c7au4rLd5CSUdbMKTS_FB8g>)
+          (<https://w3id.org/np/RA5e5XeXy_-aNK5giB7kBAEQslTLVydHeM4YYEzhmEE2w>)
+        }
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np dct:created ?date ; dct:creator ?creator .
+          OPTIONAL { ?np rdfs:label ?label . }
+        }
+        GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?template . }
+        OPTIONAL {
+          GRAPH ?pubinfo { ?np npx:introduces ?introduced . }
+          GRAPH ?assertion { ?introduced rdfs:label ?desc . }
+        }
+      } GROUP BY ?np ?label ?date ?creator ORDER BY DESC(?date) LIMIT 5
+    `);
+
+    if (rows.length === 0) {
+      container.innerHTML = '<p class="sl-muted">No nanopublications found.</p>';
+      return;
+    }
+
+    const list = document.createElement('ul');
+    list.className = 'sl-feed-list';
+
+    for (const row of rows) {
+      const title = row.description || row.label || 'Untitled';
+      const date = row.date ? new Date(row.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+      const npUrl = 'https://platform.sciencelive4all.org/np/?uri=' + encodeURIComponent(row.np);
+
+      const li = document.createElement('li');
+      li.className = 'sl-feed-item';
+      li.innerHTML = `
+        <a href="${npUrl}" class="sl-feed-title">${title}</a>
+        ${row.description && row.label ? '<p class="sl-feed-subtitle">' + row.label + '</p>' : ''}
+        <span class="sl-feed-meta">${date}</span>
+      `;
+      list.appendChild(li);
+    }
+
+    container.innerHTML = '';
+    container.appendChild(list);
+  } catch (e) {
+    container.innerHTML = '<p class="sl-muted">Could not load feed.</p>';
+  }
+})();
 </script>
 {% endblock extra_js %}

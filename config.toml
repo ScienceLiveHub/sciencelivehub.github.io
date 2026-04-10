@@ -129,13 +129,18 @@ url = "#tools"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Showcase"
+name = "Community"
 url = "#showcase"
 class = "primary"
 
 [[extra.nav_links]]
 name = "Pricing"
 url = "#pricing"
+class = "primary"
+
+[[extra.nav_links]]
+name = "Roadmap"
+url = "#roadmap"
 class = "primary"
 
 [[extra.nav_links]]
@@ -160,7 +165,7 @@ link_text = "Start creating"
 title = "Discover & Search"
 description = "Find relevant nanopublications across the decentralized network. Filter by topic, author, type, or organization."
 icon = "magnifying-glass"
-link = "https://platform.sciencelive4all.org/search"
+link = "https://platform.sciencelive4all.org/np/"
 link_text = "Explore"
 
 [[extra.features]]
@@ -215,10 +220,10 @@ links = []
 # ── What Is It ───────────────────────────────────────────────────────────────
 [extra.what_is_it]
 tag = "WHAT IS A NANOPUBLICATION?"
-title = "Structured, FAIR knowledge bricks"
-description = "A nanopublication is a small, structured unit of scientific knowledge — a claim, a dataset description, a replication result — that is machine-readable, citable, and permanently linked to its author via ORCID. Think of them as building blocks for open science."
-embed_uri = "https://w3id.org/np/RA9ZVikfCPsv6yAnNX2S9Ai9x-Udy_q9dWzja9qTMz_80"
-embed_caption = "A PICO research question — one of many nanopublication types you can create"
+title = "Your research, in building blocks others can build on"
+description = "A nanopublication captures one clear piece of your research — a finding, a dataset, a replication result — in a format that's citable, searchable, and permanently yours. No more invisible work buried in PDFs."
+embed_uri = "https://w3id.org/sciencelive/np/RAMFMgw2oNSeAEhPjg2Dco_0vYWQ1igTNbkT0_5177yV8"
+embed_caption = "A scientific claim (AIDA sentence) — one of many nanopublication types you can create"
 
 # ── How It Works ─────────────────────────────────────────────────────────────
 [extra.how_it_works]
@@ -250,7 +255,7 @@ features = [
     "Cite and build upon others' work",
 ]
 cta_text = "Explore"
-cta_url = "https://platform.sciencelive4all.org/search"
+cta_url = "https://platform.sciencelive4all.org/np/"
 
 [[extra.how_it_works.cards]]
 title = "Embed & Track"
@@ -474,3 +479,51 @@ description = "Ask questions about features, pricing, and how Science Live fits 
 url = "/#pricing"
 text = "View Pricing Plans"
 icon = "fas fa-tag"
+
+# ── Community Feed ──────────────────────────────────────────────────────────
+[extra.community_feed]
+tag = "COMMUNITY"
+title = "Latest from the community"
+subtitle = "Recent nanopublications created by researchers using Science Live"
+
+# ── Roadmap ─────────────────────────────────────────────────────────────────
+[extra.roadmap]
+tag = "ROADMAP"
+title = "What's coming next"
+subtitle = "We're building the infrastructure for open, structured scientific knowledge. Here's what's on the horizon."
+
+[[extra.roadmap.items]]
+title = "Collections"
+description = "Group related nanopublications into curated, shareable collections."
+icon = "layer-group"
+
+[[extra.roadmap.items]]
+title = "Feeds & Subscriptions"
+description = "Follow researchers, topics, or template types and get notified of new publications."
+icon = "rss"
+
+[[extra.roadmap.items]]
+title = "Community Verification"
+description = "Trustworthiness ratings and peer endorsements for nanopublications."
+icon = "certificate"
+
+[[extra.roadmap.items]]
+title = "Credit System"
+description = "Rewards and recognition for publishers, reviewers, and active community members."
+icon = "coins"
+
+[[extra.roadmap.items]]
+title = "Research Organizations"
+description = "Attribute research output to institutions with dashboards and analytics."
+icon = "university"
+
+[[extra.roadmap.items]]
+title = "Industry Bounties"
+description = "Companies post requests and bounties on specific research topics or validations."
+icon = "briefcase"
+
+#[[extra.roadmap.items]]
+#title = "Knowledge Graph Papers"
+#description = "Generate structured papers from verified, interlinked nanopublications."
+#icon = "wand-magic-sparkles"
+
