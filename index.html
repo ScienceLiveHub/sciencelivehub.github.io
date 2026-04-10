@@ -59,9 +59,11 @@
                 
                 <a href="#tools" class="nav-link primary">Tools</a>
                 
-                <a href="#showcase" class="nav-link primary">Showcase</a>
+                <a href="#showcase" class="nav-link primary">Community</a>
                 
                 <a href="#pricing" class="nav-link primary">Pricing</a>
+                
+                <a href="#roadmap" class="nav-link primary">Roadmap</a>
                 
                 <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;" class="nav-link secondary">Docs</a>
                 
@@ -103,19 +105,19 @@
         <div class="sl-container sl-container--narrow">
             <div class="sl-section-header">
                 <span class="sl-tag">WHAT IS A NANOPUBLICATION?</span>
-                <h2 class="sl-title">Structured, FAIR knowledge bricks</h2>
+                <h2 class="sl-title">Your research, in building blocks others can build on</h2>
             </div>
-            <p class="sl-lead">A nanopublication is a small, structured unit of scientific knowledge — a claim, a dataset description, a replication result — that is machine-readable, citable, and permanently linked to its author via ORCID. Think of them as building blocks for open science.</p>
+            <p class="sl-lead">A nanopublication captures one clear piece of your research — a finding, a dataset, a replication result — in a format that&#x27;s citable, searchable, and permanently yours. No more invisible work buried in PDFs.</p>
 
             
             <div class="sl-embed-card">
                 <iframe
-                    src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RA9ZVikfCPsv6yAnNX2S9Ai9x-Udy_q9dWzja9qTMz_80&theme=light&primaryColor=be2e78&showShare=false&showReferences=false"
+                    src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;sciencelive&#x2F;np&#x2F;RAMFMgw2oNSeAEhPjg2Dco_0vYWQ1igTNbkT0_5177yV8&theme=light&primaryColor=be2e78&showShare=false&showReferences=false"
                     width="100%" height="450" frameborder="0" scrolling="no">
                 </iframe>
             </div>
             
-            <p class="sl-caption">A PICO research question — one of many nanopublication types you can create</p>
+            <p class="sl-caption">A scientific claim (AIDA sentence) — one of many nanopublication types you can create</p>
             
             
         </div>
@@ -172,7 +174,7 @@
                         <li><i class="fas fa-check"></i> Cite and build upon others&#x27; work</li>
                         
                     </ul>
-                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org&#x2F;search" class="sl-btn sl-btn--outline">
+                    <a href="https:&#x2F;&#x2F;platform.sciencelive4all.org&#x2F;np&#x2F;" class="sl-btn sl-btn--outline">
                         Explore <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -251,53 +253,22 @@
     </section>
     
 
-    <!-- Showcase Section -->
+    <!-- Community Feed Section (replaces Showcase) -->
     
     <section class="sl-section" id="showcase">
         <div class="sl-container sl-container--narrow">
             <div class="sl-section-header">
-                <span class="sl-tag">SHOWCASE</span>
-                <h2 class="sl-title">Real nanopublications, live on the network</h2>
-                <p class="sl-subtitle">These are actual nanopublications created by researchers using Science Live</p>
+                <span class="sl-tag">COMMUNITY</span>
+                <h2 class="sl-title">Latest from the community</h2>
+                <p class="sl-subtitle">Recent nanopublications created by researchers using Science Live</p>
             </div>
-            <div class="sl-showcase-list">
-                
-                <div class="sl-showcase-item">
-                    <div class="sl-showcase-item-header">
-                        <h3>Scientific Claim (AIDA Sentence)</h3>
-                        <p>A structured scientific assertion with provenance and attribution</p>
-                    </div>
-                    <iframe
-                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RAY7IdUcyQ8P_WCO6o9NDMz9q2LN6w7bl7ZJnsHQ_sO5g&theme=light&primaryColor=0f2547"
-                        width="100%" height="500" frameborder="0" scrolling="no"
-                        loading="lazy">
-                    </iframe>
-                </div>
-                
-                <div class="sl-showcase-item">
-                    <div class="sl-showcase-item-header">
-                        <h3>FAIR Dataset</h3>
-                        <p>A dataset description with metadata, creators, license, and access information</p>
-                    </div>
-                    <iframe
-                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RAywW3taqJeRBg2K1nk-ZU5_XnfDGZEt4gFEQOKHdPOqs&theme=light&primaryColor=0f2547"
-                        width="100%" height="500" frameborder="0" scrolling="no"
-                        loading="lazy">
-                    </iframe>
-                </div>
-                
-                <div class="sl-showcase-item">
-                    <div class="sl-showcase-item-header">
-                        <h3>FORRT Replication Study</h3>
-                        <p>A structured replication result from the FORRT reproducibility project</p>
-                    </div>
-                    <iframe
-                        src="https://platform.sciencelive4all.org/embed/view?uri=https:&#x2F;&#x2F;w3id.org&#x2F;np&#x2F;RADCSRkRrlaOzRZ-lkPh1dnvthkhqFz55eGr1wtpW03vk&theme=light&primaryColor=0f2547"
-                        width="100%" height="600" frameborder="0" scrolling="no"
-                        loading="lazy">
-                    </iframe>
-                </div>
-                
+            <div id="community-feed">
+                <p class="sl-feed-loading">Loading latest nanopublications…</p>
+            </div>
+            <div class="sl-center" style="margin-top: 1.5rem;">
+                <a href="https://platform.sciencelive4all.org/np/" class="sl-btn sl-btn--outline">
+                    Browse all <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -522,6 +493,70 @@
     </section>
     
 
+    <!-- Roadmap Section -->
+    
+    <section class="sl-section" id="roadmap">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">ROADMAP</span>
+                <h2 class="sl-title">What&#x27;s coming next</h2>
+                <p class="sl-subtitle">We&#x27;re building the infrastructure for open, structured scientific knowledge. Here&#x27;s what&#x27;s on the horizon.</p>
+            </div>
+            <div class="sl-roadmap-grid">
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Collections</h3>
+                    <p>Group related nanopublications into curated, shareable collections.</p>
+                </div>
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-rss"></i>
+                    </div>
+                    <h3>Feeds &amp; Subscriptions</h3>
+                    <p>Follow researchers, topics, or template types and get notified of new publications.</p>
+                </div>
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Community Verification</h3>
+                    <p>Trustworthiness ratings and peer endorsements for nanopublications.</p>
+                </div>
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Credit System</h3>
+                    <p>Rewards and recognition for publishers, reviewers, and active community members.</p>
+                </div>
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Research Organizations</h3>
+                    <p>Attribute research output to institutions with dashboards and analytics.</p>
+                </div>
+                
+                <div class="sl-roadmap-item">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Industry Bounties</h3>
+                    <p>Companies post requests and bounties on specific research topics or validations.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
     <!-- CTA Section -->
     <section class="sl-section sl-section--dark">
         <div class="sl-container sl-center">
@@ -692,6 +727,79 @@ window.onclick = function(event) {
     var m = document.getElementById('contactModal');
     if (event.target == m) closeContactModal();
 }
+</script>
+
+<!-- Community Feed -->
+<script type="module">
+import { NanopubClient } from '/js/nanopub-elements.js';
+
+(async function() {
+  const container = document.getElementById('community-feed');
+  if (!container) return;
+
+  try {
+    const client = new NanopubClient();
+    const rows = await client.querySparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX np: <http://www.nanopub.org/nschema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX dct: <http://purl.org/dc/terms/>
+      PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+
+      SELECT ?np ?label ?date ?creator (MAX(?desc) AS ?description) WHERE {
+        VALUES (?template) {
+          (<https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA>)
+          (<https://w3id.org/np/RA4fmfVFULMP50FqDFX8fEMn66uDF07vXKFXh_L9aoQKE>)
+          (<https://w3id.org/np/RAX_4tWTyjFpO6nz63s14ucuejd64t2mK3IBlkwZ7jjLo>)
+          (<https://w3id.org/np/RAu5uTahAxc0OLBB3vaGwK3OQDDZV7QuWtDlBk0Ea3bco>)
+          (<https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE>)
+          (<https://w3id.org/np/RAw3XdUhxQJfKBaU-cQhV6c7au4rLd5CSUdbMKTS_FB8g>)
+          (<https://w3id.org/np/RA5e5XeXy_-aNK5giB7kBAEQslTLVydHeM4YYEzhmEE2w>)
+        }
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np dct:created ?date ; dct:creator ?creator .
+          OPTIONAL { ?np rdfs:label ?label . }
+        }
+        GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?template . }
+        OPTIONAL {
+          GRAPH ?pubinfo { ?np npx:introduces ?introduced . }
+          GRAPH ?assertion { ?introduced rdfs:label ?desc . }
+        }
+      } GROUP BY ?np ?label ?date ?creator ORDER BY DESC(?date) LIMIT 5
+    `);
+
+    if (rows.length === 0) {
+      container.innerHTML = '<p class="sl-muted">No nanopublications found.</p>';
+      return;
+    }
+
+    const list = document.createElement('ul');
+    list.className = 'sl-feed-list';
+
+    for (const row of rows) {
+      const title = row.description || row.label || 'Untitled';
+      const date = row.date ? new Date(row.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+      const npUrl = 'https://platform.sciencelive4all.org/np/?uri=' + encodeURIComponent(row.np);
+
+      const li = document.createElement('li');
+      li.className = 'sl-feed-item';
+      li.innerHTML = `
+        <a href="${npUrl}" class="sl-feed-title">${title}</a>
+        ${row.description && row.label ? '<p class="sl-feed-subtitle">' + row.label + '</p>' : ''}
+        <span class="sl-feed-meta">${date}</span>
+      `;
+      list.appendChild(li);
+    }
+
+    container.innerHTML = '';
+    container.appendChild(list);
+  } catch (e) {
+    container.innerHTML = '<p class="sl-muted">Could not load feed.</p>';
+  }
+})();
 </script>
 
 </body>
