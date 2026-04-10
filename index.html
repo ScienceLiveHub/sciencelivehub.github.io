@@ -59,15 +59,13 @@
                 
                 <a href="#tools" class="nav-link primary">Tools</a>
                 
-                <a href="#showcase" class="nav-link primary">Community</a>
+                <a href="#what-is-it" class="nav-link primary">Community</a>
                 
                 <a href="#pricing" class="nav-link primary">Pricing</a>
                 
                 <a href="#roadmap" class="nav-link primary">Roadmap</a>
                 
                 <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;" class="nav-link secondary">Docs</a>
-                
-                <a href="#team" class="nav-link secondary">Team</a>
                 
             </div>
         </div>
@@ -99,7 +97,7 @@
         </div>
     </section>
 
-    <!-- What Is It Section -->
+    <!-- What Is It + Community Feed (merged) -->
     
     <section class="sl-section" id="what-is-it">
         <div class="sl-container sl-container--narrow">
@@ -120,6 +118,20 @@
             <p class="sl-caption">A scientific claim (AIDA sentence) — one of many nanopublication types you can create</p>
             
             
+
+            <!-- Live community feed below the example -->
+            <div class="sl-community-divider">
+                <h3>Latest from the community</h3>
+                <p>Recent nanopublications created by researchers using Science Live</p>
+            </div>
+            <div id="community-feed">
+                <p class="sl-feed-loading">Loading latest nanopublications…</p>
+            </div>
+            <div class="sl-center" style="margin-top: 1.5rem;">
+                <a href="https://platform.sciencelive4all.org/np/" class="sl-btn sl-btn--outline">
+                    Browse all <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </section>
     
@@ -131,7 +143,7 @@
             <div class="sl-section-header">
                 <span class="sl-tag">HOW IT WORKS</span>
                 <h2 class="sl-title">From research to reusable knowledge</h2>
-                <p class="sl-subtitle">Create, discover, and share structured nanopublications — whether you&#x27;re a researcher or an organization.</p>
+                <p class="sl-subtitle">Researchers create. Everyone discovers. Organizations embed and track. One platform, three workflows.</p>
             </div>
             <div class="sl-three-col">
                 
@@ -206,73 +218,7 @@
     </section>
     
 
-    <!-- For Researchers Section -->
-    
-    <section class="sl-section" id="researchers">
-        <div class="sl-container">
-            <div class="sl-section-header">
-                <span class="sl-tag">FOR RESEARCHERS</span>
-                <h2 class="sl-title">Make your invisible work visible</h2>
-                <p class="sl-subtitle">Literature annotations, citation assessments, replication studies, PRISMA reviews — all become published, citable contributions linked to your ORCID.</p>
-            </div>
-            <div class="sl-three-col">
-                
-                <div class="sl-card sl-card--compact">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-fingerprint"></i>
-                    </div>
-                    <h3>Permanent attribution</h3>
-                    <p>Every nanopub gets a persistent URI and your ORCID cryptographic signature. Your work follows you across institutions.</p>
-                </div>
-                
-                <div class="sl-card sl-card--compact">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                    <h3>Zotero integration</h3>
-                    <p>Create nanopublications directly from your Zotero library — annotate papers, declare citations, publish claims.</p>
-                </div>
-                
-                <div class="sl-card sl-card--compact">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>PRISMA workflows</h3>
-                    <p>Conduct structured systematic reviews. Each step — search strategy, screening, assessment — becomes a traceable nanopub.</p>
-                </div>
-                
-            </div>
-            
-            <div class="sl-center" style="margin-top: 2rem;">
-                <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;for-researchers&#x2F;recognition-and-credits&#x2F;" class="sl-btn sl-btn--outline">
-                    Learn about recognition &amp; credits <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            
-        </div>
-    </section>
-    
 
-    <!-- Community Feed Section (replaces Showcase) -->
-    
-    <section class="sl-section" id="showcase">
-        <div class="sl-container sl-container--narrow">
-            <div class="sl-section-header">
-                <span class="sl-tag">COMMUNITY</span>
-                <h2 class="sl-title">Latest from the community</h2>
-                <p class="sl-subtitle">Recent nanopublications created by researchers using Science Live</p>
-            </div>
-            <div id="community-feed">
-                <p class="sl-feed-loading">Loading latest nanopublications…</p>
-            </div>
-            <div class="sl-center" style="margin-top: 1.5rem;">
-                <a href="https://platform.sciencelive4all.org/np/" class="sl-btn sl-btn--outline">
-                    Browse all <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-    
 
     <!-- For Organizations & Industry -->
     
@@ -280,59 +226,160 @@
         <div class="sl-container">
             <div class="sl-section-header">
                 <span class="sl-tag">FOR ORGANIZATIONS &amp; INDUSTRY</span>
-                <h2 class="sl-title">Structured, queryable research evidence</h2>
-                <p class="sl-subtitle">Every nanopublication is cryptographically signed, machine-readable, and permanently queryable. No anonymous AI summaries — full provenance on every finding.</p>
+                <h2 class="sl-title">Make your research investment count</h2>
+                <p class="sl-subtitle">Universities meet funder mandates and turn research into real-world impact. Companies cut R&amp;D time with validated findings and on-demand replications.</p>
             </div>
-            <div class="sl-two-col">
-                
-                <div class="sl-card">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>For Research Organizations</h3>
-                    <p>Universities, research institutes, and government agencies</p>
-                    <ul class="sl-checklist">
-                        
-                        <li><i class="fas fa-check"></i> Track institutional research output with dashboards</li>
-                        
-                        <li><i class="fas fa-check"></i> Preserve knowledge when researchers move on</li>
-                        
-                        <li><i class="fas fa-check"></i> Embed nanopubs on your website with branded themes</li>
-                        
-                        <li><i class="fas fa-check"></i> Demonstrate FAIR compliance and research quality</li>
-                        
-                    </ul>
+
+            <!-- Bidirectional value diagram -->
+            <div class="sl-orgs-flow">
+                <div class="sl-orgs-flow-side">
+                    <i class="fas fa-university"></i>
+                    <strong>Universities & RSEs</strong>
+                    <span>publish structured work</span>
                 </div>
-                
-                <div class="sl-card">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>For Industry</h3>
-                    <p>Companies, R&amp;D teams, and commercial organizations</p>
-                    <ul class="sl-checklist">
-                        
-                        <li><i class="fas fa-check"></i> Query structured evidence: &#x27;Which claims have been replicated?&#x27;</li>
-                        
-                        <li><i class="fas fa-check"></i> Commission targeted research via bounties</li>
-                        
-                        <li><i class="fas fa-check"></i> Fund researchers directly through travel grants</li>
-                        
-                        <li><i class="fas fa-check"></i> Open ecosystem — no vendor lock-in</li>
-                        
-                    </ul>
+                <div class="sl-orgs-flow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Science Live</span>
+                    <i class="fas fa-arrow-left"></i>
                 </div>
-                
+                <div class="sl-orgs-flow-side">
+                    <i class="fas fa-briefcase"></i>
+                    <strong>Industry & R&amp;D</strong>
+                    <span>access &amp; commission replications</span>
+                </div>
             </div>
-            <div class="sl-center" style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+
+            <!-- Universities side -->
+            <div class="sl-orgs-block">
+                <div class="sl-orgs-block-header">
+                    <h3><i class="fas fa-university"></i> For Universities &amp; Research Institutes</h3>
+                    <p class="sl-orgs-tagline">Meet funder mandates. Turn research into impact.</p>
+                    <p>Funders demand FAIR data and measurable impact. But too much research stays locked in PDFs that industry and society never see. Science Live makes your researchers&#x27; contributions structured, discoverable, and ready to be used by the people who need them.</p>
+                </div>
+                <div class="sl-orgs-points-grid">
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </div>
+                        <h4>FAIR compliance, automatic</h4>
+                        <p>Horizon Europe, NIH, NSF, and most national funders now mandate FAIR data plans. Every nanopublication is FAIR by design — demonstrate compliance without extra documentation.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>From research to impact</h4>
+                        <p>Make findings discoverable by industry, policymakers, and other researchers. Build the impact case studies funders increasingly require — backed by real, traceable contributions.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-chart-column"></i>
+                        </div>
+                        <h4>Research output reporting</h4>
+                        <p>Track structured contributions across departments — datasets, methods, replications, claims. Generate reports for REF, accreditation, and internal evaluations in minutes, not months.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Visibility for RSEs and research engineers</h4>
+                        <p>Make hard-to-justify staff contributions measurable and discoverable. Show funders and industry what your research engineering team actually delivers.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Live Lifewatch dashboard -->
+            <div class="sl-dashboard-wrapper">
+                <p class="sl-mockup-label">Live example: Lifewatch institutional dashboard</p>
+                <div class="sl-dashboard-mockup sl-dashboard-mockup--lifewatch">
+                    <div class="sl-dashboard-header">
+                        <div class="sl-dashboard-brand">
+                            <img src="/assets/img/lifewatch-eric-logo.png" alt="LifeWatch ERIC" class="sl-lifewatch-img" />
+                            <p>European e-Science Infrastructure for Biodiversity Research</p>
+                        </div>
+                        <span class="sl-dashboard-badge">Powered by Science Live</span>
+                    </div>
+                    <div class="sl-dashboard-stats" id="lifewatch-stats">
+                        <div class="sl-dashboard-stat">
+                            <span class="sl-dashboard-stat-value" data-stat="total">—</span>
+                            <span class="sl-dashboard-stat-label">Nanopublications</span>
+                        </div>
+                        <div class="sl-dashboard-stat">
+                            <span class="sl-dashboard-stat-value" data-stat="creators">—</span>
+                            <span class="sl-dashboard-stat-label">Active researchers</span>
+                        </div>
+                        <div class="sl-dashboard-stat">
+                            <span class="sl-dashboard-stat-value" data-stat="datasets">—</span>
+                            <span class="sl-dashboard-stat-label">FAIR datasets</span>
+                        </div>
+                        <div class="sl-dashboard-stat">
+                            <span class="sl-dashboard-stat-value" data-stat="claims">—</span>
+                            <span class="sl-dashboard-stat-label">Scientific claims</span>
+                        </div>
+                    </div>
+                    <div class="sl-dashboard-recent">
+                        <h5>Recent contributions</h5>
+                        <ul id="lifewatch-recent">
+                            <li class="sl-dashboard-loading">Loading…</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="sl-caption">Live data — updated from the nanopub network</p>
+            </div>
+
+            <!-- Industry side -->
+            <div class="sl-orgs-block">
+                <div class="sl-orgs-block-header">
+                    <h3><i class="fas fa-briefcase"></i> For Industry &amp; R&amp;D Teams</h3>
+                    <p class="sl-orgs-tagline">Cut R&amp;D validation time from weeks to minutes</p>
+                    <p>Your team spends weeks reading papers, attending conferences, and waiting on contract research orgs. Science Live gives you direct access to structured, validated findings — and lets you commission replications on what matters to your business.</p>
+                </div>
+                <div class="sl-orgs-points-grid">
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Commission targeted replications</h4>
+                        <p>The only platform where you can request a replication study on a specific finding. Get independent validation on the claims your investment depends on — without hiring a CRO.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Skip the preliminary work</h4>
+                        <p>Browse structured findings directly. Reproducible methods, ready-to-use datasets, replicated claims — try them yourself in minutes instead of weeks of literature review.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h4>Trust over AI summaries</h4>
+                        <p>Every claim is cryptographically signed and traceable to its author and methodology. No hallucinated summaries — full provenance on every finding.</p>
+                    </div>
+                    
+                    <div class="sl-card sl-card--compact">
+                        <div class="sl-card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Direct researcher engagement</h4>
+                        <p>Identify and contact the researchers behind the work that matters to you. Bypass academic publishing delays and CRO markups.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sl-center" style="margin-top: 2.5rem;">
                 <button onclick="openContactModal()" class="sl-btn sl-btn--primary">
-                    <i class="fas fa-envelope"></i> Contact Us
+                    <i class="fas fa-envelope"></i> Talk to us about your organization
                 </button>
-                
-                <a href="https:&#x2F;&#x2F;sciencelive4all.org&#x2F;science-live-platform&#x2F;for-organizations&#x2F;overview&#x2F;" class="sl-btn sl-btn--outline">
-                    Read the organization overview <i class="fas fa-arrow-right"></i>
-                </a>
-                
             </div>
         </div>
     </section>
@@ -451,51 +498,9 @@
     </section>
     
 
-    <!-- Team Section -->
+    <!-- Roadmap + Team (merged) -->
     
-    <section class="sl-section sl-section--alt" id="team">
-        <div class="sl-container">
-            <div class="sl-section-header">
-                <h2 class="sl-title">Who We Are</h2>
-                <p class="sl-subtitle">Building the infrastructure for FAIR scientific knowledge</p>
-            </div>
-            <div class="sl-three-col">
-                
-                <div class="sl-card sl-card--compact">
-                    <h3>Viten Hub Team</h3>
-                    <h4>Project Lead</h4>
-                    <p>Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship.</p>
-                    
-                      <a href="http:&#x2F;&#x2F;vitenhub.no&#x2F;" class="sl-card-link">VitenHub AS <i class="fas fa-arrow-right"></i></a>
-                    
-                </div>
-                
-                <div class="sl-card sl-card--compact">
-                    <h3>Knowledge Pixels Team</h3>
-                    <h4>Nanopublication Infrastructure</h4>
-                    <p>Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation.</p>
-                    
-                      <a href="https:&#x2F;&#x2F;knowledgepixels.com" class="sl-card-link">Knowledge Pixels <i class="fas fa-arrow-right"></i></a>
-                    
-                </div>
-                
-                <div class="sl-card sl-card--compact">
-                    <h3>Prophet Town Team</h3>
-                    <h4>Software Engineering</h4>
-                    <p>Vijay Prema is developing the Science Live Platform and the Zotero plugin.</p>
-                    
-                      <a href="https:&#x2F;&#x2F;www.ptown.tech" class="sl-card-link">Prophet Town <i class="fas fa-arrow-right"></i></a>
-                    
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- Roadmap Section -->
-    
-    <section class="sl-section" id="roadmap">
+    <section class="sl-section sl-section--alt" id="roadmap">
         <div class="sl-container">
             <div class="sl-section-header">
                 <span class="sl-tag">ROADMAP</span>
@@ -553,6 +558,34 @@
                 </div>
                 
             </div>
+
+            
+            <!-- Compact "Built by" team strip -->
+            <div class="sl-built-by" id="team">
+                <span class="sl-built-by-label">Built by</span>
+                <div class="sl-built-by-orgs">
+                    
+                    
+                    <a href="http:&#x2F;&#x2F;vitenhub.no&#x2F;" class="sl-built-by-org" target="_blank" rel="noopener">
+                        VitenHub AS
+                    </a>
+                    
+                    
+                    
+                    <a href="https:&#x2F;&#x2F;knowledgepixels.com" class="sl-built-by-org" target="_blank" rel="noopener">
+                        Knowledge Pixels
+                    </a>
+                    
+                    
+                    
+                    <a href="https:&#x2F;&#x2F;www.ptown.tech" class="sl-built-by-org" target="_blank" rel="noopener">
+                        Prophet Town
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
         </div>
     </section>
     
@@ -731,15 +764,32 @@ window.onclick = function(event) {
 
 <!-- Community Feed -->
 <script type="module">
-import { NanopubClient } from '/js/nanopub-elements.js';
+const FEED_ENDPOINT = 'https://query.knowledgepixels.com/repo/full';
+
+async function feedSparql(query) {
+  const res = await fetch(FEED_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/sparql-results+json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams({ query }),
+  });
+  if (!res.ok) throw new Error(`SPARQL ${res.status}`);
+  const data = await res.json();
+  return data.results.bindings.map(row => {
+    const out = {};
+    for (const [k, v] of Object.entries(row)) out[k] = v.value;
+    return out;
+  });
+}
 
 (async function() {
   const container = document.getElementById('community-feed');
   if (!container) return;
 
   try {
-    const client = new NanopubClient();
-    const rows = await client.querySparql(`
+    const rows = await feedSparql(`
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX np: <http://www.nanopub.org/nschema#>
       PREFIX npa: <http://purl.org/nanopub/admin/>
@@ -798,6 +848,187 @@ import { NanopubClient } from '/js/nanopub-elements.js';
     container.appendChild(list);
   } catch (e) {
     container.innerHTML = '<p class="sl-muted">Could not load feed.</p>';
+  }
+})();
+</script>
+
+<!-- Lifewatch Dashboard -->
+<script type="module">
+const TEXT_ENDPOINT = 'https://query.knowledgepixels.com/repo/text';
+
+async function sparql(query) {
+  const res = await fetch(TEXT_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/sparql-results+json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams({ query }),
+  });
+  if (!res.ok) throw new Error(`SPARQL ${res.status}`);
+  const data = await res.json();
+  return data.results.bindings.map(row => {
+    const out = {};
+    for (const [k, v] of Object.entries(row)) out[k] = v.value;
+    return out;
+  });
+}
+
+(async function() {
+  const statsEl = document.getElementById('lifewatch-stats');
+  const recentEl = document.getElementById('lifewatch-recent');
+  if (!statsEl || !recentEl) return;
+
+  // Helper to run a query and return null on failure, with retry on 503
+  async function safeSparql(query, retries = 2) {
+    for (let i = 0; i <= retries; i++) {
+      try {
+        return await sparql(query);
+      } catch (e) {
+        if (i < retries && /503/.test(e.message)) {
+          await new Promise(r => setTimeout(r, 800 * (i + 1)));
+          continue;
+        }
+        console.error('Query failed:', e);
+        return null;
+      }
+    }
+    return null;
+  }
+
+  const SEARCH_TERMS = '"lifewatch OR biodiversity"';
+
+  // Type labels for known templates
+  const typeMap = {
+    'https://w3id.org/np/RAuVB37yyAuAlgusrUAoG84JI4_EfrEqIkpEZYDpSz3d8': 'Dataset',
+    'https://w3id.org/np/RABBzVTxosLGT4YBCfdfNd6LyuOOTe2EVOTtWJMyOoZHk': 'Software',
+    'https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA': 'Claim',
+    'https://w3id.org/np/RA4fmfVFULMP50FqDFX8fEMn66uDF07vXKFXh_L9aoQKE': 'Claim',
+    'https://w3id.org/np/RAX_4tWTyjFpO6nz63s14ucuejd64t2mK3IBlkwZ7jjLo': 'Citation',
+    'https://w3id.org/np/RAu5uTahAxc0OLBB3vaGwK3OQDDZV7QuWtDlBk0Ea3bco': 'FORRT Claim',
+    'https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE': 'Replication',
+    'https://w3id.org/np/RAw3XdUhxQJfKBaU-cQhV6c7au4rLd5CSUdbMKTS_FB8g': 'Replication',
+    'https://w3id.org/np/RAsPVd3bNOPg5vxQGc1Tqn69v3dSY-ASrAhEFioutCXao': 'Geo coverage',
+  };
+
+  // Run queries sequentially to avoid rate limiting on /text endpoint
+  const statsRows = await safeSparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX dct: <http://purl.org/dc/terms/>
+      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
+
+      SELECT (COUNT(DISTINCT ?np) AS ?total) (COUNT(DISTINCT ?creator) AS ?creators) WHERE {
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np rdfs:label ?label ; dct:creator ?creator .
+        }
+        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
+      }
+    `);
+
+  // Render stats first so user sees something quickly
+  if (statsRows && statsRows.length > 0) {
+    const s = statsRows[0];
+    statsEl.querySelector('[data-stat="total"]').textContent = s.total || '0';
+    statsEl.querySelector('[data-stat="creators"]').textContent = s.creators || '0';
+  }
+
+  const datasetRows = await safeSparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
+
+      SELECT (COUNT(DISTINCT ?np) AS ?count) WHERE {
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np rdfs:label ?label .
+        }
+        GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate <https://w3id.org/np/RAuVB37yyAuAlgusrUAoG84JI4_EfrEqIkpEZYDpSz3d8> . }
+        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
+      }
+    `);
+  if (datasetRows && datasetRows.length > 0) {
+    statsEl.querySelector('[data-stat="datasets"]').textContent = datasetRows[0].count || '0';
+  }
+
+  const claimRows = await safeSparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
+
+      SELECT (COUNT(DISTINCT ?np) AS ?count) WHERE {
+        VALUES ?t {
+          <https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA>
+          <https://w3id.org/np/RA4fmfVFULMP50FqDFX8fEMn66uDF07vXKFXh_L9aoQKE>
+        }
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np rdfs:label ?label .
+        }
+        GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?t . }
+        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
+      }
+    `);
+  if (claimRows && claimRows.length > 0) {
+    statsEl.querySelector('[data-stat="claims"]').textContent = claimRows[0].count || '0';
+  }
+
+  const recentRows = await safeSparql(`
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX npa: <http://purl.org/nanopub/admin/>
+      PREFIX npx: <http://purl.org/nanopub/x/>
+      PREFIX dct: <http://purl.org/dc/terms/>
+      PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
+
+      SELECT DISTINCT ?np ?label ?date ?template WHERE {
+        VALUES ?template {
+          <https://w3id.org/np/RAuVB37yyAuAlgusrUAoG84JI4_EfrEqIkpEZYDpSz3d8>
+          <https://w3id.org/np/RABBzVTxosLGT4YBCfdfNd6LyuOOTe2EVOTtWJMyOoZHk>
+          <https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA>
+          <https://w3id.org/np/RA4fmfVFULMP50FqDFX8fEMn66uDF07vXKFXh_L9aoQKE>
+          <https://w3id.org/np/RAX_4tWTyjFpO6nz63s14ucuejd64t2mK3IBlkwZ7jjLo>
+          <https://w3id.org/np/RAu5uTahAxc0OLBB3vaGwK3OQDDZV7QuWtDlBk0Ea3bco>
+          <https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE>
+          <https://w3id.org/np/RAw3XdUhxQJfKBaU-cQhV6c7au4rLd5CSUdbMKTS_FB8g>
+          <https://w3id.org/np/RAsPVd3bNOPg5vxQGc1Tqn69v3dSY-ASrAhEFioutCXao>
+        }
+        GRAPH npa:graph {
+          ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
+          FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
+          ?np rdfs:label ?label ; dct:created ?date .
+        }
+        GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?template . }
+        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
+      } ORDER BY DESC(?date) LIMIT 4
+    `);
+
+  // Render recent
+  if (recentRows && recentRows.length > 0) {
+    recentEl.innerHTML = '';
+    for (const row of recentRows) {
+      const type = typeMap[row.template] || 'Nanopub';
+      const dateLabel = row.date ? new Date(row.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+      const url = 'https://platform.sciencelive4all.org/np/?uri=' + encodeURIComponent(row.np);
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <span class="sl-dashboard-type">${type}</span>
+        <a href="${url}" class="sl-dashboard-title">${row.label || 'Untitled'}</a>
+        <span class="sl-dashboard-date">${dateLabel}</span>
+      `;
+      recentEl.appendChild(li);
+    }
+  } else {
+    recentEl.innerHTML = '<li class="sl-dashboard-loading">No data yet.</li>';
   }
 })();
 </script>
