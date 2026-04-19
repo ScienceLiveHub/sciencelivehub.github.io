@@ -12,6 +12,13 @@
                 {% endif %}
                 <p>{{ config.extra.hero_subtitle }}</p>
 
+                {% if config.extra.hero_badge_text %}
+                <div class="hero-badge">
+                    <i class="fas fa-{{ config.extra.hero_badge_icon | default(value='check-circle') }}"></i>
+                    <span>{{ config.extra.hero_badge_text }}</span>
+                </div>
+                {% endif %}
+
                 <div class="hero-buttons">
                     {% if config.extra.hero_primary_button_url is defined %}
                     <a href="{{ config.extra.hero_primary_button_url }}" class="btn-primary">
@@ -27,6 +34,28 @@
             </div>
         </div>
     </section>
+
+    <!-- Funders strip -->
+    {% if config.extra.funders %}
+    <section class="sl-funders" aria-label="Funders">
+        <div class="sl-funders-inner">
+            <span class="sl-funders-label">Funded by</span>
+            <div class="sl-funders-logos">
+                {% for funder in config.extra.funders %}
+                {% if funder.url %}
+                <a href="{{ funder.url }}" class="sl-funders-logo" target="_blank" rel="noopener" aria-label="{{ funder.name }}">
+                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" />
+                </a>
+                {% else %}
+                <span class="sl-funders-logo" aria-label="{{ funder.name }}">
+                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" />
+                </span>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- What Is It + Community Feed (merged) -->
     {% if config.extra.what_is_it is defined %}
@@ -283,7 +312,7 @@
             {% if config.extra.team is defined %}
             <!-- Compact "Built by" team strip -->
             <div class="sl-built-by" id="team">
-                <span class="sl-built-by-label">Built by</span>
+                <span class="sl-built-by-label">A collaboration between</span>
                 <div class="sl-built-by-orgs">
                     {% for member in config.extra.team.members %}
                     {% if member.url is defined %}
@@ -511,7 +540,7 @@ async function sparql(query) {
     return null;
   }
 
-  const SEARCH_TERMS = '"lifewatch OR biodiversity"';
+  const SEARCH_TERMS = '"lifewatch OR biodiversity OR ecology"';
 
   // Type labels for known templates
   const typeMap = {

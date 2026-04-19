@@ -90,7 +90,10 @@ twitter = "https://twitter.com/sciencelive"
 hero_title_1 = "Turn research into"
 hero_title_2 = "building blocks others can use"
 hero_title_3 = ""
-hero_subtitle = "Create structured, citable nanopublications from your research. Organizations get visibility into research output, knowledge preservation, and FAIR compliance."
+hero_subtitle = "Create structured, citable nanopublications from your research. Organizations and industry speed up R&D, preserve knowledge, and demonstrate impact."
+
+hero_badge_text = "Free forever for researchers"
+hero_badge_icon = "check-circle"
 
 hero_primary_button_text = "Try the Platform"
 hero_primary_button_url = "https://platform.sciencelive4all.org"
@@ -134,8 +137,8 @@ url = "#what-is-it"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Pricing"
-url = "#pricing"
+name = "Organizations & Industry"
+url = "#organizations"
 class = "primary"
 
 [[extra.nav_links]]
@@ -147,6 +150,15 @@ class = "primary"
 name = "Docs"
 url = "https://sciencelive4all.org/science-live-platform/"
 class = "secondary"
+
+# ── Funders ──────────────────────────────────────────────────────────────────
+# Rendered as a "Funded by" strip directly below the hero.
+# Label text is hardcoded in templates/index.html (TOML scoping prevents a flat
+# `funders_label` key here — it would bind to the preceding [[extra.nav_links]]).
+[[extra.funders]]
+name = "Astera Institute"
+logo = "/assets/img/Astera-logo.png"
+url = "https://astera.org"
 
 # ── Features (array of cards) ────────────────────────────────────────────────
 [[extra.features]]
@@ -360,7 +372,7 @@ subtitle = "Free for individual researchers. Subscriptions for organizations."
 name = "Researchers"
 price = "Free"
 price_period = ""
-description = "Individual researchers, PhD students, postdocs, faculty"
+description = "Any individual researcher — academic or in industry"
 cta_text = "Try the Platform"
 cta_url = "https://platform.sciencelive4all.org"
 cta_style = "secondary"
