@@ -44,11 +44,11 @@
                 {% for funder in config.extra.funders %}
                 {% if funder.url %}
                 <a href="{{ funder.url }}" class="sl-funders-logo" target="_blank" rel="noopener" aria-label="{{ funder.name }}">
-                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" />
+                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" height="40" style="max-height:40px;width:auto;" />
                 </a>
                 {% else %}
                 <span class="sl-funders-logo" aria-label="{{ funder.name }}">
-                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" />
+                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" height="40" style="max-height:40px;width:auto;" />
                 </span>
                 {% endif %}
                 {% endfor %}
