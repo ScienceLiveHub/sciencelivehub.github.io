@@ -270,6 +270,74 @@ body {
     line-height: 1.8;
 }
 
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 1.5rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.9rem;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+}
+
+/* Funders strip (below hero) */
+.sl-funders {
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+    padding: 1.25rem 1.5rem;
+}
+
+.sl-funders-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sl-funders-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+}
+
+.sl-funders-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sl-funders-logo {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.sl-funders-logo:hover {
+    opacity: 1;
+}
+
+.sl-funders-logo img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+}
+
+.hero-badge i {
+    color: var(--accent-color);
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
