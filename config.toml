@@ -366,13 +366,13 @@ height = "600"
 [extra.pricing]
 tag = "PRICING"
 title = "Simple, transparent pricing"
-subtitle = "Free for individual researchers. Subscriptions for organizations."
+subtitle = "Free for everyone. Custom replications and data adaptations on request."
 
 [[extra.pricing.tiers]]
-name = "Researchers"
+name = "Free for everyone"
 price = "Free"
 price_period = ""
-description = "Any individual researcher — academic or in industry"
+description = "Anyone — researchers, students, librarians, science communicators, citizen scientists."
 cta_text = "Try the Platform"
 cta_url = "https://platform.sciencelive4all.org"
 cta_style = "secondary"
@@ -386,38 +386,18 @@ features = [
 ]
 
 [[extra.pricing.tiers]]
-name = "Research Organizations"
-price = "€3,000"
-price_period = "/year"
-description = "Universities, research institutes, government agencies"
-is_featured = true
-cta_text = "Contact Us"
-cta_url = "#contact"
+name = "Custom replication"
+price = "From €2,000"
+price_period = " / replication"
+description = "Bespoke replications and data adaptations, delivered by VitenHub AS using the Science Live platform."
+cta_text = "See pricing"
+cta_url = "https://vitenhub.no/replication-services"
 cta_style = "primary"
 features = [
-    "Everything in Free, plus:",
-    "Institutional dashboard & analytics",
-    "Track research output across teams",
-    "Preserve institutional knowledge",
-    "Branded embed viewers",
-    "Priority support",
-]
-
-[[extra.pricing.tiers]]
-name = "Industry"
-price = "€10,000"
-price_period = "/year"
-description = "Companies, R&D teams, commercial organizations"
-cta_text = "Contact Us"
-cta_url = "#contact"
-cta_style = "primary"
-features = [
-    "Everything in Organizations, plus:",
-    "Access validated research",
-    "Commission targeted validations",
-    "Custom API integration",
-    "Dedicated account manager",
-    "Custom branding & deployment",
+    "Bespoke replication of your chosen study",
+    "Adaptation to your data and workflows",
+    "Signed, citable nanopublications of results",
+    "Brief written report and code delivery",
 ]
 
 # ── Team ─────────────────────────────────────────────────────────────────────
