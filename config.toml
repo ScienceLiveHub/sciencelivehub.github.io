@@ -320,7 +320,7 @@ description = "Your team spends weeks reading papers, attending conferences, and
 [[extra.orgs.industry.points]]
 icon = "flask"
 title = "Commission targeted replications"
-description = "The only platform where you can request a replication study on a specific finding. Get independent validation on the claims your investment depends on — without hiring a CRO."
+description = "Every published claim on Science Live can be independently re-run on your data — bespoke replications delivered by Vitenhub AS using the open platform. Independent validation on the claims your investment depends on, without hiring a CRO."
 
 [[extra.orgs.industry.points]]
 icon = "bolt"
@@ -493,29 +493,19 @@ description = "Group related nanopublications into curated, shareable collection
 icon = "layer-group"
 
 [[extra.roadmap.items]]
-title = "Feeds & Subscriptions"
-description = "Follow researchers, topics, or template types and get notified of new publications."
+title = "Subscriptions & saved searches"
+description = "Follow researchers, topics, or template types and get notified of new publications. Builds on the Latest feed and template filters already in place."
 icon = "rss"
 
 [[extra.roadmap.items]]
-title = "Community Verification"
-description = "Trustworthiness ratings and peer endorsements for nanopublications."
-icon = "certificate"
+title = "Multi-organization dashboards"
+description = "Custom institutional dashboards for paid organizations — branded analytics, structured output reporting, and FAIR-compliance evidence. Extends the existing LifeWatch dashboard."
+icon = "building-columns"
 
 [[extra.roadmap.items]]
-title = "Credit System"
-description = "Rewards and recognition for publishers, reviewers, and active community members."
-icon = "coins"
-
-[[extra.roadmap.items]]
-title = "Research Organizations"
-description = "Attribute research output to institutions with dashboards and analytics."
-icon = "university"
-
-[[extra.roadmap.items]]
-title = "Industry Bounties"
-description = "Companies post requests and bounties on specific research topics or validations."
-icon = "briefcase"
+title = "Programmatic API access"
+description = "FORRT-chain-aware REST API for partner organizations and Vitenhub AS engagements — constellation traversal, search, and template registry. Currently in restricted beta."
+icon = "code"
 
 #[[extra.roadmap.items]]
 #title = "Knowledge Graph Papers"
