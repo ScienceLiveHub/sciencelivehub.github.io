@@ -831,10 +831,15 @@ async function feedSparql(query) {
 
 <!-- Lifewatch Dashboard -->
 <script type="module">
-const TEXT_ENDPOINT = 'https://query.knowledgepixels.com/repo/text';
+// Standard SPARQL endpoint (structured queries). We deliberately avoid the
+// separate /repo/text Lucene full-text endpoint (search:matches), whose index
+// can be unavailable and silently returns zero rows. This dashboard scopes by
+// template URI + an rdfs:label CONTAINS filter instead, matching how the
+// platform's browse views (latest-by-templates) source data.
+const FULL_ENDPOINT = 'https://query.knowledgepixels.com/repo/full';
 
 async function sparql(query) {
-  const res = await fetch(TEXT_ENDPOINT, {
+  const res = await fetch(FULL_ENDPOINT, {
     method: 'POST',
     headers: {
       'Accept': 'application/sparql-results+json',
@@ -873,7 +878,12 @@ async function sparql(query) {
     return null;
   }
 
-  const SEARCH_TERMS = '"lifewatch OR biodiversity OR ecology"';
+  // LifeWatch topic scope, applied as a label CONTAINS filter on ?label
+  // (no Lucene). Injected into each query's npa:graph block.
+  const LABEL_FILTER =
+    'FILTER(CONTAINS(LCASE(STR(?label)), "lifewatch") || ' +
+    'CONTAINS(LCASE(STR(?label)), "biodiversity") || ' +
+    'CONTAINS(LCASE(STR(?label)), "ecology"))';
 
   // Type labels for known templates
   const typeMap = {
@@ -894,15 +904,14 @@ async function sparql(query) {
       PREFIX npa: <http://purl.org/nanopub/admin/>
       PREFIX npx: <http://purl.org/nanopub/x/>
       PREFIX dct: <http://purl.org/dc/terms/>
-      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
 
       SELECT (COUNT(DISTINCT ?np) AS ?total) (COUNT(DISTINCT ?creator) AS ?creators) WHERE {
         GRAPH npa:graph {
           ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
           FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
           ?np rdfs:label ?label ; dct:creator ?creator .
+          ${LABEL_FILTER}
         }
-        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
       }
     `);
 
@@ -918,16 +927,15 @@ async function sparql(query) {
       PREFIX npa: <http://purl.org/nanopub/admin/>
       PREFIX npx: <http://purl.org/nanopub/x/>
       PREFIX nt: <https://w3id.org/np/o/ntemplate/>
-      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
 
       SELECT (COUNT(DISTINCT ?np) AS ?count) WHERE {
         GRAPH npa:graph {
           ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
           FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
           ?np rdfs:label ?label .
+          ${LABEL_FILTER}
         }
         GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate <https://w3id.org/np/RAuVB37yyAuAlgusrUAoG84JI4_EfrEqIkpEZYDpSz3d8> . }
-        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
       }
     `);
   if (datasetRows && datasetRows.length > 0) {
@@ -939,7 +947,6 @@ async function sparql(query) {
       PREFIX npa: <http://purl.org/nanopub/admin/>
       PREFIX npx: <http://purl.org/nanopub/x/>
       PREFIX nt: <https://w3id.org/np/o/ntemplate/>
-      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
 
       SELECT (COUNT(DISTINCT ?np) AS ?count) WHERE {
         VALUES ?t {
@@ -950,9 +957,9 @@ async function sparql(query) {
           ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
           FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
           ?np rdfs:label ?label .
+          ${LABEL_FILTER}
         }
         GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?t . }
-        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
       }
     `);
   if (claimRows && claimRows.length > 0) {
@@ -965,7 +972,6 @@ async function sparql(query) {
       PREFIX npx: <http://purl.org/nanopub/x/>
       PREFIX dct: <http://purl.org/dc/terms/>
       PREFIX nt: <https://w3id.org/np/o/ntemplate/>
-      PREFIX search: <http://www.openrdf.org/contrib/lucenesail#>
 
       SELECT DISTINCT ?np ?label ?date ?template WHERE {
         VALUES ?template {
@@ -983,9 +989,9 @@ async function sparql(query) {
           ?np npa:hasValidSignatureForPublicKeyHash ?pubkey .
           FILTER NOT EXISTS { ?npx npx:invalidates ?np ; npa:hasValidSignatureForPublicKeyHash ?pubkey . }
           ?np rdfs:label ?label ; dct:created ?date .
+          ${LABEL_FILTER}
         }
         GRAPH ?pubinfo { ?np nt:wasCreatedFromTemplate ?template . }
-        ?np search:matches [ search:query ${SEARCH_TERMS} ; search:property rdfs:label ] .
       } ORDER BY DESC(?date) LIMIT 4
     `);
 
