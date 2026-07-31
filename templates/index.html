@@ -128,7 +128,37 @@
     </section>
     {% endif %}
 
-
+    <!-- Replication stories -->
+    {% if config.extra.featured_stories is defined %}
+    <section class="sl-section" id="stories">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.featured_stories.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.featured_stories.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.featured_stories.subtitle }}</p>
+            </div>
+            <div class="sl-three-col">
+                {% for card in config.extra.featured_stories.cards %}
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ card.icon }}"></i>
+                    </div>
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.description }}</p>
+                    <ul class="sl-checklist">
+                        {% for feature in card.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{{ config.extra.stories_platform_url }}/np/story?uri={{ card.story_uri | urlencode_strict }}" class="sl-btn sl-btn--outline">
+                        Read the story <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- For Organizations & Industry -->
     {% if config.extra.orgs is defined %}
