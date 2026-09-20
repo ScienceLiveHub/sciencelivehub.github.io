@@ -104,9 +104,8 @@ hero_secondary_button_url = "#contact"
 hero_secondary_button_icon = "envelope"
 
 # Base URL of the platform used by the replication-story links (see
-# [extra.featured_stories]). Points at platform-dev while the story reader is
-# dev-only; switch to https://platform.sciencelive4all.org once it ships to prod.
-stories_platform_url = "https://platform-dev.sciencelive4all.org"
+# [extra.featured_stories]). The story reader is live in production.
+stories_platform_url = "https://platform.sciencelive4all.org"
 
 # ── Features header ─────────────────────────────────────────────────────────
 features_section_tag = "PLATFORM FEATURES"
