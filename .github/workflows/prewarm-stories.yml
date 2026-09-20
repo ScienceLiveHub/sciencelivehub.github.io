@@ -1,0 +1,79 @@
+name: Pre-warm story cache
+
+# Keeps the platform's story-reader cache warm for every replication story
+# featured on the homepage, so a public visitor never waits on the ~60s cold
+# "constellation" walk the reader runs on first load.
+#
+# Data-driven: it reads the featured story nanopub URIs straight from
+# config.toml (the same source the homepage cards use), resolves each story to
+# its apex, and requests the constellation the reader fetches. Add a story card
+# and it gets warmed automatically, with no change here.
+#
+# CAVEAT: Cloudflare's cache is per-colo. A GitHub runner warms whichever
+# Cloudflare location it lands in (typically US). With tiered caching that can
+# reach other regions; without it, a visitor's first hit in a still-cold region
+# may run the full walk. This is a best-effort mitigation, not a global
+# guarantee. The durable, global fix would be a Worker-side (KV) cache in the
+# api repo rather than only the per-colo edge cache.
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # every 3h, comfortably inside the 4h edge-cache TTL
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prewarm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Warm the constellation for each featured story
+        run: |
+          set -uo pipefail
+          API="https://api.sciencelive4all.org"
+
+          # Featured story nanopubs, read from the homepage config (source of truth).
+          mapfile -t STORIES < <(grep -oE 'story_uri = "[^"]+"' config.toml | grep -oE 'https://[^"]+')
+          if [ "${#STORIES[@]}" -eq 0 ]; then
+            echo "No featured stories found in config.toml — nothing to warm."
+            exit 0
+          fi
+          echo "Found ${#STORIES[@]} featured story(ies) to warm."
+
+          fail=0
+          for story in "${STORIES[@]}"; do
+            echo "::group::$story"
+
+            # The reader derives the apex from the story node <apex>/story.
+            apex=$(curl -sL --max-time 30 -H "Accept: application/trig" "$story" \
+                   | grep -oiE "<https?://[^>]+/story>" | head -1 \
+                   | sed 's|/story>||; s|[<>]||g')
+
+            if [ -z "$apex" ]; then
+              echo "  could not resolve apex — skipping"
+              fail=1
+              echo "::endgroup::"
+              continue
+            fi
+            echo "  apex: $apex"
+
+            # Request the constellation the reader fetches; this populates the edge cache.
+            result=$(curl -s -o /dev/null -w '%{http_code} %{time_total}s' --max-time 140 \
+                     -G "$API/np/constellation" --data-urlencode "uri=$apex")
+            echo "  constellation warm: $result"
+            case "$result" in
+              200*) : ;;
+              *) fail=1 ;;
+            esac
+
+            echo "::endgroup::"
+          done
+
+          # Best-effort: a slow or transient warm should not fail the scheduled
+          # run, but surface it so a persistent problem is visible.
+          if [ "$fail" -ne 0 ]; then
+            echo "::warning::one or more featured stories could not be warmed"
+          fi
