@@ -2375,6 +2375,20 @@ button.btn-hiring:hover {
     gap: 1.5rem;
 }
 
+/* Featured stories: centered flow so any number of cards (2, 3, …) stays
+   balanced instead of leaving an empty column in a fixed grid. */
+.sl-stories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sl-stories-grid > .sl-card {
+    flex: 0 1 340px;
+    max-width: 340px;
+}
+
 /* ── Checklist ─────────────────────────────────────────────────────────────── */
 .sl-checklist {
     list-style: none;
