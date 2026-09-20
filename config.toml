@@ -290,6 +290,17 @@ title = "See replication in action"
 subtitle = "Independent replications, told as readable stories. Each is composed from a signed, verifiable chain of nanopublications, so every claim traces back to its data, method, and author."
 
 [[extra.featured_stories.cards]]
+title = "Marine heatwaves are getting longer and more frequent"
+icon = "temperature-high"
+description = "An independent, fully open-source replication of Oliver et al. (2018), rebuilt from a different satellite record and a different detector: the rising trend in marine-heatwave days holds, and survives ENSO removal."
+features = [
+    "Marine-heatwave trend: confirms",
+    "Independent data: ESA CCI satellite SST",
+    "Anne Fouilloux, 2026",
+]
+story_uri = "https://w3id.org/np/RAQfGMNmJiFt4KDDJE8dsiT3az4CRYehRuDFoa-tXGc8w"
+
+[[extra.featured_stories.cards]]
 title = "Sentinel-2 water quality in the Westerschelde"
 icon = "water"
 description = "An independent, fully open-source replication of a Sado estuary water-quality study, run in a more turbid estuary: the parameter-dependent accuracy of the original finding holds."
