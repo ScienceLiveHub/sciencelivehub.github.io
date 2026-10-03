@@ -7,7 +7,10 @@
         <loc>https://sciencelive4all.org/categories/</loc>
     </url>
     <url>
-        <loc>https://sciencelive4all.org/credits/</loc>
+        <loc>https://sciencelive4all.org/contribute/</loc>
+    </url>
+    <url>
+        <loc>https://sciencelive4all.org/for-funders/</loc>
     </url>
     <url>
         <loc>https://sciencelive4all.org/policies/</loc>
@@ -15,6 +18,9 @@
     <url>
         <loc>https://sciencelive4all.org/privacy/</loc>
         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+        <loc>https://sciencelive4all.org/request-a-replication/</loc>
     </url>
     <url>
         <loc>https://sciencelive4all.org/tags/</loc>
@@ -30,6 +36,6 @@
         <loc>https://sciencelive4all.org/thank-you-demo/</loc>
     </url>
     <url>
-        <loc>https://sciencelive4all.org/verification/</loc>
+        <loc>https://sciencelive4all.org/tools/</loc>
     </url>
 </urlset>
