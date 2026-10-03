@@ -42,6 +42,8 @@ templates/           # Tera templates
   thank-you.html     # Form submission landing
   macros/            # head.html, analytics.html, debug.html
   partials/          # hero-visual.html
+  shortcodes/        # generated SVG figures (do not hand-edit; see figures/)
+figures/             # offline Python scripts that generate the SVG figures (not part of the build)
 static/              # Served verbatim at site root
   css/science-live.css
   js/scripts.js, nanopub-elements.js
@@ -58,6 +60,7 @@ CNAME                # sciencelive4all.org
 - **Legal / static pages** (privacy, terms, policies, credits, verification): `content/*.md`.
 - **Layout / structure**: `templates/`.
 - **Styles**: `static/css/science-live.css` (no Sass pipeline is in use despite `compile_sass = true`).
+- **Figures** (Tools, Request, Credit, Research-is-never-finished, Foundations): edit `figures/gen_*.py`, run it offline (`python3 gen_<name>.py`, no dependencies), and commit the regenerated `templates/shortcodes/*.html`. Zola only includes the result; it never runs the scripts.
 - **Analytics**: GTM id `GTM-WSJ3ZZ29` is set in `config.toml` and wired via `templates/macros/analytics.html`.
 
 ### TOML scoping gotcha
