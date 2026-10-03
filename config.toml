@@ -87,41 +87,45 @@ github = "https://github.com/sciencelivehub"
 twitter = "https://twitter.com/sciencelive"
 
 # ── Hero ─────────────────────────────────────────────────────────────────────
-hero_title_1 = "Turn research into"
-hero_title_2 = "building blocks others can use"
+hero_title_1 = "Research you "
+hero_title_2 = "can build on"
 hero_title_3 = ""
-hero_subtitle = "Create structured, citable nanopublications from your research. Organizations and industry speed up R&D, preserve knowledge, and demonstrate impact."
+hero_subtitle = "See who claimed what, who checked it, and what they found. Every claim, replication and review is signed, credited, and readable by people and AI."
 
-hero_badge_text = "Free forever for researchers"
+hero_badge_text = "Free and open for researchers"
 hero_badge_icon = "check-circle"
 
-hero_primary_button_text = "Try the Platform"
-hero_primary_button_url = "https://platform.sciencelive4all.org"
-hero_primary_button_icon = "rocket"
+hero_primary_button_text = "Explore the evidence"
+hero_primary_button_url = "https://platform.sciencelive4all.org/np/"
+hero_primary_button_icon = "magnifying-glass"
 
-hero_secondary_button_text = "Contact Us"
-hero_secondary_button_url = "#contact"
-hero_secondary_button_icon = "envelope"
+hero_secondary_button_text = "Request a replication"
+hero_secondary_button_url = "/request-a-replication/"
+hero_secondary_button_icon = "rotate"
 
 # Base URL of the platform used by the replication-story links (see
 # [extra.featured_stories]). The story reader is live in production.
 stories_platform_url = "https://platform.sciencelive4all.org"
+
+# Label for the past-support strip in the team section ([[extra.funders]]).
+# Astera funding ended in June 2026: keep this past tense, never "Funded by".
+past_support_label = "Developed with support from the Astera Institute (until June 2026)"
 
 # ── Features header ─────────────────────────────────────────────────────────
 features_section_tag = "PLATFORM FEATURES"
 features_section_title = "Everything you need for FAIR research"
 
 # ── CTA Section ──────────────────────────────────────────────────────────────
-cta_title = "Ready to transform your research?"
-cta_subtitle = "Join researchers and organizations already using Science Live to create FAIR, structured nanopublications."
+cta_title = "Ready to build on research that holds?"
+cta_subtitle = "Publish your claims and replications with your name on them, or ask for a result to be checked."
 
 cta_primary_button_text = "Try the Platform"
 cta_primary_button_url = "https://platform.sciencelive4all.org"
 cta_primary_button_icon = "rocket"
 
-cta_secondary_button_text = "Contact Us"
-cta_secondary_button_url = "#contact"
-cta_secondary_button_icon = "envelope"
+cta_secondary_button_text = "Request a replication"
+cta_secondary_button_url = "/request-a-replication/"
+cta_secondary_button_icon = "rotate"
 
 # ── Footer ───────────────────────────────────────────────────────────────────
 footer_description = "The open platform for FAIR scientific nanopublications."
@@ -132,22 +136,27 @@ footer_copyright_text = "Science Live is an open platform supporting Open Scienc
 # ══════════════════════════════════════════════════════════════════════════════
 [[extra.nav_links]]
 name = "Tools"
-url = "#tools"
+url = "/tools/"
 class = "primary"
 
 [[extra.nav_links]]
-name = "Community"
-url = "#what-is-it"
+name = "Get credited"
+url = "/contribute/"
+class = "primary"
+
+[[extra.nav_links]]
+name = "Request a replication"
+url = "/request-a-replication/"
+class = "primary"
+
+[[extra.nav_links]]
+name = "For funders"
+url = "/for-funders/"
 class = "primary"
 
 [[extra.nav_links]]
 name = "Organizations & Industry"
-url = "#organizations"
-class = "primary"
-
-[[extra.nav_links]]
-name = "Roadmap"
-url = "#roadmap"
+url = "/#organizations"
 class = "primary"
 
 [[extra.nav_links]]
@@ -156,9 +165,8 @@ url = "https://sciencelive4all.org/science-live-platform/"
 class = "secondary"
 
 # ── Funders ──────────────────────────────────────────────────────────────────
-# Rendered as a "Funded by" strip directly below the hero.
-# Label text is hardcoded in templates/index.html (TOML scoping prevents a flat
-# `funders_label` key here — it would bind to the preceding [[extra.nav_links]]).
+# Past support, rendered in the team section with `past_support_label`.
+# Astera funding ended in June 2026, so it is no longer shown under the hero.
 [[extra.funders]]
 name = "Astera Institute"
 logo = "/assets/img/Astera-logo.png"
@@ -231,55 +239,47 @@ links = []
 # ── What Is It ───────────────────────────────────────────────────────────────
 [extra.what_is_it]
 tag = "WHAT IS A NANOPUBLICATION?"
-title = "Your research, in building blocks others can build on"
-description = "A nanopublication captures one clear piece of your research — a finding, a dataset, a replication result — in a format that's citable, searchable, and permanently yours. No more invisible work buried in PDFs."
+title = "The smallest citable unit of science"
+description = "A nanopublication is one clear statement (a claim, a dataset, a replication verdict) signed with its author's ORCID, with its source and a permanent identifier. People and AI can find it, check it and cite it. No more invisible work buried in PDFs."
 embed_uri = "https://w3id.org/sciencelive/np/RAMFMgw2oNSeAEhPjg2Dco_0vYWQ1igTNbkT0_5177yV8"
 embed_caption = "A scientific claim (AIDA sentence) — one of many nanopublication types you can create"
 
-# ── How It Works ─────────────────────────────────────────────────────────────
-[extra.how_it_works]
-tag = "HOW IT WORKS"
-title = "From research to reusable knowledge"
-subtitle = "Researchers create. Everyone discovers. Organizations embed and track. One platform, three workflows."
+# ── Three doors ──────────────────────────────────────────────────────────────
+# Audience entry points right under the hero.
+[extra.doors]
+tag = "START HERE"
+title = "What brings you to Science Live?"
+footnote = 'Building with AI agents? See <a href="/tools/">our tools and MCP servers</a>.'
 
-[[extra.how_it_works.cards]]
-title = "Create"
-icon = "file-circle-plus"
-description = "Researchers create nanopublications from their work using guided templates or the Zotero plugin."
-features = [
-    "Web platform with 15+ guided templates",
-    "Zotero plugin for your existing workflow",
-    "PRISMA systematic review tools",
-    "ORCID-signed, permanently citable",
-]
-cta_text = "Try the Platform"
-cta_url = "https://platform.sciencelive4all.org"
+[[extra.doors.cards]]
+title = "I want credit for my work"
+icon = "award"
+description = "Publish your claims, replications and reviews as signed nanopublications. Your name stays on them, permanently."
+url = "/contribute/"
+link_text = "Get credited"
 
-[[extra.how_it_works.cards]]
-title = "Discover"
+[[extra.doors.cards]]
+title = "I doubt a result"
 icon = "magnifying-glass"
-description = "Search and explore structured research across the decentralized nanopub network."
-features = [
-    "Machine-readable structured queries",
-    "Filter by topic, author, or type",
-    "Full provenance on every result",
-    "Cite and build upon others' work",
-]
-cta_text = "Explore"
-cta_url = "https://platform.sciencelive4all.org/np/"
+description = "Check whether a claim has been replicated, and ask the community or our experts to test it if not."
+url = "/request-a-replication/"
+link_text = "Request a replication"
 
-[[extra.how_it_works.cards]]
-title = "Embed & Track"
-icon = "code"
-description = "Organizations embed nanopubs on their website and track institutional research output."
-features = [
-    "Customizable iframe embed viewer",
-    "Branded themes for your organization",
-    "Institutional dashboard and analytics",
-    "Preserve knowledge across team changes",
-]
-cta_text = "Learn about embedding"
-cta_url = "https://sciencelive4all.org/science-live-platform/for-organizations/embed/"
+[[extra.doors.cards]]
+title = "I fund or invest in research"
+icon = "landmark"
+description = "See which results your programs rest on, which are contested, and where the gaps are."
+url = "/for-funders/"
+link_text = "For funders"
+
+# ── Research is never finished ───────────────────────────────────────────────
+# Real example rendered from templates/shortcodes/constellation_diagram.html.
+[extra.evolving]
+tag = "RESEARCH IS NEVER FINISHED"
+title = "Evidence that keeps up with the research"
+subtitle = 'New replications can confirm, qualify or refute a claim at any time. A real example, from the bumble bee study of <a href="https://doi.org/10.1126/science.aax8591">Soroye et al. (2020)</a>.'
+link_text = "How credit works"
+link_url = "/contribute/"
 
 # ── Replication stories ──────────────────────────────────────────────────────
 # Each card links to a reader-facing story blog on the platform
