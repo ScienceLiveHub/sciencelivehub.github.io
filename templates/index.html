@@ -26,32 +26,94 @@
                     </a>
                     {% endif %}
                     {% if config.extra.hero_secondary_button_url is defined %}
+                    {% if config.extra.hero_secondary_button_url == "#contact" %}
                     <button onclick="openContactModal()" class="btn-secondary">
                         <i class="fas fa-{{ config.extra.hero_secondary_button_icon }}"></i> {{ config.extra.hero_secondary_button_text }}
                     </button>
+                    {% else %}
+                    <a href="{{ config.extra.hero_secondary_button_url }}" class="btn-secondary">
+                        <i class="fas fa-{{ config.extra.hero_secondary_button_icon }}"></i> {{ config.extra.hero_secondary_button_text }}
+                    </a>
+                    {% endif %}
                     {% endif %}
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Funders strip -->
-    {% if config.extra.funders %}
-    <section class="sl-funders" aria-label="Funders">
-        <div class="sl-funders-inner">
-            <span class="sl-funders-label">Funded by</span>
-            <div class="sl-funders-logos">
-                {% for funder in config.extra.funders %}
-                {% if funder.url %}
-                <a href="{{ funder.url }}" class="sl-funders-logo" target="_blank" rel="noopener" aria-label="{{ funder.name }}">
-                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" height="40" style="max-height:40px;width:auto;" />
+    <!-- Three doors: who are you? -->
+    {% if config.extra.doors is defined %}
+    <section class="sl-section" id="start">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.doors.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.doors.title }}</h2>
+            </div>
+            <div class="sl-three-col">
+                {% for door in config.extra.doors.cards %}
+                <a href="{{ door.url }}" class="sl-card sl-door">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ door.icon }}"></i>
+                    </div>
+                    <h3>{{ door.title }}</h3>
+                    <p>{{ door.description }}</p>
+                    <span class="sl-card-link">{{ door.link_text }} <i class="fas fa-arrow-right"></i></span>
                 </a>
-                {% else %}
-                <span class="sl-funders-logo" aria-label="{{ funder.name }}">
-                    <img src="{{ funder.logo }}" alt="{{ funder.name }}" height="40" style="max-height:40px;width:auto;" />
-                </span>
-                {% endif %}
                 {% endfor %}
+            </div>
+            {% if config.extra.doors.footnote is defined %}
+            <p class="sl-center sl-muted" style="margin-top: 1.5rem;">{{ config.extra.doors.footnote | safe }}</p>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Replication stories -->
+    {% if config.extra.featured_stories is defined %}
+    <section class="sl-section sl-section--alt" id="stories">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.featured_stories.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.featured_stories.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.featured_stories.subtitle }}</p>
+            </div>
+            <div class="sl-stories-grid">
+                {% for card in config.extra.featured_stories.cards %}
+                <div class="sl-card">
+                    <div class="sl-card-icon">
+                        <i class="fas fa-{{ card.icon }}"></i>
+                    </div>
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.description }}</p>
+                    <ul class="sl-checklist">
+                        {% for feature in card.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{{ config.extra.stories_platform_url }}/np/story?uri={{ card.story_uri | urlencode_strict }}" class="sl-btn sl-btn--outline">
+                        Read the story <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Research is never finished (real example) -->
+    {% if config.extra.evolving is defined %}
+    <section class="sl-section" id="evolving">
+        <div class="sl-container">
+            <div class="sl-section-header">
+                <span class="sl-tag">{{ config.extra.evolving.tag }}</span>
+                <h2 class="sl-title">{{ config.extra.evolving.title }}</h2>
+                <p class="sl-subtitle">{{ config.extra.evolving.subtitle | safe }}</p>
+            </div>
+            {% include "shortcodes/constellation_diagram.html" %}
+            <div class="sl-center" style="margin-top: 1rem;">
+                <a href="{{ config.extra.evolving.link_url }}" class="sl-btn sl-btn--outline">
+                    {{ config.extra.evolving.link_text }} <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -91,70 +153,6 @@
                 <a href="https://platform.sciencelive4all.org/np/" class="sl-btn sl-btn--outline">
                     Browse all <i class="fas fa-arrow-right"></i>
                 </a>
-            </div>
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- How It Works Section -->
-    {% if config.extra.how_it_works is defined %}
-    <section class="sl-section sl-section--alt" id="tools">
-        <div class="sl-container">
-            <div class="sl-section-header">
-                <span class="sl-tag">{{ config.extra.how_it_works.tag }}</span>
-                <h2 class="sl-title">{{ config.extra.how_it_works.title }}</h2>
-                <p class="sl-subtitle">{{ config.extra.how_it_works.subtitle }}</p>
-            </div>
-            <div class="sl-three-col">
-                {% for card in config.extra.how_it_works.cards %}
-                <div class="sl-card">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-{{ card.icon }}"></i>
-                    </div>
-                    <h3>{{ card.title }}</h3>
-                    <p>{{ card.description }}</p>
-                    <ul class="sl-checklist">
-                        {% for feature in card.features %}
-                        <li><i class="fas fa-check"></i> {{ feature }}</li>
-                        {% endfor %}
-                    </ul>
-                    <a href="{{ card.cta_url }}" class="sl-btn sl-btn--outline">
-                        {{ card.cta_text }} <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- Replication stories -->
-    {% if config.extra.featured_stories is defined %}
-    <section class="sl-section" id="stories">
-        <div class="sl-container">
-            <div class="sl-section-header">
-                <span class="sl-tag">{{ config.extra.featured_stories.tag }}</span>
-                <h2 class="sl-title">{{ config.extra.featured_stories.title }}</h2>
-                <p class="sl-subtitle">{{ config.extra.featured_stories.subtitle }}</p>
-            </div>
-            <div class="sl-stories-grid">
-                {% for card in config.extra.featured_stories.cards %}
-                <div class="sl-card">
-                    <div class="sl-card-icon">
-                        <i class="fas fa-{{ card.icon }}"></i>
-                    </div>
-                    <h3>{{ card.title }}</h3>
-                    <p>{{ card.description }}</p>
-                    <ul class="sl-checklist">
-                        {% for feature in card.features %}
-                        <li><i class="fas fa-check"></i> {{ feature }}</li>
-                        {% endfor %}
-                    </ul>
-                    <a href="{{ config.extra.stories_platform_url }}/np/story?uri={{ card.story_uri | urlencode_strict }}" class="sl-btn sl-btn--outline">
-                        Read the story <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                {% endfor %}
             </div>
         </div>
     </section>
@@ -361,6 +359,20 @@
                 </div>
             </div>
             {% endif %}
+
+            {% if config.extra.funders %}
+            <!-- Past support (Astera funding ended June 2026: never say "Funded by") -->
+            <div class="sl-built-by sl-past-support">
+                <span class="sl-built-by-label">{{ config.extra.past_support_label }}</span>
+                <div class="sl-built-by-orgs">
+                    {% for funder in config.extra.funders %}
+                    <a href="{{ funder.url }}" class="sl-past-support-logo" target="_blank" rel="noopener" aria-label="{{ funder.name }}">
+                        <img src="{{ funder.logo }}" alt="{{ funder.name }}" height="32" style="max-height:32px;width:auto;" />
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
         </div>
     </section>
     {% endif %}
@@ -374,9 +386,15 @@
                 <a href="{{ config.extra.cta_primary_button_url }}" class="sl-btn sl-btn--white">
                     <i class="fas fa-{{ config.extra.cta_primary_button_icon }}"></i> {{ config.extra.cta_primary_button_text }}
                 </a>
+                {% if config.extra.cta_secondary_button_url == "#contact" %}
                 <button onclick="openContactModal()" class="sl-btn sl-btn--white-outline">
                     <i class="fas fa-{{ config.extra.cta_secondary_button_icon }}"></i> {{ config.extra.cta_secondary_button_text }}
                 </button>
+                {% else %}
+                <a href="{{ config.extra.cta_secondary_button_url }}" class="sl-btn sl-btn--white-outline">
+                    <i class="fas fa-{{ config.extra.cta_secondary_button_icon }}"></i> {{ config.extra.cta_secondary_button_text }}
+                </a>
+                {% endif %}
             </div>
         </div>
     </section>
@@ -417,7 +435,7 @@
                 <button type="submit" class="sl-btn sl-btn--primary" style="width: 100%;">
                     <i class="fas fa-paper-plane"></i> Send Message
                 </button>
-                <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you">
+                <input type="hidden" name="_next" value="https://sciencelive4all.org/thank-you-contact/">
                 <input type="hidden" name="_subject" value="New Contact Message from Science Live">
             </form>
         </div>

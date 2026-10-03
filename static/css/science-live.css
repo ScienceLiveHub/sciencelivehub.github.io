@@ -3120,3 +3120,195 @@ a.sl-built-by-org::after {
     opacity: 0.5;
 }
 
+
+/* Card grids inside content pages (tools, contribute, request, funders) */
+.content-container .sl-tools-grid {
+    margin: 1.5rem 0 2rem;
+}
+
+.content-container .sl-two-col.sl-tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.content-container .sl-three-col.sl-tools-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.content-container .sl-tools-grid .sl-card .sl-btn {
+    align-self: flex-start;
+}
+
+.content-container .sl-tools-grid .sl-card h3 {
+    margin-top: 0.5rem;
+}
+
+.content-container .sl-tools-grid .sl-card pre {
+    font-size: 0.85rem;
+    margin: 0 0 1rem;
+}
+
+.content-container .sl-btn {
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    text-decoration: none;
+}
+
+.content-container .sl-btn--primary,
+.content-container .sl-btn--primary:hover {
+    color: white;
+}
+
+.sl-foundations-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2rem;
+    border-radius: 12px;
+}
+
+.content-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+}
+
+.content-container th,
+.content-container td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--gray-200, #e5e7eb);
+}
+
+@media (max-width: 768px) {
+    .content-container .sl-two-col.sl-tools-grid,
+    .content-container .sl-three-col.sl-tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sl-diagram {
+    margin: 2rem 0 2.5rem;
+}
+
+.sl-diagram svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+}
+
+.sl-diagram figcaption {
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--gray-500);
+}
+
+.sl-diagram .sl-diagram--narrow {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .sl-diagram .sl-diagram--wide {
+        display: none;
+    }
+
+    .sl-diagram .sl-diagram--narrow {
+        display: block;
+    }
+}
+
+/* Homepage doors: whole card is the link */
+a.sl-door {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+a.sl-door:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 10px 24px rgba(15, 37, 71, 0.08);
+}
+
+a.sl-door .sl-card-link {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.sl-past-support {
+    margin-top: 1.25rem;
+}
+
+.sl-past-support-logo img {
+    display: block;
+}
+
+#evolving .sl-subtitle a {
+    color: var(--secondary-color);
+}
+
+#start .sl-muted a {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+#evolving .sl-diagram {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile navigation: collapse the links behind a menu button so they no longer cover the page */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.navbar.scrolled .nav-toggle {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        position: relative;
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+        padding: 0.75rem 1rem 1rem;
+        background: var(--primary-color);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar.scrolled .nav-menu {
+        background: #ffffff;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    /* the mobile menu bar is shorter (64px) than the desktop one the page header was offset for */
+    body .page-header {
+        margin-top: 64px;
+    }
+}
