@@ -439,6 +439,9 @@ features = [
 [extra.team]
 title = "Who We Are"
 subtitle = "Building the infrastructure for FAIR scientific knowledge"
+label = "A collaboration between"
+# Lead-in for the thank-you line in the Astera past-support block.
+past_contributors_label = "With thanks to"
 
 [[extra.team.members]]
 name = "LifeWatch ERIC"
@@ -464,7 +467,7 @@ url = "https://knowledgepixels.com"
 # Earlier contributors, thanked inside the Astera past-support block.
 [[extra.team.past_contributors]]
 organization = "Prophet Town"
-contribution = "developing the platform and the Zotero plugin during that period"
+contribution = "for developing the platform and the Zotero plugin during that period"
 url = "https://www.ptown.tech"
 
 # ── Thank You Pages ─────────────────────────────────────────────────────────

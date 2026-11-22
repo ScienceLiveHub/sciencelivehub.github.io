@@ -345,7 +345,7 @@
             {% if config.extra.team is defined %}
             <!-- Compact "Built by" team strip -->
             <div class="sl-built-by" id="team">
-                <span class="sl-built-by-label">A collaboration between</span>
+                <span class="sl-built-by-label">{{ config.extra.team.label }}</span>
                 <div class="sl-built-by-orgs">
                     {% for member in config.extra.team.members %}
                     {% if member.url is defined %}
@@ -379,8 +379,8 @@
                 </div>
                 {% if config.extra.team.past_contributors is defined %}
                 <p class="sl-built-by-past">
-                    With thanks to
-                    {% for past in config.extra.team.past_contributors %}<a href="{{ past.url }}" target="_blank" rel="noopener">{{ past.organization }}</a> for {{ past.contribution }}{% if not loop.last %}; {% endif %}{% endfor %}.
+                    {{ config.extra.team.past_contributors_label }}
+                    {% for past in config.extra.team.past_contributors %}<a href="{{ past.url }}" target="_blank" rel="noopener">{{ past.organization }}</a> {{ past.contribution }}{% if not loop.last %}; {% endif %}{% endfor %}.
                 </p>
                 {% endif %}
             </div>
