@@ -349,11 +349,17 @@
                 <div class="sl-built-by-orgs">
                     {% for member in config.extra.team.members %}
                     {% if member.url is defined %}
-                    <a href="{{ member.url }}" class="sl-built-by-org" target="_blank" rel="noopener">
-                        {{ member.organization }}
-                    </a>
+                    <div class="sl-built-by-member">
+                        <a href="{{ member.url }}" class="sl-built-by-org" target="_blank" rel="noopener">
+                            {{ member.organization }}
+                        </a>
+                        {% if member.title is defined %}<span class="sl-built-by-role">{{ member.title }}</span>{% endif %}
+                    </div>
                     {% else %}
-                    <span class="sl-built-by-org">{{ member.organization }}</span>
+                    <div class="sl-built-by-member">
+                        <span class="sl-built-by-org">{{ member.organization }}</span>
+                        {% if member.title is defined %}<span class="sl-built-by-role">{{ member.title }}</span>{% endif %}
+                    </div>
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -371,6 +377,12 @@
                     </a>
                     {% endfor %}
                 </div>
+                {% if config.extra.team.past_contributors is defined %}
+                <p class="sl-built-by-past">
+                    With thanks to
+                    {% for past in config.extra.team.past_contributors %}<a href="{{ past.url }}" target="_blank" rel="noopener">{{ past.organization }}</a> for {{ past.contribution }}{% if not loop.last %}; {% endif %}{% endfor %}.
+                </p>
+                {% endif %}
             </div>
             {% endif %}
         </div>

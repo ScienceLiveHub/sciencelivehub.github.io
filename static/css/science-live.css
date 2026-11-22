@@ -3114,6 +3114,29 @@ section[id] {
     color: var(--secondary);
 }
 
+.sl-built-by-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.sl-built-by-role {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+.sl-built-by-past {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    margin: 0.25rem 0 0;
+}
+
+.sl-built-by-past a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 a.sl-built-by-org::after {
     content: " ↗";
     font-size: 0.75rem;

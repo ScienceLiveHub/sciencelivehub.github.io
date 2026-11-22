@@ -435,29 +435,36 @@ features = [
 ]
 
 # ── Team ─────────────────────────────────────────────────────────────────────
+# Rendered as the "A collaboration between" strip (organization + title).
 [extra.team]
 title = "Who We Are"
 subtitle = "Building the infrastructure for FAIR scientific knowledge"
 
 [[extra.team.members]]
-name = "Viten Hub Team"
-title = "Project Lead"
-description = "Anne Fouilloux founded VitenHub AS and has 25 years of experience in research software engineering and Open Science practices. Expert in semantic technologies and FAIR data stewardship."
-organization = "VitenHub AS"
-url = "http://vitenhub.no/"
+name = "LifeWatch ERIC"
+title = "Development"
+description = "Anne Fouilloux, CTO of LifeWatch ERIC, develops the Science Live platform and its open tools: FORRT Research MCP, Replication Radar and fip-mcp."
+organization = "LifeWatch ERIC"
+url = "https://www.lifewatch.eu"
 
 [[extra.team.members]]
-name = "Knowledge Pixels Team"
-title = "Nanopublication Infrastructure"
-description = "Swiss startup specializing in nanopublication technology and decentralized scientific knowledge networks. Providing core infrastructure expertise and technical implementation."
+name = "VitenHub AS"
+title = "Infrastructure & operations"
+description = "Jean Iaquinta, CEO of VitenHub AS, manages the infrastructure behind the Science Live platform. VitenHub AS operates Science Live and delivers the paid replication services."
+organization = "VitenHub AS"
+url = "https://vitenhub.no/"
+
+[[extra.team.members]]
+name = "Knowledge Pixels"
+title = "Nanopublication infrastructure"
+description = "Swiss company behind the nanopublication technology and the decentralized knowledge network that Science Live publishes to."
 organization = "Knowledge Pixels"
 url = "https://knowledgepixels.com"
 
-[[extra.team.members]]
-name = "Prophet Town Team"
-title = "Software Engineering"
-description = "Vijay Prema is developing the Science Live Platform and the Zotero plugin."
+# Earlier contributors, thanked inside the Astera past-support block.
+[[extra.team.past_contributors]]
 organization = "Prophet Town"
+contribution = "developing the platform and the Zotero plugin during that period"
 url = "https://www.ptown.tech"
 
 # ── Thank You Pages ─────────────────────────────────────────────────────────
